@@ -1,20 +1,30 @@
-import { notFound } from "next/navigation";
+"use client";
+
+import { use } from "react";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import grade2 from "@/data/grade2";
 import { Grade } from "@/data/types";
+import { useLanguage } from "@/components/LanguageContext";
 
 const gradeData: Record<string, Grade> = {
   "2": grade2,
 };
 
-export default async function GradePage({
+export default function GradePage({
   params,
 }: {
   params: Promise<{ grade: string }>;
 }) {
-  const { grade } = await params;
+  const { grade } = use(params);
+  const { language } = useLanguage();
   const data = gradeData[grade];
+
+  function getTitle(unit: Grade["units"][0]) {
+    if (language === "es") return unit.title.es;
+    if (language === "ur") return unit.title.ur;
+    return unit.title.en;
+  }
 
   if (!data) {
     return (
@@ -54,7 +64,12 @@ export default async function GradePage({
               <span className="text-4xl">{unit.emoji}</span>
               <div className="flex-1">
                 <div className="font-black text-gray-800 text-lg">{unit.title.en}</div>
-                <div className="text-gray-400 text-sm font-semibold">{unit.title.es} · {unit.title.ur}</div>
+                <div
+                  className="text-primary text-sm font-semibold"
+                  dir={language === "ur" ? "rtl" : "ltr"}
+                >
+                  {getTitle(unit)}
+                </div>
               </div>
               <div className="text-right text-xs text-gray-400 font-mono">
                 <div>{unit.teks}</div>
