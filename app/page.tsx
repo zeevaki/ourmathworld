@@ -16,7 +16,7 @@ export default function LandingPage() {
   return (
     <main
       className="min-h-screen flex flex-col items-center justify-center px-6 py-12"
-      style={{ background: "linear-gradient(135deg, #EDE9FE 0%, #FEF3C7 100%)" }}
+      style={{ background: "linear-gradient(135deg, #D1FAE5 0%, #E0F2FE 100%)" }}
     >
       {/* Header */}
       <div className="text-center mb-12">
@@ -33,7 +33,7 @@ export default function LandingPage() {
       <div className="w-full max-w-2xl grid grid-cols-2 gap-6">
         {/* Spanish card */}
         <div className="bg-white rounded-3xl p-8 shadow-lg text-center border-2 border-transparent hover:border-primary transition-all">
-          <div className="text-5xl mb-3">🇺🇸🇲🇽</div>
+          <div className="text-5xl mb-4">🌿</div>
           <h2 className="text-2xl font-black text-primary mb-1">English + Spanish</h2>
           <p className="text-gray-400 text-sm mb-6">Inglés + Español</p>
           <div className="flex flex-col gap-3">
@@ -54,7 +54,7 @@ export default function LandingPage() {
 
         {/* Urdu card */}
         <div className="bg-white rounded-3xl p-8 shadow-lg text-center border-2 border-transparent hover:border-accent transition-all">
-          <div className="text-5xl mb-3">🇺🇸🇵🇰</div>
+          <div className="text-5xl mb-4">🌊</div>
           <h2 className="text-2xl font-black text-accent mb-1">English + Urdu</h2>
           <p className="text-gray-400 text-sm mb-6 font-semibold" dir="rtl">انگریزی + اردو</p>
           <div className="flex flex-col gap-3">

@@ -4,12 +4,12 @@ import { useRouter } from "next/navigation";
 import NavBar from "@/components/NavBar";
 
 const grades = [
-  { grade: "K", label: "Kindergarten", emoji: "⭐", color: "#EC4899" },
-  { grade: "1", label: "Grade 1", emoji: "🌱", color: "#F59E0B" },
-  { grade: "2", label: "Grade 2", emoji: "✌️", color: "#7C3AED" },
-  { grade: "3", label: "Grade 3", emoji: "🔥", color: "#EF4444" },
-  { grade: "4", label: "Grade 4", emoji: "🚀", color: "#3B82F6" },
-  { grade: "5", label: "Grade 5", emoji: "🏆", color: "#10B981" },
+  { grade: "K", label: "Kindergarten", emoji: "🌻", color: "#F59E0B" },
+  { grade: "1", label: "Grade 1", emoji: "🌱", color: "#22C55E" },
+  { grade: "2", label: "Grade 2", emoji: "🌿", color: "#059669" },
+  { grade: "3", label: "Grade 3", emoji: "🌊", color: "#0EA5E9" },
+  { grade: "4", label: "Grade 4", emoji: "🌍", color: "#0891B2" },
+  { grade: "5", label: "Grade 5", emoji: "☀️", color: "#047857" },
 ];
 
 export default function StudentPage() {
