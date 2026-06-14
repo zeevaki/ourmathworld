@@ -23,18 +23,23 @@ export default function LandingPage() {
       }}
     >
       {/* Light overlay so cards and text stay readable */}
-      <div className="absolute inset-0" style={{ backgroundColor: "rgba(255,255,255,0.45)" }} />
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(255,255,255,0.22)" }} />
 
       {/* Content sits above the overlay */}
       <div className="relative z-10 flex flex-col items-center w-full">
 
         {/* Heading */}
         <div className="text-center mb-12">
-          <h1 className="text-6xl font-black text-primary drop-shadow-sm mb-0">OurMathWorld</h1>
+          <h1
+            className="text-6xl font-black mb-0"
+            style={{ color: "#ffffff", textShadow: "0 2px 16px rgba(4,120,87,0.7), 0 1px 4px rgba(0,0,0,0.4)" }}
+          >
+            OurMathWorld
+          </h1>
         </div>
 
         {/* Language + Mode selection */}
-        <p className="text-center text-gray-700 font-bold text-lg mb-6 drop-shadow-sm">
+        <p className="text-center font-bold text-lg mb-6" style={{ color: "#ffffff", textShadow: "0 1px 6px rgba(0,0,0,0.5)" }}>
           Choose your language pair to get started
         </p>
 
@@ -82,7 +87,7 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <p className="text-gray-600 text-sm mt-8 font-semibold drop-shadow-sm">
+        <p className="text-sm mt-8 font-semibold" style={{ color: "#ffffff", textShadow: "0 1px 4px rgba(0,0,0,0.4)" }}>
           Your choice is saved — you won&apos;t need to pick again next time.
         </p>
       </div>
