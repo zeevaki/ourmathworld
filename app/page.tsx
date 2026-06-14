@@ -41,13 +41,13 @@ export default function LandingPage() {
               onClick={() => choose("es", "student")}
               className="w-full bg-primary text-white font-bold py-3 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
             >
-              🎒 I&apos;m a Student
+              I&apos;m a Student
             </button>
             <button
               onClick={() => choose("es", "teacher")}
               className="w-full bg-white border-2 border-primary text-primary font-bold py-3 rounded-2xl hover:bg-primary-light transition-colors cursor-pointer"
             >
-              🍎 I&apos;m a Teacher
+              I&apos;m a Teacher
             </button>
           </div>
         </div>
@@ -62,13 +62,13 @@ export default function LandingPage() {
               onClick={() => choose("ur", "student")}
               className="w-full bg-accent text-white font-bold py-3 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer"
             >
-              🎒 I&apos;m a Student
+              I&apos;m a Student
             </button>
             <button
               onClick={() => choose("ur", "teacher")}
               className="w-full bg-white border-2 border-accent text-accent font-bold py-3 rounded-2xl hover:bg-accent-light transition-colors cursor-pointer"
             >
-              🍎 I&apos;m a Teacher
+              I&apos;m a Teacher
             </button>
           </div>
         </div>
