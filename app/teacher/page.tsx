@@ -37,7 +37,7 @@ export default function TeacherPage() {
     <div className="min-h-screen flex flex-col bg-background">
       <NavBar />
       <main className="flex-1 px-6 py-10 max-w-3xl mx-auto w-full">
-        <h1 className="text-4xl font-black text-gray-800 mb-2">🍎 Teacher View</h1>
+        <h1 className="text-4xl font-black text-gray-800 mb-2">Teacher View</h1>
         <p className="text-gray-500 font-semibold mb-10">Browse by TEKS or Cambridge standard</p>
 
         <GradeSection label="Kindergarten" grade="K" units={kindergarten.units} />
