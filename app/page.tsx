@@ -17,7 +17,7 @@ export default function LandingPage() {
     <main
       className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative"
       style={{
-        backgroundImage: "url('https://images.unsplash.com/photo-1566837945700-30057527ade0?w=1920&q=80&fit=crop')",
+        backgroundImage: "url('/kashmir.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
