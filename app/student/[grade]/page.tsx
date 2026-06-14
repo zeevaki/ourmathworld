@@ -7,6 +7,7 @@ import grade2 from "@/data/grade2";
 import grade1 from "@/data/grade1";
 import grade3 from "@/data/grade3";
 import grade4 from "@/data/grade4";
+import grade5 from "@/data/grade5";
 import kindergarten from "@/data/kindergarten";
 import { Grade } from "@/data/types";
 import { useLanguage } from "@/components/LanguageContext";
@@ -17,6 +18,7 @@ const gradeData: Record<string, Grade> = {
   "2": grade2,
   "3": grade3,
   "4": grade4,
+  "5": grade5,
 };
 
 export default function GradePage({
