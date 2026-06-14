@@ -5,6 +5,7 @@ import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import grade2 from "@/data/grade2";
 import grade1 from "@/data/grade1";
+import grade3 from "@/data/grade3";
 import kindergarten from "@/data/kindergarten";
 import { Grade } from "@/data/types";
 import { useLanguage } from "@/components/LanguageContext";
@@ -13,6 +14,7 @@ const gradeData: Record<string, Grade> = {
   K: kindergarten,
   "1": grade1,
   "2": grade2,
+  "3": grade3,
 };
 
 export default function GradePage({

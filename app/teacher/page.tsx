@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import grade2 from "@/data/grade2";
 import grade1 from "@/data/grade1";
+import grade3 from "@/data/grade3";
 import kindergarten from "@/data/kindergarten";
 
 function GradeSection({ label, grade, units }: { label: string; grade: string; units: typeof grade2.units }) {
@@ -44,6 +45,7 @@ export default function TeacherPage() {
         <GradeSection label="Kindergarten" grade="K" units={kindergarten.units} />
         <GradeSection label="Grade 1" grade="1" units={grade1.units} />
         <GradeSection label="Grade 2" grade="2" units={grade2.units} />
+        <GradeSection label="Grade 3" grade="3" units={grade3.units} />
 
         <div className="mt-10 bg-primary-light rounded-2xl p-6 text-center">
           <p className="text-gray-500 font-semibold">More grades coming soon. Want to help shape the content?</p>
