@@ -16,17 +16,14 @@ export default function CommunityPage() {
 
         <div className="bg-white rounded-3xl shadow-md p-6 mb-8">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSf_PLACEHOLDER/viewform?embedded=true"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScH8V8WrVcJH2JRbv1d7CzgfjxF3gXJSvOqJg0lu1C-A60esQ/viewform?embedded=true"
             width="100%"
-            height="600"
+            height="1010"
             style={{ border: "none" }}
             title="Teacher Feedback Form"
           >
-            Loading form…
+            Loading…
           </iframe>
-          <p className="text-gray-400 text-sm mt-4">
-            Replace the Google Form link above with your actual form URL.
-          </p>
         </div>
 
         <div className="grid grid-cols-3 gap-4 text-center">
