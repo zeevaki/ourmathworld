@@ -49,7 +49,7 @@ export default function LandingPage() {
             <h2 className="text-lg font-black mb-1" style={{ color: "#4ade80" }}>
               English + Spanish
             </h2>
-            <p className="text-white/80 text-xs mb-4 font-semibold">Inglés + Español</p>
+            <p className="text-white/95 text-xs mb-4 font-semibold">Inglés + Español</p>
             <div className="flex flex-col gap-2">
               <button
                 onClick={() => choose("es", "student")}
@@ -69,10 +69,10 @@ export default function LandingPage() {
 
           {/* Urdu card */}
           <div className="bg-white/65 backdrop-blur-sm rounded-2xl p-5 shadow-md text-center border border-white/40 hover:bg-white/75 transition-all">
-            <h2 className="text-lg font-black mb-1" style={{ color: "#7dd3fc" }}>
+            <h2 className="text-lg font-black mb-1" style={{ color: "#38bdf8" }}>
               English + Urdu
             </h2>
-            <p className="text-white/80 text-xs mb-4 font-semibold" dir="rtl">انگریزی + اردو</p>
+            <p className="text-white/95 text-xs mb-4 font-semibold" dir="rtl">انگریزی + اردو</p>
             <div className="flex flex-col gap-2">
               <button
                 onClick={() => choose("ur", "student")}
