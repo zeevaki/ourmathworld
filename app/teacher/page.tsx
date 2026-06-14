@@ -1,6 +1,7 @@
 import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import grade2 from "@/data/grade2";
+import grade1 from "@/data/grade1";
 import kindergarten from "@/data/kindergarten";
 
 function GradeSection({ label, grade, units }: { label: string; grade: string; units: typeof grade2.units }) {
@@ -41,6 +42,7 @@ export default function TeacherPage() {
         <p className="text-gray-500 font-semibold mb-10">Browse by TEKS or Cambridge standard</p>
 
         <GradeSection label="Kindergarten" grade="K" units={kindergarten.units} />
+        <GradeSection label="Grade 1" grade="1" units={grade1.units} />
         <GradeSection label="Grade 2" grade="2" units={grade2.units} />
 
         <div className="mt-10 bg-primary-light rounded-2xl p-6 text-center">
