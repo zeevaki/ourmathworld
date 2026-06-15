@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/components/LanguageContext";
+import SiteFooter from "@/components/SiteFooter";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -20,7 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={nunito.variable}>
       <body className="min-h-screen flex flex-col font-sans">
-        <LanguageProvider>{children}</LanguageProvider>
+        <LanguageProvider>
+          {children}
+          <SiteFooter />
+        </LanguageProvider>
       </body>
     </html>
   );
