@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { TeksUnit, ExerciseQuestion } from "@/data/types";
+import { useEffect, useRef, useState } from "react";
+import { TeksUnit, ExerciseQuestion, Fluency } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
 
-type Tab = "vocab" | "lesson" | "exercises" | "quiz" | "story";
+type Tab = "vocab" | "lesson" | "exercises" | "quiz" | "story" | "fluency";
 
 const tabs: { id: Tab; label: string; emoji: string }[] = [
   { id: "vocab", label: "Vocabulary", emoji: "📖" },
@@ -12,6 +12,7 @@ const tabs: { id: Tab; label: string; emoji: string }[] = [
   { id: "exercises", label: "Exercises", emoji: "✏️" },
   { id: "quiz", label: "Exit Ticket", emoji: "🎯" },
   { id: "story", label: "Story", emoji: "📚" },
+  { id: "fluency", label: "Fluency", emoji: "⚡" },
 ];
 
 function getLang(text: { en: string; es: string; ur: string }, lang: string | null) {
@@ -162,7 +163,29 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
                   </p>
                 </div>
               ))}
+              {unit.fluency && (
+                <button
+                  onClick={() => setActiveTab("fluency")}
+                  className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
+                >
+                  Next: Fluency ⚡
+                </button>
+              )}
             </>
+          )}
+        </div>
+      )}
+
+      {/* Fluency */}
+      {activeTab === "fluency" && (
+        <div className="flex flex-col gap-6">
+          {!unit.fluency ? (
+            <div className="bg-white rounded-2xl p-10 text-center shadow-sm border border-gray-100">
+              <div className="text-5xl mb-3">⚡</div>
+              <p className="text-gray-500 font-semibold">Fluency practice coming soon for this topic!</p>
+            </div>
+          ) : (
+            <FluencyDrill fluency={unit.fluency} language={language} />
           )}
         </div>
       )}
@@ -268,6 +291,118 @@ function QuestionSet({
           {completeLabel}
         </button>
       )}
+    </div>
+  );
+}
+
+type FluencyStatus = "idle" | "running" | "done";
+
+function FluencyDrill({ fluency, language }: { fluency: Fluency; language: string | null }) {
+  const [status, setStatus] = useState<FluencyStatus>("idle");
+  const [index, setIndex] = useState(0);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [input, setInput] = useState("");
+  const [timeLeft, setTimeLeft] = useState(fluency.timeLimitSeconds);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (status !== "running") return;
+    if (timeLeft <= 0) {
+      setStatus("done");
+      return;
+    }
+    const timer = setTimeout(() => setTimeLeft((t) => t - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [status, timeLeft]);
+
+  useEffect(() => {
+    if (status === "running") inputRef.current?.focus();
+  }, [status, index]);
+
+  function start() {
+    setStatus("running");
+    setIndex(0);
+    setCorrectCount(0);
+    setInput("");
+    setTimeLeft(fluency.timeLimitSeconds);
+  }
+
+  function submit() {
+    if (input.trim() === "") return;
+    if (Number(input) === fluency.problems[index].answer) {
+      setCorrectCount((c) => c + 1);
+    }
+    setInput("");
+    if (index + 1 >= fluency.problems.length) {
+      setStatus("done");
+    } else {
+      setIndex((i) => i + 1);
+    }
+  }
+
+  if (status === "idle") {
+    return (
+      <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100">
+        <div className="text-5xl mb-4">⚡</div>
+        <p className="text-gray-700 font-semibold text-lg mb-1">{fluency.instructions.en}</p>
+        {language && (
+          <p className="text-primary font-semibold mb-6" style={{ direction: language === "ur" ? "rtl" : "ltr" }}>
+            {getLang(fluency.instructions, language)}
+          </p>
+        )}
+        <button
+          onClick={start}
+          className="bg-accent text-white font-bold py-4 px-10 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer"
+        >
+          Start — {fluency.timeLimitSeconds}s ⏱️
+        </button>
+      </div>
+    );
+  }
+
+  if (status === "running") {
+    const problem = fluency.problems[index];
+    return (
+      <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100">
+        <div className="flex justify-between items-center mb-6 text-sm font-bold">
+          <span className="text-gray-400">
+            {index + 1} / {fluency.problems.length}
+          </span>
+          <span className={timeLeft <= 10 ? "text-danger" : "text-primary"}>⏱️ {timeLeft}s</span>
+        </div>
+        <p className="text-5xl font-black text-gray-800 mb-6">{problem.prompt} = ?</p>
+        <input
+          ref={inputRef}
+          type="number"
+          inputMode="numeric"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && submit()}
+          className="w-32 text-center text-3xl font-black border-2 border-primary rounded-xl py-3 mb-4"
+        />
+        <button
+          onClick={submit}
+          className="block w-full bg-primary text-white font-bold py-3 rounded-2xl hover:bg-primary-dark transition-colors cursor-pointer"
+        >
+          Submit
+        </button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="bg-primary-light rounded-2xl p-8 text-center">
+      <div className="text-5xl mb-2">
+        {correctCount === fluency.problems.length ? "🌟" : correctCount >= fluency.problems.length / 2 ? "👍" : "💪"}
+      </div>
+      <p className="text-2xl font-black text-primary">{correctCount} correct</p>
+      <p className="text-gray-500 mt-1">in {fluency.timeLimitSeconds - timeLeft} seconds</p>
+      <button
+        onClick={start}
+        className="mt-6 bg-primary text-white font-bold py-3 px-8 rounded-2xl hover:bg-primary-dark transition-colors cursor-pointer"
+      >
+        Try Again ⚡
+      </button>
     </div>
   );
 }

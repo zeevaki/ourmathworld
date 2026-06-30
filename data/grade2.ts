@@ -170,6 +170,31 @@ const grade2: Grade = {
           correctIndex: 3,
         },
       ],
+      fluency: {
+        instructions: {
+          en: "⚡ Quick math facts! Solve as many as you can before time runs out. Type the answer and press Enter.",
+          es: "⚡ ¡Datos matemáticos rápidos! Resuelve tantos como puedas antes de que se acabe el tiempo. Escribe la respuesta y presiona Enter.",
+          ur: "⚡ فوری ریاضی کے حقائق! وقت ختم ہونے سے پہلے جتنے ممکن ہوں حل کرو۔ جواب لکھو اور Enter دباؤ۔",
+        },
+        timeLimitSeconds: 60,
+        problems: [
+          { id: "fl-2.4A-1", prompt: "5 + 3", answer: 8 },
+          { id: "fl-2.4A-2", prompt: "9 - 4", answer: 5 },
+          { id: "fl-2.4A-3", prompt: "6 + 6", answer: 12 },
+          { id: "fl-2.4A-4", prompt: "10 - 7", answer: 3 },
+          { id: "fl-2.4A-5", prompt: "8 + 5", answer: 13 },
+          { id: "fl-2.4A-6", prompt: "12 - 5", answer: 7 },
+          { id: "fl-2.4A-7", prompt: "7 + 7", answer: 14 },
+          { id: "fl-2.4A-8", prompt: "15 - 9", answer: 6 },
+          { id: "fl-2.4A-9", prompt: "4 + 9", answer: 13 },
+          { id: "fl-2.4A-10", prompt: "11 - 6", answer: 5 },
+          { id: "fl-2.4A-11", prompt: "8 + 8", answer: 16 },
+          { id: "fl-2.4A-12", prompt: "14 - 8", answer: 6 },
+          { id: "fl-2.4A-13", prompt: "6 + 9", answer: 15 },
+          { id: "fl-2.4A-14", prompt: "13 - 7", answer: 6 },
+          { id: "fl-2.4A-15", prompt: "10 + 10", answer: 20 },
+        ],
+      },
     },
 
     {

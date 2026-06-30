@@ -29,6 +29,18 @@ export type Story = {
   pages: StoryPage[];
 };
 
+export type FluencyProblem = {
+  id: string;
+  prompt: string;
+  answer: number;
+};
+
+export type Fluency = {
+  instructions: BilingualText;
+  timeLimitSeconds: number;
+  problems: FluencyProblem[];
+};
+
 export type TeksUnit = {
   teks: string;
   cambridge: string;
@@ -39,6 +51,7 @@ export type TeksUnit = {
   exercises: ExerciseQuestion[];
   quiz: ExerciseQuestion[];
   story?: Story;
+  fluency?: Fluency;
 };
 
 export type Grade = {
