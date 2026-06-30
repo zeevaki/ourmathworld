@@ -66,7 +66,6 @@ export default function TeacherPage() {
               href={`/student/${current.id}/${unit.teks}`}
               className="bg-white rounded-2xl px-6 py-5 shadow-sm border border-gray-100 hover:border-primary hover:shadow-md transition-all flex items-center gap-5"
             >
-              <span className="text-3xl">{unit.emoji}</span>
               <div className="flex-1">
                 <div className="font-black text-gray-800">{unit.title.en}</div>
                 <div className="text-gray-400 text-sm">
