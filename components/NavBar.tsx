@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { Leaf } from "lucide-react";
 import { useLanguage } from "./LanguageContext";
 
 export default function NavBar() {
@@ -13,7 +14,8 @@ export default function NavBar() {
   return (
     <nav className="w-full bg-white border-b border-gray-100 shadow-sm sticky top-0 z-50">
       <div className="px-6 py-3 flex items-center justify-between">
-        <Link href="/" className="font-black text-xl text-primary" onClick={() => setOpen(false)}>
+        <Link href="/" className="font-black text-xl text-primary flex items-center gap-1.5" onClick={() => setOpen(false)}>
+          <Leaf size={20} className="text-primary" />
           OurMathWorld
         </Link>
 

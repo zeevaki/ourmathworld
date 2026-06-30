@@ -1,18 +1,20 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap, Timer, Star, ThumbsUp, Dumbbell, ChevronRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { TeksUnit, ExerciseQuestion, Fluency } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
 
 type Tab = "vocab" | "lesson" | "exercises" | "quiz" | "story" | "fluency";
 
-const tabs: { id: Tab; label: string; emoji: string }[] = [
-  { id: "vocab", label: "Vocabulary", emoji: "📖" },
-  { id: "lesson", label: "Lesson", emoji: "🎓" },
-  { id: "exercises", label: "Exercises", emoji: "✏️" },
-  { id: "quiz", label: "Exit Ticket", emoji: "🎯" },
-  { id: "story", label: "Story", emoji: "📚" },
-  { id: "fluency", label: "Fluency", emoji: "⚡" },
+const tabs: { id: Tab; label: string; icon: LucideIcon }[] = [
+  { id: "vocab",     label: "Vocabulary",  icon: BookOpen       },
+  { id: "lesson",    label: "Lesson",       icon: GraduationCap  },
+  { id: "exercises", label: "Exercises",    icon: PencilLine     },
+  { id: "quiz",      label: "Exit Ticket",  icon: ClipboardCheck },
+  { id: "story",     label: "Story",        icon: BookMarked     },
+  { id: "fluency",   label: "Fluency",      icon: Zap            },
 ];
 
 function getLang(text: { en: string; es: string; ur: string }, lang: string | null) {
@@ -28,20 +30,24 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
   return (
     <div>
       {/* Tab bar */}
-      <div className="flex gap-2 mb-8 bg-white rounded-2xl p-2 shadow-sm">
-        {tabs.map((tab) => (
-          <button
-            key={tab.id}
-            onClick={() => setActiveTab(tab.id)}
-            className={`flex-1 py-2.5 rounded-xl font-bold text-sm transition-all cursor-pointer ${
-              activeTab === tab.id
-                ? "bg-primary text-white shadow-md"
-                : "text-gray-400 hover:text-primary"
-            }`}
-          >
-            {tab.emoji} {tab.label}
-          </button>
-        ))}
+      <div className="flex gap-1.5 mb-8 bg-white rounded-2xl p-2 shadow-sm overflow-x-auto">
+        {tabs.map((tab) => {
+          const Icon = tab.icon;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex-1 min-w-[72px] py-2.5 rounded-xl font-bold text-xs transition-all cursor-pointer flex flex-col items-center gap-1 ${
+                activeTab === tab.id
+                  ? "bg-primary text-white shadow-md"
+                  : "text-gray-400 hover:text-primary"
+              }`}
+            >
+              <Icon size={16} />
+              {tab.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Vocabulary */}
@@ -109,7 +115,7 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
           questions={unit.exercises}
           language={language}
           onComplete={() => setActiveTab("quiz")}
-          completeLabel="Ready for the Quiz? 🎯"
+          completeLabel="Ready for the Exit Ticket?"
           isQuiz={false}
         />
       )}
@@ -129,7 +135,7 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
               onClick={() => setActiveTab("story")}
               className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
             >
-              Next: Story 📚
+              <BookMarked size={18} className="inline mr-1" /> Next: Story
             </button>
           )}
         </div>
@@ -140,7 +146,7 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
         <div className="flex flex-col gap-6">
           {!unit.story ? (
             <div className="bg-white rounded-2xl p-10 text-center shadow-sm border border-gray-100">
-              <div className="text-5xl mb-3">📚</div>
+              <BookMarked size={40} className="text-primary mx-auto mb-3" />
               <p className="text-gray-500 font-semibold">Story coming soon for this topic!</p>
             </div>
           ) : (
@@ -168,7 +174,7 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
                   onClick={() => setActiveTab("fluency")}
                   className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
                 >
-                  Next: Fluency ⚡
+                  <Zap size={18} className="inline mr-1" /> Next: Fluency
                 </button>
               )}
             </>
@@ -181,7 +187,7 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
         <div className="flex flex-col gap-6">
           {!unit.fluency ? (
             <div className="bg-white rounded-2xl p-10 text-center shadow-sm border border-gray-100">
-              <div className="text-5xl mb-3">⚡</div>
+              <Zap size={40} className="text-primary mx-auto mb-3" />
               <p className="text-gray-500 font-semibold">Fluency practice coming soon for this topic!</p>
             </div>
           ) : (
@@ -265,15 +271,21 @@ function QuestionSet({
       {isQuiz && !submitted && allAnswered && (
         <button
           onClick={() => setSubmitted(true)}
-          className="w-full bg-accent text-white font-bold py-4 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer"
+          className="w-full bg-accent text-white font-bold py-4 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer flex items-center justify-center gap-2"
         >
-          Submit Quiz 🎯
+          <ClipboardCheck size={20} /> Submit Exit Ticket
         </button>
       )}
 
       {isQuiz && submitted && (
         <div className="bg-primary-light rounded-2xl p-6 text-center">
-          <div className="text-5xl mb-2">{score === questions.length ? "🌟" : score >= questions.length / 2 ? "👍" : "💪"}</div>
+          <div className="flex justify-center mb-2">
+            {score === questions.length
+              ? <Star size={44} className="text-accent fill-accent" />
+              : score >= questions.length / 2
+              ? <ThumbsUp size={44} className="text-primary" />
+              : <Dumbbell size={44} className="text-primary" />}
+          </div>
           <p className="text-2xl font-black text-primary">
             {score} / {questions.length} correct
           </p>
@@ -343,7 +355,7 @@ function FluencyDrill({ fluency, language }: { fluency: Fluency; language: strin
   if (status === "idle") {
     return (
       <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-gray-100">
-        <div className="text-5xl mb-4">⚡</div>
+        <Zap size={44} className="text-primary mx-auto mb-4" />
         <p className="text-gray-700 font-semibold text-lg mb-1">{fluency.instructions.en}</p>
         {language && (
           <p className="text-primary font-semibold mb-6" style={{ direction: language === "ur" ? "rtl" : "ltr" }}>
@@ -352,9 +364,9 @@ function FluencyDrill({ fluency, language }: { fluency: Fluency; language: strin
         )}
         <button
           onClick={start}
-          className="bg-accent text-white font-bold py-4 px-10 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer"
+          className="bg-accent text-white font-bold py-4 px-10 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer flex items-center gap-2 mx-auto"
         >
-          Start — {fluency.timeLimitSeconds}s ⏱️
+          <Timer size={20} /> Start — {fluency.timeLimitSeconds}s
         </button>
       </div>
     );
@@ -368,7 +380,9 @@ function FluencyDrill({ fluency, language }: { fluency: Fluency; language: strin
           <span className="text-gray-400">
             {index + 1} / {fluency.problems.length}
           </span>
-          <span className={timeLeft <= 10 ? "text-danger" : "text-primary"}>⏱️ {timeLeft}s</span>
+          <span className={`flex items-center gap-1 ${timeLeft <= 10 ? "text-danger" : "text-primary"}`}>
+            <Timer size={14} /> {timeLeft}s
+          </span>
         </div>
         <p className="text-5xl font-black text-gray-800 mb-6">{problem.prompt} = ?</p>
         <input
@@ -392,16 +406,20 @@ function FluencyDrill({ fluency, language }: { fluency: Fluency; language: strin
 
   return (
     <div className="bg-primary-light rounded-2xl p-8 text-center">
-      <div className="text-5xl mb-2">
-        {correctCount === fluency.problems.length ? "🌟" : correctCount >= fluency.problems.length / 2 ? "👍" : "💪"}
+      <div className="flex justify-center mb-2">
+        {correctCount === fluency.problems.length
+          ? <Star size={44} className="text-accent fill-accent" />
+          : correctCount >= fluency.problems.length / 2
+          ? <ThumbsUp size={44} className="text-primary" />
+          : <Dumbbell size={44} className="text-primary" />}
       </div>
       <p className="text-2xl font-black text-primary">{correctCount} correct</p>
       <p className="text-gray-500 mt-1">in {fluency.timeLimitSeconds - timeLeft} seconds</p>
       <button
         onClick={start}
-        className="mt-6 bg-primary text-white font-bold py-3 px-8 rounded-2xl hover:bg-primary-dark transition-colors cursor-pointer"
+        className="mt-6 bg-primary text-white font-bold py-3 px-8 rounded-2xl hover:bg-primary-dark transition-colors cursor-pointer flex items-center gap-2 mx-auto"
       >
-        Try Again ⚡
+        <Zap size={16} /> Try Again
       </button>
     </div>
   );
