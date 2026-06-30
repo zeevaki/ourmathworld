@@ -60,7 +60,7 @@ export default function GradePage({
           ← All Grades
         </Link>
         <h1 className="text-4xl font-black text-gray-800 mb-2">
-          {data.emoji} {data.label}
+          {data.label}
         </h1>
         <p className="text-gray-500 font-semibold mb-10">Pick a topic to learn</p>
 
@@ -71,7 +71,6 @@ export default function GradePage({
               href={`/student/${grade}/${unit.teks}`}
               className="bg-white rounded-2xl px-6 py-5 shadow-sm border border-gray-100 hover:border-primary hover:shadow-md transition-all flex items-center gap-5"
             >
-              <span className="text-4xl">{unit.emoji}</span>
               <div className="flex-1">
                 <div className="font-black text-gray-800 text-lg">{unit.title.en}</div>
                 <div
