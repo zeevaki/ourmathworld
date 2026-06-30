@@ -4,13 +4,14 @@ import { useState } from "react";
 import { TeksUnit, ExerciseQuestion } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
 
-type Tab = "vocab" | "lesson" | "exercises" | "quiz";
+type Tab = "vocab" | "lesson" | "exercises" | "quiz" | "story";
 
 const tabs: { id: Tab; label: string; emoji: string }[] = [
   { id: "vocab", label: "Vocabulary", emoji: "📖" },
   { id: "lesson", label: "Lesson", emoji: "🎓" },
   { id: "exercises", label: "Exercises", emoji: "✏️" },
-  { id: "quiz", label: "Quiz", emoji: "🎯" },
+  { id: "quiz", label: "Exit Ticket", emoji: "🎯" },
+  { id: "story", label: "Story", emoji: "📚" },
 ];
 
 function getLang(text: { en: string; es: string; ur: string }, lang: string | null) {
@@ -114,13 +115,56 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
 
       {/* Quiz */}
       {activeTab === "quiz" && (
-        <QuestionSet
-          questions={unit.quiz}
-          language={language}
-          onComplete={() => {}}
-          completeLabel=""
-          isQuiz={true}
-        />
+        <div className="flex flex-col gap-6">
+          <QuestionSet
+            questions={unit.quiz}
+            language={language}
+            onComplete={() => {}}
+            completeLabel=""
+            isQuiz={true}
+          />
+          {unit.story && (
+            <button
+              onClick={() => setActiveTab("story")}
+              className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
+            >
+              Next: Story 📚
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Story */}
+      {activeTab === "story" && (
+        <div className="flex flex-col gap-6">
+          {!unit.story ? (
+            <div className="bg-white rounded-2xl p-10 text-center shadow-sm border border-gray-100">
+              <div className="text-5xl mb-3">📚</div>
+              <p className="text-gray-500 font-semibold">Story coming soon for this topic!</p>
+            </div>
+          ) : (
+            <>
+              <h3 className="text-2xl font-black text-gray-800 text-center">
+                {unit.story.title.en}
+                <span className="block text-primary text-lg mt-1" dir={language === "ur" ? "rtl" : "ltr"}>
+                  {getLang(unit.story.title, language)}
+                </span>
+              </h3>
+              {unit.story.pages.map((page, i) => (
+                <div key={i} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                  <div className="text-5xl text-center mb-4">{page.emoji}</div>
+                  <p className="text-gray-700 leading-relaxed text-lg mb-3">{page.text.en}</p>
+                  <p
+                    className="text-primary leading-relaxed text-lg font-semibold pt-3 border-t border-gray-100"
+                    style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                  >
+                    {getLang(page.text, language)}
+                  </p>
+                </div>
+              ))}
+            </>
+          )}
+        </div>
       )}
     </div>
   );

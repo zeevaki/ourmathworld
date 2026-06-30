@@ -19,6 +19,16 @@ export type ExerciseQuestion = {
   correctIndex: number;
 };
 
+export type StoryPage = {
+  emoji: string;
+  text: BilingualText;
+};
+
+export type Story = {
+  title: BilingualText;
+  pages: StoryPage[];
+};
+
 export type TeksUnit = {
   teks: string;
   cambridge: string;
@@ -28,6 +38,7 @@ export type TeksUnit = {
   lesson: BilingualText;
   exercises: ExerciseQuestion[];
   quiz: ExerciseQuestion[];
+  story?: Story;
 };
 
 export type Grade = {

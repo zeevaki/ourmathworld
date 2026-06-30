@@ -440,6 +440,79 @@ const grade2: Grade = {
           correctIndex: 3,
         },
       ],
+      story: {
+        title: {
+          en: "Leo's Flying Machine",
+          es: "La Máquina Voladora de Leo",
+          ur: "لیو کی اڑن مشین",
+        },
+        pages: [
+          {
+            emoji: "📓",
+            text: {
+              en: "Young Leo sat in his workshop in Florence, sketching in his notebook. \"Today,\" he said, \"I will build a flying machine!\"",
+              es: "El joven Leo estaba sentado en su taller en Florencia, dibujando en su cuaderno. \"Hoy,\" dijo, \"¡voy a construir una máquina voladora!\"",
+              ur: "نوجوان لیو فلورنس میں اپنی ورکشاپ میں بیٹھا اپنی کاپی میں خاکہ بنا رہا تھا۔ \"آج،\" اس نے کہا، \"میں ایک اڑن مشین بناؤں گا!\"",
+            },
+          },
+          {
+            emoji: "🔺",
+            text: {
+              en: "First, Leo needed wings — wide and strong, with 3 straight sides that could cut through the wind. \"A triangle!\" he said, and sketched two big ones.",
+              es: "Primero, Leo necesitaba alas — anchas y fuertes, con 3 lados rectos que pudieran cortar el viento. \"¡Un triángulo!\" dijo, y dibujó dos grandes.",
+              ur: "پہلے، لیو کو پر چاہیے تھے — چوڑے اور مضبوط، 3 سیدھے اطراف کے ساتھ جو ہوا کو کاٹ سکیں۔ \"تکون!\" اس نے کہا، اور دو بڑی تکونیں بنائیں۔",
+            },
+          },
+          {
+            emoji: "🟦",
+            text: {
+              en: "Next, the machine needed a body to hold everything together — 4 sides, with opposite sides equal, so it would stay balanced. \"A rectangle!\" said Leo.",
+              es: "Después, la máquina necesitaba un cuerpo para sostener todo junto — 4 lados, con los lados opuestos iguales, para que se mantuviera equilibrada. \"¡Un rectángulo!\" dijo Leo.",
+              ur: "پھر، مشین کو سب کچھ جوڑے رکھنے کے لیے ایک باڈی چاہیے تھی — 4 اطراف، جس کے آمنے سامنے والے اطراف برابر ہوں، تاکہ توازن رہے۔ \"مستطیل!\" لیو نے کہا۔",
+            },
+          },
+          {
+            emoji: "⭕",
+            text: {
+              en: "Leo tried to roll the machine out of the workshop, but it would not move. \"I need wheels — round, with no corners, so they can spin.\" He drew 2 circles.",
+              es: "Leo trató de rodar la máquina fuera del taller, pero no se movía. \"Necesito ruedas — redondas, sin esquinas, para que puedan girar.\" Dibujó 2 círculos.",
+              ur: "لیو نے مشین کو ورکشاپ سے باہر نکالنے کی کوشش کی، مگر وہ حرکت نہ کر سکی۔ \"مجھے پہیے چاہئیں — گول، بغیر کونوں کے، تاکہ وہ گھوم سکیں۔\" اس نے 2 دائرے بنائے۔",
+            },
+          },
+          {
+            emoji: "🟥",
+            text: {
+              en: "Last, Leo wanted a small flag on top, fair and even on every side. \"4 equal sides... a square!\" He painted it bright red.",
+              es: "Por último, Leo quería una pequeña bandera arriba, justa e igual en cada lado. \"4 lados iguales... ¡un cuadrado!\" La pintó de rojo brillante.",
+              ur: "آخر میں، لیو چاہتا تھا کہ اوپر ایک چھوٹا جھنڈا ہو، جو ہر طرف سے برابر اور منصفانہ ہو۔ \"4 برابر اطراف... مربع!\" اس نے اسے چمکدار سرخ رنگ دیا۔",
+            },
+          },
+          {
+            emoji: "🔧",
+            text: {
+              en: "Leo put the pieces together: triangle wings, a rectangle body, circle wheels, and a square flag. Every shape had its own job to do.",
+              es: "Leo unió las piezas: alas triangulares, un cuerpo rectangular, ruedas circulares y una bandera cuadrada. Cada figura tenía su propio trabajo.",
+              ur: "لیو نے سب حصے جوڑے: تکون پر، مستطیل باڈی، دائرے کے پہیے، اور مربع جھنڈا۔ ہر شکل کا اپنا کام تھا۔",
+            },
+          },
+          {
+            emoji: "🪽",
+            text: {
+              en: "He rolled the machine up to the rooftop on its circle wheels, and the wind caught the triangle wings. The flying machine lifted into the sky!",
+              es: "Subió la máquina al techo sobre sus ruedas circulares, y el viento atrapó las alas triangulares. ¡La máquina voladora se elevó hacia el cielo!",
+              ur: "اس نے مشین کو گول پہیوں پر چھت تک لے گیا، اور ہوا نے تکون پروں کو پکڑ لیا۔ اڑن مشین آسمان کی طرف اڑ گئی!",
+            },
+          },
+          {
+            emoji: "✨",
+            text: {
+              en: "\"Every shape has a job!\" Leo laughed, watching it soar. \"Round things roll, triangles cut the wind, and equal sides keep things fair and strong.\"",
+              es: "\"¡Cada figura tiene un trabajo!\" rio Leo, mirándola volar. \"Las cosas redondas ruedan, los triángulos cortan el viento, y los lados iguales mantienen las cosas justas y fuertes.\"",
+              ur: "\"ہر شکل کا ایک کام ہوتا ہے!\" لیو نے ہنستے ہوئے کہا، اسے اڑتا دیکھ کر۔ \"گول چیزیں لڑھکتی ہیں، تکونیں ہوا کاٹتی ہیں، اور برابر اطراف چیزوں کو منصفانہ اور مضبوط رکھتے ہیں۔\"",
+            },
+          },
+        ],
+      },
     },
   ],
 };
