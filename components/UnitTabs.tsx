@@ -1,8 +1,34 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap, Timer, Star, ThumbsUp, Dumbbell, ChevronRight } from "lucide-react";
+import {
+  BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
+  Timer, Star, ThumbsUp, Dumbbell, ChevronRight,
+  Plus, Minus, Sigma, ArrowLeftRight, Equal,
+  Columns2, LayoutList, Users, Scale,
+  Circle, Square, Triangle, RectangleHorizontal, Ruler,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+
+const vocabIconMap: Record<string, LucideIcon> = {
+  // 2.4A — Adding & Subtracting
+  add:        Plus,
+  subtract:   Minus,
+  sum:        Sigma,
+  difference: ArrowLeftRight,
+  equals:     Equal,
+  // 2.7A — Even & Odd
+  even:       Columns2,
+  odd:        LayoutList,
+  pairs:      Users,
+  equal:      Scale,
+  // 2.8A — 2D Shapes
+  circle:     Circle,
+  square:     Square,
+  triangle:   Triangle,
+  rectangle:  RectangleHorizontal,
+  sides:      Ruler,
+};
 import { TeksUnit, ExerciseQuestion, Fluency } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
 
@@ -53,9 +79,16 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
       {/* Vocabulary */}
       {activeTab === "vocab" && (
         <div className="flex flex-col gap-4">
-          {unit.vocabulary.map((word) => (
+          {unit.vocabulary.map((word) => {
+            const VocabIcon = vocabIconMap[word.id];
+            return (
             <div key={word.id} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex gap-4 items-start">
-              <span className="text-4xl">{word.emoji}</span>
+              <div className="bg-primary-light rounded-xl p-3 flex-shrink-0 flex items-center justify-center">
+                {VocabIcon
+                  ? <VocabIcon size={28} className="text-primary" />
+                  : <span className="text-3xl">{word.emoji}</span>
+                }
+              </div>
               <div>
                 <div className="flex items-baseline gap-3 mb-1">
                   <span className="text-xl font-black text-gray-800">{word.word.en}</span>
@@ -69,12 +102,13 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
                 </p>
               </div>
             </div>
-          ))}
+            );
+          })}
           <button
             onClick={() => setActiveTab("lesson")}
-            className="mt-4 w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
+            className="mt-4 w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer flex items-center justify-center gap-2"
           >
-            Next: Lesson 🎓
+            <GraduationCap size={20} /> Next: Lesson
           </button>
         </div>
       )}
