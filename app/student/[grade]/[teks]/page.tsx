@@ -7,6 +7,7 @@ import {
   X, Divide, Slash, Frame,
   Layers, Equal, Dot, Move,
   Box, ListOrdered, Crosshair,
+  Hexagon, Clock, Ruler, PieChart,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import grade2 from "@/data/grade2";
@@ -30,11 +31,19 @@ const teksIconMap: Record<string, LucideIcon> = {
   "1.2G": Scale,
   "1.8A": BarChart2,
   // Grade 2
+  "2.2B": Hash,
+  "2.3B": PieChart,
   "2.4A": Sprout,
   "2.4C": Plus,
+  "2.4D": Equal,
   "2.6A": Grid3X3,
   "2.7A": TreePine,
   "2.8A": Leaf,
+  "2.8B": Box,
+  "2.8C": Hexagon,
+  "2.9E": Ruler,
+  "2.9G": Clock,
+  "2.10C": BarChart2,
   // Grade 3
   "3.4F": X,
   "3.4K": Divide,

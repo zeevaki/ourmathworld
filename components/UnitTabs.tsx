@@ -14,6 +14,7 @@ import {
   Plus, Minus, Sigma, ArrowLeftRight, Equal,
   Columns2, LayoutList, Users, Scale,
   Circle, Square, Triangle, RectangleHorizontal, Ruler,
+  Hexagon, Clock, Sun, Moon,
   // Grade 3 vocab
   X, Layers, Package, Divide, Slash, Percent, Share2, ArrowUp, ArrowDown, LayoutGrid, Frame, CircleDot,
   // Grade 4 vocab
@@ -117,6 +118,44 @@ const vocabIconMap: Record<string, LucideIcon> = {
   "in-each":   ChevronRight,
   "skip-count": ChevronsRight,
   total:       Sigma,
+  // 2.2B — Place Value to 1,200
+  digit:          Hash,
+  "expanded-form": Columns2,
+  "standard-form": Hash,
+  // 2.3B — Fractions
+  half:    Slash,
+  fourth:  Divide,
+  eighth:  Grid3X3,
+  // 2.4D — Number Sentences
+  "number-sentence": Equal,
+  unknown:   CircleHelp,
+  operation: Plus,
+  solve:     CheckCircle,
+  // 2.8B — 3D Solids
+  sphere:   Circle,
+  cone:     Triangle,
+  cylinder: Columns2,
+  prism:    Box,
+  face:     Square,
+  // 2.8C — Classify Polygons
+  polygon:       Hexagon,
+  vertex:        Dot,
+  side:          Ruler,
+  quadrilateral: Square,
+  // 2.9E — Estimating Length
+  inch:        Ruler,
+  centimeter:  Ruler,
+  // 2.9G — Telling Time
+  "hour-hand":   Clock,
+  "minute-hand": Clock,
+  "a.m.":        Sun,
+  "p.m.":        Moon,
+  "elapsed-time": Timer,
+  // 2.10C — Bar Graphs & Pictographs
+  "bar-graph":  BarChart2,
+  pictograph:   LayoutGrid,
+  key:          Target,
+  scale:        Scale,
 
   // ── Grade 4 ────────────────────────────────────────────────────
   // 4.4D — Multi-digit Multiplication
