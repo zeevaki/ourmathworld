@@ -2,15 +2,67 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
+  // Tab icons
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
+  // UI elements
   Timer, Star, ThumbsUp, Dumbbell, ChevronRight,
+  // Kindergarten vocab
+  Hash, CircleHelp, TrendingUp, TrendingDown, PlusCircle, Scissors, ArrowLeft, CornerRightDown, CircleOff,
+  // Grade 1 vocab
+  Grid3X3, SearchX, ChevronLeft, BarChart2, LineChart,
+  // Grade 2 vocab
   Plus, Minus, Sigma, ArrowLeftRight, Equal,
   Columns2, LayoutList, Users, Scale,
   Circle, Square, Triangle, RectangleHorizontal, Ruler,
+  // Grade 3 vocab
+  X, Layers, Package, Divide, Slash, Percent, Share2, ArrowUp, ArrowDown, LayoutGrid, Frame, CircleDot,
+  // Grade 4 vocab
+  Calculator, RefreshCw, Target, Minimize2, Milestone, Dot, ChevronsRight, Move, MoveHorizontal,
+  // Grade 5 vocab
+  Box, Code2, Code, ListOrdered, Crosshair, ArrowRight, MapPin, AlignJustify, CheckCircle, RotateCw, Move3d,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 const vocabIconMap: Record<string, LucideIcon> = {
+  // ── Kindergarten ──────────────────────────────────────────────
+  // K.2C — Counting
+  count:      Hash,
+  number:     Hash,
+  "how-many": CircleHelp,
+  zero:       CircleOff,
+  // K.2H — More / Less / Equal
+  more:       TrendingUp,
+  less:       TrendingDown,
+  fair:       Scale,
+  // K.3A — Join / Separate
+  join:       PlusCircle,
+  separate:   Scissors,
+  "in-all":   Sigma,
+  left:       ArrowLeft,
+  // K.6A — 2D Shapes
+  corner:     CornerRightDown,
+
+  // ── Grade 1 ────────────────────────────────────────────────────
+  // 1.3B — Add & Subtract
+  altogether: Sigma,
+  // 1.3C — Ten Frames
+  "ten-frame":  Grid3X3,
+  addend:       Plus,
+  missing:      SearchX,
+  decompose:    Scissors,
+  // 1.2G — Compare Numbers
+  "greater-than": ChevronRight,
+  "less-than":    ChevronLeft,
+  "equal-to":     Equal,
+  compare:        Scale,
+  // 1.8A — Data
+  data:  BarChart2,
+  tally: Hash,
+  graph: LineChart,
+  most:  TrendingUp,
+  least: TrendingDown,
+
+  // ── Grade 2 ────────────────────────────────────────────────────
   // 2.4A — Adding & Subtracting
   add:        Plus,
   subtract:   Minus,
@@ -18,16 +70,85 @@ const vocabIconMap: Record<string, LucideIcon> = {
   difference: ArrowLeftRight,
   equals:     Equal,
   // 2.7A — Even & Odd
-  even:       Columns2,
-  odd:        LayoutList,
-  pairs:      Users,
-  equal:      Scale,
+  even:      Columns2,
+  odd:       LayoutList,
+  pairs:     Users,
+  equal:     Scale,
   // 2.8A — 2D Shapes
-  circle:     Circle,
-  square:     Square,
-  triangle:   Triangle,
-  rectangle:  RectangleHorizontal,
-  sides:      Ruler,
+  circle:    Circle,
+  square:    Square,
+  triangle:  Triangle,
+  rectangle: RectangleHorizontal,
+  sides:     Ruler,
+
+  // ── Grade 3 ────────────────────────────────────────────────────
+  // 3.4F — Multiplication
+  multiply:       X,
+  factor:         Layers,
+  product:        Package,
+  array:          Grid3X3,
+  "equal-groups": LayoutGrid,
+  // 3.4K — Division
+  divide:       Divide,
+  dividend:     CircleDot,
+  divisor:      Slash,
+  quotient:     Percent,
+  "fair-share": Share2,
+  // 3.3A — Fractions
+  fraction:    Slash,
+  numerator:   ArrowUp,
+  denominator: ArrowDown,
+  whole:       Circle,
+  equivalent:  Equal,
+  // 3.6C — Area
+  area:          Frame,
+  "square-unit": LayoutGrid,
+  length:        MoveHorizontal,
+  width:         MoveHorizontal,
+  formula:       Calculator,
+
+  // ── Grade 4 ────────────────────────────────────────────────────
+  // 4.4D — Multi-digit Multiplication
+  "partial-product": Layers,
+  regroup:           RefreshCw,
+  estimate:          Target,
+  // 4.3E — Fractions
+  "like-denominators": Equal,
+  simplify:            Minimize2,
+  benchmark:           Milestone,
+  // 4.2E — Decimals
+  decimal:            Dot,
+  tenths:             ChevronRight,
+  hundredths:         ChevronsRight,
+  "compare-decimals": Scale,
+  // 4.5D — Perimeter & Area
+  perimeter:           Frame,
+  "perimeter-formula": Calculator,
+  "area-formula":      Calculator,
+  dimension:           Move,
+
+  // ── Grade 5 ────────────────────────────────────────────────────
+  // 5.3E — Decimal Multiplication
+  "decimal-product": Hash,
+  "place-value":     AlignJustify,
+  round:             RotateCw,
+  reasonable:        CheckCircle,
+  // 5.6A — Volume
+  volume:                Box,
+  "cubic-unit":          Box,
+  "length-width-height": Move3d,
+  "rectangular-prism":   Box,
+  // 5.4E — Order of Operations
+  expression:     Code2,
+  parentheses:    Code,
+  "order-of-ops": ListOrdered,
+  evaluate:       Calculator,
+  // 5.8A — Coordinate Plane
+  "coordinate-plane": Crosshair,
+  "x-axis":           ArrowRight,
+  "y-axis":           ArrowUp,
+  "ordered-pair":     MapPin,
+  origin:             Target,
 };
 import { TeksUnit, ExerciseQuestion, Fluency } from "@/data/types";
 import { useLanguage } from "./LanguageContext";

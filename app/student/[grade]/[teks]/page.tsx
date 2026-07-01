@@ -1,6 +1,13 @@
 import { notFound } from "next/navigation";
 import NavBar from "@/components/NavBar";
-import { Sprout, TreePine, Leaf } from "lucide-react";
+import {
+  Hash, Scale, PlusCircle, Circle,
+  Plus, Grid3X3, BarChart2,
+  Sprout, TreePine, Leaf,
+  X, Divide, Slash, Frame,
+  Layers, Equal, Dot, Move,
+  Box, ListOrdered, Crosshair,
+} from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import grade2 from "@/data/grade2";
 import grade1 from "@/data/grade1";
@@ -12,10 +19,35 @@ import { Grade } from "@/data/types";
 import UnitTabs from "@/components/UnitTabs";
 
 const teksIconMap: Record<string, LucideIcon> = {
+  // Kindergarten
+  "K.2C": Hash,
+  "K.2H": Scale,
+  "K.3A": PlusCircle,
+  "K.6A": Circle,
+  // Grade 1
+  "1.3B": Plus,
+  "1.3C": Grid3X3,
+  "1.2G": Scale,
+  "1.8A": BarChart2,
   // Grade 2
   "2.4A": Sprout,
   "2.7A": TreePine,
   "2.8A": Leaf,
+  // Grade 3
+  "3.4F": X,
+  "3.4K": Divide,
+  "3.3A": Slash,
+  "3.6C": Frame,
+  // Grade 4
+  "4.4D": Layers,
+  "4.3E": Equal,
+  "4.2E": Dot,
+  "4.5D": Move,
+  // Grade 5
+  "5.3E": Hash,
+  "5.6A": Box,
+  "5.4E": ListOrdered,
+  "5.8A": Crosshair,
 };
 
 const gradeData: Record<string, Grade> = {
