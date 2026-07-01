@@ -532,78 +532,6 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
   );
 }
 
-function RecyclingAnimation({ onContinue }: { onContinue: () => void }) {
-  useEffect(() => {
-    const t = setTimeout(onContinue, 4500);
-    return () => clearTimeout(t);
-  }, [onContinue]);
-
-  return (
-    <div className="flex flex-col items-center justify-center bg-[#f4faf6] rounded-3xl py-10 px-6 text-center border border-green-100">
-      <style>{`
-        .recycle-bottle { transform-origin: 50px 30px; animation: dropBottle 3.5s cubic-bezier(0.55,0.055,0.675,0.19) infinite; }
-        .recycle-bin-group { transform-origin: 50px 85px; animation: bounceBin 3.5s cubic-bezier(0.175,0.885,0.32,1.275) infinite; }
-        .magic-sparkle { transform-origin: 50px 55px; opacity: 0; animation: sparkleBurst 3.5s ease-out infinite; }
-        .sparkle-left { animation-delay: 0s; }
-        .sparkle-right { animation-delay: 0.05s; }
-        @keyframes dropBottle {
-          0%        { transform: translateY(-50px) rotate(-15deg); opacity: 0; }
-          5%        { opacity: 1; }
-          22%       { transform: translateY(22px) rotate(5deg); opacity: 1; }
-          23%, 100% { transform: translateY(25px) rotate(5deg); opacity: 0; }
-        }
-        @keyframes bounceBin {
-          0%, 20%   { transform: scale(1); }
-          22%       { transform: scale(1.15, 0.8); }
-          28%       { transform: scale(0.9, 1.12); }
-          35%       { transform: scale(1.05, 0.95); }
-          42%, 100% { transform: scale(1); }
-        }
-        @keyframes sparkleBurst {
-          0%, 21% { opacity: 0; transform: scale(0.3) translate(0, 0); }
-          25%     { opacity: 1; }
-          40%     { opacity: 0; transform: scale(1.1) translate(var(--tx), var(--ty)); }
-          100%    { opacity: 0; }
-        }
-      `}</style>
-
-      <svg className="w-40 h-40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g className="recycle-bottle">
-          <rect x="47" y="12" width="6" height="4" rx="1" fill="#64b5f6"/>
-          <path d="M46 16 H54 L55 22 H45 Z" fill="#bbdefb"/>
-          <path d="M44 22 C44 22 42 25 42 28 L43 45 C43 47 45 49 47 49 H53 C55 49 57 47 57 45 L58 28 C58 25 56 22 56 22 Z" fill="#e3f2fd" stroke="#90caf9" strokeWidth="1.5"/>
-          <rect x="43.5" y="30" width="13" height="8" fill="#4fc3f7" rx="1"/>
-        </g>
-        <path className="magic-sparkle sparkle-left"
-          style={{ "--tx": "-20px", "--ty": "-15px" } as React.CSSProperties}
-          d="M25 45 L26.5 48.5 L30 48.5 L27 50.5 L28.5 54 L25 52 L21.5 54 L23 50.5 L20 48.5 L23.5 48.5 Z"
-          fill="#ffd54f"/>
-        <path className="magic-sparkle sparkle-right"
-          style={{ "--tx": "20px", "--ty": "-18px" } as React.CSSProperties}
-          d="M75 42 L76.5 45.5 L80 45.5 L77 47.5 L78.5 51 L75 49 L71.5 51 L73 47.5 L70 45.5 L73.5 45.5 Z"
-          fill="#ffd54f"/>
-        <g className="recycle-bin-group">
-          <path d="M33 56 L37 86 C37 88 39 90 41 90 H59 C61 90 63 88 63 86 L67 56 Z" fill="#4caf50"/>
-          <rect x="30" y="52" width="40" height="6" rx="3" fill="#388e3c"/>
-          <g transform="translate(43, 64) scale(0.7)" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M10 2 L18 14 H2 Z"/>
-            <path d="M5 9 L15 9"/>
-          </g>
-        </g>
-      </svg>
-
-      <p className="mt-4 text-emerald-700 font-black text-xl">Keep it green! ♻️</p>
-      <p className="text-emerald-600 text-sm mt-1 mb-6">You&apos;re doing great — keep going!</p>
-      <button
-        onClick={onContinue}
-        className="bg-primary text-white font-bold px-8 py-3 rounded-2xl cursor-pointer text-base"
-      >
-        Continue →
-      </button>
-    </div>
-  );
-}
-
 function QuestionSet({
   questions,
   language,
@@ -620,7 +548,6 @@ function QuestionSet({
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number | null>>({});
   const [submitted, setSubmitted] = useState(false);
-  const [showAnimation, setShowAnimation] = useState(false);
 
   const allAnswered = questions.every((q) => answers[q.id] !== undefined);
   const score = questions.filter((q) => answers[q.id] === q.correctIndex).length;
@@ -633,14 +560,6 @@ function QuestionSet({
 
   // ── Exercise mode: one question at a time ──────────────────────────
   if (!isQuiz) {
-    if (showAnimation) {
-      return (
-        <RecyclingAnimation
-          onContinue={() => { setShowAnimation(false); setCurrent(2); }}
-        />
-      );
-    }
-
     return (
       <div className="flex flex-col gap-5">
         {/* Progress header */}
@@ -715,13 +634,7 @@ function QuestionSet({
         {/* Advance to next question */}
         {isAnswered && current < questions.length - 1 && (
           <button
-            onClick={() => {
-              if (current === 1) {
-                setShowAnimation(true);
-              } else {
-                setCurrent(c => c + 1);
-              }
-            }}
+            onClick={() => setCurrent(c => c + 1)}
             className="w-full bg-primary text-white font-bold py-4 rounded-2xl cursor-pointer text-lg"
           >
             Next Question →
