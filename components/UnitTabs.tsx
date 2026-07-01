@@ -361,15 +361,11 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
       {/* Vocabulary */}
       {activeTab === "vocab" && (
         <div className="flex flex-col gap-4">
-          {unit.vocabulary.map((word) => {
-            const VocabIcon = vocabIconMap[word.id];
+          {unit.vocabulary.map((word, wi) => {
             return (
             <div key={word.id} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex gap-4 items-start">
-              <div className="bg-primary-light rounded-xl p-3 flex-shrink-0 flex items-center justify-center">
-                {VocabIcon
-                  ? <VocabIcon size={28} className="text-primary" />
-                  : <span className="text-3xl">{word.emoji}</span>
-                }
+              <div className="bg-primary-light rounded-xl p-3 flex-shrink-0 flex items-center justify-center w-14 h-14">
+                <span className="text-primary font-black text-2xl">{wi + 1}</span>
               </div>
               <div>
                 <div className="flex items-baseline gap-3 mb-1">
