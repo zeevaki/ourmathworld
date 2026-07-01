@@ -532,6 +532,78 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
   );
 }
 
+function RecyclingAnimation({ onContinue }: { onContinue: () => void }) {
+  useEffect(() => {
+    const t = setTimeout(onContinue, 4500);
+    return () => clearTimeout(t);
+  }, [onContinue]);
+
+  return (
+    <div className="flex flex-col items-center justify-center bg-[#f4faf6] rounded-3xl py-10 px-6 text-center border border-green-100">
+      <style>{`
+        .recycle-bottle { transform-origin: 50px 30px; animation: dropBottle 3.5s cubic-bezier(0.55,0.055,0.675,0.19) infinite; }
+        .recycle-bin-group { transform-origin: 50px 85px; animation: bounceBin 3.5s cubic-bezier(0.175,0.885,0.32,1.275) infinite; }
+        .magic-sparkle { transform-origin: 50px 55px; opacity: 0; animation: sparkleBurst 3.5s ease-out infinite; }
+        .sparkle-left { animation-delay: 0s; }
+        .sparkle-right { animation-delay: 0.05s; }
+        @keyframes dropBottle {
+          0%        { transform: translateY(-50px) rotate(-15deg); opacity: 0; }
+          5%        { opacity: 1; }
+          22%       { transform: translateY(22px) rotate(5deg); opacity: 1; }
+          23%, 100% { transform: translateY(25px) rotate(5deg); opacity: 0; }
+        }
+        @keyframes bounceBin {
+          0%, 20%   { transform: scale(1); }
+          22%       { transform: scale(1.15, 0.8); }
+          28%       { transform: scale(0.9, 1.12); }
+          35%       { transform: scale(1.05, 0.95); }
+          42%, 100% { transform: scale(1); }
+        }
+        @keyframes sparkleBurst {
+          0%, 21% { opacity: 0; transform: scale(0.3) translate(0, 0); }
+          25%     { opacity: 1; }
+          40%     { opacity: 0; transform: scale(1.1) translate(var(--tx), var(--ty)); }
+          100%    { opacity: 0; }
+        }
+      `}</style>
+
+      <svg className="w-40 h-40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g className="recycle-bottle">
+          <rect x="47" y="12" width="6" height="4" rx="1" fill="#64b5f6"/>
+          <path d="M46 16 H54 L55 22 H45 Z" fill="#bbdefb"/>
+          <path d="M44 22 C44 22 42 25 42 28 L43 45 C43 47 45 49 47 49 H53 C55 49 57 47 57 45 L58 28 C58 25 56 22 56 22 Z" fill="#e3f2fd" stroke="#90caf9" strokeWidth="1.5"/>
+          <rect x="43.5" y="30" width="13" height="8" fill="#4fc3f7" rx="1"/>
+        </g>
+        <path className="magic-sparkle sparkle-left"
+          style={{ "--tx": "-20px", "--ty": "-15px" } as React.CSSProperties}
+          d="M25 45 L26.5 48.5 L30 48.5 L27 50.5 L28.5 54 L25 52 L21.5 54 L23 50.5 L20 48.5 L23.5 48.5 Z"
+          fill="#ffd54f"/>
+        <path className="magic-sparkle sparkle-right"
+          style={{ "--tx": "20px", "--ty": "-18px" } as React.CSSProperties}
+          d="M75 42 L76.5 45.5 L80 45.5 L77 47.5 L78.5 51 L75 49 L71.5 51 L73 47.5 L70 45.5 L73.5 45.5 Z"
+          fill="#ffd54f"/>
+        <g className="recycle-bin-group">
+          <path d="M33 56 L37 86 C37 88 39 90 41 90 H59 C61 90 63 88 63 86 L67 56 Z" fill="#4caf50"/>
+          <rect x="30" y="52" width="40" height="6" rx="3" fill="#388e3c"/>
+          <g transform="translate(43, 64) scale(0.7)" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M10 2 L18 14 H2 Z"/>
+            <path d="M5 9 L15 9"/>
+          </g>
+        </g>
+      </svg>
+
+      <p className="mt-4 text-emerald-700 font-black text-xl">Keep it green! ♻️</p>
+      <p className="text-emerald-600 text-sm mt-1 mb-6">You&apos;re doing great — keep going!</p>
+      <button
+        onClick={onContinue}
+        className="bg-primary text-white font-bold px-8 py-3 rounded-2xl cursor-pointer text-base"
+      >
+        Continue →
+      </button>
+    </div>
+  );
+}
+
 function QuestionSet({
   questions,
   language,
@@ -545,24 +617,136 @@ function QuestionSet({
   completeLabel: string;
   isQuiz: boolean;
 }) {
+  const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number | null>>({});
   const [submitted, setSubmitted] = useState(false);
-
-  function answer(qId: string, idx: number) {
-    if (isQuiz && submitted) return;
-    if (!isQuiz && answers[qId] !== undefined) return;
-    setAnswers((prev) => ({ ...prev, [qId]: idx }));
-  }
+  const [showAnimation, setShowAnimation] = useState(false);
 
   const allAnswered = questions.every((q) => answers[q.id] !== undefined);
   const score = questions.filter((q) => answers[q.id] === q.correctIndex).length;
 
+  // Current question state (used in exercise mode)
+  const currentQ = questions[current];
+  const chosen = answers[currentQ?.id];
+  const isAnswered = chosen !== undefined;
+  const isCorrect = isAnswered && chosen === currentQ?.correctIndex;
+
+  // ── Exercise mode: one question at a time ──────────────────────────
+  if (!isQuiz) {
+    if (showAnimation) {
+      return (
+        <RecyclingAnimation
+          onContinue={() => { setShowAnimation(false); setCurrent(2); }}
+        />
+      );
+    }
+
+    return (
+      <div className="flex flex-col gap-5">
+        {/* Progress header */}
+        <div className="flex items-center justify-between">
+          <span className="text-sm font-bold text-gray-400">
+            Question {current + 1} of {questions.length}
+          </span>
+          <span className="text-sm font-bold text-primary">✅ {score} correct</span>
+        </div>
+
+        {/* Question card */}
+        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+          <p className="font-black text-gray-800 text-lg mb-1">
+            {current + 1}. {currentQ.prompt.en}
+          </p>
+          {language && (
+            <p className="text-primary font-semibold text-sm mb-4"
+              style={{ direction: language === "ur" ? "rtl" : "ltr" }}>
+              {getLang(currentQ.prompt, language)}
+            </p>
+          )}
+          <div className="flex flex-col gap-2">
+            {currentQ.choices.map((choice, idx) => {
+              let bg = "bg-gray-50 border-gray-200 text-gray-700";
+              if (isAnswered) {
+                if (idx === currentQ.correctIndex) bg = "bg-success/10 border-success text-success font-bold";
+                else if (idx === chosen) bg = "bg-danger/10 border-danger text-danger";
+              } else if (idx === chosen) {
+                bg = "bg-primary-light border-primary text-primary font-bold";
+              }
+              return (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    if (isAnswered) return;
+                    setAnswers(prev => ({ ...prev, [currentQ.id]: idx }));
+                  }}
+                  className={`text-left px-4 py-3 rounded-xl border-2 font-semibold transition-all cursor-pointer ${bg}`}
+                >
+                  {choice.en}
+                  {language && choice.en !== getLang(choice, language) && (
+                    <span className="ml-2 text-sm opacity-70">· {getLang(choice, language)}</span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+
+          {isAnswered && (
+            <div className={`mt-4 p-3 rounded-xl text-center font-bold text-sm ${isCorrect ? "bg-emerald-50 text-emerald-700" : "bg-red-50 text-red-600"}`}>
+              {isCorrect ? "🌟 Correct! Great job!" : "The correct answer is highlighted above. 💚 Keep going!"}
+            </div>
+          )}
+        </div>
+
+        {/* Progress dots */}
+        <div className="flex justify-center gap-1.5 flex-wrap">
+          {questions.map((item, i) => {
+            const done = answers[item.id] !== undefined;
+            const correct = done && answers[item.id] === item.correctIndex;
+            return (
+              <div key={item.id} className={`h-2.5 rounded-full transition-all duration-300 ${
+                i === current ? "w-6 bg-primary" :
+                correct       ? "w-2.5 bg-emerald-400" :
+                done          ? "w-2.5 bg-red-300" :
+                                "w-2.5 bg-gray-200"
+              }`} />
+            );
+          })}
+        </div>
+
+        {/* Advance to next question */}
+        {isAnswered && current < questions.length - 1 && (
+          <button
+            onClick={() => {
+              if (current === 1) {
+                setShowAnimation(true);
+              } else {
+                setCurrent(c => c + 1);
+              }
+            }}
+            className="w-full bg-primary text-white font-bold py-4 rounded-2xl cursor-pointer text-lg"
+          >
+            Next Question →
+          </button>
+        )}
+
+        {/* Complete all exercises */}
+        {isAnswered && current === questions.length - 1 && (
+          <button
+            onClick={onComplete}
+            className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
+          >
+            {completeLabel}
+          </button>
+        )}
+      </div>
+    );
+  }
+
+  // ── Quiz mode: all questions visible, submit at end ────────────────
   return (
     <div className="flex flex-col gap-6">
       {questions.map((q, qi) => {
-        const chosen = answers[q.id];
-        const showResult = !isQuiz ? chosen !== undefined : submitted;
-
+        const qChosen = answers[q.id];
+        const showResult = submitted;
         return (
           <div key={q.id} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
             <p className="font-black text-gray-800 text-lg mb-1">
@@ -579,14 +763,17 @@ function QuestionSet({
                 let bg = "bg-gray-50 border-gray-200 text-gray-700";
                 if (showResult) {
                   if (idx === q.correctIndex) bg = "bg-success/10 border-success text-success font-bold";
-                  else if (idx === chosen) bg = "bg-danger/10 border-danger text-danger";
-                } else if (idx === chosen) {
+                  else if (idx === qChosen) bg = "bg-danger/10 border-danger text-danger";
+                } else if (idx === qChosen) {
                   bg = "bg-primary-light border-primary text-primary font-bold";
                 }
                 return (
                   <button
                     key={idx}
-                    onClick={() => answer(q.id, idx)}
+                    onClick={() => {
+                      if (submitted) return;
+                      setAnswers(prev => ({ ...prev, [q.id]: idx }));
+                    }}
                     className={`text-left px-4 py-3 rounded-xl border-2 font-semibold transition-all cursor-pointer ${bg}`}
                   >
                     {choice.en}
@@ -601,7 +788,7 @@ function QuestionSet({
         );
       })}
 
-      {isQuiz && !submitted && allAnswered && (
+      {!submitted && allAnswered && (
         <button
           onClick={() => setSubmitted(true)}
           className="w-full bg-accent text-white font-bold py-4 rounded-2xl hover:opacity-90 transition-colors text-lg cursor-pointer flex items-center justify-center gap-2"
@@ -610,7 +797,7 @@ function QuestionSet({
         </button>
       )}
 
-      {isQuiz && submitted && (
+      {submitted && (
         <div className="bg-primary-light rounded-2xl p-6 text-center">
           <div className="flex justify-center mb-2">
             {score === questions.length
@@ -626,15 +813,6 @@ function QuestionSet({
             {score === questions.length ? "Perfect score!" : "Keep practicing!"}
           </p>
         </div>
-      )}
-
-      {!isQuiz && allAnswered && completeLabel && (
-        <button
-          onClick={onComplete}
-          className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
-        >
-          {completeLabel}
-        </button>
       )}
     </div>
   );
