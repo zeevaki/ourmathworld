@@ -92,6 +92,7 @@ const grade2: Grade = {
         {
           id: "ex-2.4A-2",
           type: "multiple-choice",
+          image: "2.4A_Ex_2.png",
           prompt: {
             en: "🌱 Students planted 15 trees in the school garden to help clean the air. A storm knocked down 6 trees. How many trees are still standing?",
             es: "🌱 Los estudiantes plantaron 15 árboles en el jardín escolar para limpiar el aire. Una tormenta derribó 6 árboles. ¿Cuántos árboles siguen en pie?",

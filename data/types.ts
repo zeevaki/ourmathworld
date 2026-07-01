@@ -17,6 +17,7 @@ export type ExerciseQuestion = {
   prompt: BilingualText;
   choices: BilingualText[];
   correctIndex: number;
+  image?: string;
 };
 
 export type StoryPage = {
@@ -48,6 +49,7 @@ export type WordProblem = {
   prompt: BilingualText;
   answer: number;
   answerUnit: BilingualText;
+  image?: string;
 };
 
 export type TeksUnit = {

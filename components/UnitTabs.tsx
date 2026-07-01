@@ -245,10 +245,14 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
       </div>
 
       <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
-        <div className="bg-gradient-to-br from-emerald-50 to-green-100 p-6 text-center">
-          <div className="text-5xl mb-2">{problem.emoji}</div>
-          <p className="text-xs font-semibold text-emerald-700 italic">{problem.scene}</p>
-        </div>
+        {problem.image ? (
+          <img src={`/images/${problem.image}`} alt="" className="w-full object-cover max-h-56" />
+        ) : (
+          <div className="bg-gradient-to-br from-emerald-50 to-green-100 p-6 text-center">
+            <div className="text-5xl mb-2">{problem.emoji}</div>
+            <p className="text-xs font-semibold text-emerald-700 italic">{problem.scene}</p>
+          </div>
+        )}
 
         <div className="p-6">
           <p className="text-gray-800 font-bold text-base leading-relaxed mb-5">{promptText}</p>
@@ -572,7 +576,15 @@ function QuestionSet({
         </div>
 
         {/* Question card */}
-        <div className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+        <div className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+          {currentQ.image && (
+            <img
+              src={`/images/${currentQ.image}`}
+              alt=""
+              className="w-full object-cover max-h-52"
+            />
+          )}
+          <div className="p-5">
           <p className="font-black text-gray-800 text-lg mb-1">
             {current + 1}. {currentQ.prompt.en}
           </p>
@@ -614,6 +626,7 @@ function QuestionSet({
               {isCorrect ? "🌟 Correct! Great job!" : "The correct answer is highlighted above. 💚 Keep going!"}
             </div>
           )}
+          </div>
         </div>
 
         {/* Arrow navigation + progress dots */}
@@ -674,7 +687,11 @@ function QuestionSet({
         const qChosen = answers[q.id];
         const showResult = submitted;
         return (
-          <div key={q.id} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100">
+          <div key={q.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            {q.image && (
+              <img src={`/images/${q.image}`} alt="" className="w-full object-cover max-h-52" />
+            )}
+            <div className="p-5">
             <p className="font-black text-gray-800 text-lg mb-1">
               {qi + 1}. {q.prompt.en}
             </p>
@@ -709,6 +726,7 @@ function QuestionSet({
                   </button>
                 );
               })}
+            </div>
             </div>
           </div>
         );
