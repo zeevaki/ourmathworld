@@ -2,203 +2,55 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
-  // Tab icons
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
-  // UI elements
-  Timer, Star, ThumbsUp, Dumbbell, ChevronRight,
-  // Kindergarten vocab
-  Hash, CircleHelp, TrendingUp, TrendingDown, PlusCircle, Scissors, ArrowLeft, CornerRightDown, CircleOff,
-  // Grade 1 vocab
-  Grid3X3, SearchX, ChevronLeft, BarChart2, LineChart,
-  // Grade 2 vocab
-  Plus, Minus, Sigma, ArrowLeftRight, Equal,
-  Columns2, LayoutList, Users, Scale,
-  Circle, Square, Triangle, RectangleHorizontal, Ruler,
-  Hexagon, Clock, Sun, Moon,
-  // Grade 3 vocab
-  X, Layers, Package, Divide, Slash, Percent, Share2, ArrowUp, ArrowDown, LayoutGrid, Frame, CircleDot,
-  // Grade 4 vocab
-  Calculator, RefreshCw, Target, Minimize2, Milestone, Dot, ChevronsRight, Move, MoveHorizontal,
-  // Grade 5 vocab
-  Box, Code2, Code, ListOrdered, Crosshair, ArrowRight, MapPin, AlignJustify, CheckCircle, RotateCw, Move3d,
+  Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-const vocabIconMap: Record<string, LucideIcon> = {
+const vocabSymbolMap: Record<string, string> = {
   // ── Kindergarten ──────────────────────────────────────────────
-  // K.2C — Counting
-  count:      Hash,
-  number:     Hash,
-  "how-many": CircleHelp,
-  zero:       CircleOff,
-  // K.2H — More / Less / Equal
-  more:       TrendingUp,
-  less:       TrendingDown,
-  fair:       Scale,
-  // K.3A — Join / Separate
-  join:       PlusCircle,
-  separate:   Scissors,
-  "in-all":   Sigma,
-  left:       ArrowLeft,
-  // K.6A — 2D Shapes
-  corner:     CornerRightDown,
-
+  count: "123", number: "9", "how-many": "?", zero: "0",
+  more: ">", less: "<", fair: "=",
+  join: "+", separate: "−", "in-all": "Σ", left: "←",
+  corner: "∟",
   // ── Grade 1 ────────────────────────────────────────────────────
-  // 1.3B — Add & Subtract
-  altogether: Sigma,
-  // 1.3C — Ten Frames
-  "ten-frame":  Grid3X3,
-  addend:       Plus,
-  missing:      SearchX,
-  decompose:    Scissors,
-  // 1.2G — Compare Numbers
-  "greater-than": ChevronRight,
-  "less-than":    ChevronLeft,
-  "equal-to":     Equal,
-  compare:        Scale,
-  // 1.8A — Data
-  data:  BarChart2,
-  tally: Hash,
-  graph: LineChart,
-  most:  TrendingUp,
-  least: TrendingDown,
-
+  altogether: "+", "ten-frame": "10", addend: "+", missing: "?",
+  decompose: "−", "greater-than": ">", "less-than": "<",
+  "equal-to": "=", compare: "⇔",
+  data: "📊", tally: "IIII", graph: "▊", most: "↑", least: "↓",
   // ── Grade 2 ────────────────────────────────────────────────────
-  // 2.4A — Adding & Subtracting
-  add:        Plus,
-  subtract:   Minus,
-  sum:        Sigma,
-  difference: ArrowLeftRight,
-  equals:     Equal,
-  // 2.7A — Even & Odd
-  even:      Columns2,
-  odd:       LayoutList,
-  pairs:     Users,
-  equal:     Scale,
-  // 2.8A — 2D Shapes
-  circle:    Circle,
-  square:    Square,
-  triangle:  Triangle,
-  rectangle: RectangleHorizontal,
-  sides:     Ruler,
-
+  add: "+", subtract: "−", sum: "Σ", difference: "△", equals: "=",
+  even: "2,4", odd: "1,3", pairs: "∥", equal: "=",
+  circle: "○", square: "□", triangle: "△", rectangle: "▭", sides: "|||",
+  hundred: "100", equation: "=", strategy: "💡",
+  group: "{}", "in-each": "÷", "skip-count": "…", total: "Σ",
+  "place-value": "PV", digit: "#", "expanded-form": "+", "standard-form": "123",
+  fraction: "½", half: "½", fourth: "¼", eighth: "⅛", whole: "○",
+  "number-sentence": "?=", unknown: "?", operation: "±", solve: "✓",
+  sphere: "●", cone: "△", cylinder: "◎", prism: "□", face: "□",
+  polygon: "⬡", vertex: "•", side: "—", quadrilateral: "▭",
+  estimate: "≈", length: "↔", inch: "in", centimeter: "cm", benchmark: "|",
+  "hour-hand": "h", "minute-hand": "m", "a.m.": "AM", "p.m.": "PM",
+  "elapsed-time": "⏱",
+  "bar-graph": "▊", pictograph: "📊", key: "K", scale: "↕",
   // ── Grade 3 ────────────────────────────────────────────────────
-  // 3.4F — Multiplication
-  multiply:       X,
-  factor:         Layers,
-  product:        Package,
-  array:          Grid3X3,
-  "equal-groups": LayoutGrid,
-  // 3.4K — Division
-  divide:       Divide,
-  dividend:     CircleDot,
-  divisor:      Slash,
-  quotient:     Percent,
-  "fair-share": Share2,
-  // 3.3A — Fractions
-  fraction:    Slash,
-  numerator:   ArrowUp,
-  denominator: ArrowDown,
-  whole:       Circle,
-  equivalent:  Equal,
-  // 3.6C — Area
-  area:          Frame,
-  "square-unit": LayoutGrid,
-  length:        MoveHorizontal,
-  width:         MoveHorizontal,
-  formula:       Calculator,
-
-  // ── Grade 2 new units ──────────────────────────────────────────
-  // 2.4C — Word Problems
-  hundred:   Hash,
-  equation:  Equal,
-  strategy:  Target,
-  // 2.6A — Equal Groups
-  group:       Users,
-  "in-each":   ChevronRight,
-  "skip-count": ChevronsRight,
-  total:       Sigma,
-  // 2.2B — Place Value to 1,200
-  digit:          Hash,
-  "expanded-form": Columns2,
-  "standard-form": Hash,
-  // 2.3B — Fractions
-  half:    Slash,
-  fourth:  Divide,
-  eighth:  Grid3X3,
-  // 2.4D — Number Sentences
-  "number-sentence": Equal,
-  unknown:   CircleHelp,
-  operation: Plus,
-  solve:     CheckCircle,
-  // 2.8B — 3D Solids
-  sphere:   Circle,
-  cone:     Triangle,
-  cylinder: Columns2,
-  prism:    Box,
-  face:     Square,
-  // 2.8C — Classify Polygons
-  polygon:       Hexagon,
-  vertex:        Dot,
-  side:          Ruler,
-  quadrilateral: Square,
-  // 2.9E — Estimating Length
-  inch:        Ruler,
-  centimeter:  Ruler,
-  // 2.9G — Telling Time
-  "hour-hand":   Clock,
-  "minute-hand": Clock,
-  "a.m.":        Sun,
-  "p.m.":        Moon,
-  "elapsed-time": Timer,
-  // 2.10C — Bar Graphs & Pictographs
-  "bar-graph":  BarChart2,
-  pictograph:   LayoutGrid,
-  key:          Target,
-  scale:        Scale,
-
+  multiply: "×", factor: "×", product: "=",
+  array: "▦", "equal-groups": "○○",
+  divide: "÷", dividend: "÷", divisor: "|", quotient: "=", "fair-share": "÷",
+  numerator: "↑", denominator: "↓", equivalent: "=",
+  area: "A=", "square-unit": "□²", width: "w", formula: "f=",
   // ── Grade 4 ────────────────────────────────────────────────────
-  // 4.4D — Multi-digit Multiplication
-  "partial-product": Layers,
-  regroup:           RefreshCw,
-  estimate:          Target,
-  // 4.3E — Fractions
-  "like-denominators": Equal,
-  simplify:            Minimize2,
-  benchmark:           Milestone,
-  // 4.2E — Decimals
-  decimal:            Dot,
-  tenths:             ChevronRight,
-  hundredths:         ChevronsRight,
-  "compare-decimals": Scale,
-  // 4.5D — Perimeter & Area
-  perimeter:           Frame,
-  "perimeter-formula": Calculator,
-  "area-formula":      Calculator,
-  dimension:           Move,
-
+  "partial-product": "×", regroup: "↑",
+  "like-denominators": "=", simplify: "↓",
+  decimal: ".", tenths: ".1", hundredths: ".01", "compare-decimals": "<>",
+  perimeter: "P", "perimeter-formula": "P=", "area-formula": "A=", dimension: "×",
   // ── Grade 5 ────────────────────────────────────────────────────
-  // 5.3E — Decimal Multiplication
-  "decimal-product": Hash,
-  "place-value":     AlignJustify,
-  round:             RotateCw,
-  reasonable:        CheckCircle,
-  // 5.6A — Volume
-  volume:                Box,
-  "cubic-unit":          Box,
-  "length-width-height": Move3d,
-  "rectangular-prism":   Box,
-  // 5.4E — Order of Operations
-  expression:     Code2,
-  parentheses:    Code,
-  "order-of-ops": ListOrdered,
-  evaluate:       Calculator,
-  // 5.8A — Coordinate Plane
-  "coordinate-plane": Crosshair,
-  "x-axis":           ArrowRight,
-  "y-axis":           ArrowUp,
-  "ordered-pair":     MapPin,
-  origin:             Target,
+  "decimal-product": ".×", round: "≈", reasonable: "✓",
+  volume: "V=", "cubic-unit": "³", "length-width-height": "×",
+  "rectangular-prism": "□",
+  expression: "()", parentheses: "()", "order-of-ops": "÷×", evaluate: "=",
+  "coordinate-plane": "xy", "x-axis": "x→", "y-axis": "y↑",
+  "ordered-pair": "(,)", origin: "(0,0)",
 };
 import { TeksUnit, ExerciseQuestion, Fluency, WordProblem } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
@@ -361,11 +213,13 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
       {/* Vocabulary */}
       {activeTab === "vocab" && (
         <div className="flex flex-col gap-4">
-          {unit.vocabulary.map((word, wi) => {
+          {unit.vocabulary.map((word) => {
+            const sym = vocabSymbolMap[word.id] ?? word.emoji;
+            const symSize = sym.length <= 1 ? "text-3xl" : sym.length <= 2 ? "text-2xl" : sym.length <= 4 ? "text-base" : "text-xs";
             return (
             <div key={word.id} className="bg-white rounded-2xl p-5 shadow-sm border border-gray-100 flex gap-4 items-start">
-              <div className="bg-primary-light rounded-xl p-3 flex-shrink-0 flex items-center justify-center w-14 h-14">
-                <span className="text-primary font-black text-2xl">{wi + 1}</span>
+              <div className="bg-primary-light rounded-xl flex-shrink-0 flex items-center justify-center w-14 h-14">
+                <span className={`text-primary font-black ${symSize} leading-none text-center`}>{sym}</span>
               </div>
               <div>
                 <div className="flex items-baseline gap-3 mb-1">
