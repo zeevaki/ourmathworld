@@ -558,10 +558,11 @@ function QuestionSet({
   const isAnswered = chosen !== undefined;
   const isCorrect = isAnswered && chosen === currentQ?.correctIndex;
 
-  // ── Exercise mode: one question at a time ──────────────────────────
+  // ── Exercise mode: one question at a time with arrow navigation ───
   if (!isQuiz) {
     return (
       <div className="flex flex-col gap-5">
+
         {/* Progress header */}
         <div className="flex items-center justify-between">
           <span className="text-sm font-bold text-gray-400">
@@ -615,34 +616,46 @@ function QuestionSet({
           )}
         </div>
 
-        {/* Progress dots */}
-        <div className="flex justify-center gap-1.5 flex-wrap">
-          {questions.map((item, i) => {
-            const done = answers[item.id] !== undefined;
-            const correct = done && answers[item.id] === item.correctIndex;
-            return (
-              <div key={item.id} className={`h-2.5 rounded-full transition-all duration-300 ${
-                i === current ? "w-6 bg-primary" :
-                correct       ? "w-2.5 bg-emerald-400" :
-                done          ? "w-2.5 bg-red-300" :
-                                "w-2.5 bg-gray-200"
-              }`} />
-            );
-          })}
-        </div>
+        {/* Arrow navigation + progress dots */}
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setCurrent(c => c - 1)}
+            disabled={current === 0}
+            className="flex-shrink-0 w-12 h-12 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-gray-400 disabled:opacity-30 hover:border-primary hover:text-primary transition-all cursor-pointer disabled:cursor-not-allowed"
+          >
+            <ChevronLeft size={22} />
+          </button>
 
-        {/* Advance to next question */}
-        {isAnswered && current < questions.length - 1 && (
+          <div className="flex-1 flex justify-center gap-1.5 flex-wrap">
+            {questions.map((item, i) => {
+              const done = answers[item.id] !== undefined;
+              const correct = done && answers[item.id] === item.correctIndex;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => setCurrent(i)}
+                  className={`h-2.5 rounded-full transition-all duration-300 cursor-pointer ${
+                    i === current ? "w-6 bg-primary" :
+                    correct       ? "w-2.5 bg-emerald-400" :
+                    done          ? "w-2.5 bg-red-300" :
+                                    "w-2.5 bg-gray-200"
+                  }`}
+                />
+              );
+            })}
+          </div>
+
           <button
             onClick={() => setCurrent(c => c + 1)}
-            className="w-full bg-primary text-white font-bold py-4 rounded-2xl cursor-pointer text-lg"
+            disabled={current === questions.length - 1}
+            className="flex-shrink-0 w-12 h-12 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-gray-400 disabled:opacity-30 hover:border-primary hover:text-primary transition-all cursor-pointer disabled:cursor-not-allowed"
           >
-            Next Question →
+            <ChevronRight size={22} />
           </button>
-        )}
+        </div>
 
-        {/* Complete all exercises */}
-        {isAnswered && current === questions.length - 1 && (
+        {/* Complete — appears once all questions are answered */}
+        {allAnswered && (
           <button
             onClick={onComplete}
             className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"
