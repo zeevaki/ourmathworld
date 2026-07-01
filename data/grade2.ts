@@ -10,6 +10,7 @@ const grade2: Grade = {
       teks: "2.4A",
       cambridge: "Stage 2 · 2Nc1",
       emoji: "🥫",
+      lessonImage: "2.4A_Lesson.png",
       title: {
         en: "Adding & Subtracting",
         es: "Sumar y Restar",
@@ -109,6 +110,7 @@ const grade2: Grade = {
         {
           id: "ex-2.4A-3",
           type: "true-false",
+          image: "2.4A_Ex_3.png",
           prompt: {
             en: "♻️ Our class recycled 8 bottles in the morning and 8 more in the afternoon. The sum is 16 bottles kept out of the trash!",
             es: "♻️ Nuestra clase recicló 8 botellas por la mañana y 8 más por la tarde. ¡La suma es 16 botellas que no fueron a la basura!",
@@ -125,6 +127,7 @@ const grade2: Grade = {
         {
           id: "qz-2.4A-1",
           type: "multiple-choice",
+          image: "2.4A_Qz_1.png",
           prompt: {
             en: "🥫 The food bank had 20 bags of rice. They gave 13 bags to families in need. How many bags are left?",
             es: "🥫 El banco de alimentos tenía 20 bolsas de arroz. Repartieron 13 bolsas a familias que las necesitaban. ¿Cuántas bolsas quedan?",

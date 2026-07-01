@@ -398,6 +398,13 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
       {/* Lesson */}
       {activeTab === "lesson" && (
         <div className="flex flex-col gap-6">
+          {unit.lessonImage && (
+            <img
+              src={`/images/${unit.lessonImage}`}
+              alt=""
+              className="w-full rounded-2xl object-cover max-h-64 shadow-sm"
+            />
+          )}
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
             <h3 className="font-black text-gray-700 mb-3 flex items-center gap-2">🇺🇸 English</h3>
             <p className="text-gray-700 leading-relaxed text-lg"

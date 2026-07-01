@@ -59,6 +59,7 @@ export type TeksUnit = {
   emoji: string;
   vocabulary: VocabWord[];
   lesson: BilingualText;
+  lessonImage?: string;
   exercises: ExerciseQuestion[];
   quiz: ExerciseQuestion[];
   story?: Story;
