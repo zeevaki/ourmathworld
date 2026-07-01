@@ -41,6 +41,15 @@ export type Fluency = {
   problems: FluencyProblem[];
 };
 
+export type WordProblem = {
+  id: string;
+  emoji: string;
+  scene: string;
+  prompt: BilingualText;
+  answer: number;
+  answerUnit: BilingualText;
+};
+
 export type TeksUnit = {
   teks: string;
   cambridge: string;
@@ -52,6 +61,7 @@ export type TeksUnit = {
   quiz: ExerciseQuestion[];
   story?: Story;
   fluency?: Fluency;
+  wordProblems?: WordProblem[];
 };
 
 export type Grade = {

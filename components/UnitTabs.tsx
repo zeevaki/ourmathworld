@@ -107,6 +107,17 @@ const vocabIconMap: Record<string, LucideIcon> = {
   width:         MoveHorizontal,
   formula:       Calculator,
 
+  // ── Grade 2 new units ──────────────────────────────────────────
+  // 2.4C — Word Problems
+  hundred:   Hash,
+  equation:  Equal,
+  strategy:  Target,
+  // 2.6A — Equal Groups
+  group:       Users,
+  "in-each":   ChevronRight,
+  "skip-count": ChevronsRight,
+  total:       Sigma,
+
   // ── Grade 4 ────────────────────────────────────────────────────
   // 4.4D — Multi-digit Multiplication
   "partial-product": Layers,
@@ -150,19 +161,126 @@ const vocabIconMap: Record<string, LucideIcon> = {
   "ordered-pair":     MapPin,
   origin:             Target,
 };
-import { TeksUnit, ExerciseQuestion, Fluency } from "@/data/types";
+import { TeksUnit, ExerciseQuestion, Fluency, WordProblem } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
 
-type Tab = "vocab" | "lesson" | "exercises" | "quiz" | "story" | "fluency";
+type Tab = "vocab" | "lesson" | "exercises" | "apply" | "quiz" | "story" | "fluency";
 
 const tabs: { id: Tab; label: string; icon: LucideIcon }[] = [
   { id: "vocab",     label: "Vocabulary",  icon: BookOpen       },
   { id: "lesson",    label: "Lesson",       icon: GraduationCap  },
   { id: "exercises", label: "Exercises",    icon: PencilLine     },
+  { id: "apply",     label: "Apply",        icon: Target         },
   { id: "quiz",      label: "Exit Ticket",  icon: ClipboardCheck },
   { id: "story",     label: "Story",        icon: BookMarked     },
   { id: "fluency",   label: "Fluency",      icon: Zap            },
 ];
+
+function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: string | null }) {
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [checked, setChecked] = useState<Record<string, boolean>>({});
+  const [current, setCurrent] = useState(0);
+
+  const problem = problems[current];
+  const userAnswer = answers[problem.id] ?? "";
+  const isChecked = checked[problem.id] ?? false;
+  const isCorrect = isChecked && parseInt(userAnswer) === problem.answer;
+  const score = problems.filter(p => checked[p.id] && parseInt(answers[p.id] ?? "") === p.answer).length;
+
+  function handleCheck() {
+    setChecked(prev => ({ ...prev, [problem.id]: true }));
+  }
+
+  function handleNext() {
+    if (current < problems.length - 1) setCurrent(current + 1);
+  }
+
+  const promptText = lang === "es" ? problem.prompt.es : lang === "ur" ? problem.prompt.ur : problem.prompt.en;
+  const unitText = lang === "es" ? problem.answerUnit.es : lang === "ur" ? problem.answerUnit.ur : problem.answerUnit.en;
+
+  return (
+    <div>
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-sm font-bold text-gray-400">Problem {current + 1} of {problems.length}</span>
+        <span className="text-sm font-bold text-primary">🌍 {score} / {problems.length} solved</span>
+      </div>
+
+      <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+        <div className="bg-gradient-to-br from-emerald-50 to-green-100 p-6 text-center">
+          <div className="text-5xl mb-2">{problem.emoji}</div>
+          <p className="text-xs font-semibold text-emerald-700 italic">{problem.scene}</p>
+        </div>
+
+        <div className="p-6">
+          <p className="text-gray-800 font-bold text-base leading-relaxed mb-5">{promptText}</p>
+
+          <div className="flex items-center gap-3 flex-wrap">
+            <span className="text-gray-500 font-semibold text-sm">Answer:</span>
+            <input
+              type="number"
+              value={userAnswer}
+              onChange={e => setAnswers(prev => ({ ...prev, [problem.id]: e.target.value }))}
+              disabled={isChecked}
+              onKeyDown={e => { if (e.key === "Enter" && !isChecked && userAnswer) handleCheck(); }}
+              className="w-24 border-2 border-gray-200 rounded-xl px-3 py-2 text-center font-bold text-lg focus:border-primary focus:outline-none disabled:bg-gray-50"
+              placeholder="?"
+            />
+            <span className="text-gray-400 text-sm">{unitText}</span>
+          </div>
+
+          {isChecked && (
+            <div className={`mt-4 p-3 rounded-xl text-center font-bold text-sm ${isCorrect ? "bg-emerald-50 text-emerald-700" : "bg-red-50 text-red-600"}`}>
+              {isCorrect
+                ? "🌟 Correct! Great work helping the planet!"
+                : `Not quite — the answer is ${problem.answer} ${problem.answerUnit.en}. Keep going! 💚`}
+            </div>
+          )}
+
+          <div className="flex gap-3 mt-5">
+            {!isChecked ? (
+              <button
+                onClick={handleCheck}
+                disabled={!userAnswer}
+                className="flex-1 bg-primary text-white font-bold py-3 rounded-xl disabled:opacity-40 cursor-pointer disabled:cursor-not-allowed"
+              >
+                Check Answer
+              </button>
+            ) : current < problems.length - 1 ? (
+              <button onClick={handleNext} className="flex-1 bg-primary text-white font-bold py-3 rounded-xl cursor-pointer">
+                Next Problem →
+              </button>
+            ) : (
+              <div className="flex-1 bg-primary-light text-primary font-bold py-3 rounded-xl text-center text-sm">
+                🌍 Amazing! You solved all {problems.length} word problems!
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="flex justify-center gap-2 mt-5">
+        {problems.map((p, i) => {
+          const done = checked[p.id];
+          const correct = done && parseInt(answers[p.id] ?? "") === p.answer;
+          return (
+            <button
+              key={p.id}
+              onClick={() => setCurrent(i)}
+              className={`w-8 h-8 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                i === current ? "bg-primary text-white scale-110" :
+                correct ? "bg-emerald-100 text-emerald-700" :
+                done ? "bg-red-100 text-red-500" :
+                "bg-gray-100 text-gray-400"
+              }`}
+            >
+              {i + 1}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 function getLang(text: { en: string; es: string; ur: string }, lang: string | null) {
   if (lang === "es") return text.es;
@@ -269,10 +387,31 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
         <QuestionSet
           questions={unit.exercises}
           language={language}
-          onComplete={() => setActiveTab("quiz")}
-          completeLabel="Ready for the Exit Ticket?"
+          onComplete={() => setActiveTab(unit.wordProblems?.length ? "apply" : "quiz")}
+          completeLabel={unit.wordProblems?.length ? "Ready to apply your skills?" : "Ready for the Exit Ticket?"}
           isQuiz={false}
         />
+      )}
+
+      {/* Apply — Word Problems */}
+      {activeTab === "apply" && (
+        <div>
+          <div className="bg-emerald-50 border border-emerald-200 rounded-2xl p-4 mb-6 flex items-start gap-3">
+            <span className="text-2xl">🌍</span>
+            <div>
+              <p className="font-black text-emerald-800 text-sm">Time to apply your skills!</p>
+              <p className="text-emerald-700 text-xs mt-0.5">You practiced the basics — now use math to help the planet. Read each story carefully and solve!</p>
+            </div>
+          </div>
+          {unit.wordProblems && unit.wordProblems.length > 0 ? (
+            <WordProblemDrill problems={unit.wordProblems} lang={language} />
+          ) : (
+            <div className="bg-white rounded-2xl p-10 text-center shadow-sm border border-gray-100">
+              <Target size={40} className="text-primary mx-auto mb-3" />
+              <p className="text-gray-500 font-semibold">Word problems coming soon for this topic!</p>
+            </div>
+          )}
+        </div>
       )}
 
       {/* Quiz */}
