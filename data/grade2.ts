@@ -145,6 +145,7 @@ const grade2: Grade = {
         {
           id: "qz-2.4A-2",
           type: "multiple-choice",
+          image: "2.4A_Qz_2.png",
           prompt: {
             en: "🌳 Grade 1 planted 23 trees and Grade 2 planted 17 trees for Earth Day. How many trees did both grades plant together?",
             es: "🌳 El primer grado plantó 23 árboles y el segundo grado plantó 17 árboles por el Día de la Tierra. ¿Cuántos árboles plantaron los dos grados juntos?",
