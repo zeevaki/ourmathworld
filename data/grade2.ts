@@ -77,6 +77,7 @@ const grade2: Grade = {
         {
           id: "ex-2.4A-1",
           type: "multiple-choice",
+          image: "2.4A_Ex_1.png",
           prompt: {
             en: "🍃 Your class collected 24 cans of food on Monday and 15 cans on Friday for the food drive. How many cans did you collect in all?",
             es: "🍃 Tu clase recolectó 24 latas el lunes y 15 latas el viernes para la colecta. ¿Cuántas latas recolectaron en total?",
