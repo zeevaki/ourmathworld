@@ -162,6 +162,7 @@ const grade2: Grade = {
         {
           id: "qz-2.4A-3",
           type: "multiple-choice",
+          image: "2.4A_Qz_3.png",
           prompt: {
             en: "♻️ Our school collected 18 cans for recycling. We already sorted 9 of them. How many cans still need to be sorted?",
             es: "♻️ Nuestra escuela juntó 18 latas para reciclar. Ya separamos 9. ¿Cuántas latas faltan por separar?",
