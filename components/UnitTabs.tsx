@@ -86,7 +86,7 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
     if (current < problems.length - 1) setCurrent(current + 1);
   }
 
-  const promptText = lang === "es" ? problem.prompt.es : lang === "ur" ? problem.prompt.ur : problem.prompt.en;
+  const promptText = lang === "es" ? problem.prompt.es : lang === "ur" ? problem.prompt.ur : null;
   const unitText = lang === "es" ? problem.answerUnit.es : lang === "ur" ? problem.answerUnit.ur : problem.answerUnit.en;
 
   return (
@@ -107,7 +107,12 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
         )}
 
         <div className="p-6">
-          <p className="text-gray-800 font-bold text-base leading-relaxed mb-5">{promptText}</p>
+          <p className="text-gray-800 font-bold text-base leading-relaxed mb-1">{problem.prompt.en}</p>
+          {promptText && (
+            <p className="text-primary font-semibold text-sm mb-4" style={{ direction: lang === "ur" ? "rtl" : "ltr" }}>
+              {promptText}
+            </p>
+          )}
 
           <div className="flex items-center gap-3 flex-wrap">
             <span className="text-gray-500 font-semibold text-sm">Answer:</span>

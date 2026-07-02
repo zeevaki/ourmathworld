@@ -260,6 +260,18 @@ const grade2: Grade = {
           answer: 9,
           answerUnit: { en: "plants", es: "plantas", ur: "پودے" },
         },
+        {
+          id: "wp-2.4A-6",
+          emoji: "🚀♻️",
+          scene: "Recycled-materials spaceship project at Dallas ISD STEM Fair",
+          prompt: {
+            en: "Mia collected 24 cardboard tubes and 15 bottle caps to build a model spaceship. How many recycled pieces does she have in all?",
+            es: "Mia recolectó 24 tubos de cartón y 15 tapas de botella para construir una nave espacial. ¿Cuántas piezas recicladas tiene en total?",
+            ur: "میا نے ماڈل خلائی جہاز بنانے کے لیے 24 گتے کی نلیاں اور 15 بوتل کے ڈھکن جمع کیے۔ اس کے پاس کل کتنے ری سائیکل شدہ ٹکڑے ہیں؟",
+          },
+          answer: 39,
+          answerUnit: { en: "pieces", es: "piezas", ur: "ٹکڑے" },
+        },
       ],
     },
 
