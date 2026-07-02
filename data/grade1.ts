@@ -1,4 +1,4 @@
-﻿import { Grade } from "./types";
+import { Grade } from "./types";
 
 const grade1: Grade = {
   grade: 1,
@@ -7,7 +7,344 @@ const grade1: Grade = {
   color: "#22C55E",
   units: [
 
-    // ─── Unit 1: Adding & Subtracting within 20 ──────────────────────────────
+    // ─── Unit 1: Comparing Numbers >, <, = ───────────────────────────────────
+    {
+      teks: "1.2G",
+      cambridge: "Stage 1 · 1Nn3",
+      emoji: "⚖️",
+      title: {
+        en: "Comparing Numbers",
+        es: "Comparar Números",
+        ur: "نمبروں کا موازنہ",
+      },
+      vocabulary: [
+        {
+          id: "greater-than",
+          emoji: "➡️",
+          word: { en: "greater than  >", es: "mayor que  >", ur: "زیادہ ہے  >" },
+          definition: {
+            en: "the first number is bigger — the open side points to the bigger number",
+            es: "el primer número es más grande — el lado abierto señala al número mayor",
+            ur: "پہلا نمبر بڑا ہے — کھلی طرف بڑے نمبر کی طرف ہوتی ہے",
+          },
+        },
+        {
+          id: "less-than",
+          emoji: "⬅️",
+          word: { en: "less than  <", es: "menor que  <", ur: "کم ہے  <" },
+          definition: {
+            en: "the first number is smaller — the open side still points to the bigger number",
+            es: "el primer número es más pequeño — el lado abierto sigue señalando al número mayor",
+            ur: "پہلا نمبر چھوٹا ہے — کھلی طرف پھر بھی بڑے نمبر کی طرف ہوتی ہے",
+          },
+        },
+        {
+          id: "equal-to",
+          emoji: "🟰",
+          word: { en: "equal to  =", es: "igual a  =", ur: "برابر ہے  =" },
+          definition: {
+            en: "both numbers are exactly the same — completely fair",
+            es: "ambos números son exactamente iguales — completamente justo",
+            ur: "دونوں نمبر بالکل ایک جیسے ہیں — مکمل انصاف",
+          },
+        },
+        {
+          id: "compare",
+          emoji: "🔍",
+          word: { en: "compare", es: "comparar", ur: "موازنہ کرنا" },
+          definition: {
+            en: "look at two numbers and decide which is bigger, smaller, or the same",
+            es: "mirar dos números y decidir cuál es mayor, menor o igual",
+            ur: "دو نمبروں کو دیکھنا اور فیصلہ کرنا کہ کون بڑا، چھوٹا یا برابر ہے",
+          },
+        },
+      ],
+      lesson: {
+        en: "⚖️ **Fair sharing starts with comparing!**\n\nWhen we share things in our community, we compare numbers to make sure everyone gets a fair amount.\n\nWe use three symbols:\n- **>** means **greater than** → 15 > 8 (15 is greater than 8)\n- **<** means **less than** → 8 < 15 (8 is less than 15)\n- **=** means **equal to** → 10 = 10 (both the same — fair!)\n\n🧡 Tip: Think of the symbol as a hungry crocodile mouth. The open mouth always faces the **bigger** number because it wants to eat the bigger one!\n\nWhen we see that one classroom has **more** supplies than another, we can use math to make it fair for everyone! ⚖️",
+        es: "⚖️ **¡Compartir de forma justa empieza con comparar!**\n\nCuando compartimos cosas en nuestra comunidad, comparamos números para asegurarnos de que todos reciban una cantidad justa.\n\nUsamos tres símbolos:\n- **>** significa **mayor que** → 15 > 8 (15 es mayor que 8)\n- **<** significa **menor que** → 8 < 15 (8 es menor que 15)\n- **=** significa **igual a** → 10 = 10 (¡los dos son iguales — justo!)\n\n🧡 Consejo: ¡Imagina el símbolo como la boca hambrienta de un cocodrilo. La boca abierta siempre apunta al número **mayor** porque quiere comerlo!\n\n¡Cuando vemos que un salón tiene **más** materiales que otro, podemos usar las matemáticas para que sea justo para todos! ⚖️",
+        ur: "⚖️ **منصفانہ بانٹنا موازنے سے شروع ہوتا ہے!**\n\nجب ہم کمیونٹی میں چیزیں بانٹتے ہیں تو نمبروں کا موازنہ کرتے ہیں تاکہ یقینی ہو کہ سب کو برابر حصہ ملے۔\n\nہم تین نشان استعمال کرتے ہیں:\n- **>** مطلب **زیادہ ہے** → 15 > 8 (15، 8 سے زیادہ ہے)\n- **<** مطلب **کم ہے** → 8 < 15 (8، 15 سے کم ہے)\n- **=** مطلب **برابر ہے** → 10 = 10 (دونوں ایک جیسے — انصاف!)\n\n🧡 ٹِپ: نشان کو بھوکے مگرمچھ کے منہ کی طرح سوچو۔ کھلا منہ ہمیشہ **بڑے** نمبر کی طرف ہوتا ہے کیونکہ وہ اسے کھانا چاہتا ہے!\n\nجب ہم دیکھتے ہیں کہ ایک کلاس میں دوسری سے **زیادہ** سامان ہے تو ریاضی سے سب کے لیے انصاف کر سکتے ہیں! ⚖️",
+      },
+      exercises: [
+        {
+          id: "ex-1.2G-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌿 Room 101 collected 14 cans of food. Room 102 collected 9 cans. Which symbol goes in the blank?  14 ___ 9",
+            es: "🌿 El salón 101 juntó 14 latas de comida. El salón 102 juntó 9 latas. ¿Qué símbolo va en el espacio?  14 ___ 9",
+            ur: "🌿 کمرہ 101 نے کھانے کے 14 ڈبے جمع کیے۔ کمرہ 102 نے 9 ڈبے جمع کیے۔ خالی جگہ میں کون سا نشان آئے گا؟  14 ___ 9",
+          },
+          choices: [
+            { en: ">", es: ">", ur: ">" },
+            { en: "<", es: "<", ur: "<" },
+            { en: "=", es: "=", ur: "=" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-1.2G-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌱 Two classes each planted some trees. Class A planted 11 trees. Class B planted 16 trees. Which is true?",
+            es: "🌱 Dos clases plantaron algunos árboles cada una. La clase A plantó 11 árboles. La clase B plantó 16 árboles. ¿Cuál es verdadero?",
+            ur: "🌱 دو کلاسوں نے درخت لگائے۔ کلاس A نے 11 درخت لگائے۔ کلاس B نے 16 درخت لگائے۔ کون سا صحیح ہے؟",
+          },
+          choices: [
+            { en: "11 > 16", es: "11 > 16", ur: "11 > 16" },
+            { en: "11 = 16", es: "11 = 16", ur: "11 = 16" },
+            { en: "11 < 16", es: "11 < 16", ur: "11 < 16" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-1.2G-3",
+          type: "true-false",
+          prompt: {
+            en: "⚖️ Both kindergarten classes recycled 13 bottles each. Since 13 = 13, they recycled an equal amount — that is fair!",
+            es: "⚖️ Ambas clases de kínder reciclaron 13 botellas cada una. Como 13 = 13, reciclaron la misma cantidad — ¡eso es justo!",
+            ur: "⚖️ دونوں کنڈرگارٹن کلاسوں نے 13-13 بوتلیں ری سائیکل کیں۔ چونکہ 13 = 13 ہے، انہوں نے برابر مقدار ری سائیکل کی — یہ انصاف ہے!",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-1.2G-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "📚 The library has 18 English books and 12 Spanish books. Which sentence is true?",
+            es: "📚 La biblioteca tiene 18 libros en inglés y 12 en español. ¿Cuál oración es verdadera?",
+            ur: "📚 لائبریری میں 18 انگریزی کتابیں اور 12 اردو کتابیں ہیں۔ کون سا جملہ صحیح ہے؟",
+          },
+          choices: [
+            { en: "18 < 12", es: "18 < 12", ur: "18 < 12" },
+            { en: "18 = 12", es: "18 = 12", ur: "18 = 12" },
+            { en: "12 > 18", es: "12 > 18", ur: "12 > 18" },
+            { en: "18 > 12", es: "18 > 12", ur: "18 > 12" },
+          ],
+          correctIndex: 3,
+        },
+        {
+          id: "qz-1.2G-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🤝 To be fair, both food drive teams need to collect the same number of cans. Team 1 has 15. Team 2 needs ___ cans to be equal.",
+            es: "🤝 Para ser justo, ambos equipos de colecta de alimentos deben reunir el mismo número de latas. El equipo 1 tiene 15. El equipo 2 necesita ___ latas para ser iguales.",
+            ur: "🤝 منصفانہ ہونے کے لیے دونوں فوڈ ڈرائیو ٹیموں کو ایک جتنے ڈبے جمع کرنے ہیں۔ ٹیم 1 کے پاس 15 ہیں۔ برابر ہونے کے لیے ٹیم 2 کو ___ ڈبے چاہیے۔",
+          },
+          choices: [
+            { en: "12", es: "12", ur: "12" },
+            { en: "17", es: "17", ur: "17" },
+            { en: "15", es: "15", ur: "15" },
+            { en: "10", es: "10", ur: "10" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.2G-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌍 Which symbol makes this true?   7 ___ 13",
+            es: "🌍 ¿Qué símbolo hace esto verdadero?   7 ___ 13",
+            ur: "🌍 کون سا نشان اسے صحیح بناتا ہے؟   7 ___ 13",
+          },
+          choices: [
+            { en: "=", es: "=", ur: "=" },
+            { en: ">", es: ">", ur: ">" },
+            { en: "<", es: "<", ur: "<" },
+          ],
+          correctIndex: 2,
+        },
+      ],
+    },
+
+    // ─── Unit 2: Skip-Counting & Fact Families ───────────────────────────────
+    {
+      teks: "1.5",
+      cambridge: "Stage 2 · 2Pt1",
+      emoji: "↔️",
+      title: {
+        en: "Skip-Counting & Patterns",
+        es: "Conteo de Salto y Patrones",
+        ur: "چھوڑ کر گنتی اور نمونے",
+      },
+      vocabulary: [
+        {
+          id: "skip-count",
+          emoji: "⏭️",
+          word: { en: "skip count", es: "contar de salto", ur: "چھوڑ کر گننا" },
+          definition: {
+            en: "count by jumping over numbers — like counting by 2s: 2, 4, 6, 8...",
+            es: "contar saltando números — como de 2 en 2: 2, 4, 6, 8...",
+            ur: "نمبر چھوڑتے ہوئے گننا — جیسے 2 کی گنتی: 2، 4، 6، 8...",
+          },
+        },
+        {
+          id: "inverse",
+          emoji: "🔄",
+          word: { en: "inverse", es: "inverso", ur: "الٹا" },
+          definition: {
+            en: "opposite operation — addition and subtraction are inverses of each other",
+            es: "operación opuesta — la suma y la resta son inversas",
+            ur: "مخالف عمل — جمع اور تفریق ایک دوسرے کے الٹ ہیں",
+          },
+        },
+        {
+          id: "fact-family",
+          emoji: "👨‍👩‍👧",
+          word: { en: "fact family", es: "familia de operaciones", ur: "حقائق خاندان" },
+          definition: {
+            en: "a set of related addition and subtraction sentences using the same three numbers",
+            es: "un conjunto de sumas y restas relacionadas con los mismos tres números",
+            ur: "ایک ہی تین نمبروں سے بنے جمع اور تفریق کے جملوں کا مجموعہ",
+          },
+        },
+        {
+          id: "related",
+          emoji: "🔗",
+          word: { en: "related facts", es: "operaciones relacionadas", ur: "متعلقہ حقائق" },
+          definition: {
+            en: "addition and subtraction sentences that use the same numbers — like 5+3=8 and 8-3=5",
+            es: "sumas y restas que usan los mismos números — como 5+3=8 y 8-3=5",
+            ur: "ایک ہی نمبروں کے جمع اور تفریق جملے — جیسے 5+3=8 اور 8-3=5",
+          },
+        },
+      ],
+      lesson: {
+        en: "↔️ **Skip-counting is like multiplication in disguise!**\n\n• **By 2s:** 2, 4, 6, 8, 10, 12... (count pairs!)\n• **By 5s:** 5, 10, 15, 20, 25... (like counting nickels!)\n• **By 10s:** 10, 20, 30, 40, 50... (like counting dimes!)\n\n**Addition and subtraction are INVERSE operations** — they undo each other!\nIf you know **5 + 3 = 8**, then you also know **8 − 3 = 5** and **8 − 5 = 3**.\n\nThis is called a **fact family**. One set of three numbers gives you four math facts!\n\nExample with community garden: If you plant 6 tomatoes and 4 peppers, you have 10 plants total. And 10 − 4 = 6. Math works both ways! 🌿",
+        es: "↔️ **¡Contar de salto es como la multiplicación disfrazada!**\n\n• **De 2 en 2:** 2, 4, 6, 8, 10, 12...\n• **De 5 en 5:** 5, 10, 15, 20, 25... (¡como contar níqueles!)\n• **De 10 en 10:** 10, 20, 30, 40, 50...\n\n**La suma y la resta son operaciones INVERSAS** — se anulan entre sí.\nSi sabes **5 + 3 = 8**, también sabes **8 − 3 = 5** y **8 − 5 = 3**.\n\nEsto se llama **familia de operaciones**. ¡Un conjunto de tres números te da cuatro datos matemáticos!\n\nEjemplo: Si plantas 6 tomates y 4 pimientos, tienes 10 plantas. Y 10 − 4 = 6. ¡Las matemáticas funcionan en ambos sentidos! 🌿",
+        ur: "↔️ **چھوڑ کر گننا ضرب کا چھپا ہوا روپ ہے!**\n\n• **2 کی گنتی:** 2، 4، 6، 8، 10، 12...\n• **5 کی گنتی:** 5، 10، 15، 20، 25... (جیسے نکل گننا!)\n• **10 کی گنتی:** 10، 20، 30، 40، 50...\n\n**جمع اور تفریق الٹے عمل ہیں** — وہ ایک دوسرے کو ختم کرتے ہیں!\nاگر تمہیں معلوم ہے **5 + 3 = 8**، تو تمہیں یہ بھی معلوم ہے **8 − 3 = 5** اور **8 − 5 = 3**۔\n\nاسے **حقائق خاندان** کہتے ہیں۔ تین نمبروں سے چار حقائق!\n\nمثال: 6 ٹماٹر اور 4 مرچیں = 10 پودے۔ اور 10 − 4 = 6۔ ریاضی دونوں طرف کام کرتی ہے! 🌿",
+      },
+      exercises: [
+        {
+          id: "ex-1.5-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌿 Skip count by 2s. What is the missing number? 2, 4, 6, ___, 10",
+            es: "🌿 Cuenta de 2 en 2. ¿Cuál es el número que falta? 2, 4, 6, ___, 10",
+            ur: "🌿 2 کی گنتی کرو۔ لاپتہ نمبر کیا ہے؟ 2، 4، 6، ___، 10",
+          },
+          choices: [
+            { en: "7", es: "7", ur: "7" },
+            { en: "9", es: "9", ur: "9" },
+            { en: "8", es: "8", ur: "8" },
+            { en: "12", es: "12", ur: "12" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-1.5-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🪙 Skip count by 5s. What comes next? 5, 10, 15, ___",
+            es: "🪙 Cuenta de 5 en 5. ¿Qué sigue? 5, 10, 15, ___",
+            ur: "🪙 5 کی گنتی کرو۔ آگے کیا آتا ہے؟ 5، 10، 15، ___",
+          },
+          choices: [
+            { en: "18", es: "18", ur: "18" },
+            { en: "25", es: "25", ur: "25" },
+            { en: "20", es: "20", ur: "20" },
+            { en: "16", es: "16", ur: "16" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-1.5-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "🔄 If 7 + 6 = 13, which related subtraction fact is also true?",
+            es: "🔄 Si 7 + 6 = 13, ¿qué resta relacionada también es correcta?",
+            ur: "🔄 اگر 7 + 6 = 13، تو کون سا متعلقہ تفریق حقیقت بھی صحیح ہے؟",
+          },
+          choices: [
+            { en: "13 − 7 = 5", es: "13 − 7 = 5", ur: "13 − 7 = 5" },
+            { en: "13 − 6 = 6", es: "13 − 6 = 6", ur: "13 − 6 = 6" },
+            { en: "13 − 6 = 7", es: "13 − 6 = 7", ur: "13 − 6 = 7" },
+            { en: "13 − 7 = 7", es: "13 − 7 = 7", ur: "13 − 7 = 7" },
+          ],
+          correctIndex: 2,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-1.5-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌱 Skip count by 10s. What is missing? 10, 20, ___, 40, 50",
+            es: "🌱 Cuenta de 10 en 10. ¿Qué falta? 10, 20, ___, 40, 50",
+            ur: "🌱 10 کی گنتی۔ کیا لاپتہ ہے؟ 10، 20، ___، 40، 50",
+          },
+          choices: [
+            { en: "25", es: "25", ur: "25" },
+            { en: "35", es: "35", ur: "35" },
+            { en: "30", es: "30", ur: "30" },
+            { en: "22", es: "22", ur: "22" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.5-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "👨‍👩‍👧 Which set of numbers makes a fact family? 4 + 9 = 13 means ___.",
+            es: "👨‍👩‍👧 4 + 9 = 13 significa también que ___.",
+            ur: "👨‍👩‍👧 4 + 9 = 13 کا مطلب یہ بھی ہے کہ ___۔",
+          },
+          choices: [
+            { en: "13 − 4 = 8", es: "13 − 4 = 8", ur: "13 − 4 = 8" },
+            { en: "13 + 4 = 17", es: "13 + 4 = 17", ur: "13 + 4 = 17" },
+            { en: "13 − 9 = 4", es: "13 − 9 = 4", ur: "13 − 9 = 4" },
+            { en: "9 − 4 = 5", es: "9 − 4 = 5", ur: "9 − 4 = 5" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.5-3",
+          type: "true-false",
+          prompt: {
+            en: "🔄 If 8 + 5 = 13, then 13 − 5 = 8. True or False?",
+            es: "🔄 Si 8 + 5 = 13, entonces 13 − 5 = 8. ¿Verdadero o falso?",
+            ur: "🔄 اگر 8 + 5 = 13، تو 13 − 5 = 8۔ صحیح یا غلط؟",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-1.5-1",
+          emoji: "🌱🔢",
+          scene: "Community garden planting day — skip-counting rows of seeds",
+          prompt: {
+            en: "Each row has 5 seeds. The class plants 4 rows. Skip count by 5s: 5, 10, 15, ___. How many seeds total?",
+            es: "Cada fila tiene 5 semillas. La clase planta 4 filas. Cuenta de 5 en 5: 5, 10, 15, ___. ¿Cuántas semillas en total?",
+            ur: "ہر قطار میں 5 بیج ہیں۔ کلاس 4 قطاریں لگاتی ہے۔ 5 کی گنتی: 5، 10، 15، ___۔ کل کتنے بیج؟",
+          },
+          answer: 20,
+          answerUnit: { en: "seeds", es: "semillas", ur: "بیج" },
+        },
+        {
+          id: "wp-1.5-2",
+          emoji: "🔄🍎",
+          scene: "School snack sharing — using fact families to check your work",
+          prompt: {
+            en: "Omar has 14 apples. He gives 6 to friends. He has 8 left. Which related fact checks his work: 8 + ___ = 14?",
+            es: "Omar tiene 14 manzanas. Da 6 a amigos. Le quedan 8. ¿Qué dato relacionado verifica su trabajo: 8 + ___ = 14?",
+            ur: "عمر کے پاس 14 سیب ہیں۔ وہ 6 دوستوں کو دیتا ہے۔ 8 بچتے ہیں۔ کون سا متعلقہ حقیقت جانچتا ہے: 8 + ___ = 14؟",
+          },
+          answer: 6,
+          answerUnit: { en: "apples", es: "manzanas", ur: "سیب" },
+        },
+      ],
+    },
+
+    // ─── Unit 3: Adding & Subtracting within 20 ──────────────────────────────
     {
       teks: "1.3B",
       cambridge: "Stage 1 · 1Nc3",
@@ -174,7 +511,7 @@ const grade1: Grade = {
       ],
     },
 
-    // ─── Unit 2: Making 10 ────────────────────────────────────────────────────
+    // ─── Unit 3: Making 10 ────────────────────────────────────────────────────
     {
       teks: "1.3C",
       cambridge: "Stage 1 · 1Nc4",
@@ -331,101 +668,111 @@ const grade1: Grade = {
       ],
     },
 
-    // ─── Unit 3: Comparing Numbers >, <, = ───────────────────────────────────
+    // ─── Unit 5: Shapes & Equal Parts ────────────────────────────────────────
     {
-      teks: "1.2G",
-      cambridge: "Stage 1 · 1Nn3",
-      emoji: "⚖️",
+      teks: "1.6",
+      cambridge: "Stage 2 · 2Gs1",
+      emoji: "⬡",
       title: {
-        en: "Comparing Numbers",
-        es: "Comparar Números",
-        ur: "نمبروں کا موازنہ",
+        en: "Shapes & Equal Parts",
+        es: "Figuras y Partes Iguales",
+        ur: "شکلیں اور برابر حصے",
       },
       vocabulary: [
         {
-          id: "greater-than",
-          emoji: "➡️",
-          word: { en: "greater than  >", es: "mayor que  >", ur: "زیادہ ہے  >" },
+          id: "half",
+          emoji: "½",
+          word: { en: "half", es: "mitad", ur: "آدھا" },
           definition: {
-            en: "the first number is bigger — the open side points to the bigger number",
-            es: "el primer número es más grande — el lado abierto señala al número mayor",
-            ur: "پہلا نمبر بڑا ہے — کھلی طرف بڑے نمبر کی طرف ہوتی ہے",
+            en: "one of two equal parts of a whole — 2 halves make 1 whole",
+            es: "una de dos partes iguales de un todo — 2 mitades forman 1 entero",
+            ur: "ایک چیز کے دو برابر حصوں میں سے ایک — 2 آدھے = 1 پورا",
           },
         },
         {
-          id: "less-than",
-          emoji: "⬅️",
-          word: { en: "less than  <", es: "menor que  <", ur: "کم ہے  <" },
+          id: "fourth",
+          emoji: "¼",
+          word: { en: "fourth", es: "cuarto", ur: "چوتھائی" },
           definition: {
-            en: "the first number is smaller — the open side still points to the bigger number",
-            es: "el primer número es más pequeño — el lado abierto sigue señalando al número mayor",
-            ur: "پہلا نمبر چھوٹا ہے — کھلی طرف پھر بھی بڑے نمبر کی طرف ہوتی ہے",
+            en: "one of four equal parts of a whole — also called a quarter",
+            es: "una de cuatro partes iguales de un todo — también llamada cuarto",
+            ur: "ایک چیز کے چار برابر حصوں میں سے ایک — کوارٹر بھی کہتے ہیں",
           },
         },
         {
-          id: "equal-to",
-          emoji: "🟰",
-          word: { en: "equal to  =", es: "igual a  =", ur: "برابر ہے  =" },
+          id: "whole",
+          emoji: "⭕",
+          word: { en: "whole", es: "entero", ur: "پورا" },
           definition: {
-            en: "both numbers are exactly the same — completely fair",
-            es: "ambos números son exactamente iguales — completamente justo",
-            ur: "دونوں نمبر بالکل ایک جیسے ہیں — مکمل انصاف",
+            en: "all the parts together — a complete shape or object",
+            es: "todas las partes juntas — una figura o un objeto completo",
+            ur: "تمام حصے مل کر — مکمل شکل یا چیز",
           },
         },
         {
-          id: "compare",
-          emoji: "🔍",
-          word: { en: "compare", es: "comparar", ur: "موازنہ کرنا" },
+          id: "equal-parts",
+          emoji: "⚖️",
+          word: { en: "equal parts", es: "partes iguales", ur: "برابر حصے" },
           definition: {
-            en: "look at two numbers and decide which is bigger, smaller, or the same",
-            es: "mirar dos números y decidir cuál es mayor, menor o igual",
-            ur: "دو نمبروں کو دیکھنا اور فیصلہ کرنا کہ کون بڑا، چھوٹا یا برابر ہے",
+            en: "parts that are exactly the same size",
+            es: "partes que son exactamente del mismo tamaño",
+            ur: "حصے جو بالکل ایک ہی سائز کے ہوں",
+          },
+        },
+        {
+          id: "compose",
+          emoji: "🔲",
+          word: { en: "compose", es: "componer", ur: "جوڑنا" },
+          definition: {
+            en: "to put shapes together to make a new, larger shape",
+            es: "unir figuras para formar una nueva figura más grande",
+            ur: "شکلیں جوڑ کر ایک نئی بڑی شکل بنانا",
           },
         },
       ],
       lesson: {
-        en: "⚖️ **Fair sharing starts with comparing!**\n\nWhen we share things in our community, we compare numbers to make sure everyone gets a fair amount.\n\nWe use three symbols:\n- **>** means **greater than** → 15 > 8 (15 is greater than 8)\n- **<** means **less than** → 8 < 15 (8 is less than 15)\n- **=** means **equal to** → 10 = 10 (both the same — fair!)\n\n🧡 Tip: Think of the symbol as a hungry crocodile mouth. The open mouth always faces the **bigger** number because it wants to eat the bigger one!\n\nWhen we see that one classroom has **more** supplies than another, we can use math to make it fair for everyone! ⚖️",
-        es: "⚖️ **¡Compartir de forma justa empieza con comparar!**\n\nCuando compartimos cosas en nuestra comunidad, comparamos números para asegurarnos de que todos reciban una cantidad justa.\n\nUsamos tres símbolos:\n- **>** significa **mayor que** → 15 > 8 (15 es mayor que 8)\n- **<** significa **menor que** → 8 < 15 (8 es menor que 15)\n- **=** significa **igual a** → 10 = 10 (¡los dos son iguales — justo!)\n\n🧡 Consejo: ¡Imagina el símbolo como la boca hambrienta de un cocodrilo. La boca abierta siempre apunta al número **mayor** porque quiere comerlo!\n\n¡Cuando vemos que un salón tiene **más** materiales que otro, podemos usar las matemáticas para que sea justo para todos! ⚖️",
-        ur: "⚖️ **منصفانہ بانٹنا موازنے سے شروع ہوتا ہے!**\n\nجب ہم کمیونٹی میں چیزیں بانٹتے ہیں تو نمبروں کا موازنہ کرتے ہیں تاکہ یقینی ہو کہ سب کو برابر حصہ ملے۔\n\nہم تین نشان استعمال کرتے ہیں:\n- **>** مطلب **زیادہ ہے** → 15 > 8 (15، 8 سے زیادہ ہے)\n- **<** مطلب **کم ہے** → 8 < 15 (8، 15 سے کم ہے)\n- **=** مطلب **برابر ہے** → 10 = 10 (دونوں ایک جیسے — انصاف!)\n\n🧡 ٹِپ: نشان کو بھوکے مگرمچھ کے منہ کی طرح سوچو۔ کھلا منہ ہمیشہ **بڑے** نمبر کی طرف ہوتا ہے کیونکہ وہ اسے کھانا چاہتا ہے!\n\nجب ہم دیکھتے ہیں کہ ایک کلاس میں دوسری سے **زیادہ** سامان ہے تو ریاضی سے سب کے لیے انصاف کر سکتے ہیں! ⚖️",
+        en: "⬡ **Shapes can be made of other shapes — and divided into equal parts!**\n\n**Composing shapes:** Two triangles can be put together to make a square. Four squares can make one big square! This is called *composing*.\n\n**Equal parts:** When we cut a pizza into 2 equal slices, each slice is called a **half** (½). When we cut it into 4 equal slices, each piece is a **fourth** or **quarter** (¼).\n\nThe parts must be **equal** — the same size. A pizza cut into one big piece and one tiny piece is NOT two halves!\n\nIn our community: sharing food equally is a form of fairness and math! 🌿🍕",
+        es: "⬡ **¡Las figuras se pueden hacer con otras figuras y dividir en partes iguales!**\n\n**Componer figuras:** Dos triángulos forman un cuadrado. ¡Cuatro cuadrados forman un cuadrado grande!\n\n**Partes iguales:** Cuando cortamos una pizza en 2 pedazos iguales, cada pedazo es una **mitad** (½). En 4 pedazos iguales, cada pieza es un **cuarto** (¼).\n\nLas partes deben ser **iguales** — del mismo tamaño. ¡Una pizza cortada en un pedazo grande y uno pequeño NO son dos mitades!\n\n¡En nuestra comunidad, compartir alimentos por igual es una forma de justicia y matemáticas! 🌿🍕",
+        ur: "⬡ **شکلیں دوسری شکلوں سے بن سکتی ہیں اور برابر حصوں میں تقسیم ہو سکتی ہیں!**\n\n**شکلیں جوڑنا:** دو مثلث مل کر مربع بناتے ہیں۔ چار مربع مل کر ایک بڑا مربع!\n\n**برابر حصے:** جب ہم پیزا کو 2 برابر ٹکڑوں میں کاٹتے ہیں تو ہر ٹکڑا **آدھا** (½) ہوتا ہے۔ 4 برابر ٹکڑوں میں ہر ٹکڑا **چوتھائی** (¼) ہے۔\n\nحصے **برابر** ہونے چاہئیں — ایک ہی سائز کے۔ ایک بڑا ٹکڑا اور ایک چھوٹا ٹکڑا دو آدھے نہیں ہیں!\n\nکمیونٹی میں: کھانا برابر بانٹنا انصاف اور ریاضی دونوں ہے! 🌿🍕",
       },
       exercises: [
         {
-          id: "ex-1.2G-1",
+          id: "ex-1.6-1",
           type: "multiple-choice",
           prompt: {
-            en: "🌿 Room 101 collected 14 cans of food. Room 102 collected 9 cans. Which symbol goes in the blank?  14 ___ 9",
-            es: "🌿 El salón 101 juntó 14 latas de comida. El salón 102 juntó 9 latas. ¿Qué símbolo va en el espacio?  14 ___ 9",
-            ur: "🌿 کمرہ 101 نے کھانے کے 14 ڈبے جمع کیے۔ کمرہ 102 نے 9 ڈبے جمع کیے۔ خالی جگہ میں کون سا نشان آئے گا؟  14 ___ 9",
+            en: "🍕 A pizza is cut into 2 equal pieces. What is each piece called?",
+            es: "🍕 Una pizza se corta en 2 pedazos iguales. ¿Cómo se llama cada pedazo?",
+            ur: "🍕 پیزا کو 2 برابر ٹکڑوں میں کاٹا گیا۔ ہر ٹکڑے کو کیا کہتے ہیں؟",
           },
           choices: [
-            { en: ">", es: ">", ur: ">" },
-            { en: "<", es: "<", ur: "<" },
-            { en: "=", es: "=", ur: "=" },
+            { en: "A fourth (¼)", es: "Un cuarto (¼)", ur: "چوتھائی (¼)" },
+            { en: "A half (½)", es: "Una mitad (½)", ur: "آدھا (½)" },
+            { en: "A whole", es: "Un entero", ur: "پورا" },
           ],
-          correctIndex: 0,
+          correctIndex: 1,
         },
         {
-          id: "ex-1.2G-2",
+          id: "ex-1.6-2",
           type: "multiple-choice",
           prompt: {
-            en: "🌱 Two classes each planted some trees. Class A planted 11 trees. Class B planted 16 trees. Which is true?",
-            es: "🌱 Dos clases plantaron algunos árboles cada una. La clase A plantó 11 árboles. La clase B plantó 16 árboles. ¿Cuál es verdadero?",
-            ur: "🌱 دو کلاسوں نے درخت لگائے۔ کلاس A نے 11 درخت لگائے۔ کلاس B نے 16 درخت لگائے۔ کون سا صحیح ہے؟",
+            en: "🔲 Two triangles are put together to make one shape. What shape do they make?",
+            es: "🔲 Dos triángulos se juntan para formar una figura. ¿Qué figura forman?",
+            ur: "🔲 دو مثلث جوڑے جاتے ہیں۔ وہ کون سی شکل بناتے ہیں؟",
           },
           choices: [
-            { en: "11 > 16", es: "11 > 16", ur: "11 > 16" },
-            { en: "11 = 16", es: "11 = 16", ur: "11 = 16" },
-            { en: "11 < 16", es: "11 < 16", ur: "11 < 16" },
+            { en: "Circle", es: "Círculo", ur: "دائرہ" },
+            { en: "Rectangle or square", es: "Rectángulo o cuadrado", ur: "مستطیل یا مربع" },
+            { en: "Triangle", es: "Triángulo", ur: "مثلث" },
           ],
-          correctIndex: 2,
+          correctIndex: 1,
         },
         {
-          id: "ex-1.2G-3",
+          id: "ex-1.6-3",
           type: "true-false",
           prompt: {
-            en: "⚖️ Both kindergarten classes recycled 13 bottles each. Since 13 = 13, they recycled an equal amount — that is fair!",
-            es: "⚖️ Ambas clases de kínder reciclaron 13 botellas cada una. Como 13 = 13, reciclaron la misma cantidad — ¡eso es justo!",
-            ur: "⚖️ دونوں کنڈرگارٹن کلاسوں نے 13-13 بوتلیں ری سائیکل کیں۔ چونکہ 13 = 13 ہے، انہوں نے برابر مقدار ری سائیکل کی — یہ انصاف ہے!",
+            en: "🍫 A chocolate bar is broken into 4 equal pieces. Each piece is a fourth (¼) of the whole bar.",
+            es: "🍫 Una barra de chocolate se rompe en 4 pedazos iguales. Cada pedazo es un cuarto (¼) de la barra entera.",
+            ur: "🍫 ایک چاکلیٹ بار 4 برابر ٹکڑوں میں توڑا گیا۔ ہر ٹکڑا پوری بار کا چوتھائی (¼) ہے۔",
           },
           choices: [
             { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
@@ -436,56 +783,473 @@ const grade1: Grade = {
       ],
       quiz: [
         {
-          id: "qz-1.2G-1",
+          id: "qz-1.6-1",
           type: "multiple-choice",
           prompt: {
-            en: "📚 The library has 18 English books and 12 Spanish books. Which sentence is true?",
-            es: "📚 La biblioteca tiene 18 libros en inglés y 12 en español. ¿Cuál oración es verdadera?",
-            ur: "📚 لائبریری میں 18 انگریزی کتابیں اور 12 اردو کتابیں ہیں۔ کون سا جملہ صحیح ہے؟",
+            en: "🌸 A garden is divided into 4 equal sections for different plants. What is each section called?",
+            es: "🌸 Un jardín se divide en 4 secciones iguales para diferentes plantas. ¿Cómo se llama cada sección?",
+            ur: "🌸 ایک باغ کو مختلف پودوں کے لیے 4 برابر حصوں میں تقسیم کیا گیا۔ ہر حصے کو کیا کہتے ہیں؟",
           },
           choices: [
-            { en: "18 < 12", es: "18 < 12", ur: "18 < 12" },
-            { en: "18 = 12", es: "18 = 12", ur: "18 = 12" },
-            { en: "12 > 18", es: "12 > 18", ur: "12 > 18" },
-            { en: "18 > 12", es: "18 > 12", ur: "18 > 12" },
-          ],
-          correctIndex: 3,
-        },
-        {
-          id: "qz-1.2G-2",
-          type: "multiple-choice",
-          prompt: {
-            en: "🤝 To be fair, both food drive teams need to collect the same number of cans. Team 1 has 15. Team 2 needs ___ cans to be equal.",
-            es: "🤝 Para ser justo, ambos equipos de colecta de alimentos deben reunir el mismo número de latas. El equipo 1 tiene 15. El equipo 2 necesita ___ latas para ser iguales.",
-            ur: "🤝 منصفانہ ہونے کے لیے دونوں فوڈ ڈرائیو ٹیموں کو ایک جتنے ڈبے جمع کرنے ہیں۔ ٹیم 1 کے پاس 15 ہیں۔ برابر ہونے کے لیے ٹیم 2 کو ___ ڈبے چاہیے۔",
-          },
-          choices: [
-            { en: "12", es: "12", ur: "12" },
-            { en: "17", es: "17", ur: "17" },
-            { en: "15", es: "15", ur: "15" },
-            { en: "10", es: "10", ur: "10" },
+            { en: "A half (½)", es: "Una mitad (½)", ur: "آدھا (½)" },
+            { en: "A whole", es: "Un entero", ur: "پورا" },
+            { en: "A fourth (¼)", es: "Un cuarto (¼)", ur: "چوتھائی (¼)" },
           ],
           correctIndex: 2,
         },
         {
-          id: "qz-1.2G-3",
+          id: "qz-1.6-2",
           type: "multiple-choice",
           prompt: {
-            en: "🌍 Which symbol makes this true?   7 ___ 13",
-            es: "🌍 ¿Qué símbolo hace esto verdadero?   7 ___ 13",
-            ur: "🌍 کون سا نشان اسے صحیح بناتا ہے؟   7 ___ 13",
+            en: "⬡ How many fourths make one whole?",
+            es: "⬡ ¿Cuántos cuartos forman un entero?",
+            ur: "⬡ کتنی چوتھائیاں مل کر ایک پورا بناتی ہیں؟",
           },
           choices: [
-            { en: "=", es: "=", ur: "=" },
-            { en: ">", es: ">", ur: ">" },
-            { en: "<", es: "<", ur: "<" },
+            { en: "2", es: "2", ur: "2" },
+            { en: "3", es: "3", ur: "3" },
+            { en: "4", es: "4", ur: "4" },
+            { en: "8", es: "8", ur: "8" },
           ],
           correctIndex: 2,
+        },
+        {
+          id: "qz-1.6-3",
+          type: "true-false",
+          prompt: {
+            en: "½ Two halves make one whole. True or False?",
+            es: "½ Dos mitades forman un entero. ¿Verdadero o falso?",
+            ur: "½ دو آدھے مل کر ایک پورا بناتے ہیں۔ صحیح یا غلط؟",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-1.6-1",
+          emoji: "🍕🌿",
+          scene: "Community pizza night — sharing equally at a Dallas school fundraiser",
+          prompt: {
+            en: "The class orders 1 pizza. It is cut into 4 equal pieces. 3 students each eat 1 piece. How many pieces are left?",
+            es: "La clase pide 1 pizza. Se corta en 4 pedazos iguales. 3 estudiantes comen 1 pedazo cada uno. ¿Cuántos pedazos quedan?",
+            ur: "کلاس نے 1 پیزا منگوایا۔ اسے 4 برابر ٹکڑوں میں کاٹا گیا۔ 3 طلبہ نے 1 ایک ٹکڑا کھایا۔ کتنے ٹکڑے بچے؟",
+          },
+          answer: 1,
+          answerUnit: { en: "piece", es: "pedazo", ur: "ٹکڑا" },
+        },
+        {
+          id: "wp-1.6-2",
+          emoji: "🔲🔷",
+          scene: "Shape art project — students compose shapes to make pictures",
+          prompt: {
+            en: "Zara uses 2 triangles to make 1 square, and she makes 3 squares. How many triangles did she use in all?",
+            es: "Zara usa 2 triángulos para hacer 1 cuadrado y hace 3 cuadrados. ¿Cuántos triángulos usó en total?",
+            ur: "زارا 2 مثلث سے 1 مربع بناتی ہے اور 3 مربع بناتی ہے۔ اس نے کل کتنے مثلث استعمال کیے؟",
+          },
+          answer: 6,
+          answerUnit: { en: "triangles", es: "triángulos", ur: "مثلث" },
         },
       ],
     },
 
-    // ─── Unit 4: Graphs & Data ────────────────────────────────────────────────
+    // ─── Unit 6: Coin Values ──────────────────────────────────────────────────
+    {
+      teks: "1.4",
+      cambridge: "Stage 2 · 2Mm1",
+      emoji: "💰",
+      title: {
+        en: "Coin Values",
+        es: "Valor de las Monedas",
+        ur: "سکوں کی قیمت",
+      },
+      vocabulary: [
+        {
+          id: "penny",
+          emoji: "🟤",
+          word: { en: "penny", es: "centavo / penny", ur: "پینی" },
+          definition: {
+            en: "1 cent (1¢) — the copper-colored coin",
+            es: "1 centavo (1¢) — la moneda de color cobre",
+            ur: "1 سینٹ (1¢) — تانبے کے رنگ کا سکہ",
+          },
+        },
+        {
+          id: "nickel",
+          emoji: "⚪",
+          word: { en: "nickel", es: "níquel", ur: "نکل" },
+          definition: {
+            en: "5 cents (5¢) — the thick silver coin",
+            es: "5 centavos (5¢) — la moneda plateada gruesa",
+            ur: "5 سینٹ (5¢) — موٹا چاندی کا سکہ",
+          },
+        },
+        {
+          id: "dime",
+          emoji: "🔘",
+          word: { en: "dime", es: "moneda de 10 centavos", ur: "ڈائم" },
+          definition: {
+            en: "10 cents (10¢) — the small thin silver coin",
+            es: "10 centavos (10¢) — la moneda plateada pequeña y delgada",
+            ur: "10 سینٹ (10¢) — چھوٹا پتلا چاندی کا سکہ",
+          },
+        },
+        {
+          id: "quarter",
+          emoji: "🟡",
+          word: { en: "quarter", es: "cuarto de dólar", ur: "کوارٹر" },
+          definition: {
+            en: "25 cents (25¢) — the large silver coin",
+            es: "25 centavos (25¢) — la moneda plateada más grande",
+            ur: "25 سینٹ (25¢) — بڑا چاندی کا سکہ",
+          },
+        },
+        {
+          id: "value",
+          emoji: "💲",
+          word: { en: "value", es: "valor", ur: "قیمت" },
+          definition: {
+            en: "how much a coin is worth in cents",
+            es: "cuánto vale una moneda en centavos",
+            ur: "ایک سکہ سینٹ میں کتنے مالیت کا ہے",
+          },
+        },
+      ],
+      lesson: {
+        en: "💰 **Every coin has a value!**\n\n| Coin | Value |\n|------|-------|\n| Penny | 1¢ |\n| Nickel | 5¢ |\n| Dime | 10¢ |\n| Quarter | 25¢ |\n\n**Counting like coins:** Skip count by the coin's value!\n• 3 dimes: 10¢, 20¢, 30¢ → **30¢**\n• 4 nickels: 5¢, 10¢, 15¢, 20¢ → **20¢**\n• 6 pennies: 1¢, 2¢, 3¢, 4¢, 5¢, 6¢ → **6¢**\n\nAt the community garden sale, knowing coin values helps you buy exactly what you need! 🌿",
+        es: "💰 **¡Cada moneda tiene un valor!**\n\n| Moneda | Valor |\n|--------|-------|\n| Centavo (Penny) | 1¢ |\n| Níquel (Nickel) | 5¢ |\n| Diez centavos (Dime) | 10¢ |\n| Cuarto de dólar (Quarter) | 25¢ |\n\n**Contar monedas iguales:** ¡Cuenta de salto por el valor de la moneda!\n• 3 dimes: 10¢, 20¢, 30¢ → **30¢**\n• 4 níqueles: 5¢, 10¢, 15¢, 20¢ → **20¢**\n\n¡En la venta del jardín comunitario, saber el valor de las monedas te ayuda a comprar lo que necesitas! 🌿",
+        ur: "💰 **ہر سکے کی ایک قیمت ہوتی ہے!**\n\n| سکہ | قیمت |\n|------|-------|\n| پینی | 1¢ |\n| نکل | 5¢ |\n| ڈائم | 10¢ |\n| کوارٹر | 25¢ |\n\n**ایک جیسے سکے گننا:** سکے کی قیمت سے چھوڑ کر گنو!\n• 3 ڈائم: 10¢، 20¢، 30¢ → **30¢**\n• 4 نکل: 5¢، 10¢، 15¢، 20¢ → **20¢**\n\nکمیونٹی باغ کی سیل میں سکوں کی قیمت جاننے سے آپ صحیح چیز خرید سکتے ہیں! 🌿",
+      },
+      exercises: [
+        {
+          id: "ex-1.4-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🔘 Count 4 dimes. How much is that in all? (Skip count by 10s)",
+            es: "🔘 Cuenta 4 monedas de 10 centavos. ¿Cuánto es en total? (Cuenta de 10 en 10)",
+            ur: "🔘 4 ڈائم گنو۔ یہ کل کتنا ہے؟ (10 کی گنتی کرو)",
+          },
+          choices: [
+            { en: "30¢", es: "30¢", ur: "30¢" },
+            { en: "40¢", es: "40¢", ur: "40¢" },
+            { en: "14¢", es: "14¢", ur: "14¢" },
+            { en: "50¢", es: "50¢", ur: "50¢" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "ex-1.4-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "⚪ Count 3 nickels. How much is that in all? (Skip count by 5s)",
+            es: "⚪ Cuenta 3 níqueles. ¿Cuánto es en total? (Cuenta de 5 en 5)",
+            ur: "⚪ 3 نکل گنو۔ یہ کل کتنا ہے؟ (5 کی گنتی کرو)",
+          },
+          choices: [
+            { en: "3¢", es: "3¢", ur: "3¢" },
+            { en: "25¢", es: "25¢", ur: "25¢" },
+            { en: "15¢", es: "15¢", ur: "15¢" },
+            { en: "20¢", es: "20¢", ur: "20¢" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-1.4-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "🟤 Count 5 pennies. How much is that in all?",
+            es: "🟤 Cuenta 5 centavos. ¿Cuánto es en total?",
+            ur: "🟤 5 پینی گنو۔ یہ کل کتنا ہے؟",
+          },
+          choices: [
+            { en: "10¢", es: "10¢", ur: "10¢" },
+            { en: "1¢", es: "1¢", ur: "1¢" },
+            { en: "5¢", es: "5¢", ur: "5¢" },
+            { en: "25¢", es: "25¢", ur: "25¢" },
+          ],
+          correctIndex: 2,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-1.4-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🟡 Count 2 quarters. How much is that in all?",
+            es: "🟡 Cuenta 2 cuartos de dólar. ¿Cuánto es en total?",
+            ur: "🟡 2 کوارٹر گنو۔ یہ کل کتنا ہے؟",
+          },
+          choices: [
+            { en: "25¢", es: "25¢", ur: "25¢" },
+            { en: "75¢", es: "75¢", ur: "75¢" },
+            { en: "50¢", es: "50¢", ur: "50¢" },
+            { en: "52¢", es: "52¢", ur: "52¢" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.4-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "💰 Which coin is worth more — a nickel or a dime?",
+            es: "💰 ¿Qué moneda vale más — un níquel o un dime?",
+            ur: "💰 کون سا سکہ زیادہ قیمتی ہے — نکل یا ڈائم؟",
+          },
+          choices: [
+            { en: "Nickel (5¢)", es: "Níquel (5¢)", ur: "نکل (5¢)" },
+            { en: "They are the same value", es: "Tienen el mismo valor", ur: "دونوں برابر ہیں" },
+            { en: "Dime (10¢)", es: "Dime (10¢)", ur: "ڈائم (10¢)" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.4-3",
+          type: "true-false",
+          prompt: {
+            en: "💲 A dime is worth less than a nickel because a dime is a smaller coin. True or False?",
+            es: "💲 Un dime vale menos que un níquel porque el dime es una moneda más pequeña. ¿Verdadero o falso?",
+            ur: "💲 ڈائم نکل سے کم قیمتی ہے کیونکہ ڈائم چھوٹا سکہ ہے۔ صحیح یا غلط؟",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌ — a dime (10¢) is worth MORE than a nickel (5¢)", es: "Falso ❌ — un dime (10¢) vale MÁS que un níquel (5¢)", ur: "غلط ❌ — ڈائم (10¢) نکل (5¢) سے زیادہ قیمتی ہے" },
+          ],
+          correctIndex: 1,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-1.4-1",
+          emoji: "🌽💰",
+          scene: "Community farmers market — first graders buy vegetables with coins",
+          prompt: {
+            en: "Mia has 3 dimes. She wants to buy corn that costs 25¢. Does she have enough money?",
+            es: "Mia tiene 3 dimes. Quiere comprar maíz que cuesta 25¢. ¿Tiene suficiente dinero?",
+            ur: "میا کے پاس 3 ڈائم ہیں۔ وہ 25¢ کی مکئی خریدنا چاہتی ہے۔ کیا اس کے پاس کافی پیسے ہیں؟",
+          },
+          answer: 30,
+          answerUnit: { en: "cents — Yes, she has 30¢ which is more than 25¢", es: "centavos — Sí, tiene 30¢ que es más de 25¢", ur: "سینٹ — ہاں، اس کے پاس 30¢ ہیں جو 25¢ سے زیادہ ہیں" },
+        },
+        {
+          id: "wp-1.4-2",
+          emoji: "🍎🪙",
+          scene: "School snack stand — students use coins to buy healthy snacks",
+          prompt: {
+            en: "An apple costs 20¢. Omar has 4 nickels. How much does he have? Is that enough for the apple?",
+            es: "Una manzana cuesta 20¢. Omar tiene 4 níqueles. ¿Cuánto tiene? ¿Alcanza para la manzana?",
+            ur: "ایک سیب 20¢ کا ہے۔ عمر کے پاس 4 نکل ہیں۔ اس کے پاس کتنے ہیں؟ کیا سیب کے لیے کافی ہے؟",
+          },
+          answer: 20,
+          answerUnit: { en: "cents — Yes! 4 nickels = 20¢, exactly enough", es: "centavos — ¡Sí! 4 níqueles = 20¢, exactamente suficiente", ur: "سینٹ — ہاں! 4 نکل = 20¢، بالکل کافی" },
+        },
+      ],
+    },
+
+    // ─── Unit 7: Measurement & Time ──────────────────────────────────────────
+    {
+      teks: "1.7",
+      cambridge: "Stage 2 · 2Ml2",
+      emoji: "🕐",
+      title: {
+        en: "Measuring & Telling Time",
+        es: "Medir y Decir la Hora",
+        ur: "پیمائش اور وقت بتانا",
+      },
+      vocabulary: [
+        {
+          id: "length",
+          emoji: "↔️",
+          word: { en: "length", es: "longitud", ur: "لمبائی" },
+          definition: {
+            en: "how long something is from one end to the other",
+            es: "qué tan largo es algo de un extremo al otro",
+            ur: "کوئی چیز ایک سرے سے دوسرے سرے تک کتنی لمبی ہے",
+          },
+        },
+        {
+          id: "measure",
+          emoji: "📏",
+          word: { en: "measure", es: "medir", ur: "پیمائش کرنا" },
+          definition: {
+            en: "to find out how long, tall, or heavy something is",
+            es: "determinar qué tan largo, alto o pesado es algo",
+            ur: "کوئی چیز کتنی لمبی، اونچی یا بھاری ہے یہ معلوم کرنا",
+          },
+        },
+        {
+          id: "non-standard",
+          emoji: "📎",
+          word: { en: "non-standard unit", es: "unidad no estándar", ur: "غیر معیاری اکائی" },
+          definition: {
+            en: "everyday objects used to measure — like paperclips, cubes, or your hand",
+            es: "objetos cotidianos usados para medir — como sujetapapeles, cubos o tu mano",
+            ur: "روزمرہ چیزیں جو پیمائش میں استعمال ہوں — جیسے کلپ، مکعب یا ہاتھ",
+          },
+        },
+        {
+          id: "hour-hand",
+          emoji: "🕐",
+          word: { en: "hour hand", es: "manecilla de las horas", ur: "گھنٹے کی سوئی" },
+          definition: {
+            en: "the short hand on a clock that shows the hour",
+            es: "la manecilla corta del reloj que muestra la hora",
+            ur: "گھڑی کی چھوٹی سوئی جو گھنٹہ بتاتی ہے",
+          },
+        },
+        {
+          id: "minute-hand",
+          emoji: "⏱️",
+          word: { en: "minute hand", es: "minutero", ur: "منٹ کی سوئی" },
+          definition: {
+            en: "the long hand on a clock — when it points to 12, it is exactly on the hour; when it points to 6, it is half past",
+            es: "la manecilla larga del reloj — cuando apunta al 12, es la hora en punto; al 6, es y media",
+            ur: "گھڑی کی لمبی سوئی — جب 12 پر ہو تو پوری گھنٹی؛ 6 پر ہو تو آدھی",
+          },
+        },
+        {
+          id: "half-hour",
+          emoji: "🕧",
+          word: { en: "half past / half hour", es: "y media", ur: "آدھا گھنٹہ / ساڑھے" },
+          definition: {
+            en: "30 minutes after the hour — 2:30 is 'half past two'",
+            es: "30 minutos después de la hora — 2:30 es 'las dos y media'",
+            ur: "گھنٹے کے 30 منٹ بعد — 2:30 کو 'ساڑھے دو' کہتے ہیں",
+          },
+        },
+      ],
+      lesson: {
+        en: "🕐 **We can measure length and tell time!**\n\n**Measuring length without a ruler:** Lay paperclips 📎 end to end along the object. Count how many fit! A pencil might be 7 paperclips long.\n\nWe can also measure with cubes, your finger, or your foot — these are called **non-standard units**.\n\n**Telling time on an analog clock:**\n• **Short hand** = hour hand (where it points tells you the hour)\n• **Long hand** = minute hand\n  - Points to **12** → exactly on the hour (e.g., 3:00)\n  - Points to **6** → half past the hour (e.g., 3:30)\n\nAt school, knowing the time helps you know when lunch starts, when recess ends, and when it is time to go home! ⏰🌿",
+        es: "🕐 **¡Podemos medir longitudes y decir la hora!**\n\n**Medir longitud sin regla:** Coloca sujetapapeles 📎 de extremo a extremo junto al objeto. ¡Cuenta cuántos caben! Un lápiz puede medir 7 sujetapapeles de largo.\n\nTambién podemos medir con cubos, tu dedo o tu pie — estas se llaman **unidades no estándar**.\n\n**Decir la hora en un reloj analógico:**\n• **Manecilla corta** = hora\n  - Apunta al **12** → en punto (ej. 3:00)\n  - Apunta al **6** → y media (ej. 3:30)\n\n¡En la escuela, saber la hora te ayuda a saber cuándo empieza el almuerzo y cuándo termina el recreo! ⏰🌿",
+        ur: "🕐 **ہم لمبائی ناپ سکتے ہیں اور وقت بتا سکتے ہیں!**\n\n**بغیر پیمانے کے لمبائی ناپنا:** کلپ 📎 کو چیز کے ساتھ سرے سے سرے تک رکھو۔ گنو کتنے فٹ ہوتے ہیں! ایک پنسل 7 کلپ لمبی ہو سکتی ہے۔\n\nہم مکعب، انگلی یا پاؤں سے بھی ناپ سکتے ہیں — انہیں **غیر معیاری اکائیاں** کہتے ہیں۔\n\n**اینالاگ گھڑی پر وقت بتانا:**\n• **چھوٹی سوئی** = گھنٹہ\n• **لمبی سوئی** = منٹ\n  - **12** پر → پوری گھنٹی (مثلاً 3:00)\n  - **6** پر → آدھی (مثلاً 3:30)\n\nاسکول میں وقت جاننا تمہیں بتاتا ہے کب کھانا شروع ہوتا ہے اور کب چھٹی ہوتی ہے! ⏰🌿",
+      },
+      exercises: [
+        {
+          id: "ex-1.7-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "📎 A student measures a leaf using paperclips laid end to end. The leaf is 5 paperclips long. What unit did the student use?",
+            es: "📎 Un estudiante mide una hoja usando sujetapapeles. La hoja mide 5 sujetapapeles de largo. ¿Qué unidad usó?",
+            ur: "📎 ایک طالب علم کلپ سے پتا ناپتا ہے۔ پتا 5 کلپ لمبا ہے۔ طالب علم نے کون سی اکائی استعمال کی؟",
+          },
+          choices: [
+            { en: "A standard unit (inches)", es: "Una unidad estándar (pulgadas)", ur: "معیاری اکائی (انچ)" },
+            { en: "A non-standard unit (paperclips)", es: "Una unidad no estándar (sujetapapeles)", ur: "غیر معیاری اکائی (کلپ)" },
+            { en: "A ruler", es: "Una regla", ur: "پیمانہ" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "ex-1.7-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🕒 The short hand points to 3 and the long hand points to 12. What time is it?",
+            es: "🕒 La manecilla corta apunta al 3 y la larga al 12. ¿Qué hora es?",
+            ur: "🕒 چھوٹی سوئی 3 پر اور لمبی سوئی 12 پر ہے۔ کیا وقت ہے؟",
+          },
+          choices: [
+            { en: "12:03", es: "12:03", ur: "12:03" },
+            { en: "3:30", es: "3:30", ur: "3:30" },
+            { en: "3:00", es: "3:00", ur: "3:00" },
+            { en: "12:30", es: "12:30", ur: "12:30" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-1.7-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "🕧 The short hand is between 7 and 8, and the long hand points to 6. What time is it?",
+            es: "🕧 La manecilla corta está entre 7 y 8, y la larga apunta al 6. ¿Qué hora es?",
+            ur: "🕧 چھوٹی سوئی 7 اور 8 کے درمیان ہے اور لمبی سوئی 6 پر۔ کیا وقت ہے؟",
+          },
+          choices: [
+            { en: "6:07", es: "6:07", ur: "6:07" },
+            { en: "7:30", es: "7:30", ur: "7:30" },
+            { en: "8:00", es: "8:00", ur: "8:00" },
+            { en: "6:30", es: "6:30", ur: "6:30" },
+          ],
+          correctIndex: 1,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-1.7-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "📎 A pencil is 8 cubes long and a crayon is 5 cubes long. How much longer is the pencil?",
+            es: "📎 Un lápiz mide 8 cubos y un crayón mide 5 cubos. ¿Cuánto más largo es el lápiz?",
+            ur: "📎 پنسل 8 مکعب لمبی ہے اور کریون 5 مکعب۔ پنسل کتنی زیادہ لمبی ہے؟",
+          },
+          choices: [
+            { en: "2 cubes", es: "2 cubos", ur: "2 مکعب" },
+            { en: "13 cubes", es: "13 cubos", ur: "13 مکعب" },
+            { en: "3 cubes", es: "3 cubos", ur: "3 مکعب" },
+            { en: "4 cubes", es: "4 cubos", ur: "4 مکعب" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.7-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🕐 Which hand on a clock is the HOUR hand?",
+            es: "🕐 ¿Cuál manecilla del reloj es la de las HORAS?",
+            ur: "🕐 گھڑی پر کون سی سوئی گھنٹے کی سوئی ہے؟",
+          },
+          choices: [
+            { en: "The long hand", es: "La manecilla larga", ur: "لمبی سوئی" },
+            { en: "The short hand", es: "La manecilla corta", ur: "چھوٹی سوئی" },
+            { en: "Both hands", es: "Ambas manecillas", ur: "دونوں سوئیاں" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "qz-1.7-3",
+          type: "true-false",
+          prompt: {
+            en: "🕧 When the minute hand points to 6, the time is half past the hour (e.g., 2:30). True or False?",
+            es: "🕧 Cuando el minutero apunta al 6, la hora es y media (ej. 2:30). ¿Verdadero o falso?",
+            ur: "🕧 جب منٹ کی سوئی 6 پر ہو تو وقت آدھا گھنٹہ (مثلاً 2:30) ہوتا ہے۔ صحیح یا غلط؟",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-1.7-1",
+          emoji: "🌿📏",
+          scene: "School garden measuring day — comparing plant heights with cubes",
+          prompt: {
+            en: "Amir's plant is 9 cubes tall. Zara's plant is 6 cubes tall. How much taller is Amir's plant?",
+            es: "La planta de Amir mide 9 cubos. La de Zara mide 6 cubos. ¿Cuánto más alta es la de Amir?",
+            ur: "امیر کا پودا 9 مکعب اونچا ہے۔ زارا کا 6 مکعب۔ امیر کا پودا کتنا زیادہ اونچا ہے؟",
+          },
+          answer: 3,
+          answerUnit: { en: "cubes taller", es: "cubos más alto", ur: "مکعب زیادہ اونچا" },
+        },
+        {
+          id: "wp-1.7-2",
+          emoji: "⏰🏫",
+          scene: "School schedule — first graders read the clock at Dallas elementary",
+          prompt: {
+            en: "School lunch starts at 12:00 and ends at 12:30. How long is lunch — a whole hour or half an hour?",
+            es: "El almuerzo escolar comienza a las 12:00 y termina a las 12:30. ¿Cuánto dura el almuerzo — una hora entera o media hora?",
+            ur: "اسکول کا کھانا 12:00 پر شروع اور 12:30 پر ختم ہوتا ہے۔ کھانا کتنی دیر ہے — پوری گھنٹی یا آدھی؟",
+          },
+          answer: 30,
+          answerUnit: { en: "minutes (half an hour)", es: "minutos (media hora)", ur: "منٹ (آدھا گھنٹہ)" },
+        },
+      ],
+    },
+
+    // ─── Unit 8: Graphs & Data ────────────────────────────────────────────────
     {
       teks: "1.8A",
       cambridge: "Stage 1 · 1Dh1",
@@ -644,6 +1408,193 @@ const grade1: Grade = {
             { en: "Plastic", es: "Plástico", ur: "پلاسٹک" },
           ],
           correctIndex: 1,
+        },
+      ],
+    },
+
+    // ─── Unit 9: Financial Literacy ──────────────────────────────────────────
+    {
+      teks: "1.9",
+      cambridge: "Stage 2 · 2Mm3",
+      emoji: "💼",
+      title: {
+        en: "Needs, Wants & Saving",
+        es: "Necesidades, Deseos y Ahorrar",
+        ur: "ضروریات، خواہشات اور بچت",
+      },
+      vocabulary: [
+        {
+          id: "need",
+          emoji: "🏠",
+          word: { en: "need", es: "necesidad", ur: "ضرورت" },
+          definition: {
+            en: "something you must have to live — like food, shelter, and clothing",
+            es: "algo que necesitas para vivir — como comida, refugio y ropa",
+            ur: "وہ چیز جو زندگی کے لیے ضروری ہو — جیسے کھانا، گھر، اور کپڑے",
+          },
+        },
+        {
+          id: "want",
+          emoji: "🎮",
+          word: { en: "want", es: "deseo", ur: "خواہش" },
+          definition: {
+            en: "something you would like to have but do not need to live",
+            es: "algo que desearías tener pero que no necesitas para vivir",
+            ur: "وہ چیز جو تم چاہتے ہو لیکن زندگی کے لیے ضروری نہیں",
+          },
+        },
+        {
+          id: "income",
+          emoji: "💵",
+          word: { en: "income", es: "ingreso", ur: "آمدنی" },
+          definition: {
+            en: "money you receive for doing work",
+            es: "dinero que recibes por hacer un trabajo",
+            ur: "کام کرنے کے بدلے ملنے والے پیسے",
+          },
+        },
+        {
+          id: "spend",
+          emoji: "🛒",
+          word: { en: "spend", es: "gastar", ur: "خرچ کرنا" },
+          definition: {
+            en: "to use money to buy something",
+            es: "usar dinero para comprar algo",
+            ur: "کچھ خریدنے کے لیے پیسے لگانا",
+          },
+        },
+        {
+          id: "save",
+          emoji: "🐖",
+          word: { en: "save", es: "ahorrar", ur: "بچانا" },
+          definition: {
+            en: "to keep money to use later instead of spending it now",
+            es: "guardar dinero para usarlo después en lugar de gastarlo ahora",
+            ur: "پیسے رکھنا تاکہ بعد میں استعمال کریں بجائے ابھی خرچ کریں",
+          },
+        },
+      ],
+      lesson: {
+        en: "💼 **Making smart choices with money!**\n\n**Needs vs. Wants:**\n• A **need** is something you must have: food 🍎, clothing 👕, shelter 🏠\n• A **want** is something extra that is nice to have: toys 🎮, candy 🍬, video games\n\n**Income:** When you do chores or help at home, you might earn an **allowance** — that is income!\n\n**Spend or Save?**\nIf a toy costs $5 and you only have $2, you need to **save** $3 more before you can buy it.\n\n🌿 In our community, families make choices every day about needs and wants. Saving up for something special teaches patience and planning. When you save, your money grows! 💰",
+        es: "💼 **¡Tomando decisiones inteligentes con el dinero!**\n\n**Necesidades vs. Deseos:**\n• Una **necesidad** es algo que debes tener: comida 🍎, ropa 👕, refugio 🏠\n• Un **deseo** es algo extra que es agradable tener: juguetes 🎮, dulces 🍬\n\n**Ingresos:** Cuando haces quehaceres o ayudas en casa, puedes ganar una **mesada** — ¡eso es un ingreso!\n\n**¿Gastar o Ahorrar?**\nSi un juguete cuesta $5 y solo tienes $2, necesitas **ahorrar** $3 más antes de comprarlo.\n\n🌿 En nuestra comunidad, las familias toman decisiones cada día sobre necesidades y deseos. ¡Ahorrar para algo especial enseña paciencia y planificación! 💰",
+        ur: "💼 **پیسوں کے ساتھ سمجھدار فیصلے!**\n\n**ضروریات بنام خواہشات:**\n• **ضرورت** وہ چیز ہے جو لازمی ہو: کھانا 🍎، کپڑے 👕، گھر 🏠\n• **خواہش** وہ اضافی چیز ہے جو اچھی لگے: کھلونے 🎮، مٹھائی 🍬\n\n**آمدنی:** جب تم گھر کے کام کرتے ہو تو جیب خرچ مل سکتا ہے — یہ آمدنی ہے!\n\n**خرچ یا بچت؟**\nاگر کھلونہ $5 کا ہے اور تمہارے پاس صرف $2 ہیں تو $3 مزید **بچانے** ہوں گے۔\n\n🌿 ہماری کمیونٹی میں گھرانے ہر روز ضروریات اور خواہشات کے بارے میں فیصلے کرتے ہیں۔ کسی خاص چیز کے لیے بچت کرنا صبر اور منصوبہ بندی سکھاتا ہے! 💰",
+      },
+      exercises: [
+        {
+          id: "ex-1.9-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🏠 Which of these is a NEED?",
+            es: "🏠 ¿Cuál de estas es una NECESIDAD?",
+            ur: "🏠 ان میں سے کون سی ضرورت ہے؟",
+          },
+          choices: [
+            { en: "A new video game", es: "Un videojuego nuevo", ur: "ایک نیا ویڈیو گیم" },
+            { en: "Food to eat", es: "Comida para comer", ur: "کھانے کے لیے کھانا" },
+            { en: "A toy car", es: "Un carro de juguete", ur: "ایک کھلونا گاڑی" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "ex-1.9-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "💵 Lila does chores at home and earns $1 each week. She wants to buy a book that costs $4. How many weeks does she need to save?",
+            es: "💵 Lila hace quehaceres en casa y gana $1 por semana. Quiere comprar un libro que cuesta $4. ¿Cuántas semanas necesita ahorrar?",
+            ur: "💵 لیلا گھر کے کام کرتی ہے اور ہر ہفتے $1 کماتی ہے۔ وہ $4 کی کتاب خریدنا چاہتی ہے۔ اسے کتنے ہفتے بچانے ہوں گے؟",
+          },
+          choices: [
+            { en: "2 weeks", es: "2 semanas", ur: "2 ہفتے" },
+            { en: "5 weeks", es: "5 semanas", ur: "5 ہفتے" },
+            { en: "4 weeks", es: "4 semanas", ur: "4 ہفتے" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-1.9-3",
+          type: "true-false",
+          prompt: {
+            en: "🎮 A toy is a want, not a need. True or False?",
+            es: "🎮 Un juguete es un deseo, no una necesidad. ¿Verdadero o falso?",
+            ur: "🎮 کھلونہ ایک خواہش ہے، ضرورت نہیں۔ صحیح یا غلط؟",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-1.9-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🐖 Saving money means ___.",
+            es: "🐖 Ahorrar dinero significa ___.",
+            ur: "🐖 پیسے بچانے کا مطلب ہے ___۔",
+          },
+          choices: [
+            { en: "Spending it all at once", es: "Gastarlo todo de una vez", ur: "سب ایک بار خرچ کرنا" },
+            { en: "Keeping it to use later", es: "Guardarlo para usarlo después", ur: "بعد میں استعمال کے لیے رکھنا" },
+            { en: "Giving it all away", es: "Darlo todo", ur: "سب دے دینا" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "qz-1.9-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "👕 Which of these is a WANT?",
+            es: "👕 ¿Cuál de estas es un DESEO?",
+            ur: "👕 ان میں سے کون سی خواہش ہے؟",
+          },
+          choices: [
+            { en: "Clean water to drink", es: "Agua limpia para beber", ur: "پینے کا صاف پانی" },
+            { en: "Clothes to stay warm", es: "Ropa para abrigarse", ur: "گرم رکھنے کے لیے کپڑے" },
+            { en: "A new pair of sneakers (for fun)", es: "Un par de tenis nuevos (por gusto)", ur: "نئے جوتے (مزے کے لیے)" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-1.9-3",
+          type: "true-false",
+          prompt: {
+            en: "💵 Income is money you receive for doing work. True or False?",
+            es: "💵 Un ingreso es el dinero que recibes por hacer un trabajo. ¿Verdadero o falso?",
+            ur: "💵 آمدنی وہ پیسے ہیں جو آپ کو کام کرنے کے بدلے ملتے ہیں۔ صحیح یا غلط؟",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-1.9-1",
+          emoji: "🐖💰",
+          scene: "First grader saving up for a book at a Dallas school book fair",
+          prompt: {
+            en: "Marcus earns $2 a week helping at home. He wants to buy a book that costs $6. How many weeks must he save?",
+            es: "Marcus gana $2 por semana ayudando en casa. Quiere comprar un libro que cuesta $6. ¿Cuántas semanas debe ahorrar?",
+            ur: "مارکس گھر میں مدد کر کے ہر ہفتے $2 کماتا ہے۔ وہ $6 کی کتاب خریدنا چاہتا ہے۔ اسے کتنے ہفتے بچانے ہوں گے؟",
+          },
+          answer: 3,
+          answerUnit: { en: "weeks", es: "semanas", ur: "ہفتے" },
+        },
+        {
+          id: "wp-1.9-2",
+          emoji: "🏪🌿",
+          scene: "Family decides between needs and wants at a community store",
+          prompt: {
+            en: "A family has $10. They need to buy bread ($3) and milk ($2). After buying both, how much money is left to save?",
+            es: "Una familia tiene $10. Necesita comprar pan ($3) y leche ($2). Después de comprar ambos, ¿cuánto dinero le queda para ahorrar?",
+            ur: "ایک خاندان کے پاس $10 ہیں۔ انہیں روٹی ($3) اور دودھ ($2) خریدنا ہے۔ دونوں خریدنے کے بعد بچانے کے لیے کتنے پیسے بچتے ہیں؟",
+          },
+          answer: 5,
+          answerUnit: { en: "dollars", es: "dólares", ur: "ڈالر" },
         },
       ],
     },
