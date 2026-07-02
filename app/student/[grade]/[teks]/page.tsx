@@ -98,7 +98,7 @@ export default async function UnitPage({
             </p>
           </div>
         </div>
-        <UnitTabs unit={unit} />
+        <UnitTabs unit={unit} grade={grade} />
       </main>
     </div>
   );

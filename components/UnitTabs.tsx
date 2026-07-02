@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import {
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
-  Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer,
+  Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer, Hash,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -54,10 +54,11 @@ const vocabSymbolMap: Record<string, string> = {
 };
 import { TeksUnit, ExerciseQuestion, Fluency, WordProblem } from "@/data/types";
 import { useLanguage } from "./LanguageContext";
+import NumbersDrill from "./NumbersDrill";
 
-type Tab = "vocab" | "lesson" | "exercises" | "apply" | "quiz" | "story" | "fluency";
+type Tab = "vocab" | "lesson" | "exercises" | "apply" | "quiz" | "story" | "fluency" | "numbers";
 
-const tabs: { id: Tab; label: string; icon: LucideIcon }[] = [
+const baseTabs: { id: Tab; label: string; icon: LucideIcon }[] = [
   { id: "vocab",     label: "Vocabulary",  icon: BookOpen       },
   { id: "lesson",    label: "Lesson",       icon: GraduationCap  },
   { id: "exercises", label: "Exercises",    icon: PencilLine     },
@@ -66,6 +67,9 @@ const tabs: { id: Tab; label: string; icon: LucideIcon }[] = [
   { id: "story",     label: "Story",        icon: BookMarked     },
   { id: "fluency",   label: "Fluency",      icon: Zap            },
 ];
+
+const numbersTab: { id: Tab; label: string; icon: LucideIcon } =
+  { id: "numbers", label: "Numbers", icon: Hash };
 
 function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: string | null }) {
   const [answers, setAnswers] = useState<Record<string, string>>({});
@@ -188,9 +192,11 @@ function getLang(text: { en: string; es: string; ur: string }, lang: string | nu
   return text.en;
 }
 
-export default function UnitTabs({ unit }: { unit: TeksUnit }) {
+export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: string }) {
   const [activeTab, setActiveTab] = useState<Tab>("vocab");
   const { language } = useLanguage();
+  const showNumbers = language === "es" && ["K", "1", "2", "3"].includes(grade);
+  const tabs = showNumbers ? [...baseTabs, numbersTab] : baseTabs;
 
   return (
     <div>
@@ -394,6 +400,9 @@ export default function UnitTabs({ unit }: { unit: TeksUnit }) {
           )}
         </div>
       )}
+
+      {/* Numbers 1–50 */}
+      {activeTab === "numbers" && <NumbersDrill />}
     </div>
   );
 }
