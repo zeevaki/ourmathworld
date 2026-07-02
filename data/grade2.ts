@@ -1,4 +1,4 @@
-import { Grade } from "./types";
+﻿import { Grade } from "./types";
 
 const grade2: Grade = {
   grade: 2,
@@ -9,7 +9,7 @@ const grade2: Grade = {
     {
       teks: "2.4A",
       cambridge: "Stage 2 · 2Nc1",
-      emoji: "🥫",
+      emoji: "🌿",
       lessonImage: "2.4A_Lesson.png",
       title: {
         en: "Adding & Subtracting",
@@ -69,24 +69,24 @@ const grade2: Grade = {
         },
       ],
       lesson: {
-        en: "🥫 **Math can help our community!** Our school is running a food drive to help families who need food. When we **add**, we count how much we collected together. When we **subtract**, we find out how much more we still need.\n\nExample: Our class brought 6 cans on Monday and 5 cans on Tuesday. 6 + 5 = **11 cans total!** The food bank needs 20 cans. 20 - 11 = **9 more cans to go!** You are helping real families with your math! 💪",
-        es: "🥫 **¡Las matemáticas pueden ayudar a nuestra comunidad!** Nuestra escuela tiene una colecta de alimentos para ayudar a familias que necesitan comida. Cuando **sumamos**, contamos todo lo que recolectamos juntos. Cuando **restamos**, averiguamos cuánto más necesitamos.\n\nEjemplo: Nuestra clase trajo 6 latas el lunes y 5 el martes. 6 + 5 = **¡11 latas en total!** El banco de alimentos necesita 20 latas. 20 - 11 = **¡9 latas más!** ¡Estás ayudando a familias reales con tus matemáticas! 💪",
-        ur: "🥫 **ریاضی ہماری کمیونٹی کی مدد کر سکتی ہے!** ہمارا اسکول کھانے کی مہم چلا رہا ہے تاکہ ضرورتمند خاندانوں کی مدد ہو سکے۔ جب ہم **جمع** کرتے ہیں تو ہم دیکھتے ہیں کہ مل کر کتنا جمع کیا۔ جب **تفریق** کرتے ہیں تو پتہ چلتا ہے کہ ابھی کتنا اور چاہیے۔\n\nمثال: ہماری کلاس نے پیر کو 6 ڈبے اور منگل کو 5 ڈبے لائے۔ 6 + 5 = **کل 11 ڈبے!** فوڈ بینک کو 20 ڈبے چاہیے۔ 20 - 11 = **9 مزید ڈبے چاہیے!** تم اپنی ریاضی سے اصلی خاندانوں کی مدد کر رہے ہو! 💪",
+        en: "🌿 **Math can help our community!** Our school is running a food drive to help families who need food. When we **add**, we count how much we collected together. When we **subtract**, we find out how much more we still need.\n\nExample: Our class brought 6 cans on Monday and 5 cans on Tuesday. 6 + 5 = **11 cans total!** The food bank needs 20 cans. 20 - 11 = **9 more cans to go!** You are helping real families with your math! 💪",
+        es: "🌿 **¡Las matemáticas pueden ayudar a nuestra comunidad!** Nuestra escuela tiene una colecta de alimentos para ayudar a familias que necesitan comida. Cuando **sumamos**, contamos todo lo que recolectamos juntos. Cuando **restamos**, averiguamos cuánto más necesitamos.\n\nEjemplo: Nuestra clase trajo 6 latas el lunes y 5 el martes. 6 + 5 = **¡11 latas en total!** El banco de alimentos necesita 20 latas. 20 - 11 = **¡9 latas más!** ¡Estás ayudando a familias reales con tus matemáticas! 💪",
+        ur: "🌿 **ریاضی ہماری کمیونٹی کی مدد کر سکتی ہے!** ہمارا اسکول کھانے کی مہم چلا رہا ہے تاکہ ضرورتمند خاندانوں کی مدد ہو سکے۔ جب ہم **جمع** کرتے ہیں تو ہم دیکھتے ہیں کہ مل کر کتنا جمع کیا۔ جب **تفریق** کرتے ہیں تو پتہ چلتا ہے کہ ابھی کتنا اور چاہیے۔\n\nمثال: ہماری کلاس نے پیر کو 6 ڈبے اور منگل کو 5 ڈبے لائے۔ 6 + 5 = **کل 11 ڈبے!** فوڈ بینک کو 20 ڈبے چاہیے۔ 20 - 11 = **9 مزید ڈبے چاہیے!** تم اپنی ریاضی سے اصلی خاندانوں کی مدد کر رہے ہو! 💪",
       },
       exercises: [
         {
           id: "ex-2.4A-1",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 Your class collected 7 cans of food on Monday and 6 cans on Friday for the food drive. How many cans did you collect in all?",
-            es: "🥫 Tu clase recolectó 7 latas el lunes y 6 latas el viernes para la colecta. ¿Cuántas latas recolectaron en total?",
-            ur: "🥫 تمہاری کلاس نے فوڈ ڈرائیو کے لیے پیر کو 7 ڈبے اور جمعہ کو 6 ڈبے جمع کیے۔ کل کتنے ڈبے جمع ہوئے؟",
+            en: "🍃 Your class collected 24 cans of food on Monday and 15 cans on Friday for the food drive. How many cans did you collect in all?",
+            es: "🍃 Tu clase recolectó 24 latas el lunes y 15 latas el viernes para la colecta. ¿Cuántas latas recolectaron en total?",
+            ur: "🍃 تمہاری کلاس نے فوڈ ڈرائیو کے لیے پیر کو 24 ڈبے اور جمعہ کو 15 ڈبے جمع کیے۔ کل کتنے ڈبے جمع ہوئے؟",
           },
           choices: [
-            { en: "12", es: "12", ur: "12" },
-            { en: "13", es: "13", ur: "13" },
-            { en: "14", es: "14", ur: "14" },
-            { en: "11", es: "11", ur: "11" },
+            { en: "37", es: "37", ur: "37" },
+            { en: "39", es: "39", ur: "39" },
+            { en: "41", es: "41", ur: "41" },
+            { en: "35", es: "35", ur: "35" },
           ],
           correctIndex: 1,
         },
@@ -129,9 +129,9 @@ const grade2: Grade = {
           type: "multiple-choice",
           image: "2.4A_Qz_1.png",
           prompt: {
-            en: "🥫 The food bank had 20 bags of rice. They gave 13 bags to families in need. How many bags are left?",
-            es: "🥫 El banco de alimentos tenía 20 bolsas de arroz. Repartieron 13 bolsas a familias que las necesitaban. ¿Cuántas bolsas quedan?",
-            ur: "🥫 فوڈ بینک کے پاس چاول کے 20 تھیلے تھے۔ انہوں نے ضرورتمند خاندانوں کو 13 تھیلے دیے۔ کتنے تھیلے بچے؟",
+            en: "🌿 The food bank had 20 bags of rice. They gave 13 bags to families in need. How many bags are left?",
+            es: "🌿 El banco de alimentos tenía 20 bolsas de arroz. Repartieron 13 bolsas a familias que las necesitaban. ¿Cuántas bolsas quedan?",
+            ur: "🌿 فوڈ بینک کے پاس چاول کے 20 تھیلے تھے۔ انہوں نے ضرورتمند خاندانوں کو 13 تھیلے دیے۔ کتنے تھیلے بچے؟",
           },
           choices: [
             { en: "8", es: "8", ur: "8" },
@@ -518,9 +518,9 @@ const grade2: Grade = {
           id: "qz-2.8A-3",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 Which shape has 4 equal sides — like a fair garden plot where every student gets the same space?",
-            es: "🥫 ¿Qué figura tiene 4 lados iguales — como un cuadro de jardín justo donde cada estudiante tiene el mismo espacio?",
-            ur: "🥫 کون سی شکل کے 4 برابر اطراف ہیں — جیسے منصفانہ باغ کا ٹکڑا جہاں ہر طالب علم کو برابر جگہ ملے؟",
+            en: "🌿 Which shape has 4 equal sides — like a fair garden plot where every student gets the same space?",
+            es: "🌿 ¿Qué figura tiene 4 lados iguales — como un cuadro de jardín justo donde cada estudiante tiene el mismo espacio?",
+            ur: "🌿 کون سی شکل کے 4 برابر اطراف ہیں — جیسے منصفانہ باغ کا ٹکڑا جہاں ہر طالب علم کو برابر جگہ ملے؟",
           },
           choices: [
             { en: "Circle", es: "Círculo", ur: "دائرہ" },
@@ -1327,7 +1327,7 @@ const grade2: Grade = {
       vocabulary: [
         { id: "sphere", emoji: "🌍", word: { en: "sphere", es: "esfera", ur: "کرہ" }, definition: { en: "a perfectly round solid shape with no flat faces — like a ball or the Earth", es: "una forma sólida perfectamente redonda sin caras planas — como una pelota o la Tierra", ur: "ایک بالکل گول ٹھوس شکل جس میں کوئی چپٹی سطح نہیں — جیسے گیند یا کرۂ زمین" } },
         { id: "cone", emoji: "🍦", word: { en: "cone", es: "cono", ur: "مخروط" }, definition: { en: "a solid shape with a flat circular base and a curved side that comes to a point at the top", es: "una forma sólida con una base circular plana y un lado curvo que termina en un punto", ur: "ایک ٹھوس شکل جس میں ایک گول چپٹی بنیاد اور اوپر نوک ہوتی ہے" } },
-        { id: "cylinder", emoji: "🥫", word: { en: "cylinder", es: "cilindro", ur: "بیلن" }, definition: { en: "a solid shape with two flat circular bases connected by a curved surface — like a can or a tree trunk", es: "una forma sólida con dos bases circulares planas unidas por una superficie curva — como una lata o un tronco", ur: "ایک ٹھوس شکل جس کے دو گول چپٹے سرے اور ایک خمیدہ سطح ہوتی ہے — جیسے ڈبہ یا درخت کا تنہ" } },
+        { id: "cylinder", emoji: "🌿", word: { en: "cylinder", es: "cilindro", ur: "بیلن" }, definition: { en: "a solid shape with two flat circular bases connected by a curved surface — like a can or a tree trunk", es: "una forma sólida con dos bases circulares planas unidas por una superficie curva — como una lata o un tronco", ur: "ایک ٹھوس شکل جس کے دو گول چپٹے سرے اور ایک خمیدہ سطح ہوتی ہے — جیسے ڈبہ یا درخت کا تنہ" } },
         { id: "prism", emoji: "📦", word: { en: "rectangular prism", es: "prisma rectangular", ur: "مستطیل منشور" }, definition: { en: "a solid shape with 6 flat rectangular faces — like a box or a brick", es: "una forma sólida con 6 caras rectangulares planas — como una caja o un ladrillo", ur: "ایک ٹھوس شکل جس کی 6 چپٹی مستطیل سطحیں ہوتی ہیں — جیسے ڈبہ یا اینٹ" } },
         { id: "face", emoji: "🟦", word: { en: "face", es: "cara", ur: "سطح" }, definition: { en: "a flat surface on a 3D solid; a rectangular prism has 6 faces", es: "una superficie plana de un sólido 3D; un prisma rectangular tiene 6 caras", ur: "تین جہتی شکل کی چپٹی سطح؛ مستطیل منشور کی 6 سطحیں ہوتی ہیں" } },
       ],

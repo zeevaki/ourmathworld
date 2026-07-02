@@ -1,4 +1,4 @@
-import { Grade } from "./types";
+﻿import { Grade } from "./types";
 
 const grade4: Grade = {
   grade: 4,
@@ -69,9 +69,9 @@ const grade4: Grade = {
           id: "ex-4.4D-1",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A food drive volunteer packs 32 cans per box. The class fills 5 boxes for families in need. How many cans did they pack in all?",
-            es: "🥫 Un voluntario de la colecta empaca 32 latas por caja. La clase llena 5 cajas para familias necesitadas. ¿Cuántas latas empacaron en total?",
-            ur: "🥫 فوڈ ڈرائیو کا رضاکار فی بکسہ 32 ڈبے پیک کرتا ہے۔ کلاس ضرورتمند خاندانوں کے لیے 5 بکسے بھرتی ہے۔ انہوں نے کل کتنے ڈبے پیک کیے؟",
+            en: "🌿 A food drive volunteer packs 32 cans per box. The class fills 5 boxes for families in need. How many cans did they pack in all?",
+            es: "🌿 Un voluntario de la colecta empaca 32 latas por caja. La clase llena 5 cajas para familias necesitadas. ¿Cuántas latas empacaron en total?",
+            ur: "🌿 فوڈ ڈرائیو کا رضاکار فی بکسہ 32 ڈبے پیک کرتا ہے۔ کلاس ضرورتمند خاندانوں کے لیے 5 بکسے بھرتی ہے۔ انہوں نے کل کتنے ڈبے پیک کیے؟",
           },
           choices: [
             { en: "150", es: "150", ur: "150" },
@@ -242,9 +242,9 @@ const grade4: Grade = {
           id: "ex-4.3E-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A community pantry had 7/8 of a shelf filled with canned food. After giving out supplies, 3/8 of the shelf was used. How much food is left on the shelf?",
-            es: "🥫 Una despensa comunitaria tenía 7/8 de un estante lleno de comida enlatada. Después de repartir suministros, se usó 3/8 del estante. ¿Cuánta comida queda en el estante?",
-            ur: "🥫 ایک کمیونٹی پینٹری کا 7/8 شیلف ڈبہ بند کھانے سے بھرا تھا۔ سامان بانٹنے کے بعد 3/8 شیلف استعمال ہو گئی۔ شیلف پر کتنا کھانا بچا؟",
+            en: "🌿 A community pantry had 7/8 of a shelf filled with canned food. After giving out supplies, 3/8 of the shelf was used. How much food is left on the shelf?",
+            es: "🌿 Una despensa comunitaria tenía 7/8 de un estante lleno de comida enlatada. Después de repartir suministros, se usó 3/8 del estante. ¿Cuánta comida queda en el estante?",
+            ur: "🌿 ایک کمیونٹی پینٹری کا 7/8 شیلف ڈبہ بند کھانے سے بھرا تھا۔ سامان بانٹنے کے بعد 3/8 شیلف استعمال ہو گئی۔ شیلف پر کتنا کھانا بچا؟",
           },
           choices: [
             { en: "3/8", es: "3/8", ur: "3/8" },

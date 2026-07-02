@@ -1,4 +1,4 @@
-import { Grade } from "./types";
+﻿import { Grade } from "./types";
 
 const grade3: Grade = {
   grade: 3,
@@ -70,7 +70,7 @@ const grade3: Grade = {
         },
       ],
       lesson: {
-        en: "🌱 **Multiplication helps us plan for our community!**\n\nWhen we pack food boxes for families, we put the **same number** of cans in every box. Instead of adding over and over, we **multiply**!\n\n🧡 Example: We pack 6 boxes. Each box gets 8 cans of food.\n6 × 8 = **48 cans** — that's enough to feed 6 families!\n\nThink of it as an **array** — 6 rows of boxes with 8 cans each:\n🥫🥫🥫🥫🥫🥫🥫🥫\n🥫🥫🥫🥫🥫🥫🥫🥫\n🥫🥫🥫🥫🥫🥫🥫🥫\n🥫🥫🥫🥫🥫🥫🥫🥫\n🥫🥫🥫🥫🥫🥫🥫🥫\n🥫🥫🥫🥫🥫🥫🥫🥫\n\nCount them — 6 × 8 = 48! Multiplication saves time so you can help more people faster. 🌍",
+        en: "🌱 **Multiplication helps us plan for our community!**\n\nWhen we pack food boxes for families, we put the **same number** of cans in every box. Instead of adding over and over, we **multiply**!\n\n🧡 Example: We pack 6 boxes. Each box gets 8 cans of food.\n6 × 8 = **48 cans** — that's enough to feed 6 families!\n\nThink of it as an **array** — 6 rows of boxes with 8 cans each:\n🌿🌿🌿🌿🌿🌿🌿🌿\n🌿🌿🌿🌿🌿🌿🌿🌿\n🌿🌿🌿🌿🌿🌿🌿🌿\n🌿🌿🌿🌿🌿🌿🌿🌿\n🌿🌿🌿🌿🌿🌿🌿🌿\n🌿🌿🌿🌿🌿🌿🌿🌿\n\nCount them — 6 × 8 = 48! Multiplication saves time so you can help more people faster. 🌍",
         es: "🌱 **¡La multiplicación nos ayuda a planear para nuestra comunidad!**\n\nCuando empacamos cajas de comida para familias, ponemos el **mismo número** de latas en cada caja. ¡En lugar de sumar una y otra vez, **multiplicamos**!\n\n🧡 Ejemplo: Empacamos 6 cajas. Cada caja recibe 8 latas de comida.\n6 × 8 = **48 latas** — ¡suficiente para alimentar a 6 familias!\n\nPiénsalo como un **arreglo** — 6 filas de cajas con 8 latas cada una.\n\n¡Cuéntalas — 6 × 8 = 48! La multiplicación ahorra tiempo para que puedas ayudar a más personas más rápido. 🌍",
         ur: "🌱 **ضرب ہمیں کمیونٹی کے لیے منصوبہ بنانے میں مدد کرتی ہے!**\n\nجب ہم خاندانوں کے لیے کھانے کے بکسے بھرتے ہیں تو ہر بکسے میں **ایک جتنے** ڈبے رکھتے ہیں۔ بار بار جمع کرنے کی بجائے **ضرب** کرتے ہیں!\n\n🧡 مثال: ہم 6 بکسے بھرتے ہیں۔ ہر بکسے میں 8 ڈبے۔\n6 × 8 = **48 ڈبے** — 6 خاندانوں کے لیے کافی!\n\nاسے **صف** کی طرح سوچو — 8 ڈبوں والی 6 قطاریں۔\n\nگنو — 6 × 8 = 48! ضرب وقت بچاتی ہے تاکہ تم زیادہ لوگوں کی تیزی سے مدد کر سکو۔ 🌍",
       },
@@ -95,9 +95,9 @@ const grade3: Grade = {
           id: "ex-3.4F-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 Volunteers packed food bags for a community drive. They made 9 bags and put 6 cans in each bag. What is the total number of cans?",
-            es: "🥫 Los voluntarios empacaron bolsas de comida para una colecta comunitaria. Hicieron 9 bolsas y pusieron 6 latas en cada bolsa. ¿Cuál es el número total de latas?",
-            ur: "🥫 رضاکاروں نے کمیونٹی مہم کے لیے کھانے کے تھیلے بھرے۔ انہوں نے 9 تھیلے بنائے اور ہر تھیلے میں 6 ڈبے رکھے۔ ڈبوں کی کل تعداد کیا ہے؟",
+            en: "🌿 Volunteers packed food bags for a community drive. They made 9 bags and put 6 cans in each bag. What is the total number of cans?",
+            es: "🌿 Los voluntarios empacaron bolsas de comida para una colecta comunitaria. Hicieron 9 bolsas y pusieron 6 latas en cada bolsa. ¿Cuál es el número total de latas?",
+            ur: "🌿 رضاکاروں نے کمیونٹی مہم کے لیے کھانے کے تھیلے بھرے۔ انہوں نے 9 تھیلے بنائے اور ہر تھیلے میں 6 ڈبے رکھے۔ ڈبوں کی کل تعداد کیا ہے؟",
           },
           choices: [
             { en: "54", es: "54", ur: "54" },
@@ -310,9 +310,9 @@ const grade3: Grade = {
           id: "qz-3.4K-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A food bank has 56 cans of soup to pack equally into boxes. Each box holds 7 cans. How many boxes can they fill?",
-            es: "🥫 Un banco de alimentos tiene 56 latas de sopa para empacar igualmente en cajas. Cada caja tiene 7 latas. ¿Cuántas cajas pueden llenar?",
-            ur: "🥫 ایک فوڈ بینک کے پاس 56 سوپ کے ڈبے برابر بکسوں میں پیک کرنے کے لیے ہیں۔ ہر بکسے میں 7 ڈبے آتے ہیں۔ وہ کتنے بکسے بھر سکتے ہیں؟",
+            en: "🌿 A food bank has 56 cans of soup to pack equally into boxes. Each box holds 7 cans. How many boxes can they fill?",
+            es: "🌿 Un banco de alimentos tiene 56 latas de sopa para empacar igualmente en cajas. Cada caja tiene 7 latas. ¿Cuántas cajas pueden llenar?",
+            ur: "🌿 ایک فوڈ بینک کے پاس 56 سوپ کے ڈبے برابر بکسوں میں پیک کرنے کے لیے ہیں۔ ہر بکسے میں 7 ڈبے آتے ہیں۔ وہ کتنے بکسے بھر سکتے ہیں؟",
           },
           choices: [
             { en: "6", es: "6", ur: "6" },
@@ -476,9 +476,9 @@ const grade3: Grade = {
           id: "qz-3.3A-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A food box has 8 slots. 5 slots are filled with vegetables and the rest are empty. Which fraction shows the filled slots?",
-            es: "🥫 Una caja de comida tiene 8 espacios. 5 espacios están llenos con verduras y el resto están vacíos. ¿Qué fracción muestra los espacios llenos?",
-            ur: "🥫 کھانے کے بکسے میں 8 جگہیں ہیں۔ 5 جگہوں میں سبزیاں بھری ہیں اور باقی خالی ہیں۔ کون سی کسر بھری جگہیں ظاہر کرتی ہے؟",
+            en: "🌿 A food box has 8 slots. 5 slots are filled with vegetables and the rest are empty. Which fraction shows the filled slots?",
+            es: "🌿 Una caja de comida tiene 8 espacios. 5 espacios están llenos con verduras y el resto están vacíos. ¿Qué fracción muestra los espacios llenos?",
+            ur: "🌿 کھانے کے بکسے میں 8 جگہیں ہیں۔ 5 جگہوں میں سبزیاں بھری ہیں اور باقی خالی ہیں۔ کون سی کسر بھری جگہیں ظاہر کرتی ہے؟",
           },
           choices: [
             { en: "3/8", es: "3/8", ur: "3/8" },

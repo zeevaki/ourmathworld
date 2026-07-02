@@ -1,4 +1,4 @@
-import { Grade } from "./types";
+﻿import { Grade } from "./types";
 
 const kindergarten: Grade = {
   grade: 0,
@@ -69,9 +69,9 @@ const kindergarten: Grade = {
           id: "ex-K.2C-1",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 You are helping sort cans for the food drive at school. You count: 1, 2, 3, 4, 5, 6, 7. How many cans did you count?",
-            es: "🥫 Estás ayudando a ordenar latas para la colecta de alimentos en la escuela. Cuentas: 1, 2, 3, 4, 5, 6, 7. ¿Cuántas latas contaste?",
-            ur: "🥫 تم اسکول میں فوڈ ڈرائیو کے لیے ڈبے چھانٹنے میں مدد کر رہے ہو۔ تم گنتے ہو: 1، 2، 3، 4، 5، 6، 7۔ تم نے کتنے ڈبے گنے؟",
+            en: "🌿 You are helping sort cans for the food drive at school. You count: 1, 2, 3, 4, 5, 6, 7. How many cans did you count?",
+            es: "🌿 Estás ayudando a ordenar latas para la colecta de alimentos en la escuela. Cuentas: 1, 2, 3, 4, 5, 6, 7. ¿Cuántas latas contaste?",
+            ur: "🌿 تم اسکول میں فوڈ ڈرائیو کے لیے ڈبے چھانٹنے میں مدد کر رہے ہو۔ تم گنتے ہو: 1، 2، 3، 4، 5، 6، 7۔ تم نے کتنے ڈبے گنے؟",
           },
           choices: [
             { en: "6", es: "6", ur: "6" },
@@ -226,9 +226,9 @@ const kindergarten: Grade = {
           id: "ex-K.2H-1",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 Table 1 has 4 cans of food. Table 2 has 6 cans. Which table has more?",
-            es: "🥫 La mesa 1 tiene 4 latas de comida. La mesa 2 tiene 6 latas. ¿Qué mesa tiene más?",
-            ur: "🥫 میز 1 پر کھانے کے 4 ڈبے ہیں۔ میز 2 پر 6 ڈبے ہیں۔ کس میز پر زیادہ ہیں؟",
+            en: "🌿 Table 1 has 4 cans of food. Table 2 has 6 cans. Which table has more?",
+            es: "🌿 La mesa 1 tiene 4 latas de comida. La mesa 2 tiene 6 latas. ¿Qué mesa tiene más?",
+            ur: "🌿 میز 1 پر کھانے کے 4 ڈبے ہیں۔ میز 2 پر 6 ڈبے ہیں۔ کس میز پر زیادہ ہیں؟",
           },
           choices: [
             { en: "Table 1", es: "Mesa 1", ur: "میز 1" },
@@ -319,7 +319,7 @@ const kindergarten: Grade = {
     {
       teks: "K.3A",
       cambridge: "Stage 1 · 1Nc2",
-      emoji: "🥫",
+      emoji: "🌿",
       title: {
         en: "Joining & Separating",
         es: "Juntar y Separar",
@@ -368,9 +368,9 @@ const kindergarten: Grade = {
         },
       ],
       lesson: {
-        en: "🥫 **Helping families with math!** Our school is collecting cans of food for families who need it. When we put two groups of cans together, we **join** them. When we give some cans away, we **separate** them.\n\n🧡 Mia has 3 cans. Omar brings 4 more. Now we **join**: 3 and 4 is 7 cans **in all**!\n\n💛 The food bank takes 5 cans. We had 7. We **separate**: 7 take away 5 — only 2 are **left**.\n\nEvery can you count helps a real family. You are a community helper! 🌟",
-        es: "🥫 **¡Ayudamos a familias con las matemáticas!** Nuestra escuela junta latas de comida para familias que las necesitan. Cuando unimos dos grupos de latas, las **juntamos**. Cuando damos algunas latas, las **separamos**.\n\n🧡 Mia tiene 3 latas. Omar trae 4 más. **Juntamos**: 3 y 4 son 7 latas **en total**!\n\n💛 El banco de alimentos toma 5 latas. Teníamos 7. **Separamos**: 7 menos 5 — solo quedan 2 **latas**.\n\n¡Cada lata que cuentas ayuda a una familia real. Eres un ayudante de la comunidad! 🌟",
-        ur: "🥫 **ریاضی سے خاندانوں کی مدد!** ہمارا اسکول ضرورتمند خاندانوں کے لیے کھانے کے ڈبے جمع کر رہا ہے۔ جب ہم ڈبوں کے دو گروپ ایک ساتھ رکھتے ہیں تو انہیں **ملاتے** ہیں۔ جب کچھ ڈبے دے دیتے ہیں تو انہیں **الگ** کرتے ہیں۔\n\n🧡 میا کے پاس 3 ڈبے ہیں۔ عمر 4 اور لاتا ہے۔ اب **ملاتے** ہیں: 3 اور 4 = **کل** 7 ڈبے!\n\n💛 فوڈ بینک 5 ڈبے لے جاتا ہے۔ ہمارے پاس 7 تھے۔ **الگ** کرتے ہیں: 7 میں سے 5 = صرف 2 **بچے**۔\n\nتم جو بھی ڈبہ گنتے ہو وہ ایک اصلی خاندان کی مدد کرتا ہے۔ تم کمیونٹی کے مددگار ہو! 🌟",
+        en: "🌿 **Helping families with math!** Our school is collecting cans of food for families who need it. When we put two groups of cans together, we **join** them. When we give some cans away, we **separate** them.\n\n🧡 Mia has 3 cans. Omar brings 4 more. Now we **join**: 3 and 4 is 7 cans **in all**!\n\n💛 The food bank takes 5 cans. We had 7. We **separate**: 7 take away 5 — only 2 are **left**.\n\nEvery can you count helps a real family. You are a community helper! 🌟",
+        es: "🌿 **¡Ayudamos a familias con las matemáticas!** Nuestra escuela junta latas de comida para familias que las necesitan. Cuando unimos dos grupos de latas, las **juntamos**. Cuando damos algunas latas, las **separamos**.\n\n🧡 Mia tiene 3 latas. Omar trae 4 más. **Juntamos**: 3 y 4 son 7 latas **en total**!\n\n💛 El banco de alimentos toma 5 latas. Teníamos 7. **Separamos**: 7 menos 5 — solo quedan 2 **latas**.\n\n¡Cada lata que cuentas ayuda a una familia real. Eres un ayudante de la comunidad! 🌟",
+        ur: "🌿 **ریاضی سے خاندانوں کی مدد!** ہمارا اسکول ضرورتمند خاندانوں کے لیے کھانے کے ڈبے جمع کر رہا ہے۔ جب ہم ڈبوں کے دو گروپ ایک ساتھ رکھتے ہیں تو انہیں **ملاتے** ہیں۔ جب کچھ ڈبے دے دیتے ہیں تو انہیں **الگ** کرتے ہیں۔\n\n🧡 میا کے پاس 3 ڈبے ہیں۔ عمر 4 اور لاتا ہے۔ اب **ملاتے** ہیں: 3 اور 4 = **کل** 7 ڈبے!\n\n💛 فوڈ بینک 5 ڈبے لے جاتا ہے۔ ہمارے پاس 7 تھے۔ **الگ** کرتے ہیں: 7 میں سے 5 = صرف 2 **بچے**۔\n\nتم جو بھی ڈبہ گنتے ہو وہ ایک اصلی خاندان کی مدد کرتا ہے۔ تم کمیونٹی کے مددگار ہو! 🌟",
       },
       exercises: [
         {
@@ -393,9 +393,9 @@ const kindergarten: Grade = {
           id: "ex-K.3A-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 The food shelf had 8 cans. Students gave 3 cans to a family in need. How many cans are left on the shelf?",
-            es: "🥫 La despensa tenía 8 latas. Los estudiantes dieron 3 latas a una familia que las necesitaba. ¿Cuántas latas quedan en la despensa?",
-            ur: "🥫 فوڈ شیلف پر 8 ڈبے تھے۔ طلبا نے ضرورتمند خاندان کو 3 ڈبے دیے۔ شیلف پر کتنے ڈبے بچے؟",
+            en: "🌿 The food shelf had 8 cans. Students gave 3 cans to a family in need. How many cans are left on the shelf?",
+            es: "🌿 La despensa tenía 8 latas. Los estudiantes dieron 3 latas a una familia que las necesitaba. ¿Cuántas latas quedan en la despensa?",
+            ur: "🌿 فوڈ شیلف پر 8 ڈبے تھے۔ طلبا نے ضرورتمند خاندان کو 3 ڈبے دیے۔ شیلف پر کتنے ڈبے بچے؟",
           },
           choices: [
             { en: "6", es: "6", ur: "6" },

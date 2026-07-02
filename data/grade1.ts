@@ -1,4 +1,4 @@
-import { Grade } from "./types";
+﻿import { Grade } from "./types";
 
 const grade1: Grade = {
   grade: 1,
@@ -11,7 +11,7 @@ const grade1: Grade = {
     {
       teks: "1.3B",
       cambridge: "Stage 1 · 1Nc3",
-      emoji: "🥫",
+      emoji: "🌿",
       title: {
         en: "Adding & Subtracting within 20",
         es: "Sumar y Restar hasta 20",
@@ -70,9 +70,9 @@ const grade1: Grade = {
         },
       ],
       lesson: {
-        en: "🥫 **We add and subtract to help our neighbors!**\n\nOur school is collecting food for families who need it. When more food arrives, we **add** it to what we already have. When we give food to a family, we **subtract** from our total.\n\n🧡 Example: We have 8 cans on the shelf. Friends bring 7 more. **8 + 7 = 15 cans altogether!**\n\n💛 Then we pack a bag for a family: we give away 6 cans. **15 − 6 = 9 cans left.**\n\nEvery can you count is food for someone who needs it. Your math skills make a real difference! 🌟",
-        es: "🥫 **¡Sumamos y restamos para ayudar a nuestros vecinos!**\n\nNuestra escuela junta comida para familias que la necesitan. Cuando llega más comida, la **sumamos** a lo que ya tenemos. Cuando damos comida a una familia, la **restamos** de nuestro total.\n\n🧡 Ejemplo: Tenemos 8 latas en la repisa. Los amigos traen 7 más. **¡8 + 7 = 15 latas en total!**\n\n💛 Luego empacamos una bolsa para una familia: damos 6 latas. **15 − 6 = 9 latas quedan.**\n\n¡Cada lata que cuentas es comida para alguien que la necesita. ¡Tus habilidades de matemáticas hacen una diferencia real! 🌟",
-        ur: "🥫 **ہم اپنے پڑوسیوں کی مدد کے لیے جمع اور تفریق کرتے ہیں!**\n\nہمارا اسکول ضرورتمند خاندانوں کے لیے کھانا جمع کر رہا ہے۔ جب مزید کھانا آتا ہے تو ہم اسے **جمع** کرتے ہیں۔ جب کسی خاندان کو کھانا دیتے ہیں تو **تفریق** کرتے ہیں۔\n\n🧡 مثال: شیلف پر 8 ڈبے ہیں۔ دوست 7 مزید لاتے ہیں۔ **8 + 7 = سب ملا کر 15 ڈبے!**\n\n💛 پھر ایک خاندان کے لیے بیگ بھرتے ہیں: 6 ڈبے دیتے ہیں۔ **15 − 6 = 9 ڈبے بچے۔**\n\nتم جو بھی ڈبہ گنتے ہو وہ کسی ضرورتمند کے لیے کھانا ہے۔ تمہاری ریاضی واقعی فرق ڈالتی ہے! 🌟",
+        en: "🌿 **We add and subtract to help our neighbors!**\n\nOur school is collecting food for families who need it. When more food arrives, we **add** it to what we already have. When we give food to a family, we **subtract** from our total.\n\n🧡 Example: We have 8 cans on the shelf. Friends bring 7 more. **8 + 7 = 15 cans altogether!**\n\n💛 Then we pack a bag for a family: we give away 6 cans. **15 − 6 = 9 cans left.**\n\nEvery can you count is food for someone who needs it. Your math skills make a real difference! 🌟",
+        es: "🌿 **¡Sumamos y restamos para ayudar a nuestros vecinos!**\n\nNuestra escuela junta comida para familias que la necesitan. Cuando llega más comida, la **sumamos** a lo que ya tenemos. Cuando damos comida a una familia, la **restamos** de nuestro total.\n\n🧡 Ejemplo: Tenemos 8 latas en la repisa. Los amigos traen 7 más. **¡8 + 7 = 15 latas en total!**\n\n💛 Luego empacamos una bolsa para una familia: damos 6 latas. **15 − 6 = 9 latas quedan.**\n\n¡Cada lata que cuentas es comida para alguien que la necesita. ¡Tus habilidades de matemáticas hacen una diferencia real! 🌟",
+        ur: "🌿 **ہم اپنے پڑوسیوں کی مدد کے لیے جمع اور تفریق کرتے ہیں!**\n\nہمارا اسکول ضرورتمند خاندانوں کے لیے کھانا جمع کر رہا ہے۔ جب مزید کھانا آتا ہے تو ہم اسے **جمع** کرتے ہیں۔ جب کسی خاندان کو کھانا دیتے ہیں تو **تفریق** کرتے ہیں۔\n\n🧡 مثال: شیلف پر 8 ڈبے ہیں۔ دوست 7 مزید لاتے ہیں۔ **8 + 7 = سب ملا کر 15 ڈبے!**\n\n💛 پھر ایک خاندان کے لیے بیگ بھرتے ہیں: 6 ڈبے دیتے ہیں۔ **15 − 6 = 9 ڈبے بچے۔**\n\nتم جو بھی ڈبہ گنتے ہو وہ کسی ضرورتمند کے لیے کھانا ہے۔ تمہاری ریاضی واقعی فرق ڈالتی ہے! 🌟",
       },
       exercises: [
         {
@@ -95,9 +95,9 @@ const grade1: Grade = {
           id: "ex-1.3B-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 The food shelf had 17 cans. The class gave 8 cans to families in need. How many cans are left?",
-            es: "🥫 La despensa tenía 17 latas. La clase dio 8 latas a familias que las necesitaban. ¿Cuántas latas quedan?",
-            ur: "🥫 فوڈ شیلف پر 17 ڈبے تھے۔ کلاس نے ضرورتمند خاندانوں کو 8 ڈبے دیے۔ کتنے ڈبے بچے؟",
+            en: "🌿 The food shelf had 17 cans. The class gave 8 cans to families in need. How many cans are left?",
+            es: "🌿 La despensa tenía 17 latas. La clase dio 8 latas a familias que las necesitaban. ¿Cuántas latas quedan?",
+            ur: "🌿 فوڈ شیلف پر 17 ڈبے تھے۔ کلاس نے ضرورتمند خاندانوں کو 8 ڈبے دیے۔ کتنے ڈبے بچے؟",
           },
           choices: [
             { en: "10", es: "10", ur: "10" },
@@ -252,9 +252,9 @@ const grade1: Grade = {
           id: "ex-1.3C-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A ten frame has 10 spots. There are 5 cans of food on the top row. How many spots are empty on the bottom row?",
-            es: "🥫 Un marco de diez tiene 10 espacios. Hay 5 latas de comida en la fila de arriba. ¿Cuántos espacios están vacíos en la fila de abajo?",
-            ur: "🥫 ٹین فریم میں 10 جگہیں ہیں۔ اوپر کی قطار میں 5 کھانے کے ڈبے ہیں۔ نیچے کی قطار میں کتنی جگہیں خالی ہیں؟",
+            en: "🌿 A ten frame has 10 spots. There are 5 cans of food on the top row. How many spots are empty on the bottom row?",
+            es: "🌿 Un marco de diez tiene 10 espacios. Hay 5 latas de comida en la fila de arriba. ¿Cuántos espacios están vacíos en la fila de abajo?",
+            ur: "🌿 ٹین فریم میں 10 جگہیں ہیں۔ اوپر کی قطار میں 5 کھانے کے ڈبے ہیں۔ نیچے کی قطار میں کتنی جگہیں خالی ہیں؟",
           },
           choices: [
             { en: "4", es: "4", ur: "4" },
@@ -393,9 +393,9 @@ const grade1: Grade = {
           id: "ex-1.2G-1",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 Room 101 collected 14 cans of food. Room 102 collected 9 cans. Which symbol goes in the blank?  14 ___ 9",
-            es: "🥫 El salón 101 juntó 14 latas de comida. El salón 102 juntó 9 latas. ¿Qué símbolo va en el espacio?  14 ___ 9",
-            ur: "🥫 کمرہ 101 نے کھانے کے 14 ڈبے جمع کیے۔ کمرہ 102 نے 9 ڈبے جمع کیے۔ خالی جگہ میں کون سا نشان آئے گا؟  14 ___ 9",
+            en: "🌿 Room 101 collected 14 cans of food. Room 102 collected 9 cans. Which symbol goes in the blank?  14 ___ 9",
+            es: "🌿 El salón 101 juntó 14 latas de comida. El salón 102 juntó 9 latas. ¿Qué símbolo va en el espacio?  14 ___ 9",
+            ur: "🌿 کمرہ 101 نے کھانے کے 14 ڈبے جمع کیے۔ کمرہ 102 نے 9 ڈبے جمع کیے۔ خالی جگہ میں کون سا نشان آئے گا؟  14 ___ 9",
           },
           choices: [
             { en: ">", es: ">", ur: ">" },
@@ -618,9 +618,9 @@ const grade1: Grade = {
           id: "qz-1.8A-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 Food drive data: Monday: 6 cans · Tuesday: 10 cans · Wednesday: 6 cans. How many more cans were collected on Tuesday than on Monday?",
-            es: "🥫 Datos de la colecta de alimentos: Lunes: 6 latas · Martes: 10 latas · Miércoles: 6 latas. ¿Cuántas latas más se recolectaron el martes que el lunes?",
-            ur: "🥫 فوڈ ڈرائیو ڈیٹا: پیر: 6 ڈبے · منگل: 10 ڈبے · بدھ: 6 ڈبے۔ پیر کے مقابلے منگل کو کتنے زیادہ ڈبے جمع ہوئے؟",
+            en: "🌿 Food drive data: Monday: 6 cans · Tuesday: 10 cans · Wednesday: 6 cans. How many more cans were collected on Tuesday than on Monday?",
+            es: "🌿 Datos de la colecta de alimentos: Lunes: 6 latas · Martes: 10 latas · Miércoles: 6 latas. ¿Cuántas latas más se recolectaron el martes que el lunes?",
+            ur: "🌿 فوڈ ڈرائیو ڈیٹا: پیر: 6 ڈبے · منگل: 10 ڈبے · بدھ: 6 ڈبے۔ پیر کے مقابلے منگل کو کتنے زیادہ ڈبے جمع ہوئے؟",
           },
           choices: [
             { en: "3", es: "3", ur: "3" },

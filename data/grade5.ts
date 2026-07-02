@@ -1,4 +1,4 @@
-import { Grade } from "./types";
+﻿import { Grade } from "./types";
 
 const grade5: Grade = {
   grade: 5,
@@ -133,9 +133,9 @@ const grade5: Grade = {
           id: "qz-5.3E-2",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A food bank buys rice at $1.35 per pound. They purchase 56 pounds for community families. What is the total cost?",
-            es: "🥫 Un banco de alimentos compra arroz a $1.35 la libra. Compran 56 libras para las familias de la comunidad. ¿Cuál es el costo total?",
-            ur: "🥫 ایک فوڈ بینک $1.35 فی پاؤنڈ چاول خریدتا ہے۔ وہ کمیونٹی خاندانوں کے لیے 56 پاؤنڈ خریدتے ہیں۔ کل قیمت کیا ہے؟",
+            en: "🌿 A food bank buys rice at $1.35 per pound. They purchase 56 pounds for community families. What is the total cost?",
+            es: "🌿 Un banco de alimentos compra arroz a $1.35 la libra. Compran 56 libras para las familias de la comunidad. ¿Cuál es el costo total?",
+            ur: "🌿 ایک فوڈ بینک $1.35 فی پاؤنڈ چاول خریدتا ہے۔ وہ کمیونٹی خاندانوں کے لیے 56 پاؤنڈ خریدتے ہیں۔ کل قیمت کیا ہے؟",
           },
           choices: [
             { en: "$75.60", es: "$75.60", ur: "$75.60" },
@@ -226,9 +226,9 @@ const grade5: Grade = {
           id: "ex-5.6A-1",
           type: "multiple-choice",
           prompt: {
-            en: "🥫 A food donation box is 3 feet long, 2 feet wide, and 2 feet tall. What is the volume of the box?",
-            es: "🥫 Una caja de donaciones de comida mide 3 pies de largo, 2 pies de ancho y 2 pies de alto. ¿Cuál es el volumen de la caja?",
-            ur: "🥫 کھانے کا عطیہ بکسہ 3 فٹ لمبا، 2 فٹ چوڑا اور 2 فٹ اونچا ہے۔ بکسے کا حجم کیا ہے؟",
+            en: "🌿 A food donation box is 3 feet long, 2 feet wide, and 2 feet tall. What is the volume of the box?",
+            es: "🌿 Una caja de donaciones de comida mide 3 pies de largo, 2 pies de ancho y 2 pies de alto. ¿Cuál es el volumen de la caja?",
+            ur: "🌿 کھانے کا عطیہ بکسہ 3 فٹ لمبا، 2 فٹ چوڑا اور 2 فٹ اونچا ہے۔ بکسے کا حجم کیا ہے؟",
           },
           choices: [
             { en: "10 cubic feet", es: "10 pies cúbicos", ur: "10 مکعب فٹ" },
@@ -414,9 +414,9 @@ const grade5: Grade = {
           id: "ex-5.4E-3",
           type: "true-false",
           prompt: {
-            en: "🥫 In the expression 3 + 5 × 2, you must multiply first: 5 × 2 = 10, then add 3. The answer is 13, not 16.",
-            es: "🥫 En la expresión 3 + 5 × 2, debes multiplicar primero: 5 × 2 = 10, luego sumar 3. La respuesta es 13, no 16.",
-            ur: "🥫 اظہار 3 + 5 × 2 میں، پہلے ضرب کرنی ہے: 5 × 2 = 10، پھر 3 جمع کرو۔ جواب 13 ہے، 16 نہیں۔",
+            en: "🌿 In the expression 3 + 5 × 2, you must multiply first: 5 × 2 = 10, then add 3. The answer is 13, not 16.",
+            es: "🌿 En la expresión 3 + 5 × 2, debes multiplicar primero: 5 × 2 = 10, luego sumar 3. La respuesta es 13, no 16.",
+            ur: "🌿 اظہار 3 + 5 × 2 میں، پہلے ضرب کرنی ہے: 5 × 2 = 10، پھر 3 جمع کرو۔ جواب 13 ہے، 16 نہیں۔",
           },
           choices: [
             { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
