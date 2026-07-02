@@ -1,4 +1,4 @@
-﻿import { Grade } from "./types";
+import { Grade } from "./types";
 
 const grade2: Grade = {
   grade: 2,
@@ -6,6 +6,262 @@ const grade2: Grade = {
   emoji: "✌️",
   color: "#7C3AED",
   units: [
+    {
+      teks: "2.2B",
+      cambridge: "Stage 2 · 2Nn2",
+      emoji: "🔢",
+      title: { en: "Place Value to 1,200", es: "Valor Posicional hasta 1,200", ur: "1,200 تک مقامی قدر" },
+      vocabulary: [
+        {
+          id: "place-value",
+          emoji: "📍",
+          word: { en: "place value", es: "valor posicional", ur: "مقامی قدر" },
+          definition: { en: "the value of a digit based on its position in a number", es: "el valor de un dígito según su posición en el número", ur: "کسی ہندسے کی قدر جو نمبر میں اس کی جگہ سے طے ہوتی ہے" },
+        },
+        {
+          id: "digit",
+          emoji: "0️⃣",
+          word: { en: "digit", es: "dígito", ur: "ہندسہ" },
+          definition: { en: "any symbol from 0–9 used to write numbers; 347 has three digits", es: "cualquier símbolo del 0 al 9 que se usa para escribir números; 347 tiene tres dígitos", ur: "0 سے 9 تک کوئی بھی علامت جو نمبر لکھنے کے لیے استعمال ہوتی ہے؛ 347 میں تین ہندسے ہیں" },
+        },
+        {
+          id: "expanded-form",
+          emoji: "➡️",
+          word: { en: "expanded form", es: "forma desarrollada", ur: "پھیلی ہوئی شکل" },
+          definition: { en: "writing a number by showing the value of each digit: 342 = 300 + 40 + 2", es: "escribir un número mostrando el valor de cada dígito: 342 = 300 + 40 + 2", ur: "ہر ہندسے کی قدر دکھا کر نمبر لکھنا: 342 = 300 + 40 + 2" },
+        },
+        {
+          id: "standard-form",
+          emoji: "🔢",
+          word: { en: "standard form", es: "forma estándar", ur: "معیاری شکل" },
+          definition: { en: "the usual way to write a number using digits, like 342", es: "la forma usual de escribir un número usando dígitos, como 342", ur: "ہندسوں سے نمبر لکھنے کا معمول کا طریقہ، جیسے 342" },
+        },
+        {
+          id: "compare",
+          emoji: "⚖️",
+          word: { en: "compare", es: "comparar", ur: "موازنہ کرنا" },
+          definition: { en: "to look at two numbers and decide which is greater, less, or equal using <, >, or =", es: "comparar dos números para saber cuál es mayor, menor o igual usando <, > o =", ur: "دو نمبروں کو دیکھ کر < > = کی مدد سے فیصلہ کرنا کہ کون بڑا، چھوٹا یا برابر ہے" },
+        },
+      ],
+      lesson: {
+        en: "Every digit in a number has a place value. In 347: the 3 is in the hundreds place (value = 300), the 4 is in the tens place (value = 40), and the 7 is in the ones place (value = 7). Expanded form shows each part: 300 + 40 + 7. Standard form puts it back together: 347. To compare numbers, look at the highest place value first. 583 > 538 because 8 tens > 3 tens.",
+        es: "Cada dígito en un número tiene un valor posicional. En 347: el 3 está en el lugar de las centenas (valor = 300), el 4 en las decenas (valor = 40), y el 7 en las unidades (valor = 7). La forma desarrollada muestra cada parte: 300 + 40 + 7. Para comparar números, mira primero el valor posicional más alto.",
+        ur: "کسی نمبر میں ہر ہندسے کی مقامی قدر ہوتی ہے۔ 347 میں: 3 سینکڑوں کی جگہ پر ہے (قدر = 300)، 4 دہائیوں میں (قدر = 40)، 7 اکائیوں میں (قدر = 7)۔ پھیلی شکل: 300 + 40 + 7۔ موازنہ کرنے کے لیے سب سے بڑی جگہ سے شروع کریں۔",
+      },
+      exercises: [
+        { id: "ex-2.2B-1", type: "multiple-choice", prompt: { en: "🌳 A park ranger counted 347 trees. What is the value of the 3 in 347?", es: "🌳 Un guardabosques contó 347 árboles. ¿Cuál es el valor del 3 en 347?", ur: "🌳 ایک رینجر نے 347 درخت گنے۔ 347 میں 3 کی قدر کیا ہے؟" }, choices: [{ en: "3", es: "3", ur: "3" }, { en: "30", es: "30", ur: "30" }, { en: "300", es: "300", ur: "300" }, { en: "3,000", es: "3,000", ur: "3,000" }], correctIndex: 2 },
+        { id: "ex-2.2B-2", type: "multiple-choice", prompt: { en: "♻️ Students sorted 528 recyclable items. Which shows 528 in expanded form?", es: "♻️ Los estudiantes clasificaron 528 artículos. ¿Cuál muestra 528 en forma desarrollada?", ur: "♻️ طلبہ نے 528 ری سائیکل اشیاء چھانٹیں۔ 528 کی پھیلی شکل کون سی ہے؟" }, choices: [{ en: "500 + 20 + 8", es: "500 + 20 + 8", ur: "500 + 20 + 8" }, { en: "52 + 8", es: "52 + 8", ur: "52 + 8" }, { en: "5 + 2 + 8", es: "5 + 2 + 8", ur: "5 + 2 + 8" }, { en: "500 + 28", es: "500 + 28", ur: "500 + 28" }], correctIndex: 0 },
+        { id: "ex-2.2B-3", type: "multiple-choice", prompt: { en: "🐝 A bee shelter tracked 694 bees. Which digit is in the TENS place?", es: "🐝 Un refugio de abejas contabilizó 694 abejas. ¿Qué dígito está en el lugar de las decenas?", ur: "🐝 ایک مکھی پناہ گاہ نے 694 مکھیاں ریکارڈ کیں۔ دہائی کی جگہ پر کون سا ہندسہ ہے؟" }, choices: [{ en: "6", es: "6", ur: "6" }, { en: "9", es: "9", ur: "9" }, { en: "4", es: "4", ur: "4" }, { en: "69", es: "69", ur: "69" }], correctIndex: 1 },
+        { id: "ex-2.2B-4", type: "multiple-choice", prompt: { en: "🌊 Garden A has 756 plants. Garden B has 765 plants. Which is true?", es: "🌊 El jardín A tiene 756 plantas. El jardín B tiene 765. ¿Cuál es verdadero?", ur: "🌊 باغ A میں 756 پودے ہیں۔ باغ B میں 765۔ کون سا صحیح ہے؟" }, choices: [{ en: "756 > 765", es: "756 > 765", ur: "756 > 765" }, { en: "756 < 765", es: "756 < 765", ur: "756 < 765" }, { en: "756 = 765", es: "756 = 765", ur: "756 = 765" }, { en: "765 < 756", es: "765 < 756", ur: "765 < 756" }], correctIndex: 1 },
+        { id: "ex-2.2B-5", type: "true-false", prompt: { en: "🌳 A forest has 912 oak trees and 921 elm trees. 912 > 921.", es: "🌳 Un bosque tiene 912 robles y 921 olmos. 912 > 921.", ur: "🌳 جنگل میں 912 بلوط اور 921 ایلم ہیں۔ 912 > 921۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 1 },
+        { id: "ex-2.2B-6", type: "multiple-choice", prompt: { en: "♻️ The recycling center processed 1,050 bottles. What is the value of the 5 in 1,050?", es: "♻️ El centro de reciclaje procesó 1,050 botellas. ¿Cuál es el valor del 5 en 1,050?", ur: "♻️ ری سائیکلنگ مرکز نے 1,050 بوتلیں چھانٹیں۔ 1,050 میں 5 کی قدر کیا ہے؟" }, choices: [{ en: "5", es: "5", ur: "5" }, { en: "50", es: "50", ur: "50" }, { en: "500", es: "500", ur: "500" }, { en: "5,000", es: "5,000", ur: "5,000" }], correctIndex: 1 },
+        { id: "ex-2.2B-7", type: "multiple-choice", prompt: { en: "🌿 A seed bank stores four hundred seventy-three seeds. What is that in standard form?", es: "🌿 Un banco de semillas guarda cuatrocientas setenta y tres semillas. ¿Cómo se escribe en forma estándar?", ur: "🌿 ایک بیج بینک میں چار سو تہتر بیج ہیں۔ معیاری شکل کیا ہے؟" }, choices: [{ en: "400 + 70 + 3", es: "400 + 70 + 3", ur: "400 + 70 + 3" }, { en: "forty-seven", es: "cuarenta y siete", ur: "سینتالیس" }, { en: "473", es: "473", ur: "473" }, { en: "4,073", es: "4,073", ur: "4,073" }], correctIndex: 2 },
+        { id: "ex-2.2B-8", type: "multiple-choice", prompt: { en: "🌊 Compare: 638 ___ 683. Which symbol belongs in the blank?", es: "🌊 Compara: 638 ___ 683. ¿Qué símbolo va en el espacio en blanco?", ur: "🌊 موازنہ کریں: 638 ___ 683۔ خالی جگہ میں کون سی علامت؟" }, choices: [{ en: ">", es: ">", ur: ">" }, { en: "<", es: "<", ur: "<" }, { en: "=", es: "=", ur: "=" }, { en: "≠", es: "≠", ur: "≠" }], correctIndex: 1 },
+        { id: "ex-2.2B-9", type: "true-false", prompt: { en: "🌳 400 + 20 + 8 = 428.", es: "🌳 400 + 20 + 8 = 428.", ur: "🌳 400 + 20 + 8 = 428۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "ex-2.2B-10", type: "multiple-choice", prompt: { en: "🌱 Order these recycling totals from least to greatest: 315, 531, 153.", es: "🌱 Ordena estos totales de reciclaje de menor a mayor: 315, 531, 153.", ur: "🌱 ان ری سائیکلنگ کے اعداد کو چھوٹے سے بڑے ترتیب میں لگائیں: 315، 531، 153۔" }, choices: [{ en: "315, 531, 153", es: "315, 531, 153", ur: "315، 531، 153" }, { en: "153, 315, 531", es: "153, 315, 531", ur: "153، 315، 531" }, { en: "531, 315, 153", es: "531, 315, 153", ur: "531، 315، 153" }, { en: "153, 531, 315", es: "153, 531, 315", ur: "153، 531، 315" }], correctIndex: 1 },
+      ],
+      quiz: [
+        { id: "qz-2.2B-1", type: "multiple-choice", prompt: { en: "🌳 A park has 847 trees. What is the value of the 8?", es: "🌳 Un parque tiene 847 árboles. ¿Cuál es el valor del 8?", ur: "🌳 ایک پارک میں 847 درخت ہیں۔ 8 کی قدر کیا ہے؟" }, choices: [{ en: "8", es: "8", ur: "8" }, { en: "80", es: "80", ur: "80" }, { en: "800", es: "800", ur: "800" }, { en: "8,000", es: "8,000", ur: "8,000" }], correctIndex: 2 },
+        { id: "qz-2.2B-2", type: "multiple-choice", prompt: { en: "♻️ Compare: 372 ___ 327. Which symbol is correct?", es: "♻️ Compara: 372 ___ 327. ¿Qué símbolo es correcto?", ur: "♻️ موازنہ: 372 ___ 327۔ کون سی علامت صحیح ہے؟" }, choices: [{ en: ">", es: ">", ur: ">" }, { en: "<", es: "<", ur: "<" }, { en: "=", es: "=", ur: "=" }, { en: "≠", es: "≠", ur: "≠" }], correctIndex: 0 },
+        { id: "qz-2.2B-3", type: "multiple-choice", prompt: { en: "🌱 What is 600 + 50 + 9 in standard form?", es: "🌱 ¿Cómo se escribe 600 + 50 + 9 en forma estándar?", ur: "🌱 600 + 50 + 9 کی معیاری شکل کیا ہے؟" }, choices: [{ en: "659", es: "659", ur: "659" }, { en: "6,059", es: "6,059", ur: "6,059" }, { en: "650", es: "650", ur: "650" }, { en: "695", es: "695", ur: "695" }], correctIndex: 0 },
+      ],
+      wordProblems: [
+        { id: "wp-2.2B-1", emoji: "🌳🔢", scene: "Forest rangers counting trees in Big Bend National Park, Texas", prompt: { en: "A nature preserve has 347 trees. What is the value of the hundreds digit?", es: "Una reserva natural tiene 347 árboles. ¿Cuál es el valor del dígito de las centenas?", ur: "ایک قدرتی پارک میں 347 درخت ہیں۔ سینکڑوں کے ہندسے کی قدر کیا ہے؟" }, answer: 300, answerUnit: { en: "(value)", es: "(valor)", ur: "(قدر)" } },
+        { id: "wp-2.2B-2", emoji: "♻️💚", scene: "Dallas ISD recycling challenge — tracking totals across schools", prompt: { en: "A school recycled 528 items in October. What is 100 more than 528?", es: "Una escuela recicló 528 artículos en octubre. ¿Cuánto es 100 más que 528?", ur: "ایک اسکول نے اکتوبر میں 528 اشیاء ری سائیکل کیں۔ 528 سے 100 زیادہ کیا ہے؟" }, answer: 628, answerUnit: { en: "items", es: "artículos", ur: "اشیاء" } },
+        { id: "wp-2.2B-3", emoji: "🌊🐢", scene: "Sea turtle rescue center on the Texas Gulf Coast", prompt: { en: "Volunteers collected 912 pieces of ocean trash this year. Last year they collected 100 fewer. How many did they collect last year?", es: "Los voluntarios recogieron 912 piezas de basura oceánica este año. El año pasado recogieron 100 menos. ¿Cuántas recogieron el año pasado?", ur: "رضاکاروں نے اس سال 912 ٹکڑے جمع کیے۔ پچھلے سال 100 کم جمع کیے۔ پچھلے سال کتنے جمع کیے؟" }, answer: 812, answerUnit: { en: "pieces", es: "piezas", ur: "ٹکڑے" } },
+        { id: "wp-2.2B-4", emoji: "🌱🌍", scene: "Seed bank preserving native Texas plants from extinction", prompt: { en: "A seed bank has 600 + 40 + 7 seeds. How many seeds is that?", es: "Un banco de semillas tiene 600 + 40 + 7 semillas. ¿Cuántas semillas son en total?", ur: "ایک بیج بینک میں 600 + 40 + 7 بیج ہیں۔ یہ کتنے بیج ہیں؟" }, answer: 647, answerUnit: { en: "seeds", es: "semillas", ur: "بیج" } },
+        { id: "wp-2.2B-5", emoji: "🐝🌻", scene: "Pollinator garden in Fort Worth — tracking bee populations", prompt: { en: "A bee population grew from 483 bees to 583 bees. How many more bees is that?", es: "Una población de abejas creció de 483 a 583 abejas. ¿Cuántas abejas más hay?", ur: "ایک مکھی آبادی 483 سے 583 ہو گئی۔ یہ کتنی مزید مکھیاں ہیں؟" }, answer: 100, answerUnit: { en: "bees", es: "abejas", ur: "مکھیاں" } },
+      ],
+    },
+
+    {
+      teks: "2.7A",
+      cambridge: "Stage 2 · 2Nn5",
+      emoji: "🧦",
+      title: {
+        en: "Even & Odd Numbers",
+        es: "Números Pares e Impares",
+        ur: "جفت اور طاق نمبر",
+      },
+      vocabulary: [
+        {
+          id: "even",
+          emoji: "2️⃣",
+          word: { en: "even", es: "par", ur: "جفت" },
+          definition: {
+            en: "a number you can split into two equal groups — like 4, 6, 8",
+            es: "un número que puedes dividir en dos grupos iguales — como 4, 6, 8",
+            ur: "وہ نمبر جسے دو برابر حصوں میں بانٹ سکتے ہیں — جیسے 4، 6، 8",
+          },
+        },
+        {
+          id: "odd",
+          emoji: "1️⃣",
+          word: { en: "odd", es: "impar", ur: "طاق" },
+          definition: {
+            en: "a number that has one left over when split into pairs — like 3, 5, 7",
+            es: "un número que tiene uno sobrante al dividirlo en pares — como 3, 5, 7",
+            ur: "وہ نمبر جو جوڑوں میں بانٹنے پر ایک بچ جائے — جیسے 3، 5، 7",
+          },
+        },
+        {
+          id: "pairs",
+          emoji: "👫",
+          word: { en: "pairs", es: "pares", ur: "جوڑے" },
+          definition: {
+            en: "groups of two",
+            es: "grupos de dos",
+            ur: "دو دو کے گروپ",
+          },
+        },
+        {
+          id: "equal",
+          emoji: "⚖️",
+          word: { en: "equal", es: "igual", ur: "برابر" },
+          definition: {
+            en: "the same amount in each group — fair for everyone",
+            es: "la misma cantidad en cada grupo — justo para todos",
+            ur: "ہر گروپ میں ایک جیسی تعداد — سب کے لیے انصاف",
+          },
+        },
+      ],
+      lesson: {
+        en: "🧦 **Fairness starts with math!** Imagine your class collected 14 warm blankets to donate. Can every family get an equal share? If the number is **even**, we can split things into two fair groups — nobody is left out! If the number is **odd**, one group gets more — that's not fair.\n\nEven numbers end in 0, 2, 4, 6, or 8. Odd numbers end in 1, 3, 5, 7, or 9. When we share things equally in our community, we use even numbers to make sure everyone is treated fairly! ⚖️",
+        es: "🧦 **¡La justicia empieza con las matemáticas!** Imagina que tu clase juntó 14 cobijas para donar. ¿Puede cada familia recibir la misma cantidad? Si el número es **par**, podemos dividir las cosas en dos grupos justos — ¡nadie queda fuera! Si el número es **impar**, un grupo recibe más — eso no es justo.\n\nLos números pares terminan en 0, 2, 4, 6 u 8. Los impares terminan en 1, 3, 5, 7 o 9. ¡Cuando compartimos cosas en nuestra comunidad, usamos números pares para que todos sean tratados justamente! ⚖️",
+        ur: "🧦 **انصاف ریاضی سے شروع ہوتا ہے!** سوچو تمہاری کلاس نے دینے کے لیے 14 گرم کمبل جمع کیے۔ کیا ہر خاندان کو برابر حصہ مل سکتا ہے؟ اگر نمبر **جفت** ہو تو ہم چیزیں دو برابر حصوں میں بانٹ سکتے ہیں — کوئی باہر نہیں رہتا! اگر نمبر **طاق** ہو تو ایک گروپ کو زیادہ ملتا ہے — یہ انصاف نہیں۔\n\nجفت نمبر 0، 2، 4، 6، یا 8 پر ختم ہوتے ہیں۔ طاق نمبر 1، 3، 5، 7، یا 9 پر ختم ہوتے ہیں۔ جب ہم کمیونٹی میں چیزیں بانٹتے ہیں تو جفت نمبر استعمال کرتے ہیں تاکہ سب کے ساتھ انصاف ہو! ⚖️",
+      },
+      exercises: [
+        {
+          id: "ex-2.7A-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🧣 Your class collected 14 scarves to give to children in need. Is 14 even or odd? Can every child get a fair share if we split into 2 equal groups?",
+            es: "🧣 Tu clase juntó 14 bufandas para dar a niños que las necesitan. ¿14 es par o impar? ¿Puede cada niño recibir una parte justa si los dividimos en 2 grupos iguales?",
+            ur: "🧣 تمہاری کلاس نے ضرورتمند بچوں کو دینے کے لیے 14 اسکارف جمع کیے۔ کیا 14 جفت ہے یا طاق؟ کیا 2 برابر گروپ بنا کر ہر بچے کو برابر حصہ مل سکتا ہے؟",
+          },
+          choices: [
+            { en: "Even — yes, it's fair! ✅", es: "Par — ¡sí, es justo! ✅", ur: "جفت — ہاں، انصاف ہے! ✅" },
+            { en: "Odd — no, not fair ❌", es: "Impar — no, no es justo ❌", ur: "طاق — نہیں، انصاف نہیں ❌" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-2.7A-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌱 The garden club has 27 seed packets to hand out equally to two classrooms. Is 27 even or odd?",
+            es: "🌱 El club de jardinería tiene 27 sobres de semillas para repartir por igual entre dos salones. ¿27 es par o impar?",
+            ur: "🌱 گارڈن کلب کے پاس دو کلاسوں میں برابر بانٹنے کے لیے 27 بیجوں کے پیکٹ ہیں۔ کیا 27 جفت ہے یا طاق؟",
+          },
+          choices: [
+            { en: "Even", es: "Par", ur: "جفت" },
+            { en: "Odd — one classroom gets more", es: "Impar — un salón recibe más", ur: "طاق — ایک کلاس کو زیادہ ملے گا" },
+          ],
+          correctIndex: 1,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-2.7A-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🥤 The school collected 20 water bottles for a hot-day giveaway. Which word best describes 20?",
+            es: "🥤 La escuela juntó 20 botellas de agua para repartirlas en un día de calor. ¿Qué palabra describe mejor al 20?",
+            ur: "🥤 اسکول نے گرم دن پر تقسیم کرنے کے لیے 20 پانی کی بوتلیں جمع کیں۔ 20 کو بہترین طریقے سے کون سا لفظ بیان کرتا ہے؟",
+          },
+          choices: [
+            { en: "Odd", es: "Impar", ur: "طاق" },
+            { en: "Even", es: "Par", ur: "جفت" },
+            { en: "Sum", es: "Suma", ur: "حاصل جمع" },
+            { en: "Difference", es: "Diferencia", ur: "فرق" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "qz-2.7A-2",
+          type: "true-false",
+          prompt: {
+            en: "♻️ Our class put 15 items in the recycling bin today. Because 15 is odd, we cannot split them into two perfectly equal groups.",
+            es: "♻️ Nuestra clase puso hoy 15 artículos en el contenedor de reciclaje. Como 15 es impar, no podemos dividirlos en dos grupos perfectamente iguales.",
+            ur: "♻️ ہماری کلاس نے آج ری سائیکلنگ بن میں 15 چیزیں ڈالیں۔ چونکہ 15 طاق ہے، ہم انہیں دو بالکل برابر گروپوں میں نہیں بانٹ سکتے۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+    },
+
+    {
+      teks: "2.3B",
+      cambridge: "Stage 2 · 2Nf1",
+      emoji: "🍕",
+      title: { en: "Fractions: Halves, Fourths & Eighths", es: "Fracciones: Mitades, Cuartos y Octavos", ur: "کسریں: آدھے، چوتھائی اور آٹھویں" },
+      vocabulary: [
+        {
+          id: "fraction",
+          emoji: "½",
+          word: { en: "fraction", es: "fracción", ur: "کسر" },
+          definition: { en: "a number that names equal parts of a whole", es: "un número que nombra partes iguales de un entero", ur: "ایک نمبر جو پورے کے برابر حصوں کو ظاہر کرتا ہے" },
+        },
+        {
+          id: "half",
+          emoji: "½",
+          word: { en: "half", es: "mitad", ur: "آدھا" },
+          definition: { en: "one of 2 equal parts of a whole; written as 1/2", es: "una de 2 partes iguales de un entero; se escribe como 1/2", ur: "پورے کے 2 برابر حصوں میں سے ایک؛ 1/2 لکھا جاتا ہے" },
+        },
+        {
+          id: "fourth",
+          emoji: "¼",
+          word: { en: "fourth", es: "cuarto", ur: "چوتھائی" },
+          definition: { en: "one of 4 equal parts of a whole; written as 1/4", es: "una de 4 partes iguales de un entero; se escribe como 1/4", ur: "پورے کے 4 برابر حصوں میں سے ایک؛ 1/4 لکھا جاتا ہے" },
+        },
+        {
+          id: "eighth",
+          emoji: "⅛",
+          word: { en: "eighth", es: "octavo", ur: "آٹھواں" },
+          definition: { en: "one of 8 equal parts of a whole; written as 1/8", es: "una de 8 partes iguales de un entero; se escribe como 1/8", ur: "پورے کے 8 برابر حصوں میں سے ایک؛ 1/8 لکھا جاتا ہے" },
+        },
+        {
+          id: "whole",
+          emoji: "⭕",
+          word: { en: "whole", es: "entero", ur: "مکمل" },
+          definition: { en: "all of the parts together — the complete amount", es: "todas las partes juntas — la cantidad completa", ur: "تمام حصے مل کر — مکمل مقدار" },
+        },
+      ],
+      lesson: {
+        en: "A fraction names equal parts of a whole. When we cut something into 2 equal parts, each part is 1/2 (one half). Cut into 4 equal parts — each is 1/4 (one fourth). Cut into 8 equal parts — each is 1/8 (one eighth). Key idea: the MORE parts we divide a whole into, the SMALLER each part becomes. So 1/8 is smaller than 1/4, which is smaller than 1/2!",
+        es: "Una fracción nombra partes iguales de un entero. Cuando cortamos algo en 2 partes iguales, cada parte es 1/2 (una mitad). En 4 partes iguales, cada parte es 1/4 (un cuarto). En 8 partes iguales, cada parte es 1/8 (un octavo). Idea clave: cuantas MÁS partes dividimos, MÁS PEQUEÑA se vuelve cada parte. ¡1/8 es menor que 1/4, que es menor que 1/2!",
+        ur: "کسر کسی پورے کے برابر حصوں کو ظاہر کرتی ہے۔ 2 برابر حصوں میں کاٹنے پر ہر حصہ 1/2 ہے۔ 4 میں کاٹنے پر 1/4۔ 8 میں کاٹنے پر 1/8۔ اہم بات: جتنے زیادہ حصے، اتنا چھوٹا ہر حصہ۔ 1/8 سب سے چھوٹا، 1/2 سب سے بڑا!",
+      },
+      exercises: [
+        { id: "ex-2.3B-1", type: "multiple-choice", prompt: { en: "🌳 A student colors 1/2 of a picture of a tree. Into how many equal parts is the picture divided?", es: "🌳 Un estudiante colorea 1/2 de un dibujo de un árbol. ¿En cuántas partes iguales está dividido el dibujo?", ur: "🌳 ایک طالب علم درخت کی تصویر کا 1/2 رنگتا ہے۔ تصویر کے کتنے برابر حصے ہیں؟" }, choices: [{ en: "1", es: "1", ur: "1" }, { en: "2", es: "2", ur: "2" }, { en: "4", es: "4", ur: "4" }, { en: "8", es: "8", ur: "8" }], correctIndex: 1 },
+        { id: "ex-2.3B-2", type: "multiple-choice", prompt: { en: "♻️ A recycling bin is split into 4 equal parts. One part is full. What fraction of the bin is full?", es: "♻️ Un contenedor de reciclaje está dividido en 4 partes iguales. Una parte está llena. ¿Qué fracción del contenedor está llena?", ur: "♻️ ریسائیکلنگ ڈبہ 4 برابر حصوں میں بٹا ہے۔ ایک حصہ بھرا ہے۔ ڈبے کا کون سا کسر بھرا ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/3", es: "1/3", ur: "1/3" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }], correctIndex: 2 },
+        { id: "ex-2.3B-3", type: "true-false", prompt: { en: "🌻 1/2 is bigger than 1/4 when both come from the same whole.", es: "🌻 1/2 es más grande que 1/4 cuando ambas vienen del mismo entero.", ur: "🌻 جب دونوں ایک ہی پورے سے ہوں تو 1/2، 1/4 سے بڑا ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "ex-2.3B-4", type: "multiple-choice", prompt: { en: "🌊 A sea turtle pond is split into 8 equal sections. Which fraction is the SMALLEST?", es: "🌊 Un estanque de tortugas está dividido en 8 secciones iguales. ¿Qué fracción es la MÁS PEQUEÑA?", ur: "🌊 سمندری کچھوے کا تالاب 8 برابر حصوں میں بٹا ہے۔ کون سا کسر سب سے چھوٹا ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "All are equal", es: "Todas son iguales", ur: "سب برابر ہیں" }], correctIndex: 2 },
+        { id: "ex-2.3B-5", type: "multiple-choice", prompt: { en: "🌿 A garden plot is divided into equal parts. The MORE parts we divide it into, the _____ each part becomes.", es: "🌿 Una parcela se divide en partes iguales. Cuantas MÁS partes la dividimos, cada parte se vuelve _____.", ur: "🌿 باغ کو برابر حصوں میں تقسیم کیا۔ جتنے زیادہ حصے، ہر حصہ اتنا _____ ہوتا ہے۔" }, choices: [{ en: "bigger", es: "más grande", ur: "بڑا" }, { en: "smaller", es: "más pequeño", ur: "چھوٹا" }, { en: "the same", es: "igual", ur: "برابر" }, { en: "heavier", es: "más pesado", ur: "بھاری" }], correctIndex: 1 },
+        { id: "ex-2.3B-6", type: "true-false", prompt: { en: "🌱 A compost bin cut into 8 equal pieces has BIGGER pieces than one cut into 4 equal pieces.", es: "🌱 Un contenedor de compost cortado en 8 partes iguales tiene piezas MÁS GRANDES que uno cortado en 4.", ur: "🌱 8 برابر حصوں میں کٹا ڈبہ 4 حصوں والے سے بڑے ٹکڑے رکھتا ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 1 },
+        { id: "ex-2.3B-7", type: "multiple-choice", prompt: { en: "🐝 A honeycomb is divided into 4 equal sections for bee families. What fraction does each family get?", es: "🐝 Un panal está dividido en 4 secciones iguales para familias de abejas. ¿Qué fracción le toca a cada familia?", ur: "🐝 شہد کے چھتے کو 4 برابر حصوں میں بانٹا گیا۔ ہر خاندان کو کتنا کسر ملتا ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "4/4", es: "4/4", ur: "4/4" }], correctIndex: 1 },
+        { id: "ex-2.3B-8", type: "multiple-choice", prompt: { en: "🌊 Which fraction is LARGER: 1/4 or 1/8?", es: "🌊 ¿Qué fracción es MAYOR: 1/4 o 1/8?", ur: "🌊 کون سا کسر بڑا ہے: 1/4 یا 1/8؟" }, choices: [{ en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "They are equal", es: "Son iguales", ur: "دونوں برابر ہیں" }, { en: "Cannot tell", es: "No se puede saber", ur: "نہیں بتا سکتے" }], correctIndex: 0 },
+        { id: "ex-2.3B-9", type: "true-false", prompt: { en: "🌿 A nature trail divided into eighths has SMALLER sections than one divided into halves.", es: "🌿 Un sendero dividido en octavos tiene secciones MÁS PEQUEÑAS que uno dividido en mitades.", ur: "🌿 آٹھویں میں تقسیم پگڈنڈی کے حصے آدھے میں تقسیم سے چھوٹے ہیں۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "ex-2.3B-10", type: "multiple-choice", prompt: { en: "🌱 A compost bin has 8 equal sections. What fraction is each section?", es: "🌱 Un contenedor de compost tiene 8 secciones iguales. ¿Qué fracción es cada sección?", ur: "🌱 کمپوسٹ ڈبے کے 8 برابر حصے ہیں۔ ہر حصہ کون سا کسر ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/6", es: "1/6", ur: "1/6" }, { en: "1/8", es: "1/8", ur: "1/8" }], correctIndex: 3 },
+      ],
+      quiz: [
+        { id: "qz-2.3B-1", type: "multiple-choice", prompt: { en: "🌳 A nature trail is divided into 4 equal parts. A hiker walked 1 part. What fraction did the hiker walk?", es: "🌳 Un sendero está dividido en 4 partes iguales. Un excursionista caminó 1 parte. ¿Qué fracción caminó?", ur: "🌳 پگڈنڈی 4 برابر حصوں میں ہے۔ ایک پیدل سفری نے 1 حصہ چلا۔ کتنا کسر چلا؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "4/1", es: "4/1", ur: "4/1" }], correctIndex: 1 },
+        { id: "qz-2.3B-2", type: "multiple-choice", prompt: { en: "🌊 Which fraction is LARGER: 1/2 or 1/8?", es: "🌊 ¿Qué fracción es MAYOR: 1/2 o 1/8?", ur: "🌊 کون سا کسر بڑا ہے: 1/2 یا 1/8؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "They are equal", es: "Son iguales", ur: "برابر ہیں" }, { en: "Cannot tell", es: "No se puede saber", ur: "نہیں بتا سکتے" }], correctIndex: 0 },
+        { id: "qz-2.3B-3", type: "multiple-choice", prompt: { en: "♻️ A recycling poster is split into 2 equal parts. What fraction is each part?", es: "♻️ Un cartel de reciclaje está dividido en 2 partes iguales. ¿Qué fracción es cada parte?", ur: "♻️ ایک ری سائیکلنگ پوسٹر 2 برابر حصوں میں ہے۔ ہر حصہ کون سا کسر ہے؟" }, choices: [{ en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "1/2", es: "1/2", ur: "1/2" }, { en: "2/2", es: "2/2", ur: "2/2" }], correctIndex: 2 },
+      ],
+      wordProblems: [
+        { id: "wp-2.3B-1", emoji: "🌿🌱", scene: "Community garden in East Dallas split into equal plots for local families", prompt: { en: "A garden is divided into 4 equal plots. A family uses 1 plot. How many plots are NOT being used?", es: "Un jardín está dividido en 4 parcelas iguales. Una familia usa 1 parcela. ¿Cuántas parcelas NO están siendo usadas?", ur: "باغ 4 برابر حصوں میں ہے۔ ایک خاندان 1 حصہ استعمال کرتا ہے۔ کتنے حصے استعمال نہیں ہو رہے؟" }, answer: 3, answerUnit: { en: "plots", es: "parcelas", ur: "حصے" } },
+        { id: "wp-2.3B-2", emoji: "🌊🧹", scene: "Beach cleanup at South Padre Island divided into sections", prompt: { en: "A beach is divided into 2 equal halves. Volunteers cleaned 1 half on Saturday. How many halves still need to be cleaned?", es: "Una playa está dividida en 2 mitades iguales. Los voluntarios limpiaron 1 mitad el sábado. ¿Cuántas mitades quedan por limpiar?", ur: "ساحل 2 برابر آدھوں میں ہے۔ رضاکاروں نے ہفتے کو 1 آدھا صاف کیا۔ کتنے آدھے ابھی صاف کرنے باقی ہیں؟" }, answer: 1, answerUnit: { en: "halves", es: "mitades", ur: "آدھے" } },
+        { id: "wp-2.3B-3", emoji: "🌳🥾", scene: "Nature trail hike for a school field trip — exploring Texas ecosystems", prompt: { en: "A nature trail is split into 8 equal sections. Hikers explored 5 sections. How many sections are still unexplored?", es: "Un sendero está dividido en 8 secciones iguales. Los excursionistas exploraron 5 secciones. ¿Cuántas secciones no han sido exploradas?", ur: "پگڈنڈی 8 برابر حصوں میں ہے۔ پیدل سفریوں نے 5 حصے دریافت کیے۔ ابھی کتنے غیر دریافت ہیں؟" }, answer: 3, answerUnit: { en: "sections", es: "secciones", ur: "حصے" } },
+        { id: "wp-2.3B-4", emoji: "🐝🍯", scene: "Bee rescue fundraiser — selling honey to fund pollinator gardens", prompt: { en: "A beekeeper divided her honey harvest into 4 equal jars. She sold 1 jar at the farmers market. How many jars does she have left?", es: "Una apicultora dividió su cosecha de miel en 4 frascos iguales. Vendió 1 frasco en el mercado. ¿Cuántos frascos le quedan?", ur: "ایک مکھی پالنے والی نے شہد 4 برابر مرتبانوں میں بانٹا۔ بازار میں 1 بیچ دیا۔ کتنے مرتبان بچے؟" }, answer: 3, answerUnit: { en: "jars", es: "frascos", ur: "مرتبان" } },
+        { id: "wp-2.3B-5", emoji: "♻️📅", scene: "Monthly recycling goal at Lincoln Elementary — 4 weekly targets", prompt: { en: "A class divided their recycling goal into 4 equal weekly targets. They met 2 targets so far. How many weekly targets are left?", es: "Una clase dividió su meta de reciclaje en 4 objetivos semanales iguales. Alcanzaron 2 hasta ahora. ¿Cuántos objetivos semanales quedan?", ur: "کلاس نے ری سائیکلنگ کا ہدف 4 برابر ہفتہ وار اہداف میں بانٹا۔ ابھی تک 2 پورے کیے۔ کتنے باقی ہیں؟" }, answer: 2, answerUnit: { en: "targets", es: "objetivos", ur: "اہداف" } },
+      ],
+    },
+
     {
       teks: "2.4A",
       cambridge: "Stage 2 · 2Nc1",
@@ -278,348 +534,6 @@ const grade2: Grade = {
       ],
     },
 
-    {
-      teks: "2.7A",
-      cambridge: "Stage 2 · 2Nn5",
-      emoji: "🧦",
-      title: {
-        en: "Even & Odd Numbers",
-        es: "Números Pares e Impares",
-        ur: "جفت اور طاق نمبر",
-      },
-      vocabulary: [
-        {
-          id: "even",
-          emoji: "2️⃣",
-          word: { en: "even", es: "par", ur: "جفت" },
-          definition: {
-            en: "a number you can split into two equal groups — like 4, 6, 8",
-            es: "un número que puedes dividir en dos grupos iguales — como 4, 6, 8",
-            ur: "وہ نمبر جسے دو برابر حصوں میں بانٹ سکتے ہیں — جیسے 4، 6، 8",
-          },
-        },
-        {
-          id: "odd",
-          emoji: "1️⃣",
-          word: { en: "odd", es: "impar", ur: "طاق" },
-          definition: {
-            en: "a number that has one left over when split into pairs — like 3, 5, 7",
-            es: "un número que tiene uno sobrante al dividirlo en pares — como 3, 5, 7",
-            ur: "وہ نمبر جو جوڑوں میں بانٹنے پر ایک بچ جائے — جیسے 3، 5، 7",
-          },
-        },
-        {
-          id: "pairs",
-          emoji: "👫",
-          word: { en: "pairs", es: "pares", ur: "جوڑے" },
-          definition: {
-            en: "groups of two",
-            es: "grupos de dos",
-            ur: "دو دو کے گروپ",
-          },
-        },
-        {
-          id: "equal",
-          emoji: "⚖️",
-          word: { en: "equal", es: "igual", ur: "برابر" },
-          definition: {
-            en: "the same amount in each group — fair for everyone",
-            es: "la misma cantidad en cada grupo — justo para todos",
-            ur: "ہر گروپ میں ایک جیسی تعداد — سب کے لیے انصاف",
-          },
-        },
-      ],
-      lesson: {
-        en: "🧦 **Fairness starts with math!** Imagine your class collected 14 warm blankets to donate. Can every family get an equal share? If the number is **even**, we can split things into two fair groups — nobody is left out! If the number is **odd**, one group gets more — that's not fair.\n\nEven numbers end in 0, 2, 4, 6, or 8. Odd numbers end in 1, 3, 5, 7, or 9. When we share things equally in our community, we use even numbers to make sure everyone is treated fairly! ⚖️",
-        es: "🧦 **¡La justicia empieza con las matemáticas!** Imagina que tu clase juntó 14 cobijas para donar. ¿Puede cada familia recibir la misma cantidad? Si el número es **par**, podemos dividir las cosas en dos grupos justos — ¡nadie queda fuera! Si el número es **impar**, un grupo recibe más — eso no es justo.\n\nLos números pares terminan en 0, 2, 4, 6 u 8. Los impares terminan en 1, 3, 5, 7 o 9. ¡Cuando compartimos cosas en nuestra comunidad, usamos números pares para que todos sean tratados justamente! ⚖️",
-        ur: "🧦 **انصاف ریاضی سے شروع ہوتا ہے!** سوچو تمہاری کلاس نے دینے کے لیے 14 گرم کمبل جمع کیے۔ کیا ہر خاندان کو برابر حصہ مل سکتا ہے؟ اگر نمبر **جفت** ہو تو ہم چیزیں دو برابر حصوں میں بانٹ سکتے ہیں — کوئی باہر نہیں رہتا! اگر نمبر **طاق** ہو تو ایک گروپ کو زیادہ ملتا ہے — یہ انصاف نہیں۔\n\nجفت نمبر 0، 2، 4، 6، یا 8 پر ختم ہوتے ہیں۔ طاق نمبر 1، 3، 5، 7، یا 9 پر ختم ہوتے ہیں۔ جب ہم کمیونٹی میں چیزیں بانٹتے ہیں تو جفت نمبر استعمال کرتے ہیں تاکہ سب کے ساتھ انصاف ہو! ⚖️",
-      },
-      exercises: [
-        {
-          id: "ex-2.7A-1",
-          type: "multiple-choice",
-          prompt: {
-            en: "🧣 Your class collected 14 scarves to give to children in need. Is 14 even or odd? Can every child get a fair share if we split into 2 equal groups?",
-            es: "🧣 Tu clase juntó 14 bufandas para dar a niños que las necesitan. ¿14 es par o impar? ¿Puede cada niño recibir una parte justa si los dividimos en 2 grupos iguales?",
-            ur: "🧣 تمہاری کلاس نے ضرورتمند بچوں کو دینے کے لیے 14 اسکارف جمع کیے۔ کیا 14 جفت ہے یا طاق؟ کیا 2 برابر گروپ بنا کر ہر بچے کو برابر حصہ مل سکتا ہے؟",
-          },
-          choices: [
-            { en: "Even — yes, it's fair! ✅", es: "Par — ¡sí, es justo! ✅", ur: "جفت — ہاں، انصاف ہے! ✅" },
-            { en: "Odd — no, not fair ❌", es: "Impar — no, no es justo ❌", ur: "طاق — نہیں، انصاف نہیں ❌" },
-          ],
-          correctIndex: 0,
-        },
-        {
-          id: "ex-2.7A-2",
-          type: "multiple-choice",
-          prompt: {
-            en: "🌱 The garden club has 27 seed packets to hand out equally to two classrooms. Is 27 even or odd?",
-            es: "🌱 El club de jardinería tiene 27 sobres de semillas para repartir por igual entre dos salones. ¿27 es par o impar?",
-            ur: "🌱 گارڈن کلب کے پاس دو کلاسوں میں برابر بانٹنے کے لیے 27 بیجوں کے پیکٹ ہیں۔ کیا 27 جفت ہے یا طاق؟",
-          },
-          choices: [
-            { en: "Even", es: "Par", ur: "جفت" },
-            { en: "Odd — one classroom gets more", es: "Impar — un salón recibe más", ur: "طاق — ایک کلاس کو زیادہ ملے گا" },
-          ],
-          correctIndex: 1,
-        },
-      ],
-      quiz: [
-        {
-          id: "qz-2.7A-1",
-          type: "multiple-choice",
-          prompt: {
-            en: "🥤 The school collected 20 water bottles for a hot-day giveaway. Which word best describes 20?",
-            es: "🥤 La escuela juntó 20 botellas de agua para repartirlas en un día de calor. ¿Qué palabra describe mejor al 20?",
-            ur: "🥤 اسکول نے گرم دن پر تقسیم کرنے کے لیے 20 پانی کی بوتلیں جمع کیں۔ 20 کو بہترین طریقے سے کون سا لفظ بیان کرتا ہے؟",
-          },
-          choices: [
-            { en: "Odd", es: "Impar", ur: "طاق" },
-            { en: "Even", es: "Par", ur: "جفت" },
-            { en: "Sum", es: "Suma", ur: "حاصل جمع" },
-            { en: "Difference", es: "Diferencia", ur: "فرق" },
-          ],
-          correctIndex: 1,
-        },
-        {
-          id: "qz-2.7A-2",
-          type: "true-false",
-          prompt: {
-            en: "♻️ Our class put 15 items in the recycling bin today. Because 15 is odd, we cannot split them into two perfectly equal groups.",
-            es: "♻️ Nuestra clase puso hoy 15 artículos en el contenedor de reciclaje. Como 15 es impar, no podemos dividirlos en dos grupos perfectamente iguales.",
-            ur: "♻️ ہماری کلاس نے آج ری سائیکلنگ بن میں 15 چیزیں ڈالیں۔ چونکہ 15 طاق ہے، ہم انہیں دو بالکل برابر گروپوں میں نہیں بانٹ سکتے۔",
-          },
-          choices: [
-            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
-            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
-          ],
-          correctIndex: 0,
-        },
-      ],
-    },
-
-    {
-      teks: "2.8A",
-      cambridge: "Stage 2 · 2Gs1",
-      emoji: "☀️",
-      title: {
-        en: "2D Shapes",
-        es: "Figuras 2D",
-        ur: "دو جہتی شکلیں",
-      },
-      vocabulary: [
-        {
-          id: "circle",
-          emoji: "⭕",
-          word: { en: "circle", es: "círculo", ur: "دائرہ" },
-          definition: {
-            en: "a round shape with no corners — like the sun or a wheel",
-            es: "una figura redonda sin esquinas — como el sol o una rueda",
-            ur: "گول شکل جس کے کوئی کونے نہ ہوں — جیسے سورج یا پہیہ",
-          },
-        },
-        {
-          id: "square",
-          emoji: "🟥",
-          word: { en: "square", es: "cuadrado", ur: "مربع" },
-          definition: {
-            en: "a shape with 4 equal sides — like a garden plot",
-            es: "una figura con 4 lados iguales — como un cuadro de jardín",
-            ur: "وہ شکل جس کے 4 برابر اطراف ہوں — جیسے باغ کا ایک حصہ",
-          },
-        },
-        {
-          id: "triangle",
-          emoji: "🔺",
-          word: { en: "triangle", es: "triángulo", ur: "تکون" },
-          definition: {
-            en: "a shape with 3 sides — like a roof that catches rainwater",
-            es: "una figura con 3 lados — como un techo que recoge agua de lluvia",
-            ur: "وہ شکل جس کے 3 اطراف ہوں — جیسے وہ چھت جو بارش کا پانی جمع کرتی ہے",
-          },
-        },
-        {
-          id: "rectangle",
-          emoji: "🟦",
-          word: { en: "rectangle", es: "rectángulo", ur: "مستطیل" },
-          definition: {
-            en: "a shape with 4 sides where opposite sides are equal — like a solar panel",
-            es: "una figura con 4 lados donde los lados opuestos son iguales — como un panel solar",
-            ur: "وہ شکل جس کے 4 اطراف ہوں اور آمنے سامنے والے اطراف برابر ہوں — جیسے سولر پینل",
-          },
-        },
-        {
-          id: "sides",
-          emoji: "📐",
-          word: { en: "sides", es: "lados", ur: "اطراف" },
-          definition: {
-            en: "the straight lines that make up a shape",
-            es: "las líneas rectas que forman una figura",
-            ur: "سیدھی لکیریں جو شکل بناتی ہیں",
-          },
-        },
-      ],
-      lesson: {
-        en: "☀️ **Shapes help save our planet!** Did you know that solar panels — the machines that make electricity from sunlight — are shaped like **rectangles**? Community gardens use **squares** to grow food for neighbors. Rooftops shaped like **triangles** collect rainwater so we don't waste it. Even wind turbines spin in a **circle**!\n\nShapes are everywhere in the tools people use to take care of our Earth. When you learn shapes, you are learning the building blocks of a better world! 🌍",
-        es: "☀️ **¡Las figuras ayudan a salvar nuestro planeta!** ¿Sabías que los paneles solares — las máquinas que producen electricidad con la luz del sol — tienen forma de **rectángulo**? Los jardines comunitarios usan **cuadrados** para cultivar comida para los vecinos. Los techos con forma de **triángulo** recogen agua de lluvia para no desperdiciarla. ¡Hasta las turbinas de viento giran en **círculo**!\n\nLas figuras están en todas partes en las herramientas que usamos para cuidar nuestra Tierra. ¡Cuando aprendes figuras, estás aprendiendo los bloques para construir un mundo mejor! 🌍",
-        ur: "☀️ **شکلیں ہماری زمین بچانے میں مدد کرتی ہیں!** کیا تم جانتے ہو کہ سولر پینل — وہ مشینیں جو سورج کی روشنی سے بجلی بناتی ہیں — **مستطیل** شکل کے ہوتے ہیں؟ کمیونٹی گارڈن پڑوسیوں کے لیے کھانا اگانے کے لیے **مربع** استعمال کرتے ہیں۔ **تکون** شکل کی چھتیں بارش کا پانی جمع کرتی ہیں تاکہ ہم اسے ضائع نہ کریں۔ حتیٰ کہ ونڈ ٹربائن بھی **دائرے** میں گھومتی ہے!\n\nہمارے سیارے کی دیکھ بھال کے اوزاروں میں شکلیں ہر جگہ ہیں۔ جب تم شکلیں سیکھتے ہو، تم ایک بہتر دنیا کی بنیاد سیکھ رہے ہو! 🌍",
-      },
-      exercises: [
-        {
-          id: "ex-2.8A-1",
-          type: "multiple-choice",
-          prompt: {
-            en: "☀️ A solar panel on the school roof makes clean energy. Solar panels have 4 sides and the opposite sides are equal. What shape is a solar panel?",
-            es: "☀️ Un panel solar en el techo de la escuela produce energía limpia. Los paneles solares tienen 4 lados y los lados opuestos son iguales. ¿Qué forma tiene un panel solar?",
-            ur: "☀️ اسکول کی چھت پر ایک سولر پینل صاف توانائی بناتا ہے۔ سولر پینل کے 4 اطراف ہوتے ہیں اور آمنے سامنے والے اطراف برابر ہوتے ہیں۔ سولر پینل کی شکل کیا ہے؟",
-          },
-          choices: [
-            { en: "Circle", es: "Círculo", ur: "دائرہ" },
-            { en: "Triangle", es: "Triángulo", ur: "تکون" },
-            { en: "Rectangle", es: "Rectángulo", ur: "مستطیل" },
-            { en: "Square", es: "Cuadrado", ur: "مربع" },
-          ],
-          correctIndex: 2,
-        },
-        {
-          id: "ex-2.8A-2",
-          type: "true-false",
-          prompt: {
-            en: "🌱 The community garden plots are shaped like squares — 4 equal sides. A circle has 0 sides.",
-            es: "🌱 Los cuadros del jardín comunitario tienen forma de cuadrado — 4 lados iguales. Un círculo tiene 0 lados.",
-            ur: "🌱 کمیونٹی گارڈن کے حصے مربع شکل کے ہیں — 4 برابر اطراف۔ دائرے کے 0 اطراف ہوتے ہیں۔",
-          },
-          choices: [
-            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
-            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
-          ],
-          correctIndex: 0,
-        },
-      ],
-      quiz: [
-        {
-          id: "qz-2.8A-1",
-          type: "multiple-choice",
-          prompt: {
-            en: "🌬️ Wind turbines spin to make clean electricity. The spinning part makes a circle shape. How many sides does a circle have?",
-            es: "🌬️ Las turbinas de viento giran para producir electricidad limpia. La parte que gira hace una figura circular. ¿Cuántos lados tiene un círculo?",
-            ur: "🌬️ ونڈ ٹربائن صاف بجلی بنانے کے لیے گھومتی ہے۔ گھومنے والا حصہ دائرہ بناتا ہے۔ دائرے کے کتنے اطراف ہوتے ہیں؟",
-          },
-          choices: [
-            { en: "1", es: "1", ur: "1" },
-            { en: "3", es: "3", ur: "3" },
-            { en: "4", es: "4", ur: "4" },
-            { en: "0", es: "0", ur: "0" },
-          ],
-          correctIndex: 3,
-        },
-        {
-          id: "qz-2.8A-2",
-          type: "multiple-choice",
-          prompt: {
-            en: "🌧️ A rooftop shaped like a triangle collects rainwater for the garden. How many sides does a triangle have?",
-            es: "🌧️ Un techo con forma de triángulo recoge agua de lluvia para el jardín. ¿Cuántos lados tiene un triángulo?",
-            ur: "🌧️ تکون شکل کی چھت باغ کے لیے بارش کا پانی جمع کرتی ہے۔ تکون کے کتنے اطراف ہوتے ہیں؟",
-          },
-          choices: [
-            { en: "2", es: "2", ur: "2" },
-            { en: "3", es: "3", ur: "3" },
-            { en: "4", es: "4", ur: "4" },
-            { en: "5", es: "5", ur: "5" },
-          ],
-          correctIndex: 1,
-        },
-        {
-          id: "qz-2.8A-3",
-          type: "multiple-choice",
-          prompt: {
-            en: "🌿 Which shape has 4 equal sides — like a fair garden plot where every student gets the same space?",
-            es: "🌿 ¿Qué figura tiene 4 lados iguales — como un cuadro de jardín justo donde cada estudiante tiene el mismo espacio?",
-            ur: "🌿 کون سی شکل کے 4 برابر اطراف ہیں — جیسے منصفانہ باغ کا ٹکڑا جہاں ہر طالب علم کو برابر جگہ ملے؟",
-          },
-          choices: [
-            { en: "Circle", es: "Círculo", ur: "دائرہ" },
-            { en: "Triangle", es: "Triángulo", ur: "تکون" },
-            { en: "Rectangle", es: "Rectángulo", ur: "مستطیل" },
-            { en: "Square", es: "Cuadrado", ur: "مربع" },
-          ],
-          correctIndex: 3,
-        },
-      ],
-      story: {
-        title: {
-          en: "Leo's Flying Machine",
-          es: "La Máquina Voladora de Leo",
-          ur: "لیو کی اڑن مشین",
-        },
-        pages: [
-          {
-            emoji: "📓",
-            text: {
-              en: "Young Leo sat in his workshop in Florence, sketching in his notebook. \"Today,\" he said, \"I will build a flying machine!\"",
-              es: "El joven Leo estaba sentado en su taller en Florencia, dibujando en su cuaderno. \"Hoy,\" dijo, \"¡voy a construir una máquina voladora!\"",
-              ur: "نوجوان لیو فلورنس میں اپنی ورکشاپ میں بیٹھا اپنی کاپی میں خاکہ بنا رہا تھا۔ \"آج،\" اس نے کہا، \"میں ایک اڑن مشین بناؤں گا!\"",
-            },
-          },
-          {
-            emoji: "🔺",
-            text: {
-              en: "First, Leo needed wings — wide and strong, with 3 straight sides that could cut through the wind. \"A triangle!\" he said, and sketched two big ones.",
-              es: "Primero, Leo necesitaba alas — anchas y fuertes, con 3 lados rectos que pudieran cortar el viento. \"¡Un triángulo!\" dijo, y dibujó dos grandes.",
-              ur: "پہلے، لیو کو پر چاہیے تھے — چوڑے اور مضبوط، 3 سیدھے اطراف کے ساتھ جو ہوا کو کاٹ سکیں۔ \"تکون!\" اس نے کہا، اور دو بڑی تکونیں بنائیں۔",
-            },
-          },
-          {
-            emoji: "🟦",
-            text: {
-              en: "Next, the machine needed a body to hold everything together — 4 sides, with opposite sides equal, so it would stay balanced. \"A rectangle!\" said Leo.",
-              es: "Después, la máquina necesitaba un cuerpo para sostener todo junto — 4 lados, con los lados opuestos iguales, para que se mantuviera equilibrada. \"¡Un rectángulo!\" dijo Leo.",
-              ur: "پھر، مشین کو سب کچھ جوڑے رکھنے کے لیے ایک باڈی چاہیے تھی — 4 اطراف، جس کے آمنے سامنے والے اطراف برابر ہوں، تاکہ توازن رہے۔ \"مستطیل!\" لیو نے کہا۔",
-            },
-          },
-          {
-            emoji: "⭕",
-            text: {
-              en: "Leo tried to roll the machine out of the workshop, but it would not move. \"I need wheels — round, with no corners, so they can spin.\" He drew 2 circles.",
-              es: "Leo trató de rodar la máquina fuera del taller, pero no se movía. \"Necesito ruedas — redondas, sin esquinas, para que puedan girar.\" Dibujó 2 círculos.",
-              ur: "لیو نے مشین کو ورکشاپ سے باہر نکالنے کی کوشش کی، مگر وہ حرکت نہ کر سکی۔ \"مجھے پہیے چاہئیں — گول، بغیر کونوں کے، تاکہ وہ گھوم سکیں۔\" اس نے 2 دائرے بنائے۔",
-            },
-          },
-          {
-            emoji: "🟥",
-            text: {
-              en: "Last, Leo wanted a small flag on top, fair and even on every side. \"4 equal sides... a square!\" He painted it bright red.",
-              es: "Por último, Leo quería una pequeña bandera arriba, justa e igual en cada lado. \"4 lados iguales... ¡un cuadrado!\" La pintó de rojo brillante.",
-              ur: "آخر میں، لیو چاہتا تھا کہ اوپر ایک چھوٹا جھنڈا ہو، جو ہر طرف سے برابر اور منصفانہ ہو۔ \"4 برابر اطراف... مربع!\" اس نے اسے چمکدار سرخ رنگ دیا۔",
-            },
-          },
-          {
-            emoji: "🔧",
-            text: {
-              en: "Leo put the pieces together: triangle wings, a rectangle body, circle wheels, and a square flag. Every shape had its own job to do.",
-              es: "Leo unió las piezas: alas triangulares, un cuerpo rectangular, ruedas circulares y una bandera cuadrada. Cada figura tenía su propio trabajo.",
-              ur: "لیو نے سب حصے جوڑے: تکون پر، مستطیل باڈی، دائرے کے پہیے، اور مربع جھنڈا۔ ہر شکل کا اپنا کام تھا۔",
-            },
-          },
-          {
-            emoji: "🪽",
-            text: {
-              en: "He rolled the machine up to the rooftop on its circle wheels, and the wind caught the triangle wings. The flying machine lifted into the sky!",
-              es: "Subió la máquina al techo sobre sus ruedas circulares, y el viento atrapó las alas triangulares. ¡La máquina voladora se elevó hacia el cielo!",
-              ur: "اس نے مشین کو گول پہیوں پر چھت تک لے گیا، اور ہوا نے تکون پروں کو پکڑ لیا۔ اڑن مشین آسمان کی طرف اڑ گئی!",
-            },
-          },
-          {
-            emoji: "✨",
-            text: {
-              en: "\"Every shape has a job!\" Leo laughed, watching it soar. \"Round things roll, triangles cut the wind, and equal sides keep things fair and strong.\"",
-              es: "\"¡Cada figura tiene un trabajo!\" rio Leo, mirándola volar. \"Las cosas redondas ruedan, los triángulos cortan el viento, y los lados iguales mantienen las cosas justas y fuertes.\"",
-              ur: "\"ہر شکل کا ایک کام ہوتا ہے!\" لیو نے ہنستے ہوئے کہا، اسے اڑتا دیکھ کر۔ \"گول چیزیں لڑھکتی ہیں، تکونیں ہوا کاٹتی ہیں، اور برابر اطراف چیزوں کو منصفانہ اور مضبوط رکھتے ہیں۔\"",
-            },
-          },
-        ],
-      },
-    },
     {
       teks: "2.4C",
       cambridge: "Stage 2 · 2Nc3",
@@ -959,6 +873,287 @@ const grade2: Grade = {
     },
 
     {
+      teks: "2.4D",
+      cambridge: "Stage 2 · 2Nc5",
+      emoji: "📐",
+      title: { en: "Number Sentences: Add & Subtract", es: "Oraciones Numéricas: Suma y Resta", ur: "نمبر جملے: جمع اور تفریق" },
+      vocabulary: [
+        { id: "number-sentence", emoji: "🔣", word: { en: "number sentence", es: "oración numérica", ur: "نمبر جملہ" }, definition: { en: "a math statement using numbers, operations, and an equal sign, like 5 + 3 = 8", es: "un enunciado matemático con números, operaciones y un signo igual, como 5 + 3 = 8", ur: "ایک ریاضی بیان جو نمبروں، علامات اور = سے مل کر بنتا ہے، جیسے 5 + 3 = 8" } },
+        { id: "unknown", emoji: "❓", word: { en: "unknown", es: "desconocido", ur: "نامعلوم" }, definition: { en: "the missing number in a math sentence, shown with a ? or a box", es: "el número que falta en una oración matemática, representado con ? o un cuadrado", ur: "ریاضی جملے میں لاپتہ نمبر، جو ? یا خانے سے دکھایا جاتا ہے" } },
+        { id: "operation", emoji: "➕", word: { en: "operation", es: "operación", ur: "عمل" }, definition: { en: "what you do to numbers — addition (+) and subtraction (−) are operations", es: "lo que haces con los números — la suma (+) y la resta (−) son operaciones", ur: "نمبروں کے ساتھ کیا جانے والا عمل — جمع (+) اور تفریق (−) عمل ہیں" } },
+        { id: "equation", emoji: "⚖️", word: { en: "equation", es: "ecuación", ur: "مساوات" }, definition: { en: "a math sentence that shows two amounts are equal using an = sign", es: "un enunciado matemático que muestra que dos cantidades son iguales con el signo =", ur: "ریاضی جملہ جو = علامت سے دو مقداروں کی برابری ظاہر کرے" } },
+        { id: "solve", emoji: "✅", word: { en: "solve", es: "resolver", ur: "حل کرنا" }, definition: { en: "to find the value of the unknown in a math sentence", es: "encontrar el valor del número desconocido en una oración matemática", ur: "ریاضی جملے میں نامعلوم کی قدر معلوم کرنا" } },
+      ],
+      lesson: {
+        en: "A number sentence uses numbers and symbols to show a math relationship. Sometimes part of a number sentence is missing: ? + 45 = 120. To find the unknown, think about what makes the equation true. If ? + 45 = 120, then ? = 120 − 45 = 75. Word problems give you a story — your job is to write the number sentence that matches the story, then solve it.",
+        es: "Una oración numérica usa números y símbolos para mostrar una relación matemática. A veces falta una parte: ? + 45 = 120. Para encontrar el desconocido, piensa en qué hace verdadera la ecuación. Si ? + 45 = 120, entonces ? = 120 − 45 = 75. Los problemas escritos te dan una historia — tu trabajo es escribir la oración numérica que la representa y luego resolverla.",
+        ur: "نمبر جملہ ریاضی تعلق کو ظاہر کرتا ہے۔ کبھی کبھی کچھ لاپتہ ہوتا ہے: ? + 45 = 120۔ نامعلوم معلوم کرنے کے لیے سوچیں کہ مساوات سچ کب ہوتی ہے۔ ? + 45 = 120 میں ? = 75۔ الفاظ کے مسائل کہانی دیتے ہیں — آپ کا کام نمبر جملہ لکھ کر حل کرنا ہے۔",
+      },
+      exercises: [
+        { id: "ex-2.4D-1", type: "multiple-choice", prompt: { en: "🌳 Rangers planted some trees. Then they planted 45 more. Now there are 120 trees. Which number sentence matches?", es: "🌳 Los guardabosques plantaron algunos árboles. Luego plantaron 45 más. Ahora hay 120 árboles. ¿Qué oración numérica corresponde?", ur: "🌳 رینجرز نے کچھ درخت لگائے۔ پھر 45 مزید لگائے۔ اب 120 ہیں۔ کون سا نمبر جملہ مناسب ہے؟" }, choices: [{ en: "120 − 45 = ?", es: "120 − 45 = ?", ur: "120 − 45 = ?" }, { en: "? + 45 = 120", es: "? + 45 = 120", ur: "? + 45 = 120" }, { en: "45 + 120 = ?", es: "45 + 120 = ?", ur: "45 + 120 = ?" }, { en: "120 + 45 = ?", es: "120 + 45 = ?", ur: "120 + 45 = ?" }], correctIndex: 1 },
+        { id: "ex-2.4D-2", type: "multiple-choice", prompt: { en: "♻️ Solve: ? + 240 = 500", es: "♻️ Resuelve: ? + 240 = 500", ur: "♻️ حل کریں: ? + 240 = 500" }, choices: [{ en: "740", es: "740", ur: "740" }, { en: "260", es: "260", ur: "260" }, { en: "240", es: "240", ur: "240" }, { en: "200", es: "200", ur: "200" }], correctIndex: 1 },
+        { id: "ex-2.4D-3", type: "true-false", prompt: { en: "🌊 500 − 200 = 300.", es: "🌊 500 − 200 = 300.", ur: "🌊 500 − 200 = 300۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "ex-2.4D-4", type: "multiple-choice", prompt: { en: "🌱 A garden had some plants. 35 were removed. Now there are 48 plants. Which number sentence matches?", es: "🌱 Un jardín tenía algunas plantas. Se quitaron 35. Ahora hay 48. ¿Qué oración numérica corresponde?", ur: "🌱 باغ میں کچھ پودے تھے۔ 35 ہٹائے گئے۔ اب 48 ہیں۔ کون سا جملہ مناسب ہے؟" }, choices: [{ en: "48 − 35 = ?", es: "48 − 35 = ?", ur: "48 − 35 = ?" }, { en: "? − 35 = 48", es: "? − 35 = 48", ur: "? − 35 = 48" }, { en: "35 + 48 = ?", es: "35 + 48 = ?", ur: "35 + 48 = ?" }, { en: "48 + 35 = ?", es: "48 + 35 = ?", ur: "48 + 35 = ?" }], correctIndex: 1 },
+        { id: "ex-2.4D-5", type: "multiple-choice", prompt: { en: "🌳 Solve: 678 − ? = 300", es: "🌳 Resuelve: 678 − ? = 300", ur: "🌳 حل کریں: 678 − ? = 300" }, choices: [{ en: "978", es: "978", ur: "978" }, { en: "378", es: "378", ur: "378" }, { en: "278", es: "278", ur: "278" }, { en: "300", es: "300", ur: "300" }], correctIndex: 1 },
+        { id: "ex-2.4D-6", type: "multiple-choice", prompt: { en: "🐝 Solve: 125 + ? = 400", es: "🐝 Resuelve: 125 + ? = 400", ur: "🐝 حل کریں: 125 + ? = 400" }, choices: [{ en: "525", es: "525", ur: "525" }, { en: "275", es: "275", ur: "275" }, { en: "375", es: "375", ur: "375" }, { en: "225", es: "225", ur: "225" }], correctIndex: 1 },
+        { id: "ex-2.4D-7", type: "true-false", prompt: { en: "🌿 The equation 350 + ? = 700 has a solution of 350.", es: "🌿 La ecuación 350 + ? = 700 tiene como solución 350.", ur: "🌿 مساوات 350 + ? = 700 کا حل 350 ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "ex-2.4D-8", type: "multiple-choice", prompt: { en: "♻️ 500 bottles were collected. Some were recycled. 175 are left. Which number sentence matches?", es: "♻️ Se recolectaron 500 botellas. Algunas fueron recicladas. Quedan 175. ¿Qué oración numérica corresponde?", ur: "♻️ 500 بوتلیں جمع ہوئیں۔ کچھ ری سائیکل ہوئیں۔ 175 باقی ہیں۔ کون سا جملہ مناسب ہے؟" }, choices: [{ en: "500 + 175 = ?", es: "500 + 175 = ?", ur: "500 + 175 = ?" }, { en: "500 − ? = 175", es: "500 − ? = 175", ur: "500 − ? = 175" }, { en: "? − 500 = 175", es: "? − 500 = 175", ur: "? − 500 = 175" }, { en: "175 − 500 = ?", es: "175 − 500 = ?", ur: "175 − 500 = ?" }], correctIndex: 1 },
+        { id: "ex-2.4D-9", type: "multiple-choice", prompt: { en: "🌊 Solve: 900 − ? = 450", es: "🌊 Resuelve: 900 − ? = 450", ur: "🌊 حل کریں: 900 − ? = 450" }, choices: [{ en: "550", es: "550", ur: "550" }, { en: "450", es: "450", ur: "450" }, { en: "350", es: "350", ur: "350" }, { en: "400", es: "400", ur: "400" }], correctIndex: 1 },
+        { id: "ex-2.4D-10", type: "true-false", prompt: { en: "🌱 The equation ? + 300 = 700 has a solution of 400.", es: "🌱 La ecuación ? + 300 = 700 tiene como solución 400.", ur: "🌱 مساوات ? + 300 = 700 کا حل 400 ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+      ],
+      quiz: [
+        { id: "qz-2.4D-1", type: "multiple-choice", prompt: { en: "🌳 Solve: ? + 350 = 800", es: "🌳 Resuelve: ? + 350 = 800", ur: "🌳 حل کریں: ? + 350 = 800" }, choices: [{ en: "450", es: "450", ur: "450" }, { en: "350", es: "350", ur: "350" }, { en: "400", es: "400", ur: "400" }, { en: "550", es: "550", ur: "550" }], correctIndex: 0 },
+        { id: "qz-2.4D-2", type: "multiple-choice", prompt: { en: "♻️ A center had 680 items. Some were sorted. 245 remain. Which sentence matches?", es: "♻️ Un centro tenía 680 artículos. Algunos fueron clasificados. Quedan 245. ¿Qué oración corresponde?", ur: "♻️ مرکز میں 680 اشیاء تھیں۔ کچھ چھانٹ لی گئیں۔ 245 باقی ہیں۔ کون سا جملہ مناسب ہے؟" }, choices: [{ en: "680 − ? = 245", es: "680 − ? = 245", ur: "680 − ? = 245" }, { en: "680 + 245 = ?", es: "680 + 245 = ?", ur: "680 + 245 = ?" }, { en: "? − 245 = 680", es: "? − 245 = 680", ur: "? − 245 = 680" }, { en: "245 + ? = 680", es: "245 + ? = 680", ur: "245 + ? = 680" }], correctIndex: 0 },
+        { id: "qz-2.4D-3", type: "true-false", prompt: { en: "🌿 750 − ? = 300 means ? = 450.", es: "🌿 750 − ? = 300 significa que ? = 450.", ur: "🌿 750 − ? = 300 کا مطلب ہے ? = 450۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+      ],
+      wordProblems: [
+        { id: "wp-2.4D-1", emoji: "🌳🌱", scene: "Reforestation drive in East Texas — filling in gaps left by wildfires", prompt: { en: "Rangers planted some trees on Monday and 248 on Tuesday. They planted 600 trees in all. How many trees did they plant on Monday?", es: "Los guardabosques plantaron algunos árboles el lunes y 248 el martes. Plantaron 600 en total. ¿Cuántos plantaron el lunes?", ur: "رینجرز نے پیر کو کچھ اور منگل کو 248 درخت لگائے۔ کل 600 لگائے۔ پیر کو کتنے لگائے؟" }, answer: 352, answerUnit: { en: "trees", es: "árboles", ur: "درخت" } },
+        { id: "wp-2.4D-2", emoji: "♻️🥤", scene: "Recycling drive at Dallas ISD — students racing to reach 500 cans", prompt: { en: "Students sorted some cans on Friday. On Saturday they sorted 175 more and reached 500 total. How many cans did they sort on Friday?", es: "Los estudiantes clasificaron algunas latas el viernes. El sábado clasificaron 175 más y llegaron a 500 en total. ¿Cuántas latas clasificaron el viernes?", ur: "طلبہ نے جمعہ کو کچھ ڈبے چھانٹے۔ ہفتے کو 175 مزید اور 500 کل ہو گئے۔ جمعہ کو کتنے چھانٹے؟" }, answer: 325, answerUnit: { en: "cans", es: "latas", ur: "ڈبے" } },
+        { id: "wp-2.4D-3", emoji: "🌊🧹", scene: "Two-week ocean cleanup at Corpus Christi — tracking total pounds removed", prompt: { en: "Cleaners collected 800 pounds of trash over two weeks. They collected 375 pounds the first week. How many pounds did they collect the second week?", es: "Los limpiadores recogieron 800 libras de basura en dos semanas. Recogieron 375 libras la primera semana. ¿Cuántas libras recogieron la segunda semana?", ur: "صفائی کاروں نے دو ہفتوں میں 800 پاؤنڈ کوڑا جمع کیا۔ پہلے ہفتے 375 پاؤنڈ۔ دوسرے ہفتے کتنے؟" }, answer: 425, answerUnit: { en: "pounds", es: "libras", ur: "پاؤنڈ" } },
+        { id: "wp-2.4D-4", emoji: "🐝🏠", scene: "Bee sanctuary in North Texas — moving bees to new safer homes", prompt: { en: "A bee shelter started with 900 bees. Some were moved to new homes. Now 365 bees remain. How many bees were moved?", es: "Un refugio de abejas empezó con 900 abejas. Algunas fueron llevadas a nuevos hogares. Ahora quedan 365. ¿Cuántas abejas fueron trasladadas?", ur: "مکھی پناہ گاہ میں 900 مکھیاں تھیں۔ کچھ نئے گھروں میں منتقل ہوئیں۔ اب 365 باقی ہیں۔ کتنی منتقل ہوئیں؟" }, answer: 535, answerUnit: { en: "bees", es: "abejas", ur: "مکھیاں" } },
+        { id: "wp-2.4D-5", emoji: "🌳🌍💚", scene: "City of Dallas tree-planting challenge — goal of 1,000 trees by year end", prompt: { en: "A nature club needs to plant 1,000 trees by the end of the year. They have planted 637 so far. How many more do they need to plant?", es: "Un club de naturaleza necesita plantar 1,000 árboles antes de fin de año. Ya plantaron 637. ¿Cuántos más necesitan plantar?", ur: "ایک نیچر کلب کو سال کے آخر تک 1,000 درخت لگانے ہیں۔ ابھی تک 637 لگائے۔ کتنے مزید لگانے ہیں؟" }, answer: 363, answerUnit: { en: "trees", es: "árboles", ur: "درخت" } },
+      ],
+    },
+
+    {
+      teks: "2.5",
+      cambridge: "Stage 2 · 2Mm1",
+      emoji: "🪙",
+      title: {
+        en: "Money & Coins",
+        es: "Dinero y Monedas",
+        ur: "پیسہ اور سکے",
+      },
+      vocabulary: [
+        {
+          id: "penny",
+          emoji: "🟤",
+          word: { en: "penny", es: "centavo", ur: "پینی" },
+          definition: {
+            en: "a coin worth 1 cent (1¢) — the copper-colored coin",
+            es: "una moneda que vale 1 centavo (1¢) — la moneda de color cobre",
+            ur: "1 سینٹ (1¢) کا سکہ — تانبے کے رنگ کا سکہ",
+          },
+        },
+        {
+          id: "nickel",
+          emoji: "⚪",
+          word: { en: "nickel", es: "níquel", ur: "نکل" },
+          definition: {
+            en: "a coin worth 5 cents (5¢) — the thick silver coin",
+            es: "una moneda que vale 5 centavos (5¢) — la moneda plateada más gruesa",
+            ur: "5 سینٹ (5¢) کا سکہ — موٹا چاندی کا سکہ",
+          },
+        },
+        {
+          id: "dime",
+          emoji: "🔘",
+          word: { en: "dime", es: "diez centavos", ur: "ڈائم" },
+          definition: {
+            en: "a coin worth 10 cents (10¢) — the small thin silver coin",
+            es: "una moneda que vale 10 centavos (10¢) — la moneda plateada pequeña y delgada",
+            ur: "10 سینٹ (10¢) کا سکہ — چھوٹا پتلا چاندی کا سکہ",
+          },
+        },
+        {
+          id: "quarter",
+          emoji: "🟡",
+          word: { en: "quarter", es: "cuarto de dólar", ur: "کوارٹر" },
+          definition: {
+            en: "a coin worth 25 cents (25¢) — the large silver coin",
+            es: "una moneda que vale 25 centavos (25¢) — la moneda plateada más grande",
+            ur: "25 سینٹ (25¢) کا سکہ — بڑا چاندی کا سکہ",
+          },
+        },
+        {
+          id: "dollar",
+          emoji: "💵",
+          word: { en: "dollar", es: "dólar", ur: "ڈالر" },
+          definition: {
+            en: "100 cents = $1.00 — written with a dollar sign ($)",
+            es: "100 centavos = $1.00 — se escribe con el signo de dólar ($)",
+            ur: "100 سینٹ = $1.00 — ڈالر کی علامت ($) سے لکھتے ہیں",
+          },
+        },
+        {
+          id: "cent",
+          emoji: "¢",
+          word: { en: "cent", es: "centavo", ur: "سینٹ" },
+          definition: {
+            en: "the smallest unit of money — written with the ¢ symbol",
+            es: "la unidad más pequeña de dinero — se escribe con el símbolo ¢",
+            ur: "پیسے کی سب سے چھوٹی اکائی — ¢ علامت سے لکھتے ہیں",
+          },
+        },
+      ],
+      lesson: {
+        en: "🪙 **Money helps our community!** When you buy fruit from a community garden or donate to a school supply drive, you use coins and dollars.\n\nHere are the coins:\n• **Penny** = 1¢\n• **Nickel** = 5¢\n• **Dime** = 10¢\n• **Quarter** = 25¢\n• **Dollar** = 100¢ = $1.00\n\nTo count a coin collection, start with the biggest coin and count up: Quarter (25¢) + Dime (10¢) + Nickel (5¢) + Penny (1¢) = **41¢**.\n\nWe use **¢** for amounts under a dollar and **$** for a dollar or more. You are learning to be a smart money manager! 💚",
+        es: "🪙 **¡El dinero ayuda a nuestra comunidad!** Cuando compras frutas en un jardín comunitario o donas útiles escolares, usas monedas y billetes.\n\nEstas son las monedas:\n• **Centavo (Penny)** = 1¢\n• **Níquel (Nickel)** = 5¢\n• **Diez centavos (Dime)** = 10¢\n• **Cuarto de dólar (Quarter)** = 25¢\n• **Dólar (Dollar)** = 100¢ = $1.00\n\nPara contar monedas, empieza por la más grande: Cuarto (25¢) + Diez (10¢) + Níquel (5¢) + Centavo (1¢) = **41¢**.\n\nUsamos **¢** para cantidades menores a un dólar y **$** para un dólar o más. ¡Estás aprendiendo a ser un administrador de dinero inteligente! 💚",
+        ur: "🪙 **پیسہ ہماری کمیونٹی کی مدد کرتا ہے!** جب تم کمیونٹی گارڈن سے پھل خریدتے ہو یا اسکول سپلائی مہم کے لیے عطیہ دیتے ہو، تم سکے اور ڈالر استعمال کرتے ہو۔\n\nسکے یہ ہیں:\n• **پینی** = 1¢\n• **نکل** = 5¢\n• **ڈائم** = 10¢\n• **کوارٹر** = 25¢\n• **ڈالر** = 100¢ = $1.00\n\nسکے گننے کے لیے سب سے بڑے سکے سے شروع کرو: کوارٹر (25¢) + ڈائم (10¢) + نکل (5¢) + پینی (1¢) = **41¢**۔\n\n**¢** ایک ڈالر سے کم کے لیے اور **$** ایک ڈالر یا زیادہ کے لیے استعمال ہوتی ہے۔ تم ایک سمجھدار مالیاتی مینیجر بننا سیکھ رہے ہو! 💚",
+      },
+      exercises: [
+        {
+          id: "ex-2.5-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌽 At the community garden sale, Mia has 1 quarter and 2 dimes. How much money does she have in all?",
+            es: "🌽 En la venta del jardín comunitario, Mia tiene 1 cuarto y 2 monedas de diez centavos. ¿Cuánto dinero tiene en total?",
+            ur: "🌽 کمیونٹی گارڈن سیل میں، میا کے پاس 1 کوارٹر اور 2 ڈائم ہیں۔ اس کے پاس کل کتنے پیسے ہیں؟",
+          },
+          choices: [
+            { en: "35¢", es: "35¢", ur: "35¢" },
+            { en: "55¢", es: "55¢", ur: "55¢" },
+            { en: "45¢", es: "45¢", ur: "45¢" },
+            { en: "30¢", es: "30¢", ur: "30¢" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-2.5-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🍎 Omar wants to buy an apple at the school farmers market for 50¢. He has 1 quarter and 3 nickels. Does he have enough?",
+            es: "🍎 Omar quiere comprar una manzana en el mercado escolar por 50¢. Tiene 1 cuarto y 3 níqueles. ¿Tiene suficiente?",
+            ur: "🍎 عمر اسکول فارمرز مارکیٹ میں 50¢ میں سیب خریدنا چاہتا ہے۔ اس کے پاس 1 کوارٹر اور 3 نکل ہیں۔ کیا اس کے پاس کافی ہے؟",
+          },
+          choices: [
+            { en: "Yes — he has 50¢", es: "Sí — tiene 50¢", ur: "ہاں — اس کے پاس 50¢ ہیں" },
+            { en: "Yes — he has 45¢", es: "Sí — tiene 45¢", ur: "ہاں — اس کے پاس 45¢ ہیں" },
+            { en: "No — he only has 40¢", es: "No — solo tiene 40¢", ur: "نہیں — اس کے پاس صرف 40¢ ہیں" },
+            { en: "No — he only has 30¢", es: "No — solo tiene 30¢", ur: "نہیں — اس کے پاس صرف 30¢ ہیں" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-2.5-3",
+          type: "true-false",
+          prompt: {
+            en: "💰 2 quarters + 4 dimes + 1 nickel = 95¢. This is less than $1.00.",
+            es: "💰 2 cuartos + 4 monedas de 10¢ + 1 níquel = 95¢. Esto es menos de $1.00.",
+            ur: "💰 2 کوارٹر + 4 ڈائم + 1 نکل = 95¢۔ یہ $1.00 سے کم ہے۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-2.5-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🪙 Lena saves coins in her piggy bank: 3 quarters, 1 dime, and 2 pennies. How much has she saved?",
+            es: "🪙 Lena guarda monedas: 3 cuartos, 1 moneda de diez y 2 centavos. ¿Cuánto ha ahorrado?",
+            ur: "🪙 لینا اپنے گُلَّک میں سکے بچاتی ہے: 3 کوارٹر، 1 ڈائم اور 2 پینی۔ اس نے کتنا بچایا؟",
+          },
+          choices: [
+            { en: "77¢", es: "77¢", ur: "77¢" },
+            { en: "82¢", es: "82¢", ur: "82¢" },
+            { en: "87¢", es: "87¢", ur: "87¢" },
+            { en: "92¢", es: "92¢", ur: "92¢" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-2.5-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌿 A seed packet costs 75¢. Which coin combination equals exactly 75¢?",
+            es: "🌿 Un sobre de semillas cuesta 75¢. ¿Qué combinación de monedas es exactamente 75¢?",
+            ur: "🌿 بیجوں کا ایک پیکٹ 75¢ کا ہے۔ کون سا سکوں کا مجموعہ بالکل 75¢ ہے؟",
+          },
+          choices: [
+            { en: "3 quarters", es: "3 cuartos", ur: "3 کوارٹر" },
+            { en: "2 quarters + 2 dimes + 1 nickel", es: "2 cuartos + 2 de diez + 1 níquel", ur: "2 کوارٹر + 2 ڈائم + 1 نکل" },
+            { en: "2 quarters + 2 nickels", es: "2 cuartos + 2 níqueles", ur: "2 کوارٹر + 2 نکل" },
+            { en: "1 quarter + 5 dimes", es: "1 cuarto + 5 de diez", ur: "1 کوارٹر + 5 ڈائم" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "qz-2.5-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "💵 Carlos has $1.00. He spends 63¢ at the school store. How much change does he get back?",
+            es: "💵 Carlos tiene $1.00. Gasta 63¢ en la tienda escolar. ¿Cuánto cambio recibe?",
+            ur: "💵 کارلوس کے پاس $1.00 ہے۔ وہ اسکول اسٹور میں 63¢ خرچ کرتا ہے۔ اسے کتنا واپس ملتا ہے؟",
+          },
+          choices: [
+            { en: "27¢", es: "27¢", ur: "27¢" },
+            { en: "47¢", es: "47¢", ur: "47¢" },
+            { en: "37¢", es: "37¢", ur: "37¢" },
+            { en: "57¢", es: "57¢", ur: "57¢" },
+          ],
+          correctIndex: 2,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-2.5-1",
+          emoji: "🌽🪙",
+          scene: "Community farmers market at Griggs Park, Dallas — fresh produce for all",
+          prompt: {
+            en: "Zara buys a bag of corn for 45¢. She pays with 2 quarters. How much change does she get back?",
+            es: "Zara compra una bolsa de maíz por 45¢. Paga con 2 cuartos. ¿Cuánto cambio recibe?",
+            ur: "زارا 45¢ میں مکئی کی ایک تھیلی خریدتی ہے۔ وہ 2 کوارٹر سے ادائیگی کرتی ہے۔ اسے کتنا واپس ملتا ہے؟",
+          },
+          answer: 5,
+          answerUnit: { en: "cents (¢)", es: "centavos (¢)", ur: "سینٹ (¢)" },
+        },
+        {
+          id: "wp-2.5-2",
+          emoji: "🌱🏪",
+          scene: "School garden supply drive — students pool coins to buy seeds",
+          prompt: {
+            en: "The class collects coins for the garden: 4 quarters, 3 dimes, and 2 nickels. How much money did they collect in all?",
+            es: "La clase junta monedas para el jardín: 4 cuartos, 3 de diez y 2 níqueles. ¿Cuánto dinero juntaron en total?",
+            ur: "کلاس نے باغ کے لیے سکے جمع کیے: 4 کوارٹر، 3 ڈائم اور 2 نکل۔ انہوں نے کل کتنے پیسے جمع کیے؟",
+          },
+          answer: 140,
+          answerUnit: { en: "cents (¢)", es: "centavos (¢)", ur: "سینٹ (¢)" },
+        },
+        {
+          id: "wp-2.5-3",
+          emoji: "🍋💛",
+          scene: "Lemonade stand raising money for a school garden — South Dallas",
+          prompt: {
+            en: "Amir's lemonade costs 25¢ a cup. He sells 3 cups. How much money does he earn in all?",
+            es: "La limonada de Amir cuesta 25¢ por vaso. Vende 3 vasos. ¿Cuánto dinero gana en total?",
+            ur: "امیر کا لیموں پانی 25¢ فی کپ ہے۔ وہ 3 کپ بیچتا ہے۔ وہ کل کتنے پیسے کماتا ہے؟",
+          },
+          answer: 75,
+          answerUnit: { en: "cents (¢)", es: "centavos (¢)", ur: "سینٹ (¢)" },
+        },
+        {
+          id: "wp-2.5-4",
+          emoji: "🛍️🌿",
+          scene: "Eco-friendly school store — students earn coins for recycling",
+          prompt: {
+            en: "Sofia has 3 dimes and 4 nickels. She needs 50¢ to buy a recycled pencil kit. How much more money does she need?",
+            es: "Sofía tiene 3 monedas de diez y 4 níqueles. Necesita 50¢ para comprar un kit de lápices reciclados. ¿Cuánto más necesita?",
+            ur: "صوفیہ کے پاس 3 ڈائم اور 4 نکل ہیں۔ اسے ری سائیکل پنسل کٹ خریدنے کے لیے 50¢ چاہئیں۔ اسے کتنے مزید پیسے چاہئیں؟",
+          },
+          answer: 10,
+          answerUnit: { en: "cents (¢)", es: "centavos (¢)", ur: "سینٹ (¢)" },
+        },
+        {
+          id: "wp-2.5-5",
+          emoji: "🌳💰",
+          scene: "Tree-fund coin drive at Dallas Arboretum — every cent counts",
+          prompt: {
+            en: "The class raises money to plant a tree. They collect 2 quarters, 4 dimes, and 5 pennies. Did they reach their goal of $1.00? How much did they collect?",
+            es: "La clase recauda dinero para plantar un árbol. Juntan 2 cuartos, 4 de diez y 5 centavos. ¿Cuánto juntaron? ¿Alcanzaron su meta de $1.00?",
+            ur: "کلاس نے درخت لگانے کے لیے پیسے جمع کیے۔ 2 کوارٹر، 4 ڈائم اور 5 پینی۔ انہوں نے کل کتنے سینٹ جمع کیے؟ کیا انہوں نے $1.00 کا ہدف پورا کیا؟",
+          },
+          answer: 95,
+          answerUnit: { en: "cents (¢)", es: "centavos (¢)", ur: "سینٹ (¢)" },
+        },
+      ],
+    },
+
+    {
       teks: "2.6A",
       cambridge: "Stage 2 · 2Nc8",
       emoji: "🌻",
@@ -1291,47 +1486,228 @@ const grade2: Grade = {
         },
       ],
     },
+
     {
-      teks: "2.4D",
-      cambridge: "Stage 2 · 2Nc5",
-      emoji: "📐",
-      title: { en: "Number Sentences: Add & Subtract", es: "Oraciones Numéricas: Suma y Resta", ur: "نمبر جملے: جمع اور تفریق" },
+      teks: "2.8A",
+      cambridge: "Stage 2 · 2Gs1",
+      emoji: "☀️",
+      title: {
+        en: "2D Shapes",
+        es: "Figuras 2D",
+        ur: "دو جہتی شکلیں",
+      },
       vocabulary: [
-        { id: "number-sentence", emoji: "🔣", word: { en: "number sentence", es: "oración numérica", ur: "نمبر جملہ" }, definition: { en: "a math statement using numbers, operations, and an equal sign, like 5 + 3 = 8", es: "un enunciado matemático con números, operaciones y un signo igual, como 5 + 3 = 8", ur: "ایک ریاضی بیان جو نمبروں، علامات اور = سے مل کر بنتا ہے، جیسے 5 + 3 = 8" } },
-        { id: "unknown", emoji: "❓", word: { en: "unknown", es: "desconocido", ur: "نامعلوم" }, definition: { en: "the missing number in a math sentence, shown with a ? or a box", es: "el número que falta en una oración matemática, representado con ? o un cuadrado", ur: "ریاضی جملے میں لاپتہ نمبر، جو ? یا خانے سے دکھایا جاتا ہے" } },
-        { id: "operation", emoji: "➕", word: { en: "operation", es: "operación", ur: "عمل" }, definition: { en: "what you do to numbers — addition (+) and subtraction (−) are operations", es: "lo que haces con los números — la suma (+) y la resta (−) son operaciones", ur: "نمبروں کے ساتھ کیا جانے والا عمل — جمع (+) اور تفریق (−) عمل ہیں" } },
-        { id: "equation", emoji: "⚖️", word: { en: "equation", es: "ecuación", ur: "مساوات" }, definition: { en: "a math sentence that shows two amounts are equal using an = sign", es: "un enunciado matemático que muestra que dos cantidades son iguales con el signo =", ur: "ریاضی جملہ جو = علامت سے دو مقداروں کی برابری ظاہر کرے" } },
-        { id: "solve", emoji: "✅", word: { en: "solve", es: "resolver", ur: "حل کرنا" }, definition: { en: "to find the value of the unknown in a math sentence", es: "encontrar el valor del número desconocido en una oración matemática", ur: "ریاضی جملے میں نامعلوم کی قدر معلوم کرنا" } },
+        {
+          id: "circle",
+          emoji: "⭕",
+          word: { en: "circle", es: "círculo", ur: "دائرہ" },
+          definition: {
+            en: "a round shape with no corners — like the sun or a wheel",
+            es: "una figura redonda sin esquinas — como el sol o una rueda",
+            ur: "گول شکل جس کے کوئی کونے نہ ہوں — جیسے سورج یا پہیہ",
+          },
+        },
+        {
+          id: "square",
+          emoji: "🟥",
+          word: { en: "square", es: "cuadrado", ur: "مربع" },
+          definition: {
+            en: "a shape with 4 equal sides — like a garden plot",
+            es: "una figura con 4 lados iguales — como un cuadro de jardín",
+            ur: "وہ شکل جس کے 4 برابر اطراف ہوں — جیسے باغ کا ایک حصہ",
+          },
+        },
+        {
+          id: "triangle",
+          emoji: "🔺",
+          word: { en: "triangle", es: "triángulo", ur: "تکون" },
+          definition: {
+            en: "a shape with 3 sides — like a roof that catches rainwater",
+            es: "una figura con 3 lados — como un techo que recoge agua de lluvia",
+            ur: "وہ شکل جس کے 3 اطراف ہوں — جیسے وہ چھت جو بارش کا پانی جمع کرتی ہے",
+          },
+        },
+        {
+          id: "rectangle",
+          emoji: "🟦",
+          word: { en: "rectangle", es: "rectángulo", ur: "مستطیل" },
+          definition: {
+            en: "a shape with 4 sides where opposite sides are equal — like a solar panel",
+            es: "una figura con 4 lados donde los lados opuestos son iguales — como un panel solar",
+            ur: "وہ شکل جس کے 4 اطراف ہوں اور آمنے سامنے والے اطراف برابر ہوں — جیسے سولر پینل",
+          },
+        },
+        {
+          id: "sides",
+          emoji: "📐",
+          word: { en: "sides", es: "lados", ur: "اطراف" },
+          definition: {
+            en: "the straight lines that make up a shape",
+            es: "las líneas rectas que forman una figura",
+            ur: "سیدھی لکیریں جو شکل بناتی ہیں",
+          },
+        },
       ],
       lesson: {
-        en: "A number sentence uses numbers and symbols to show a math relationship. Sometimes part of a number sentence is missing: ? + 45 = 120. To find the unknown, think about what makes the equation true. If ? + 45 = 120, then ? = 120 − 45 = 75. Word problems give you a story — your job is to write the number sentence that matches the story, then solve it.",
-        es: "Una oración numérica usa números y símbolos para mostrar una relación matemática. A veces falta una parte: ? + 45 = 120. Para encontrar el desconocido, piensa en qué hace verdadera la ecuación. Si ? + 45 = 120, entonces ? = 120 − 45 = 75. Los problemas escritos te dan una historia — tu trabajo es escribir la oración numérica que la representa y luego resolverla.",
-        ur: "نمبر جملہ ریاضی تعلق کو ظاہر کرتا ہے۔ کبھی کبھی کچھ لاپتہ ہوتا ہے: ? + 45 = 120۔ نامعلوم معلوم کرنے کے لیے سوچیں کہ مساوات سچ کب ہوتی ہے۔ ? + 45 = 120 میں ? = 75۔ الفاظ کے مسائل کہانی دیتے ہیں — آپ کا کام نمبر جملہ لکھ کر حل کرنا ہے۔",
+        en: "☀️ **Shapes help save our planet!** Did you know that solar panels — the machines that make electricity from sunlight — are shaped like **rectangles**? Community gardens use **squares** to grow food for neighbors. Rooftops shaped like **triangles** collect rainwater so we don't waste it. Even wind turbines spin in a **circle**!\n\nShapes are everywhere in the tools people use to take care of our Earth. When you learn shapes, you are learning the building blocks of a better world! 🌍",
+        es: "☀️ **¡Las figuras ayudan a salvar nuestro planeta!** ¿Sabías que los paneles solares — las máquinas que producen electricidad con la luz del sol — tienen forma de **rectángulo**? Los jardines comunitarios usan **cuadrados** para cultivar comida para los vecinos. Los techos con forma de **triángulo** recogen agua de lluvia para no desperdiciarla. ¡Hasta las turbinas de viento giran en **círculo**!\n\nLas figuras están en todas partes en las herramientas que usamos para cuidar nuestra Tierra. ¡Cuando aprendes figuras, estás aprendiendo los bloques para construir un mundo mejor! 🌍",
+        ur: "☀️ **شکلیں ہماری زمین بچانے میں مدد کرتی ہیں!** کیا تم جانتے ہو کہ سولر پینل — وہ مشینیں جو سورج کی روشنی سے بجلی بناتی ہیں — **مستطیل** شکل کے ہوتے ہیں؟ کمیونٹی گارڈن پڑوسیوں کے لیے کھانا اگانے کے لیے **مربع** استعمال کرتے ہیں۔ **تکون** شکل کی چھتیں بارش کا پانی جمع کرتی ہیں تاکہ ہم اسے ضائع نہ کریں۔ حتیٰ کہ ونڈ ٹربائن بھی **دائرے** میں گھومتی ہے!\n\nہمارے سیارے کی دیکھ بھال کے اوزاروں میں شکلیں ہر جگہ ہیں۔ جب تم شکلیں سیکھتے ہو، تم ایک بہتر دنیا کی بنیاد سیکھ رہے ہو! 🌍",
       },
       exercises: [
-        { id: "ex-2.4D-1", type: "multiple-choice", prompt: { en: "🌳 Rangers planted some trees. Then they planted 45 more. Now there are 120 trees. Which number sentence matches?", es: "🌳 Los guardabosques plantaron algunos árboles. Luego plantaron 45 más. Ahora hay 120 árboles. ¿Qué oración numérica corresponde?", ur: "🌳 رینجرز نے کچھ درخت لگائے۔ پھر 45 مزید لگائے۔ اب 120 ہیں۔ کون سا نمبر جملہ مناسب ہے؟" }, choices: [{ en: "120 − 45 = ?", es: "120 − 45 = ?", ur: "120 − 45 = ?" }, { en: "? + 45 = 120", es: "? + 45 = 120", ur: "? + 45 = 120" }, { en: "45 + 120 = ?", es: "45 + 120 = ?", ur: "45 + 120 = ?" }, { en: "120 + 45 = ?", es: "120 + 45 = ?", ur: "120 + 45 = ?" }], correctIndex: 1 },
-        { id: "ex-2.4D-2", type: "multiple-choice", prompt: { en: "♻️ Solve: ? + 240 = 500", es: "♻️ Resuelve: ? + 240 = 500", ur: "♻️ حل کریں: ? + 240 = 500" }, choices: [{ en: "740", es: "740", ur: "740" }, { en: "260", es: "260", ur: "260" }, { en: "240", es: "240", ur: "240" }, { en: "200", es: "200", ur: "200" }], correctIndex: 1 },
-        { id: "ex-2.4D-3", type: "true-false", prompt: { en: "🌊 500 − 200 = 300.", es: "🌊 500 − 200 = 300.", ur: "🌊 500 − 200 = 300۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
-        { id: "ex-2.4D-4", type: "multiple-choice", prompt: { en: "🌱 A garden had some plants. 35 were removed. Now there are 48 plants. Which number sentence matches?", es: "🌱 Un jardín tenía algunas plantas. Se quitaron 35. Ahora hay 48. ¿Qué oración numérica corresponde?", ur: "🌱 باغ میں کچھ پودے تھے۔ 35 ہٹائے گئے۔ اب 48 ہیں۔ کون سا جملہ مناسب ہے؟" }, choices: [{ en: "48 − 35 = ?", es: "48 − 35 = ?", ur: "48 − 35 = ?" }, { en: "? − 35 = 48", es: "? − 35 = 48", ur: "? − 35 = 48" }, { en: "35 + 48 = ?", es: "35 + 48 = ?", ur: "35 + 48 = ?" }, { en: "48 + 35 = ?", es: "48 + 35 = ?", ur: "48 + 35 = ?" }], correctIndex: 1 },
-        { id: "ex-2.4D-5", type: "multiple-choice", prompt: { en: "🌳 Solve: 678 − ? = 300", es: "🌳 Resuelve: 678 − ? = 300", ur: "🌳 حل کریں: 678 − ? = 300" }, choices: [{ en: "978", es: "978", ur: "978" }, { en: "378", es: "378", ur: "378" }, { en: "278", es: "278", ur: "278" }, { en: "300", es: "300", ur: "300" }], correctIndex: 1 },
-        { id: "ex-2.4D-6", type: "multiple-choice", prompt: { en: "🐝 Solve: 125 + ? = 400", es: "🐝 Resuelve: 125 + ? = 400", ur: "🐝 حل کریں: 125 + ? = 400" }, choices: [{ en: "525", es: "525", ur: "525" }, { en: "275", es: "275", ur: "275" }, { en: "375", es: "375", ur: "375" }, { en: "225", es: "225", ur: "225" }], correctIndex: 1 },
-        { id: "ex-2.4D-7", type: "true-false", prompt: { en: "🌿 The equation 350 + ? = 700 has a solution of 350.", es: "🌿 La ecuación 350 + ? = 700 tiene como solución 350.", ur: "🌿 مساوات 350 + ? = 700 کا حل 350 ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
-        { id: "ex-2.4D-8", type: "multiple-choice", prompt: { en: "♻️ 500 bottles were collected. Some were recycled. 175 are left. Which number sentence matches?", es: "♻️ Se recolectaron 500 botellas. Algunas fueron recicladas. Quedan 175. ¿Qué oración numérica corresponde?", ur: "♻️ 500 بوتلیں جمع ہوئیں۔ کچھ ری سائیکل ہوئیں۔ 175 باقی ہیں۔ کون سا جملہ مناسب ہے؟" }, choices: [{ en: "500 + 175 = ?", es: "500 + 175 = ?", ur: "500 + 175 = ?" }, { en: "500 − ? = 175", es: "500 − ? = 175", ur: "500 − ? = 175" }, { en: "? − 500 = 175", es: "? − 500 = 175", ur: "? − 500 = 175" }, { en: "175 − 500 = ?", es: "175 − 500 = ?", ur: "175 − 500 = ?" }], correctIndex: 1 },
-        { id: "ex-2.4D-9", type: "multiple-choice", prompt: { en: "🌊 Solve: 900 − ? = 450", es: "🌊 Resuelve: 900 − ? = 450", ur: "🌊 حل کریں: 900 − ? = 450" }, choices: [{ en: "550", es: "550", ur: "550" }, { en: "450", es: "450", ur: "450" }, { en: "350", es: "350", ur: "350" }, { en: "400", es: "400", ur: "400" }], correctIndex: 1 },
-        { id: "ex-2.4D-10", type: "true-false", prompt: { en: "🌱 The equation ? + 300 = 700 has a solution of 400.", es: "🌱 La ecuación ? + 300 = 700 tiene como solución 400.", ur: "🌱 مساوات ? + 300 = 700 کا حل 400 ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        {
+          id: "ex-2.8A-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "☀️ A solar panel on the school roof makes clean energy. Solar panels have 4 sides and the opposite sides are equal. What shape is a solar panel?",
+            es: "☀️ Un panel solar en el techo de la escuela produce energía limpia. Los paneles solares tienen 4 lados y los lados opuestos son iguales. ¿Qué forma tiene un panel solar?",
+            ur: "☀️ اسکول کی چھت پر ایک سولر پینل صاف توانائی بناتا ہے۔ سولر پینل کے 4 اطراف ہوتے ہیں اور آمنے سامنے والے اطراف برابر ہوتے ہیں۔ سولر پینل کی شکل کیا ہے؟",
+          },
+          choices: [
+            { en: "Circle", es: "Círculo", ur: "دائرہ" },
+            { en: "Triangle", es: "Triángulo", ur: "تکون" },
+            { en: "Rectangle", es: "Rectángulo", ur: "مستطیل" },
+            { en: "Square", es: "Cuadrado", ur: "مربع" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "ex-2.8A-2",
+          type: "true-false",
+          prompt: {
+            en: "🌱 The community garden plots are shaped like squares — 4 equal sides. A circle has 0 sides.",
+            es: "🌱 Los cuadros del jardín comunitario tienen forma de cuadrado — 4 lados iguales. Un círculo tiene 0 lados.",
+            ur: "🌱 کمیونٹی گارڈن کے حصے مربع شکل کے ہیں — 4 برابر اطراف۔ دائرے کے 0 اطراف ہوتے ہیں۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
       ],
       quiz: [
-        { id: "qz-2.4D-1", type: "multiple-choice", prompt: { en: "🌳 Solve: ? + 350 = 800", es: "🌳 Resuelve: ? + 350 = 800", ur: "🌳 حل کریں: ? + 350 = 800" }, choices: [{ en: "450", es: "450", ur: "450" }, { en: "350", es: "350", ur: "350" }, { en: "400", es: "400", ur: "400" }, { en: "550", es: "550", ur: "550" }], correctIndex: 0 },
-        { id: "qz-2.4D-2", type: "multiple-choice", prompt: { en: "♻️ A center had 680 items. Some were sorted. 245 remain. Which sentence matches?", es: "♻️ Un centro tenía 680 artículos. Algunos fueron clasificados. Quedan 245. ¿Qué oración corresponde?", ur: "♻️ مرکز میں 680 اشیاء تھیں۔ کچھ چھانٹ لی گئیں۔ 245 باقی ہیں۔ کون سا جملہ مناسب ہے؟" }, choices: [{ en: "680 − ? = 245", es: "680 − ? = 245", ur: "680 − ? = 245" }, { en: "680 + 245 = ?", es: "680 + 245 = ?", ur: "680 + 245 = ?" }, { en: "? − 245 = 680", es: "? − 245 = 680", ur: "? − 245 = 680" }, { en: "245 + ? = 680", es: "245 + ? = 680", ur: "245 + ? = 680" }], correctIndex: 0 },
-        { id: "qz-2.4D-3", type: "true-false", prompt: { en: "🌿 750 − ? = 300 means ? = 450.", es: "🌿 750 − ? = 300 significa que ? = 450.", ur: "🌿 750 − ? = 300 کا مطلب ہے ? = 450۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        {
+          id: "qz-2.8A-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌬️ Wind turbines spin to make clean electricity. The spinning part makes a circle shape. How many sides does a circle have?",
+            es: "🌬️ Las turbinas de viento giran para producir electricidad limpia. La parte que gira hace una figura circular. ¿Cuántos lados tiene un círculo?",
+            ur: "🌬️ ونڈ ٹربائن صاف بجلی بنانے کے لیے گھومتی ہے۔ گھومنے والا حصہ دائرہ بناتا ہے۔ دائرے کے کتنے اطراف ہوتے ہیں؟",
+          },
+          choices: [
+            { en: "1", es: "1", ur: "1" },
+            { en: "3", es: "3", ur: "3" },
+            { en: "4", es: "4", ur: "4" },
+            { en: "0", es: "0", ur: "0" },
+          ],
+          correctIndex: 3,
+        },
+        {
+          id: "qz-2.8A-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌧️ A rooftop shaped like a triangle collects rainwater for the garden. How many sides does a triangle have?",
+            es: "🌧️ Un techo con forma de triángulo recoge agua de lluvia para el jardín. ¿Cuántos lados tiene un triángulo?",
+            ur: "🌧️ تکون شکل کی چھت باغ کے لیے بارش کا پانی جمع کرتی ہے۔ تکون کے کتنے اطراف ہوتے ہیں؟",
+          },
+          choices: [
+            { en: "2", es: "2", ur: "2" },
+            { en: "3", es: "3", ur: "3" },
+            { en: "4", es: "4", ur: "4" },
+            { en: "5", es: "5", ur: "5" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "qz-2.8A-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌿 Which shape has 4 equal sides — like a fair garden plot where every student gets the same space?",
+            es: "🌿 ¿Qué figura tiene 4 lados iguales — como un cuadro de jardín justo donde cada estudiante tiene el mismo espacio?",
+            ur: "🌿 کون سی شکل کے 4 برابر اطراف ہیں — جیسے منصفانہ باغ کا ٹکڑا جہاں ہر طالب علم کو برابر جگہ ملے؟",
+          },
+          choices: [
+            { en: "Circle", es: "Círculo", ur: "دائرہ" },
+            { en: "Triangle", es: "Triángulo", ur: "تکون" },
+            { en: "Rectangle", es: "Rectángulo", ur: "مستطیل" },
+            { en: "Square", es: "Cuadrado", ur: "مربع" },
+          ],
+          correctIndex: 3,
+        },
       ],
-      wordProblems: [
-        { id: "wp-2.4D-1", emoji: "🌳🌱", scene: "Reforestation drive in East Texas — filling in gaps left by wildfires", prompt: { en: "Rangers planted some trees on Monday and 248 on Tuesday. They planted 600 trees in all. How many trees did they plant on Monday?", es: "Los guardabosques plantaron algunos árboles el lunes y 248 el martes. Plantaron 600 en total. ¿Cuántos plantaron el lunes?", ur: "رینجرز نے پیر کو کچھ اور منگل کو 248 درخت لگائے۔ کل 600 لگائے۔ پیر کو کتنے لگائے؟" }, answer: 352, answerUnit: { en: "trees", es: "árboles", ur: "درخت" } },
-        { id: "wp-2.4D-2", emoji: "♻️🥤", scene: "Recycling drive at Dallas ISD — students racing to reach 500 cans", prompt: { en: "Students sorted some cans on Friday. On Saturday they sorted 175 more and reached 500 total. How many cans did they sort on Friday?", es: "Los estudiantes clasificaron algunas latas el viernes. El sábado clasificaron 175 más y llegaron a 500 en total. ¿Cuántas latas clasificaron el viernes?", ur: "طلبہ نے جمعہ کو کچھ ڈبے چھانٹے۔ ہفتے کو 175 مزید اور 500 کل ہو گئے۔ جمعہ کو کتنے چھانٹے؟" }, answer: 325, answerUnit: { en: "cans", es: "latas", ur: "ڈبے" } },
-        { id: "wp-2.4D-3", emoji: "🌊🧹", scene: "Two-week ocean cleanup at Corpus Christi — tracking total pounds removed", prompt: { en: "Cleaners collected 800 pounds of trash over two weeks. They collected 375 pounds the first week. How many pounds did they collect the second week?", es: "Los limpiadores recogieron 800 libras de basura en dos semanas. Recogieron 375 libras la primera semana. ¿Cuántas libras recogieron la segunda semana?", ur: "صفائی کاروں نے دو ہفتوں میں 800 پاؤنڈ کوڑا جمع کیا۔ پہلے ہفتے 375 پاؤنڈ۔ دوسرے ہفتے کتنے؟" }, answer: 425, answerUnit: { en: "pounds", es: "libras", ur: "پاؤنڈ" } },
-        { id: "wp-2.4D-4", emoji: "🐝🏠", scene: "Bee sanctuary in North Texas — moving bees to new safer homes", prompt: { en: "A bee shelter started with 900 bees. Some were moved to new homes. Now 365 bees remain. How many bees were moved?", es: "Un refugio de abejas empezó con 900 abejas. Algunas fueron llevadas a nuevos hogares. Ahora quedan 365. ¿Cuántas abejas fueron trasladadas?", ur: "مکھی پناہ گاہ میں 900 مکھیاں تھیں۔ کچھ نئے گھروں میں منتقل ہوئیں۔ اب 365 باقی ہیں۔ کتنی منتقل ہوئیں؟" }, answer: 535, answerUnit: { en: "bees", es: "abejas", ur: "مکھیاں" } },
-        { id: "wp-2.4D-5", emoji: "🌳🌍💚", scene: "City of Dallas tree-planting challenge — goal of 1,000 trees by year end", prompt: { en: "A nature club needs to plant 1,000 trees by the end of the year. They have planted 637 so far. How many more do they need to plant?", es: "Un club de naturaleza necesita plantar 1,000 árboles antes de fin de año. Ya plantaron 637. ¿Cuántos más necesitan plantar?", ur: "ایک نیچر کلب کو سال کے آخر تک 1,000 درخت لگانے ہیں۔ ابھی تک 637 لگائے۔ کتنے مزید لگانے ہیں؟" }, answer: 363, answerUnit: { en: "trees", es: "árboles", ur: "درخت" } },
-      ],
+      story: {
+        title: {
+          en: "Leo's Flying Machine",
+          es: "La Máquina Voladora de Leo",
+          ur: "لیو کی اڑن مشین",
+        },
+        pages: [
+          {
+            emoji: "📓",
+            text: {
+              en: "Young Leo sat in his workshop in Florence, sketching in his notebook. \"Today,\" he said, \"I will build a flying machine!\"",
+              es: "El joven Leo estaba sentado en su taller en Florencia, dibujando en su cuaderno. \"Hoy,\" dijo, \"¡voy a construir una máquina voladora!\"",
+              ur: "نوجوان لیو فلورنس میں اپنی ورکشاپ میں بیٹھا اپنی کاپی میں خاکہ بنا رہا تھا۔ \"آج،\" اس نے کہا، \"میں ایک اڑن مشین بناؤں گا!\"",
+            },
+          },
+          {
+            emoji: "🔺",
+            text: {
+              en: "First, Leo needed wings — wide and strong, with 3 straight sides that could cut through the wind. \"A triangle!\" he said, and sketched two big ones.",
+              es: "Primero, Leo necesitaba alas — anchas y fuertes, con 3 lados rectos que pudieran cortar el viento. \"¡Un triángulo!\" dijo, y dibujó dos grandes.",
+              ur: "پہلے، لیو کو پر چاہیے تھے — چوڑے اور مضبوط، 3 سیدھے اطراف کے ساتھ جو ہوا کو کاٹ سکیں۔ \"تکون!\" اس نے کہا، اور دو بڑی تکونیں بنائیں۔",
+            },
+          },
+          {
+            emoji: "🟦",
+            text: {
+              en: "Next, the machine needed a body to hold everything together — 4 sides, with opposite sides equal, so it would stay balanced. \"A rectangle!\" said Leo.",
+              es: "Después, la máquina necesitaba un cuerpo para sostener todo junto — 4 lados, con los lados opuestos iguales, para que se mantuviera equilibrada. \"¡Un rectángulo!\" dijo Leo.",
+              ur: "پھر، مشین کو سب کچھ جوڑے رکھنے کے لیے ایک باڈی چاہیے تھی — 4 اطراف، جس کے آمنے سامنے والے اطراف برابر ہوں، تاکہ توازن رہے۔ \"مستطیل!\" لیو نے کہا۔",
+            },
+          },
+          {
+            emoji: "⭕",
+            text: {
+              en: "Leo tried to roll the machine out of the workshop, but it would not move. \"I need wheels — round, with no corners, so they can spin.\" He drew 2 circles.",
+              es: "Leo trató de rodar la máquina fuera del taller, pero no se movía. \"Necesito ruedas — redondas, sin esquinas, para que puedan girar.\" Dibujó 2 círculos.",
+              ur: "لیو نے مشین کو ورکشاپ سے باہر نکالنے کی کوشش کی، مگر وہ حرکت نہ کر سکی۔ \"مجھے پہیے چاہئیں — گول، بغیر کونوں کے، تاکہ وہ گھوم سکیں۔\" اس نے 2 دائرے بنائے۔",
+            },
+          },
+          {
+            emoji: "🟥",
+            text: {
+              en: "Last, Leo wanted a small flag on top, fair and even on every side. \"4 equal sides... a square!\" He painted it bright red.",
+              es: "Por último, Leo quería una pequeña bandera arriba, justa e igual en cada lado. \"4 lados iguales... ¡un cuadrado!\" La pintó de rojo brillante.",
+              ur: "آخر میں، لیو چاہتا تھا کہ اوپر ایک چھوٹا جھنڈا ہو، جو ہر طرف سے برابر اور منصفانہ ہو۔ \"4 برابر اطراف... مربع!\" اس نے اسے چمکدار سرخ رنگ دیا۔",
+            },
+          },
+          {
+            emoji: "🔧",
+            text: {
+              en: "Leo put the pieces together: triangle wings, a rectangle body, circle wheels, and a square flag. Every shape had its own job to do.",
+              es: "Leo unió las piezas: alas triangulares, un cuerpo rectangular, ruedas circulares y una bandera cuadrada. Cada figura tenía su propio trabajo.",
+              ur: "لیو نے سب حصے جوڑے: تکون پر، مستطیل باڈی، دائرے کے پہیے، اور مربع جھنڈا۔ ہر شکل کا اپنا کام تھا۔",
+            },
+          },
+          {
+            emoji: "🪽",
+            text: {
+              en: "He rolled the machine up to the rooftop on its circle wheels, and the wind caught the triangle wings. The flying machine lifted into the sky!",
+              es: "Subió la máquina al techo sobre sus ruedas circulares, y el viento atrapó las alas triangulares. ¡La máquina voladora se elevó hacia el cielo!",
+              ur: "اس نے مشین کو گول پہیوں پر چھت تک لے گیا، اور ہوا نے تکون پروں کو پکڑ لیا۔ اڑن مشین آسمان کی طرف اڑ گئی!",
+            },
+          },
+          {
+            emoji: "✨",
+            text: {
+              en: "\"Every shape has a job!\" Leo laughed, watching it soar. \"Round things roll, triangles cut the wind, and equal sides keep things fair and strong.\"",
+              es: "\"¡Cada figura tiene un trabajo!\" rio Leo, mirándola volar. \"Las cosas redondas ruedan, los triángulos cortan el viento, y los lados iguales mantienen las cosas justas y fuertes.\"",
+              ur: "\"ہر شکل کا ایک کام ہوتا ہے!\" لیو نے ہنستے ہوئے کہا، اسے اڑتا دیکھ کر۔ \"گول چیزیں لڑھکتی ہیں، تکونیں ہوا کاٹتی ہیں، اور برابر اطراف چیزوں کو منصفانہ اور مضبوط رکھتے ہیں۔\"",
+            },
+          },
+        ],
+      },
     },
 
     {
@@ -1377,141 +1753,6 @@ const grade2: Grade = {
       ],
     },
 
-    {
-      teks: "2.2B",
-      cambridge: "Stage 2 · 2Nn2",
-      emoji: "🔢",
-      title: { en: "Place Value to 1,200", es: "Valor Posicional hasta 1,200", ur: "1,200 تک مقامی قدر" },
-      vocabulary: [
-        {
-          id: "place-value",
-          emoji: "📍",
-          word: { en: "place value", es: "valor posicional", ur: "مقامی قدر" },
-          definition: { en: "the value of a digit based on its position in a number", es: "el valor de un dígito según su posición en el número", ur: "کسی ہندسے کی قدر جو نمبر میں اس کی جگہ سے طے ہوتی ہے" },
-        },
-        {
-          id: "digit",
-          emoji: "0️⃣",
-          word: { en: "digit", es: "dígito", ur: "ہندسہ" },
-          definition: { en: "any symbol from 0–9 used to write numbers; 347 has three digits", es: "cualquier símbolo del 0 al 9 que se usa para escribir números; 347 tiene tres dígitos", ur: "0 سے 9 تک کوئی بھی علامت جو نمبر لکھنے کے لیے استعمال ہوتی ہے؛ 347 میں تین ہندسے ہیں" },
-        },
-        {
-          id: "expanded-form",
-          emoji: "➡️",
-          word: { en: "expanded form", es: "forma desarrollada", ur: "پھیلی ہوئی شکل" },
-          definition: { en: "writing a number by showing the value of each digit: 342 = 300 + 40 + 2", es: "escribir un número mostrando el valor de cada dígito: 342 = 300 + 40 + 2", ur: "ہر ہندسے کی قدر دکھا کر نمبر لکھنا: 342 = 300 + 40 + 2" },
-        },
-        {
-          id: "standard-form",
-          emoji: "🔢",
-          word: { en: "standard form", es: "forma estándar", ur: "معیاری شکل" },
-          definition: { en: "the usual way to write a number using digits, like 342", es: "la forma usual de escribir un número usando dígitos, como 342", ur: "ہندسوں سے نمبر لکھنے کا معمول کا طریقہ، جیسے 342" },
-        },
-        {
-          id: "compare",
-          emoji: "⚖️",
-          word: { en: "compare", es: "comparar", ur: "موازنہ کرنا" },
-          definition: { en: "to look at two numbers and decide which is greater, less, or equal using <, >, or =", es: "comparar dos números para saber cuál es mayor, menor o igual usando <, > o =", ur: "دو نمبروں کو دیکھ کر < > = کی مدد سے فیصلہ کرنا کہ کون بڑا، چھوٹا یا برابر ہے" },
-        },
-      ],
-      lesson: {
-        en: "Every digit in a number has a place value. In 347: the 3 is in the hundreds place (value = 300), the 4 is in the tens place (value = 40), and the 7 is in the ones place (value = 7). Expanded form shows each part: 300 + 40 + 7. Standard form puts it back together: 347. To compare numbers, look at the highest place value first. 583 > 538 because 8 tens > 3 tens.",
-        es: "Cada dígito en un número tiene un valor posicional. En 347: el 3 está en el lugar de las centenas (valor = 300), el 4 en las decenas (valor = 40), y el 7 en las unidades (valor = 7). La forma desarrollada muestra cada parte: 300 + 40 + 7. Para comparar números, mira primero el valor posicional más alto.",
-        ur: "کسی نمبر میں ہر ہندسے کی مقامی قدر ہوتی ہے۔ 347 میں: 3 سینکڑوں کی جگہ پر ہے (قدر = 300)، 4 دہائیوں میں (قدر = 40)، 7 اکائیوں میں (قدر = 7)۔ پھیلی شکل: 300 + 40 + 7۔ موازنہ کرنے کے لیے سب سے بڑی جگہ سے شروع کریں۔",
-      },
-      exercises: [
-        { id: "ex-2.2B-1", type: "multiple-choice", prompt: { en: "🌳 A park ranger counted 347 trees. What is the value of the 3 in 347?", es: "🌳 Un guardabosques contó 347 árboles. ¿Cuál es el valor del 3 en 347?", ur: "🌳 ایک رینجر نے 347 درخت گنے۔ 347 میں 3 کی قدر کیا ہے؟" }, choices: [{ en: "3", es: "3", ur: "3" }, { en: "30", es: "30", ur: "30" }, { en: "300", es: "300", ur: "300" }, { en: "3,000", es: "3,000", ur: "3,000" }], correctIndex: 2 },
-        { id: "ex-2.2B-2", type: "multiple-choice", prompt: { en: "♻️ Students sorted 528 recyclable items. Which shows 528 in expanded form?", es: "♻️ Los estudiantes clasificaron 528 artículos. ¿Cuál muestra 528 en forma desarrollada?", ur: "♻️ طلبہ نے 528 ری سائیکل اشیاء چھانٹیں۔ 528 کی پھیلی شکل کون سی ہے؟" }, choices: [{ en: "500 + 20 + 8", es: "500 + 20 + 8", ur: "500 + 20 + 8" }, { en: "52 + 8", es: "52 + 8", ur: "52 + 8" }, { en: "5 + 2 + 8", es: "5 + 2 + 8", ur: "5 + 2 + 8" }, { en: "500 + 28", es: "500 + 28", ur: "500 + 28" }], correctIndex: 0 },
-        { id: "ex-2.2B-3", type: "multiple-choice", prompt: { en: "🐝 A bee shelter tracked 694 bees. Which digit is in the TENS place?", es: "🐝 Un refugio de abejas contabilizó 694 abejas. ¿Qué dígito está en el lugar de las decenas?", ur: "🐝 ایک مکھی پناہ گاہ نے 694 مکھیاں ریکارڈ کیں۔ دہائی کی جگہ پر کون سا ہندسہ ہے؟" }, choices: [{ en: "6", es: "6", ur: "6" }, { en: "9", es: "9", ur: "9" }, { en: "4", es: "4", ur: "4" }, { en: "69", es: "69", ur: "69" }], correctIndex: 1 },
-        { id: "ex-2.2B-4", type: "multiple-choice", prompt: { en: "🌊 Garden A has 756 plants. Garden B has 765 plants. Which is true?", es: "🌊 El jardín A tiene 756 plantas. El jardín B tiene 765. ¿Cuál es verdadero?", ur: "🌊 باغ A میں 756 پودے ہیں۔ باغ B میں 765۔ کون سا صحیح ہے؟" }, choices: [{ en: "756 > 765", es: "756 > 765", ur: "756 > 765" }, { en: "756 < 765", es: "756 < 765", ur: "756 < 765" }, { en: "756 = 765", es: "756 = 765", ur: "756 = 765" }, { en: "765 < 756", es: "765 < 756", ur: "765 < 756" }], correctIndex: 1 },
-        { id: "ex-2.2B-5", type: "true-false", prompt: { en: "🌳 A forest has 912 oak trees and 921 elm trees. 912 > 921.", es: "🌳 Un bosque tiene 912 robles y 921 olmos. 912 > 921.", ur: "🌳 جنگل میں 912 بلوط اور 921 ایلم ہیں۔ 912 > 921۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 1 },
-        { id: "ex-2.2B-6", type: "multiple-choice", prompt: { en: "♻️ The recycling center processed 1,050 bottles. What is the value of the 5 in 1,050?", es: "♻️ El centro de reciclaje procesó 1,050 botellas. ¿Cuál es el valor del 5 en 1,050?", ur: "♻️ ری سائیکلنگ مرکز نے 1,050 بوتلیں چھانٹیں۔ 1,050 میں 5 کی قدر کیا ہے؟" }, choices: [{ en: "5", es: "5", ur: "5" }, { en: "50", es: "50", ur: "50" }, { en: "500", es: "500", ur: "500" }, { en: "5,000", es: "5,000", ur: "5,000" }], correctIndex: 1 },
-        { id: "ex-2.2B-7", type: "multiple-choice", prompt: { en: "🌿 A seed bank stores four hundred seventy-three seeds. What is that in standard form?", es: "🌿 Un banco de semillas guarda cuatrocientas setenta y tres semillas. ¿Cómo se escribe en forma estándar?", ur: "🌿 ایک بیج بینک میں چار سو تہتر بیج ہیں۔ معیاری شکل کیا ہے؟" }, choices: [{ en: "400 + 70 + 3", es: "400 + 70 + 3", ur: "400 + 70 + 3" }, { en: "forty-seven", es: "cuarenta y siete", ur: "سینتالیس" }, { en: "473", es: "473", ur: "473" }, { en: "4,073", es: "4,073", ur: "4,073" }], correctIndex: 2 },
-        { id: "ex-2.2B-8", type: "multiple-choice", prompt: { en: "🌊 Compare: 638 ___ 683. Which symbol belongs in the blank?", es: "🌊 Compara: 638 ___ 683. ¿Qué símbolo va en el espacio en blanco?", ur: "🌊 موازنہ کریں: 638 ___ 683۔ خالی جگہ میں کون سی علامت؟" }, choices: [{ en: ">", es: ">", ur: ">" }, { en: "<", es: "<", ur: "<" }, { en: "=", es: "=", ur: "=" }, { en: "≠", es: "≠", ur: "≠" }], correctIndex: 1 },
-        { id: "ex-2.2B-9", type: "true-false", prompt: { en: "🌳 400 + 20 + 8 = 428.", es: "🌳 400 + 20 + 8 = 428.", ur: "🌳 400 + 20 + 8 = 428۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
-        { id: "ex-2.2B-10", type: "multiple-choice", prompt: { en: "🌱 Order these recycling totals from least to greatest: 315, 531, 153.", es: "🌱 Ordena estos totales de reciclaje de menor a mayor: 315, 531, 153.", ur: "🌱 ان ری سائیکلنگ کے اعداد کو چھوٹے سے بڑے ترتیب میں لگائیں: 315، 531، 153۔" }, choices: [{ en: "315, 531, 153", es: "315, 531, 153", ur: "315، 531، 153" }, { en: "153, 315, 531", es: "153, 315, 531", ur: "153، 315، 531" }, { en: "531, 315, 153", es: "531, 315, 153", ur: "531، 315، 153" }, { en: "153, 531, 315", es: "153, 531, 315", ur: "153، 531، 315" }], correctIndex: 1 },
-      ],
-      quiz: [
-        { id: "qz-2.2B-1", type: "multiple-choice", prompt: { en: "🌳 A park has 847 trees. What is the value of the 8?", es: "🌳 Un parque tiene 847 árboles. ¿Cuál es el valor del 8?", ur: "🌳 ایک پارک میں 847 درخت ہیں۔ 8 کی قدر کیا ہے؟" }, choices: [{ en: "8", es: "8", ur: "8" }, { en: "80", es: "80", ur: "80" }, { en: "800", es: "800", ur: "800" }, { en: "8,000", es: "8,000", ur: "8,000" }], correctIndex: 2 },
-        { id: "qz-2.2B-2", type: "multiple-choice", prompt: { en: "♻️ Compare: 372 ___ 327. Which symbol is correct?", es: "♻️ Compara: 372 ___ 327. ¿Qué símbolo es correcto?", ur: "♻️ موازنہ: 372 ___ 327۔ کون سی علامت صحیح ہے؟" }, choices: [{ en: ">", es: ">", ur: ">" }, { en: "<", es: "<", ur: "<" }, { en: "=", es: "=", ur: "=" }, { en: "≠", es: "≠", ur: "≠" }], correctIndex: 0 },
-        { id: "qz-2.2B-3", type: "multiple-choice", prompt: { en: "🌱 What is 600 + 50 + 9 in standard form?", es: "🌱 ¿Cómo se escribe 600 + 50 + 9 en forma estándar?", ur: "🌱 600 + 50 + 9 کی معیاری شکل کیا ہے؟" }, choices: [{ en: "659", es: "659", ur: "659" }, { en: "6,059", es: "6,059", ur: "6,059" }, { en: "650", es: "650", ur: "650" }, { en: "695", es: "695", ur: "695" }], correctIndex: 0 },
-      ],
-      wordProblems: [
-        { id: "wp-2.2B-1", emoji: "🌳🔢", scene: "Forest rangers counting trees in Big Bend National Park, Texas", prompt: { en: "A nature preserve has 347 trees. What is the value of the hundreds digit?", es: "Una reserva natural tiene 347 árboles. ¿Cuál es el valor del dígito de las centenas?", ur: "ایک قدرتی پارک میں 347 درخت ہیں۔ سینکڑوں کے ہندسے کی قدر کیا ہے؟" }, answer: 300, answerUnit: { en: "(value)", es: "(valor)", ur: "(قدر)" } },
-        { id: "wp-2.2B-2", emoji: "♻️💚", scene: "Dallas ISD recycling challenge — tracking totals across schools", prompt: { en: "A school recycled 528 items in October. What is 100 more than 528?", es: "Una escuela recicló 528 artículos en octubre. ¿Cuánto es 100 más que 528?", ur: "ایک اسکول نے اکتوبر میں 528 اشیاء ری سائیکل کیں۔ 528 سے 100 زیادہ کیا ہے؟" }, answer: 628, answerUnit: { en: "items", es: "artículos", ur: "اشیاء" } },
-        { id: "wp-2.2B-3", emoji: "🌊🐢", scene: "Sea turtle rescue center on the Texas Gulf Coast", prompt: { en: "Volunteers collected 912 pieces of ocean trash this year. Last year they collected 100 fewer. How many did they collect last year?", es: "Los voluntarios recogieron 912 piezas de basura oceánica este año. El año pasado recogieron 100 menos. ¿Cuántas recogieron el año pasado?", ur: "رضاکاروں نے اس سال 912 ٹکڑے جمع کیے۔ پچھلے سال 100 کم جمع کیے۔ پچھلے سال کتنے جمع کیے؟" }, answer: 812, answerUnit: { en: "pieces", es: "piezas", ur: "ٹکڑے" } },
-        { id: "wp-2.2B-4", emoji: "🌱🌍", scene: "Seed bank preserving native Texas plants from extinction", prompt: { en: "A seed bank has 600 + 40 + 7 seeds. How many seeds is that?", es: "Un banco de semillas tiene 600 + 40 + 7 semillas. ¿Cuántas semillas son en total?", ur: "ایک بیج بینک میں 600 + 40 + 7 بیج ہیں۔ یہ کتنے بیج ہیں؟" }, answer: 647, answerUnit: { en: "seeds", es: "semillas", ur: "بیج" } },
-        { id: "wp-2.2B-5", emoji: "🐝🌻", scene: "Pollinator garden in Fort Worth — tracking bee populations", prompt: { en: "A bee population grew from 483 bees to 583 bees. How many more bees is that?", es: "Una población de abejas creció de 483 a 583 abejas. ¿Cuántas abejas más hay?", ur: "ایک مکھی آبادی 483 سے 583 ہو گئی۔ یہ کتنی مزید مکھیاں ہیں؟" }, answer: 100, answerUnit: { en: "bees", es: "abejas", ur: "مکھیاں" } },
-      ],
-    },
-
-    {
-      teks: "2.3B",
-      cambridge: "Stage 2 · 2Nf1",
-      emoji: "🍕",
-      title: { en: "Fractions: Halves, Fourths & Eighths", es: "Fracciones: Mitades, Cuartos y Octavos", ur: "کسریں: آدھے، چوتھائی اور آٹھویں" },
-      vocabulary: [
-        {
-          id: "fraction",
-          emoji: "½",
-          word: { en: "fraction", es: "fracción", ur: "کسر" },
-          definition: { en: "a number that names equal parts of a whole", es: "un número que nombra partes iguales de un entero", ur: "ایک نمبر جو پورے کے برابر حصوں کو ظاہر کرتا ہے" },
-        },
-        {
-          id: "half",
-          emoji: "½",
-          word: { en: "half", es: "mitad", ur: "آدھا" },
-          definition: { en: "one of 2 equal parts of a whole; written as 1/2", es: "una de 2 partes iguales de un entero; se escribe como 1/2", ur: "پورے کے 2 برابر حصوں میں سے ایک؛ 1/2 لکھا جاتا ہے" },
-        },
-        {
-          id: "fourth",
-          emoji: "¼",
-          word: { en: "fourth", es: "cuarto", ur: "چوتھائی" },
-          definition: { en: "one of 4 equal parts of a whole; written as 1/4", es: "una de 4 partes iguales de un entero; se escribe como 1/4", ur: "پورے کے 4 برابر حصوں میں سے ایک؛ 1/4 لکھا جاتا ہے" },
-        },
-        {
-          id: "eighth",
-          emoji: "⅛",
-          word: { en: "eighth", es: "octavo", ur: "آٹھواں" },
-          definition: { en: "one of 8 equal parts of a whole; written as 1/8", es: "una de 8 partes iguales de un entero; se escribe como 1/8", ur: "پورے کے 8 برابر حصوں میں سے ایک؛ 1/8 لکھا جاتا ہے" },
-        },
-        {
-          id: "whole",
-          emoji: "⭕",
-          word: { en: "whole", es: "entero", ur: "مکمل" },
-          definition: { en: "all of the parts together — the complete amount", es: "todas las partes juntas — la cantidad completa", ur: "تمام حصے مل کر — مکمل مقدار" },
-        },
-      ],
-      lesson: {
-        en: "A fraction names equal parts of a whole. When we cut something into 2 equal parts, each part is 1/2 (one half). Cut into 4 equal parts — each is 1/4 (one fourth). Cut into 8 equal parts — each is 1/8 (one eighth). Key idea: the MORE parts we divide a whole into, the SMALLER each part becomes. So 1/8 is smaller than 1/4, which is smaller than 1/2!",
-        es: "Una fracción nombra partes iguales de un entero. Cuando cortamos algo en 2 partes iguales, cada parte es 1/2 (una mitad). En 4 partes iguales, cada parte es 1/4 (un cuarto). En 8 partes iguales, cada parte es 1/8 (un octavo). Idea clave: cuantas MÁS partes dividimos, MÁS PEQUEÑA se vuelve cada parte. ¡1/8 es menor que 1/4, que es menor que 1/2!",
-        ur: "کسر کسی پورے کے برابر حصوں کو ظاہر کرتی ہے۔ 2 برابر حصوں میں کاٹنے پر ہر حصہ 1/2 ہے۔ 4 میں کاٹنے پر 1/4۔ 8 میں کاٹنے پر 1/8۔ اہم بات: جتنے زیادہ حصے، اتنا چھوٹا ہر حصہ۔ 1/8 سب سے چھوٹا، 1/2 سب سے بڑا!",
-      },
-      exercises: [
-        { id: "ex-2.3B-1", type: "multiple-choice", prompt: { en: "🌳 A student colors 1/2 of a picture of a tree. Into how many equal parts is the picture divided?", es: "🌳 Un estudiante colorea 1/2 de un dibujo de un árbol. ¿En cuántas partes iguales está dividido el dibujo?", ur: "🌳 ایک طالب علم درخت کی تصویر کا 1/2 رنگتا ہے۔ تصویر کے کتنے برابر حصے ہیں؟" }, choices: [{ en: "1", es: "1", ur: "1" }, { en: "2", es: "2", ur: "2" }, { en: "4", es: "4", ur: "4" }, { en: "8", es: "8", ur: "8" }], correctIndex: 1 },
-        { id: "ex-2.3B-2", type: "multiple-choice", prompt: { en: "♻️ A recycling bin is split into 4 equal parts. One part is full. What fraction of the bin is full?", es: "♻️ Un contenedor de reciclaje está dividido en 4 partes iguales. Una parte está llena. ¿Qué fracción del contenedor está llena?", ur: "♻️ ریسائیکلنگ ڈبہ 4 برابر حصوں میں بٹا ہے۔ ایک حصہ بھرا ہے۔ ڈبے کا کون سا کسر بھرا ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/3", es: "1/3", ur: "1/3" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }], correctIndex: 2 },
-        { id: "ex-2.3B-3", type: "true-false", prompt: { en: "🌻 1/2 is bigger than 1/4 when both come from the same whole.", es: "🌻 1/2 es más grande que 1/4 cuando ambas vienen del mismo entero.", ur: "🌻 جب دونوں ایک ہی پورے سے ہوں تو 1/2، 1/4 سے بڑا ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
-        { id: "ex-2.3B-4", type: "multiple-choice", prompt: { en: "🌊 A sea turtle pond is split into 8 equal sections. Which fraction is the SMALLEST?", es: "🌊 Un estanque de tortugas está dividido en 8 secciones iguales. ¿Qué fracción es la MÁS PEQUEÑA?", ur: "🌊 سمندری کچھوے کا تالاب 8 برابر حصوں میں بٹا ہے۔ کون سا کسر سب سے چھوٹا ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "All are equal", es: "Todas son iguales", ur: "سب برابر ہیں" }], correctIndex: 2 },
-        { id: "ex-2.3B-5", type: "multiple-choice", prompt: { en: "🌿 A garden plot is divided into equal parts. The MORE parts we divide it into, the _____ each part becomes.", es: "🌿 Una parcela se divide en partes iguales. Cuantas MÁS partes la dividimos, cada parte se vuelve _____.", ur: "🌿 باغ کو برابر حصوں میں تقسیم کیا۔ جتنے زیادہ حصے، ہر حصہ اتنا _____ ہوتا ہے۔" }, choices: [{ en: "bigger", es: "más grande", ur: "بڑا" }, { en: "smaller", es: "más pequeño", ur: "چھوٹا" }, { en: "the same", es: "igual", ur: "برابر" }, { en: "heavier", es: "más pesado", ur: "بھاری" }], correctIndex: 1 },
-        { id: "ex-2.3B-6", type: "true-false", prompt: { en: "🌱 A compost bin cut into 8 equal pieces has BIGGER pieces than one cut into 4 equal pieces.", es: "🌱 Un contenedor de compost cortado en 8 partes iguales tiene piezas MÁS GRANDES que uno cortado en 4.", ur: "🌱 8 برابر حصوں میں کٹا ڈبہ 4 حصوں والے سے بڑے ٹکڑے رکھتا ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 1 },
-        { id: "ex-2.3B-7", type: "multiple-choice", prompt: { en: "🐝 A honeycomb is divided into 4 equal sections for bee families. What fraction does each family get?", es: "🐝 Un panal está dividido en 4 secciones iguales para familias de abejas. ¿Qué fracción le toca a cada familia?", ur: "🐝 شہد کے چھتے کو 4 برابر حصوں میں بانٹا گیا۔ ہر خاندان کو کتنا کسر ملتا ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "4/4", es: "4/4", ur: "4/4" }], correctIndex: 1 },
-        { id: "ex-2.3B-8", type: "multiple-choice", prompt: { en: "🌊 Which fraction is LARGER: 1/4 or 1/8?", es: "🌊 ¿Qué fracción es MAYOR: 1/4 o 1/8?", ur: "🌊 کون سا کسر بڑا ہے: 1/4 یا 1/8؟" }, choices: [{ en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "They are equal", es: "Son iguales", ur: "دونوں برابر ہیں" }, { en: "Cannot tell", es: "No se puede saber", ur: "نہیں بتا سکتے" }], correctIndex: 0 },
-        { id: "ex-2.3B-9", type: "true-false", prompt: { en: "🌿 A nature trail divided into eighths has SMALLER sections than one divided into halves.", es: "🌿 Un sendero dividido en octavos tiene secciones MÁS PEQUEÑAS que uno dividido en mitades.", ur: "🌿 آٹھویں میں تقسیم پگڈنڈی کے حصے آدھے میں تقسیم سے چھوٹے ہیں۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
-        { id: "ex-2.3B-10", type: "multiple-choice", prompt: { en: "🌱 A compost bin has 8 equal sections. What fraction is each section?", es: "🌱 Un contenedor de compost tiene 8 secciones iguales. ¿Qué fracción es cada sección?", ur: "🌱 کمپوسٹ ڈبے کے 8 برابر حصے ہیں۔ ہر حصہ کون سا کسر ہے؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/6", es: "1/6", ur: "1/6" }, { en: "1/8", es: "1/8", ur: "1/8" }], correctIndex: 3 },
-      ],
-      quiz: [
-        { id: "qz-2.3B-1", type: "multiple-choice", prompt: { en: "🌳 A nature trail is divided into 4 equal parts. A hiker walked 1 part. What fraction did the hiker walk?", es: "🌳 Un sendero está dividido en 4 partes iguales. Un excursionista caminó 1 parte. ¿Qué fracción caminó?", ur: "🌳 پگڈنڈی 4 برابر حصوں میں ہے۔ ایک پیدل سفری نے 1 حصہ چلا۔ کتنا کسر چلا؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "4/1", es: "4/1", ur: "4/1" }], correctIndex: 1 },
-        { id: "qz-2.3B-2", type: "multiple-choice", prompt: { en: "🌊 Which fraction is LARGER: 1/2 or 1/8?", es: "🌊 ¿Qué fracción es MAYOR: 1/2 o 1/8?", ur: "🌊 کون سا کسر بڑا ہے: 1/2 یا 1/8؟" }, choices: [{ en: "1/2", es: "1/2", ur: "1/2" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "They are equal", es: "Son iguales", ur: "برابر ہیں" }, { en: "Cannot tell", es: "No se puede saber", ur: "نہیں بتا سکتے" }], correctIndex: 0 },
-        { id: "qz-2.3B-3", type: "multiple-choice", prompt: { en: "♻️ A recycling poster is split into 2 equal parts. What fraction is each part?", es: "♻️ Un cartel de reciclaje está dividido en 2 partes iguales. ¿Qué fracción es cada parte?", ur: "♻️ ایک ری سائیکلنگ پوسٹر 2 برابر حصوں میں ہے۔ ہر حصہ کون سا کسر ہے؟" }, choices: [{ en: "1/4", es: "1/4", ur: "1/4" }, { en: "1/8", es: "1/8", ur: "1/8" }, { en: "1/2", es: "1/2", ur: "1/2" }, { en: "2/2", es: "2/2", ur: "2/2" }], correctIndex: 2 },
-      ],
-      wordProblems: [
-        { id: "wp-2.3B-1", emoji: "🌿🌱", scene: "Community garden in East Dallas split into equal plots for local families", prompt: { en: "A garden is divided into 4 equal plots. A family uses 1 plot. How many plots are NOT being used?", es: "Un jardín está dividido en 4 parcelas iguales. Una familia usa 1 parcela. ¿Cuántas parcelas NO están siendo usadas?", ur: "باغ 4 برابر حصوں میں ہے۔ ایک خاندان 1 حصہ استعمال کرتا ہے۔ کتنے حصے استعمال نہیں ہو رہے؟" }, answer: 3, answerUnit: { en: "plots", es: "parcelas", ur: "حصے" } },
-        { id: "wp-2.3B-2", emoji: "🌊🧹", scene: "Beach cleanup at South Padre Island divided into sections", prompt: { en: "A beach is divided into 2 equal halves. Volunteers cleaned 1 half on Saturday. How many halves still need to be cleaned?", es: "Una playa está dividida en 2 mitades iguales. Los voluntarios limpiaron 1 mitad el sábado. ¿Cuántas mitades quedan por limpiar?", ur: "ساحل 2 برابر آدھوں میں ہے۔ رضاکاروں نے ہفتے کو 1 آدھا صاف کیا۔ کتنے آدھے ابھی صاف کرنے باقی ہیں؟" }, answer: 1, answerUnit: { en: "halves", es: "mitades", ur: "آدھے" } },
-        { id: "wp-2.3B-3", emoji: "🌳🥾", scene: "Nature trail hike for a school field trip — exploring Texas ecosystems", prompt: { en: "A nature trail is split into 8 equal sections. Hikers explored 5 sections. How many sections are still unexplored?", es: "Un sendero está dividido en 8 secciones iguales. Los excursionistas exploraron 5 secciones. ¿Cuántas secciones no han sido exploradas?", ur: "پگڈنڈی 8 برابر حصوں میں ہے۔ پیدل سفریوں نے 5 حصے دریافت کیے۔ ابھی کتنے غیر دریافت ہیں؟" }, answer: 3, answerUnit: { en: "sections", es: "secciones", ur: "حصے" } },
-        { id: "wp-2.3B-4", emoji: "🐝🍯", scene: "Bee rescue fundraiser — selling honey to fund pollinator gardens", prompt: { en: "A beekeeper divided her honey harvest into 4 equal jars. She sold 1 jar at the farmers market. How many jars does she have left?", es: "Una apicultora dividió su cosecha de miel en 4 frascos iguales. Vendió 1 frasco en el mercado. ¿Cuántos frascos le quedan?", ur: "ایک مکھی پالنے والی نے شہد 4 برابر مرتبانوں میں بانٹا۔ بازار میں 1 بیچ دیا۔ کتنے مرتبان بچے؟" }, answer: 3, answerUnit: { en: "jars", es: "frascos", ur: "مرتبان" } },
-        { id: "wp-2.3B-5", emoji: "♻️📅", scene: "Monthly recycling goal at Lincoln Elementary — 4 weekly targets", prompt: { en: "A class divided their recycling goal into 4 equal weekly targets. They met 2 targets so far. How many weekly targets are left?", es: "Una clase dividió su meta de reciclaje en 4 objetivos semanales iguales. Alcanzaron 2 hasta ahora. ¿Cuántos objetivos semanales quedan?", ur: "کلاس نے ری سائیکلنگ کا ہدف 4 برابر ہفتہ وار اہداف میں بانٹا۔ ابھی تک 2 پورے کیے۔ کتنے باقی ہیں؟" }, answer: 2, answerUnit: { en: "targets", es: "objetivos", ur: "اہداف" } },
-      ],
-    },
     {
       teks: "2.8C",
       cambridge: "Stage 2 · 2Gs1",
@@ -1597,6 +1838,7 @@ const grade2: Grade = {
         { id: "wp-2.9E-5", emoji: "🌊🌿", scene: "Coastal dune restoration at Padre Island — measuring native grass height", prompt: { en: "Students estimate that dune grass is about 2 feet tall. They measure 3 patches of grass end to end. About how many feet long is the row of grass patches?", es: "Los estudiantes estiman que el pasto de dunas mide unos 2 pies de alto. Miden 3 parches de pasto de punta a punta. ¿Cuántos pies de largo mide la hilera de parches?", ur: "طلبہ اندازہ لگاتے ہیں کہ ٹیلے کی گھاس تقریباً 2 فٹ اونچی ہے۔ وہ 3 گھاس کے ٹکڑوں کو قطار میں ناپتے ہیں۔ گھاس کی قطار تقریباً کتنے فٹ لمبی ہے؟" }, answer: 6, answerUnit: { en: "feet", es: "pies", ur: "فٹ" } },
       ],
     },
+
     {
       teks: "2.9G",
       cambridge: "Stage 2 · 2Mt1",
@@ -1682,6 +1924,251 @@ const grade2: Grade = {
         { id: "wp-2.10C-5", emoji: "🌱📊", scene: "Spring garden data project — students track how many seeds sprouted", prompt: { en: "A bar graph shows sprouted seeds: Sunflower = 45, Tomato = 30, Bean = 25. How many seeds sprouted in all?", es: "Un gráfico muestra semillas germinadas: Girasol = 45, Tomate = 30, Frijol = 25. ¿Cuántas semillas germinaron en total?", ur: "بار گراف: سورج مکھی = 45، ٹماٹر = 30، لوبیا = 25 اگے ہوئے بیج۔ کل کتنے بیج اگے؟" }, answer: 100, answerUnit: { en: "seeds", es: "semillas", ur: "بیج" } },
       ],
     },
+
+    {
+      teks: "2.11",
+      cambridge: "Stage 2 · 2Nf2",
+      emoji: "🏦",
+      title: {
+        en: "Financial Literacy",
+        es: "Educación Financiera",
+        ur: "مالیاتی خواندگی",
+      },
+      vocabulary: [
+        {
+          id: "income",
+          emoji: "💵",
+          word: { en: "income", es: "ingresos", ur: "آمدنی" },
+          definition: {
+            en: "money you receive for doing a job or providing a service",
+            es: "dinero que recibes por hacer un trabajo o brindar un servicio",
+            ur: "کام کرنے یا خدمت فراہم کرنے کے بدلے ملنے والے پیسے",
+          },
+        },
+        {
+          id: "spend",
+          emoji: "🛒",
+          word: { en: "spend", es: "gastar", ur: "خرچ کرنا" },
+          definition: {
+            en: "to use money to buy goods or services",
+            es: "usar dinero para comprar bienes o servicios",
+            ur: "سامان یا خدمات خریدنے کے لیے پیسے استعمال کرنا",
+          },
+        },
+        {
+          id: "save",
+          emoji: "🐖",
+          word: { en: "save", es: "ahorrar", ur: "بچانا" },
+          definition: {
+            en: "to keep money to use later instead of spending it now",
+            es: "guardar dinero para usarlo después en vez de gastarlo ahora",
+            ur: "پیسے ابھی خرچ کرنے کی بجائے بعد میں استعمال کے لیے رکھنا",
+          },
+        },
+        {
+          id: "producer",
+          emoji: "🌾",
+          word: { en: "producer", es: "productor", ur: "پیدا کنندہ" },
+          definition: {
+            en: "a person or business that makes or grows goods to sell",
+            es: "una persona o negocio que hace o cultiva bienes para vender",
+            ur: "وہ شخص یا کاروبار جو فروخت کے لیے سامان بناتا یا اگاتا ہے",
+          },
+        },
+        {
+          id: "consumer",
+          emoji: "🛍️",
+          word: { en: "consumer", es: "consumidor", ur: "صارف" },
+          definition: {
+            en: "a person who buys and uses goods or services",
+            es: "una persona que compra y usa bienes o servicios",
+            ur: "وہ شخص جو سامان یا خدمات خریدتا اور استعمال کرتا ہے",
+          },
+        },
+        {
+          id: "goods",
+          emoji: "📦",
+          word: { en: "goods", es: "bienes", ur: "سامان" },
+          definition: {
+            en: "things that are made or grown and can be bought — like food, toys, or clothes",
+            es: "cosas que se fabrican o cultivan y se pueden comprar — como comida, juguetes o ropa",
+            ur: "وہ چیزیں جو بنائی یا اگائی جاتی ہیں اور خریدی جا سکتی ہیں — جیسے کھانا، کھلونے یا کپڑے",
+          },
+        },
+        {
+          id: "services",
+          emoji: "🔧",
+          word: { en: "services", es: "servicios", ur: "خدمات" },
+          definition: {
+            en: "jobs that people do to help others — like teaching, cleaning, or fixing things",
+            es: "trabajos que la gente hace para ayudar a otros — como enseñar, limpiar o reparar",
+            ur: "وہ کام جو لوگ دوسروں کی مدد کے لیے کرتے ہیں — جیسے پڑھانا، صفائی کرنا یا مرمت کرنا",
+          },
+        },
+      ],
+      lesson: {
+        en: "🏦 **Smart money choices help our community!** Every day, people make decisions about money.\n\n**Producers** make or grow things to sell — like a farmer who grows tomatoes or a baker who makes bread. **Consumers** buy and use those things.\n\n**Goods** are things you can touch and take home — like a book, food, or a toy. **Services** are helpful jobs — like a doctor helping you feel better or a teacher helping you learn.\n\n**Income** is money you earn by working. You can **spend** it (buy things now) or **save** it (keep it for later). Saving is how you reach bigger goals — like buying something special or helping your family. 💚",
+        es: "🏦 **¡Las decisiones inteligentes con el dinero ayudan a nuestra comunidad!** Cada día, las personas toman decisiones sobre el dinero.\n\nLos **productores** hacen o cultivan cosas para vender — como un granjero que cultiva tomates o un panadero que hace pan. Los **consumidores** compran y usan esas cosas.\n\nLos **bienes** son cosas que puedes tocar y llevar a casa — como un libro, comida o un juguete. Los **servicios** son trabajos útiles — como un médico que te ayuda a sentirte mejor o un maestro que te ayuda a aprender.\n\nLos **ingresos** son el dinero que ganas trabajando. Puedes **gastarlo** (comprar cosas ahora) o **ahorrarlo** (guardarlo para después). ¡Ahorrar es cómo alcanzas metas más grandes! 💚",
+        ur: "🏦 **سمجھداری سے پیسے کے فیصلے ہماری کمیونٹی کی مدد کرتے ہیں!** ہر روز لوگ پیسے کے بارے میں فیصلے کرتے ہیں۔\n\n**پیدا کنندہ** چیزیں بناتے یا اگاتے ہیں — جیسے کسان ٹماٹر اگاتا ہے یا بیکر روٹی بناتا ہے۔ **صارفین** وہ چیزیں خریدتے اور استعمال کرتے ہیں۔\n\n**سامان** وہ چیزیں ہیں جو تم چھو سکتے ہو — جیسے کتاب، کھانا یا کھلونا۔ **خدمات** مددگار کام ہیں — جیسے ڈاکٹر تمہیں ٹھیک کرتا ہے یا استاد تمہیں پڑھاتا ہے۔\n\n**آمدنی** وہ پیسہ ہے جو تم کام کر کے کماتے ہو۔ تم اسے **خرچ** کر سکتے ہو (ابھی چیزیں خریدو) یا **بچا** سکتے ہو (بعد کے لیے رکھو)۔ بچت سے تم بڑے ہدف پورے کرتے ہو! 💚",
+      },
+      exercises: [
+        {
+          id: "ex-2.11-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌾 A farmer grows vegetables and sells them at the market. Is the farmer a producer or a consumer?",
+            es: "🌾 Un granjero cultiva verduras y las vende en el mercado. ¿El granjero es productor o consumidor?",
+            ur: "🌾 ایک کسان سبزیاں اگاتا ہے اور بازار میں بیچتا ہے۔ کیا کسان پیدا کنندہ ہے یا صارف؟",
+          },
+          choices: [
+            { en: "Producer — he makes and sells goods", es: "Productor — hace y vende bienes", ur: "پیدا کنندہ — وہ سامان بناتا اور بیچتا ہے" },
+            { en: "Consumer — he buys and uses goods", es: "Consumidor — compra y usa bienes", ur: "صارف — وہ سامان خریدتا اور استعمال کرتا ہے" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-2.11-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🏫 A teacher helps students learn to read every day. Is this a good or a service?",
+            es: "🏫 Una maestra ayuda a los estudiantes a leer todos los días. ¿Es un bien o un servicio?",
+            ur: "🏫 ایک استانی ہر روز طلبہ کو پڑھنا سکھاتی ہے۔ کیا یہ سامان ہے یا خدمت؟",
+          },
+          choices: [
+            { en: "A good — it's something you can touch", es: "Un bien — es algo que puedes tocar", ur: "سامان — یہ کوئی ایسی چیز ہے جو چھوئی جا سکے" },
+            { en: "A service — it's a helpful job", es: "Un servicio — es un trabajo útil", ur: "خدمت — یہ ایک مددگار کام ہے" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "ex-2.11-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "💰 Jaylen earns $5 doing chores. He wants to buy a $3 book now and save the rest. How much will he save?",
+            es: "💰 Jaylen gana $5 haciendo tareas del hogar. Quiere comprar un libro de $3 ahora y ahorrar el resto. ¿Cuánto ahorrará?",
+            ur: "💰 جیلن کام کر کے $5 کماتا ہے۔ وہ ابھی $3 کی کتاب خریدنا اور باقی بچانا چاہتا ہے۔ وہ کتنا بچائے گا؟",
+          },
+          choices: [
+            { en: "$1", es: "$1", ur: "$1" },
+            { en: "$3", es: "$3", ur: "$3" },
+            { en: "$2", es: "$2", ur: "$2" },
+            { en: "$8", es: "$8", ur: "$8" },
+          ],
+          correctIndex: 2,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-2.11-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "🍞 A family buys bread from a bakery. The family is the _____ and the bakery is the _____.",
+            es: "🍞 Una familia compra pan en una panadería. La familia es el _____ y la panadería es el _____.",
+            ur: "🍞 ایک خاندان بیکری سے روٹی خریدتا ہے۔ خاندان _____ ہے اور بیکری _____ ہے۔",
+          },
+          choices: [
+            { en: "producer … consumer", es: "productor … consumidor", ur: "پیدا کنندہ … صارف" },
+            { en: "consumer … producer", es: "consumidor … productor", ur: "صارف … پیدا کنندہ" },
+            { en: "service … goods", es: "servicio … bienes", ur: "خدمت … سامان" },
+            { en: "income … save", es: "ingresos … ahorrar", ur: "آمدنی … بچانا" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "qz-2.11-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🚒 A firefighter puts out fires and keeps the neighborhood safe. This is an example of a ___.",
+            es: "🚒 Un bombero apaga incendios y mantiene seguro el vecindario. Esto es un ejemplo de un ___.",
+            ur: "🚒 ایک فائر فائٹر آگ بجھاتا ہے اور محلے کو محفوظ رکھتا ہے۔ یہ ___ کی مثال ہے۔",
+          },
+          choices: [
+            { en: "Good", es: "Bien", ur: "سامان" },
+            { en: "Income", es: "Ingreso", ur: "آمدنی" },
+            { en: "Service", es: "Servicio", ur: "خدمت" },
+            { en: "Producer", es: "Productor", ur: "پیدا کنندہ" },
+          ],
+          correctIndex: 2,
+        },
+        {
+          id: "qz-2.11-3",
+          type: "true-false",
+          prompt: {
+            en: "💡 When you save money instead of spending it right away, you can use it later for something more important.",
+            es: "💡 Cuando ahorras dinero en lugar de gastarlo enseguida, puedes usarlo después para algo más importante.",
+            ur: "💡 جب تم پیسے فوری خرچ کرنے کی بجائے بچاتے ہو، تو تم انہیں بعد میں کسی اہم چیز کے لیے استعمال کر سکتے ہو۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-2.11-1",
+          emoji: "🌾🏪",
+          scene: "Urban farm stand at Fair Park, Dallas — local producers selling fresh goods",
+          prompt: {
+            en: "A farm stand earns $48 selling tomatoes and $27 selling herbs. How much income did the farm earn in all?",
+            es: "Un puesto de granja gana $48 vendiendo tomates y $27 vendiendo hierbas. ¿Cuántos ingresos ganó la granja en total?",
+            ur: "ایک فارم اسٹینڈ نے ٹماٹر بیچ کر $48 اور جڑی بوٹیاں بیچ کر $27 کمائے۔ فارم نے کل کتنی آمدنی کمائی؟",
+          },
+          answer: 75,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-2",
+          emoji: "🐖💚",
+          scene: "Second grade savings challenge — students save coins all month",
+          prompt: {
+            en: "Aisha earns $10 helping at the library. She spends $6 on a book and saves the rest. How much does she save?",
+            es: "Aisha gana $10 ayudando en la biblioteca. Gasta $6 en un libro y ahorra el resto. ¿Cuánto ahorra?",
+            ur: "عائشہ لائبریری میں مدد کر کے $10 کماتی ہے۔ وہ کتاب پر $6 خرچ کرتی ہے اور باقی بچاتی ہے۔ وہ کتنا بچاتی ہے؟",
+          },
+          answer: 4,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-3",
+          emoji: "🛍️🌿",
+          scene: "School eco-store — students buy recycled goods with earned tokens",
+          prompt: {
+            en: "The school store has pencils for $2 each and notebooks for $5 each. Marco buys 1 pencil and 1 notebook. How much does he spend in all?",
+            es: "La tienda escolar tiene lápices a $2 y libretas a $5. Marco compra 1 lápiz y 1 libreta. ¿Cuánto gasta en total?",
+            ur: "اسکول اسٹور میں پنسل $2 اور نوٹ بک $5 کی ہے۔ مارکو 1 پنسل اور 1 نوٹ بک خریدتا ہے۔ وہ کل کتنا خرچ کرتا ہے؟",
+          },
+          answer: 7,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-4",
+          emoji: "🔧🏠",
+          scene: "Neighborhood fix-it day — community members help with small repairs",
+          prompt: {
+            en: "A repair service earns $35 on Saturday and $29 on Sunday. How much income did they earn over the weekend?",
+            es: "Un servicio de reparación gana $35 el sábado y $29 el domingo. ¿Cuántos ingresos ganaron durante el fin de semana?",
+            ur: "ایک مرمت خدمت نے ہفتہ کو $35 اور اتوار کو $29 کمائے۔ انہوں نے ویک اینڈ میں کتنی آمدنی کمائی؟",
+          },
+          answer: 64,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-5",
+          emoji: "💰🎯",
+          scene: "Classroom savings goal — students save to buy supplies for a community garden project",
+          prompt: {
+            en: "The class wants to save $50 for a garden project. They have saved $38 so far. How much more do they need to save?",
+            es: "La clase quiere ahorrar $50 para un proyecto de jardín. Ya ahorraron $38. ¿Cuánto más necesitan ahorrar?",
+            ur: "کلاس باغ کے منصوبے کے لیے $50 بچانا چاہتی ہے۔ ابھی تک $38 بچائے ہیں۔ انہیں کتنا مزید بچانا ہے؟",
+          },
+          answer: 12,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+      ],
+    },
+
   ],
 };
 

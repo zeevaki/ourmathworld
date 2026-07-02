@@ -36,6 +36,7 @@ const teksIconMap: Record<string, LucideIcon> = {
   "2.4A": Sprout,
   "2.4C": Plus,
   "2.4D": Equal,
+  "2.5": PieChart,
   "2.6A": Grid3X3,
   "2.7A": TreePine,
   "2.8A": Leaf,
@@ -44,6 +45,7 @@ const teksIconMap: Record<string, LucideIcon> = {
   "2.9E": Ruler,
   "2.9G": Clock,
   "2.10C": BarChart2,
+  "2.11": Layers,
   // Grade 3
   "3.4F": X,
   "3.4K": Divide,
