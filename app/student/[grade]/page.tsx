@@ -1,6 +1,6 @@
 "use client";
 
-import { use } from "react";
+import { use, useState } from "react";
 import Link from "next/link";
 import NavBar from "@/components/NavBar";
 import grade2 from "@/data/grade2";
@@ -11,6 +11,7 @@ import grade5 from "@/data/grade5";
 import kindergarten from "@/data/kindergarten";
 import { Grade } from "@/data/types";
 import { useLanguage } from "@/components/LanguageContext";
+import NumbersDrill from "@/components/NumbersDrill";
 
 const gradeData: Record<string, Grade> = {
   K: kindergarten,
@@ -29,6 +30,8 @@ export default function GradePage({
   const { grade } = use(params);
   const { language } = useLanguage();
   const data = gradeData[grade];
+  const showNumbers = language === "es" && ["K", "1", "2", "3"].includes(grade);
+  const [tab, setTab] = useState<"units" | "numbers">("units");
 
   function getTitle(unit: Grade["units"][0]) {
     if (language === "es") return unit.title.es;
@@ -62,31 +65,57 @@ export default function GradePage({
         <h1 className="text-4xl font-black text-gray-800 mb-2">
           {data.label}
         </h1>
-        <p className="text-gray-500 font-semibold mb-10">Pick a topic to learn</p>
+        <p className="text-gray-500 font-semibold mb-6">Pick a topic to learn</p>
 
-        <div className="flex flex-col gap-4">
-          {data.units.map((unit) => (
-            <Link
-              key={unit.teks}
-              href={`/student/${grade}/${unit.teks}`}
-              className="bg-white rounded-2xl px-6 py-5 shadow-sm border border-gray-100 hover:border-primary hover:shadow-md transition-all flex items-center gap-5"
+        {/* Numbers tab — Spanish only, K–3 */}
+        {showNumbers && (
+          <div className="flex gap-2 mb-8 bg-white rounded-2xl p-1.5 shadow-sm border border-gray-100">
+            <button
+              onClick={() => setTab("units")}
+              className={`flex-1 py-2.5 rounded-xl font-bold text-sm transition-all cursor-pointer ${
+                tab === "units" ? "bg-primary text-white shadow-md" : "text-gray-400 hover:text-primary"
+              }`}
             >
-              <div className="flex-1">
-                <div className="font-black text-gray-800 text-lg">{unit.title.en}</div>
-                <div
-                  className="text-primary text-sm font-semibold"
-                  dir={language === "ur" ? "rtl" : "ltr"}
-                >
-                  {getTitle(unit)}
+              📚 Topics
+            </button>
+            <button
+              onClick={() => setTab("numbers")}
+              className={`flex-1 py-2.5 rounded-xl font-bold text-sm transition-all cursor-pointer ${
+                tab === "numbers" ? "bg-primary text-white shadow-md" : "text-gray-400 hover:text-primary"
+              }`}
+            >
+              🔢 Numbers 1–50
+            </button>
+          </div>
+        )}
+
+        {showNumbers && tab === "numbers" && <NumbersDrill />}
+
+        {tab === "units" && (
+          <div className="flex flex-col gap-4">
+            {data.units.map((unit) => (
+              <Link
+                key={unit.teks}
+                href={`/student/${grade}/${unit.teks}`}
+                className="bg-white rounded-2xl px-6 py-5 shadow-sm border border-gray-100 hover:border-primary hover:shadow-md transition-all flex items-center gap-5"
+              >
+                <div className="flex-1">
+                  <div className="font-black text-gray-800 text-lg">{unit.title.en}</div>
+                  <div
+                    className="text-primary text-sm font-semibold"
+                    dir={language === "ur" ? "rtl" : "ltr"}
+                  >
+                    {getTitle(unit)}
+                  </div>
                 </div>
-              </div>
-              <div className="text-right text-xs text-gray-400 font-mono">
-                <div>{unit.teks}</div>
-                <div>{unit.cambridge}</div>
-              </div>
-            </Link>
-          ))}
-        </div>
+                <div className="text-right text-xs text-gray-400 font-mono">
+                  <div>{unit.teks}</div>
+                  <div>{unit.cambridge}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
