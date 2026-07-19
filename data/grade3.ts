@@ -172,6 +172,20 @@ const grade3: Grade = {
           correctIndex: 1,
         },
       ],
+      wordProblems: [
+        {
+          id: "wp-3.4F-1",
+          emoji: "🌳🏞️➕",
+          scene: "After a flood, a Hill Country community plants trees along the riverbank to help soak up rainwater and hold the soil in place",
+          prompt: {
+            en: "Volunteers plant trees along the riverbank in 6 rows with 8 trees in each row. How many trees did they plant in all?",
+            es: "Los voluntarios plantan árboles junto al río en 6 filas con 8 árboles en cada fila. ¿Cuántos árboles plantaron en total?",
+            ur: "رضاکار دریا کے کنارے 6 قطاروں میں 8 درخت فی قطار لگاتے ہیں۔ انہوں نے کل کتنے درخت لگائے؟",
+          },
+          answer: 48,
+          answerUnit: { en: "trees", es: "árboles", ur: "درخت" },
+        },
+      ],
     },
 
     // ─── Unit 2: Division ─────────────────────────────────────────────────────
@@ -668,6 +682,20 @@ const grade3: Grade = {
             { en: "7 meters", es: "7 metros", ur: "7 میٹر" },
           ],
           correctIndex: 3,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-3.6C-1",
+          emoji: "🌱🟩📐",
+          scene: "A town builds a rain garden to catch extra stormwater and slow down flooding",
+          prompt: {
+            en: "A new rain garden is 9 feet long and 6 feet wide. What is the area of the rain garden?",
+            es: "Un nuevo jardín de lluvia mide 9 pies de largo y 6 pies de ancho. ¿Cuál es el área del jardín de lluvia?",
+            ur: "ایک نیا بارش کا باغ 9 فٹ لمبا اور 6 فٹ چوڑا ہے۔ باغ کا رقبہ کیا ہے؟",
+          },
+          answer: 54,
+          answerUnit: { en: "square feet", es: "pies cuadrados", ur: "مربع فٹ" },
         },
       ],
     },

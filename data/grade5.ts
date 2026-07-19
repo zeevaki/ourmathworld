@@ -318,6 +318,20 @@ const grade5: Grade = {
           correctIndex: 0,
         },
       ],
+      wordProblems: [
+        {
+          id: "wp-5.6A-1",
+          emoji: "🌊🟦📦",
+          scene: "A new stormwater retention pond is built to catch and hold extra rain so nearby streets don't flood",
+          prompt: {
+            en: "A stormwater retention pond is shaped like a rectangular prism: 20 feet long, 12 feet wide, and 5 feet deep. What is the volume of water it can hold?",
+            es: "Un estanque de retención de agua pluvial tiene forma de prisma rectangular: 20 pies de largo, 12 pies de ancho y 5 pies de profundidad. ¿Cuál es el volumen de agua que puede contener?",
+            ur: "ایک طوفانی پانی کا ذخیرہ تالاب مستطیل پرزم کی شکل کا ہے: 20 فٹ لمبا، 12 فٹ چوڑا اور 5 فٹ گہرا۔ یہ کتنے مکعب فٹ پانی روک سکتا ہے؟",
+          },
+          answer: 1200,
+          answerUnit: { en: "cubic feet", es: "pies cúbicos", ur: "مکعب فٹ" },
+        },
+      ],
     },
 
     // ─── Unit 3: Numerical Expressions & Order of Operations ─────────────────
@@ -640,6 +654,20 @@ const grade5: Grade = {
             { en: "6 units", es: "6 unidades", ur: "6 اکائیاں" },
           ],
           correctIndex: 3,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-5.8A-1",
+          emoji: "🗺️📍🏘️",
+          scene: "Fifth graders start a community project, mapping flood-risk spots so neighbors know where to prepare first",
+          prompt: {
+            en: "For a community flood-safety project, students plot two rain gauge stations on a grid: Station A at (2, 3) and Station B at (9, 3). How many units apart are the two stations?",
+            es: "Para un proyecto comunitario de seguridad ante inundaciones, los estudiantes marcan dos estaciones de medición de lluvia en una cuadrícula: Estación A en (2, 3) y Estación B en (9, 3). ¿A cuántas unidades de distancia están las dos estaciones?",
+            ur: "کمیونٹی سیلاب حفاظتی منصوبے کے لیے، طلبہ گرڈ پر دو بارش گیج اسٹیشن نشان زد کرتے ہیں: اسٹیشن A پر (2, 3) اور اسٹیشن B پر (9, 3)۔ دونوں اسٹیشنز کے درمیان کتنی اکائیوں کا فاصلہ ہے؟",
+          },
+          answer: 7,
+          answerUnit: { en: "units", es: "unidades", ur: "اکائیاں" },
         },
       ],
     },

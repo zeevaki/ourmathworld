@@ -869,6 +869,18 @@ const grade2: Grade = {
           answer: 47,
           answerUnit: { en: "scraps", es: "restos", ur: "بچے کھچے" },
         },
+        {
+          id: "wp-2.4C-6",
+          emoji: "🌧️🏞️💧",
+          scene: "Flash flooding in the Texas Hill Country — heavy summer storms raise river levels fast. Planting trees and grass along riverbanks helps soak up extra rain.",
+          prompt: {
+            en: "During a summer storm, 6 inches of rain fell in the morning and 4 more inches fell that afternoon over a Hill Country town. How many inches of rain fell in all that day?",
+            es: "Durante una tormenta de verano, cayeron 6 pulgadas de lluvia por la mañana y 4 pulgadas más por la tarde sobre un pueblo de Hill Country. ¿Cuántas pulgadas de lluvia cayeron ese día en total?",
+            ur: "ایک گرمی کے طوفان کے دوران، ہل کنٹری کے ایک قصبے میں صبح 6 انچ اور دوپہر میں مزید 4 انچ بارش ہوئی۔ اس دن کل کتنی انچ بارش ہوئی؟",
+          },
+          answer: 10,
+          answerUnit: { en: "inches of rain", es: "pulgadas de lluvia", ur: "انچ بارش" },
+        },
       ],
     },
 
@@ -1922,6 +1934,7 @@ const grade2: Grade = {
         { id: "wp-2.10C-3", emoji: "🌊📈", scene: "4-week ocean cleanup data — pounds of trash removed each week", prompt: { en: "A bar graph shows trash collected each week: Week 1 = 50 lbs, Week 2 = 75 lbs, Week 3 = 60 lbs, Week 4 = 40 lbs. How many more pounds were collected in Week 2 than Week 4?", es: "Un gráfico muestra basura recolectada: Semana 1 = 50 lbs, Semana 2 = 75 lbs, Semana 3 = 60 lbs, Semana 4 = 40 lbs. ¿Cuántas libras más en la semana 2 que en la 4?", ur: "بار گراف: ہفتہ 1 = 50، ہفتہ 2 = 75، ہفتہ 3 = 60، ہفتہ 4 = 40 پاؤنڈ۔ ہفتہ 2 میں ہفتہ 4 سے کتنے زیادہ پاؤنڈ جمع ہوئے؟" }, answer: 35, answerUnit: { en: "pounds", es: "libras", ur: "پاؤنڈ" } },
         { id: "wp-2.10C-4", emoji: "🐝🌸", scene: "Pollinator count survey across 4 school garden plots", prompt: { en: "A pictograph shows bees spotted. Key: 🐝 = 5 bees. Garden A: 🐝🐝🐝, Garden B: 🐝🐝🐝🐝🐝, Garden C: 🐝🐝. How many MORE bees were in Garden B than Garden C?", es: "Pictografía de abejas vistas. Clave: 🐝 = 5 abejas. Jardín A: 🐝🐝🐝, Jardín B: 🐝🐝🐝🐝🐝, Jardín C: 🐝🐝. ¿Cuántas MÁS abejas en el Jardín B que en el C?", ur: "تصویری گراف: کلید: 🐝 = 5 مکھیاں۔ باغ A: 🐝🐝🐝، باغ B: 🐝🐝🐝🐝🐝، باغ C: 🐝🐝۔ باغ B میں باغ C سے کتنی زیادہ مکھیاں تھیں؟" }, answer: 15, answerUnit: { en: "bees", es: "abejas", ur: "مکھیاں" } },
         { id: "wp-2.10C-5", emoji: "🌱📊", scene: "Spring garden data project — students track how many seeds sprouted", prompt: { en: "A bar graph shows sprouted seeds: Sunflower = 45, Tomato = 30, Bean = 25. How many seeds sprouted in all?", es: "Un gráfico muestra semillas germinadas: Girasol = 45, Tomate = 30, Frijol = 25. ¿Cuántas semillas germinaron en total?", ur: "بار گراف: سورج مکھی = 45، ٹماٹر = 30، لوبیا = 25 اگے ہوئے بیج۔ کل کتنے بیج اگے؟" }, answer: 100, answerUnit: { en: "seeds", es: "semillas", ur: "بیج" } },
+        { id: "wp-2.10C-6", emoji: "🌧️📊", scene: "Flood-watch rainfall data from three Hill Country towns during one storm", prompt: { en: "A bar graph shows rainfall during one storm: Town A = 6 inches, Town B = 10 inches, Town C = 8 inches. How many more inches of rain fell in Town B than in Town A?", es: "Un gráfico muestra la lluvia durante una tormenta: Pueblo A = 6 pulgadas, Pueblo B = 10 pulgadas, Pueblo C = 8 pulgadas. ¿Cuántas pulgadas más de lluvia cayeron en el Pueblo B que en el Pueblo A?", ur: "بار گراف: قصبہ A = 6 انچ، قصبہ B = 10 انچ، قصبہ C = 8 انچ بارش۔ قصبہ B میں قصبہ A سے کتنی زیادہ بارش ہوئی؟" }, answer: 4, answerUnit: { en: "inches", es: "pulgadas", ur: "انچ" } },
       ],
     },
 

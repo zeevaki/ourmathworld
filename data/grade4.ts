@@ -162,6 +162,20 @@ const grade4: Grade = {
           correctIndex: 1,
         },
       ],
+      wordProblems: [
+        {
+          id: "wp-4.4D-1",
+          emoji: "🌳🏙️✖️",
+          scene: "A city-wide flood-prevention project — every neighborhood plants trees to help the ground soak up rain",
+          prompt: {
+            en: "A city-wide tree-planting project has 24 neighborhoods. Each neighborhood plants 35 trees to help prevent flooding. How many trees will be planted in all?",
+            es: "Un proyecto de siembra de árboles en toda la ciudad tiene 24 vecindarios. Cada vecindario planta 35 árboles para ayudar a prevenir inundaciones. ¿Cuántos árboles se plantarán en total?",
+            ur: "شہر بھر کے شجرکاری منصوبے میں 24 محلے شامل ہیں۔ ہر محلہ سیلاب روکنے کے لیے 35 درخت لگاتا ہے۔ کل کتنے درخت لگائے جائیں گے؟",
+          },
+          answer: 840,
+          answerUnit: { en: "trees", es: "árboles", ur: "درخت" },
+        },
+      ],
     },
 
     // ─── Unit 2: Adding & Subtracting Fractions ──────────────────────────────
@@ -637,6 +651,20 @@ const grade4: Grade = {
             { en: "They are equal", es: "Son iguales", ur: "وہ برابر ہیں" },
           ],
           correctIndex: 1,
+        },
+      ],
+      wordProblems: [
+        {
+          id: "wp-4.5D-1",
+          emoji: "🧱🏞️📏",
+          scene: "Engineers plan a flood wall around a riverside park to protect the neighborhood during heavy storms",
+          prompt: {
+            en: "Engineers plan a rectangular flood wall around a park that is 120 feet long and 75 feet wide. What is the perimeter of the flood wall?",
+            es: "Los ingenieros planean un muro de contención rectangular alrededor de un parque que mide 120 pies de largo y 75 pies de ancho. ¿Cuál es el perímetro del muro?",
+            ur: "انجینئرز ایک پارک کے گرد مستطیل سیلابی دیوار کا منصوبہ بناتے ہیں جو 120 فٹ لمبا اور 75 فٹ چوڑا ہے۔ دیوار کا محیط کیا ہے؟",
+          },
+          answer: 390,
+          answerUnit: { en: "feet", es: "pies", ur: "فٹ" },
         },
       ],
     },
