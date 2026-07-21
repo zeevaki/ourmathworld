@@ -331,6 +331,19 @@ const grade5: Grade = {
           answer: 1200,
           answerUnit: { en: "cubic feet", es: "pies cúbicos", ur: "مکعب فٹ" },
         },
+        {
+          id: "wp-5.6A-2",
+          emoji: "🏢🌿📐",
+          scene: "Students are designing an eco-friendly Green Mall built entirely from geometric shapes — a circular fountain, triangular garden beds, and rectangular shops with rooftop gardens",
+          image: "5.6A_GreenMall.png",
+          prompt: {
+            en: "🏢 The Green Mall's new plant shop has rectangular walls. One wall is 12 meters long and the other is 8 meters long. The city needs to know how much fencing to buy to go all the way around the shop. What is the perimeter?",
+            es: "🏢 La nueva tienda de plantas del Green Mall tiene paredes rectangulares. Una pared mide 12 metros de largo y la otra mide 8 metros de largo. La ciudad necesita saber cuánta cerca comprar para rodear toda la tienda. ¿Cuál es el perímetro?",
+            ur: "🏢 گرین مال کی نئی پودوں کی دکان کی دیواریں مستطیل ہیں۔ ایک دیوار 12 میٹر لمبی ہے اور دوسری 8 میٹر لمبی ہے۔ شہر کو معلوم کرنا ہے کہ دکان کے چاروں طرف باڑ لگانے کے لیے کتنی باڑ خریدنی ہوگی۔ محیط کیا ہے؟",
+          },
+          answer: 40,
+          answerUnit: { en: "meters", es: "metros", ur: "میٹر" },
+        },
       ],
     },
 
