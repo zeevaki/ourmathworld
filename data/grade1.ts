@@ -17,6 +17,7 @@ const grade1: Grade = {
         es: "Agrupar hasta 120",
         ur: "120 تک بنڈل بنانا",
       },
+      lessonImage: "1.2B_Lesson.png",
       vocabulary: [
         {
           id: "bundle-of-ten",
