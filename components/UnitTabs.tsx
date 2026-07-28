@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
   Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer, Hash,
+  Volume2,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -192,6 +193,19 @@ function getLang(text: { en: string; es: string; ur: string }, lang: string | nu
   return text.en;
 }
 
+function speakVocab(en: string, es: string) {
+  if (typeof window === "undefined" || !window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utterEn = new SpeechSynthesisUtterance(en);
+  utterEn.lang = "en-US";
+  utterEn.rate = 0.9;
+  const utterEs = new SpeechSynthesisUtterance(es);
+  utterEs.lang = "es-MX";
+  utterEs.rate = 0.9;
+  window.speechSynthesis.speak(utterEn);
+  window.speechSynthesis.speak(utterEs);
+}
+
 export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: string }) {
   const [activeTab, setActiveTab] = useState<Tab>("vocab");
   const { language } = useLanguage();
@@ -238,6 +252,16 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
                   <span className="text-primary font-bold text-lg">
                     {getLang(word.word, language)}
                   </span>
+                  {language === "es" && (
+                    <button
+                      type="button"
+                      onClick={() => speakVocab(word.word.en, word.word.es)}
+                      aria-label={`Listen: ${word.word.en} / ${word.word.es}`}
+                      className="text-primary hover:text-primary-dark transition-colors cursor-pointer flex-shrink-0"
+                    >
+                      <Volume2 size={20} />
+                    </button>
+                  )}
                 </div>
                 <p className="text-gray-500 text-sm leading-relaxed">{word.definition.en}</p>
                 <p className="font-semibold text-sm mt-1" style={{ direction: language === "ur" ? "rtl" : "ltr" }}>
