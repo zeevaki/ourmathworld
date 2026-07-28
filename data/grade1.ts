@@ -7,6 +7,173 @@ const grade1: Grade = {
   color: "#22C55E",
   units: [
 
+    // ─── Bundling to 120 ──────────────────────────────────────────────────────
+    {
+      teks: "1.2B",
+      cambridge: "Stage 1 · 1Nn6",
+      emoji: "📦",
+      title: {
+        en: "Bundling to 120",
+        es: "Agrupar hasta 120",
+        ur: "120 تک بنڈل بنانا",
+      },
+      vocabulary: [
+        {
+          id: "bundle-of-ten",
+          emoji: "📦",
+          word: { en: "bundle of ten", es: "grupo de diez", ur: "دس کا بنڈل" },
+          definition: {
+            en: "ten ones grouped or tied together to make counting faster and easier",
+            es: "diez unidades agrupadas o atadas juntas para contar más rápido y fácil",
+            ur: "دس اکائیاں ایک ساتھ گروہ بند کی گئیں تاکہ گنتی تیز اور آسان ہو",
+          },
+        },
+        {
+          id: "tens-ones-120",
+          emoji: "🔟",
+          word: { en: "tens and ones", es: "decenas y unidades", ur: "دہائیاں اور اکائیاں" },
+          definition: {
+            en: "the two place values we use to build numbers — how many bundles of ten, and how many are left over",
+            es: "los dos valores posicionales que usamos para construir números — cuántos grupos de diez, y cuántos quedan sueltos",
+            ur: "دو جگہ کی قدریں جو نمبر بنانے میں استعمال ہوتی ہیں — کتنے دس کے بنڈل، اور کتنے اکیلے بچے",
+          },
+        },
+        {
+          id: "hundred-bundle",
+          emoji: "💯",
+          word: { en: "hundred", es: "centena", ur: "سو" },
+          definition: {
+            en: "ten bundles of ten grouped together to make one hundred",
+            es: "diez grupos de diez agrupados juntos para formar una centena",
+            ur: "دس کے دس بنڈل مل کر ایک سو بناتے ہیں",
+          },
+        },
+        {
+          id: "compose-120",
+          emoji: "🧩",
+          word: { en: "compose", es: "componer", ur: "جوڑنا" },
+          definition: {
+            en: "put tens and ones together to build a number",
+            es: "juntar decenas y unidades para construir un número",
+            ur: "ایک نمبر بنانے کے لیے دہائیاں اور اکائیاں جوڑنا",
+          },
+        },
+        {
+          id: "decompose-120",
+          emoji: "🔓",
+          word: { en: "decompose", es: "descomponer", ur: "توڑنا" },
+          definition: {
+            en: "break a number apart into tens and ones — there is more than one way to do it!",
+            es: "separar un número en decenas y unidades — ¡hay más de una forma de hacerlo!",
+            ur: "ایک نمبر کو دہائیوں اور اکائیوں میں توڑنا — اسے کرنے کے ایک سے زیادہ طریقے ہیں!",
+          },
+        },
+      ],
+      lesson: {
+        en: "📦 **Bundling makes big numbers easy to build!**\n\nWhen our community collects cans, bottles, or seed packets for a good cause, we bundle them into groups of ten — it makes counting fast, even for big piles!\n\n**Building a number:** Count the bundles of ten, then count what's left over.\n\n🧡 Example: A recycling club collects cans and bundles them by ten.\nThey have **6 bundles of ten** and **3 loose cans**.\n6 tens + 3 ones = **63 cans!**\n\n**Numbers past 100:** Ten bundles of ten make **one hundred**! If a food drive collects 112 cans, that's **1 hundred, 1 ten, and 2 ones**.\n\n**More than one way:** 63 can also be built as **5 tens + 13 ones** — same total, different bundles! Numbers up to 120 can always be composed and decomposed more than one way.\n\nBundling isn't just neat — it helps our whole community count faster when we're working together to help the planet! 🌍",
+        es: "📦 **¡Agrupar hace que los números grandes sean fáciles de construir!**\n\nCuando nuestra comunidad recolecta latas, botellas o sobres de semillas para una buena causa, las agrupamos de diez en diez — ¡así contamos rápido, incluso montones grandes!\n\n**Construir un número:** Cuenta los grupos de diez, luego cuenta lo que sobra.\n\n🧡 Ejemplo: Un club de reciclaje recolecta latas y las agrupa de diez en diez.\nTienen **6 grupos de diez** y **3 latas sueltas**.\n6 decenas + 3 unidades = **¡63 latas!**\n\n**Números después de 100:** ¡Diez grupos de diez forman **una centena**! Si una colecta de comida junta 112 latas, eso es **1 centena, 1 decena y 2 unidades**.\n\n**Más de una forma:** 63 también se puede formar como **5 decenas + 13 unidades** — ¡el mismo total, con grupos diferentes! Los números hasta 120 siempre se pueden componer y descomponer de más de una manera.\n\n¡Agrupar no solo es ordenado — ayuda a toda nuestra comunidad a contar más rápido cuando trabajamos juntos para ayudar al planeta! 🌍",
+        ur: "📦 **بنڈل بنانا بڑے نمبر آسانی سے بنانے میں مدد دیتا ہے!**\n\nجب ہماری کمیونٹی کسی اچھے مقصد کے لیے ڈبے، بوتلیں یا بیجوں کے پیکٹ جمع کرتی ہے، تو ہم انہیں دس دس کے بنڈل میں گروہ بند کرتے ہیں — اس سے بڑے ڈھیر بھی جلدی گنے جا سکتے ہیں!\n\n**نمبر بنانا:** پہلے دس کے بنڈل گنو، پھر جو بچا ہے اسے گنو۔\n\n🧡 مثال: ایک ری سائیکلنگ کلب ڈبے جمع کرتا ہے اور انہیں دس دس کے بنڈل میں گروہ بند کرتا ہے۔\nان کے پاس **6 بنڈل دس کے** اور **3 اکیلے ڈبے** ہیں۔\n6 دہائیاں + 3 اکائیاں = **63 ڈبے!**\n\n**100 کے بعد کے نمبر:** دس کے دس بنڈل مل کر **ایک سو** بناتے ہیں! اگر کھانے کی مہم 112 ڈبے جمع کرے، تو یہ **1 سو، 1 دہائی، اور 2 اکائیاں** ہیں۔\n\n**ایک سے زیادہ طریقے:** 63 کو **5 دہائیاں + 13 اکائیاں** کے طور پر بھی بنایا جا سکتا ہے — وہی کل تعداد، مختلف بنڈل! 120 تک کے نمبر ہمیشہ ایک سے زیادہ طریقوں سے جوڑے اور توڑے جا سکتے ہیں۔\n\nبنڈل بنانا صرف صاف ستھرا نہیں — یہ پوری کمیونٹی کو تیزی سے گننے میں مدد دیتا ہے جب ہم مل کر زمین کی مدد کر رہے ہوں! 🌍",
+      },
+      exercises: [
+        {
+          id: "ex-1.2B-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "♻️ A recycling club bundles cans into groups of ten. They have 6 bundles of ten and 3 loose cans. How many cans do they have in all?",
+            es: "♻️ Un club de reciclaje agrupa las latas de diez en diez. Tienen 6 grupos de diez y 3 latas sueltas. ¿Cuántas latas tienen en total?",
+            ur: "♻️ ایک ری سائیکلنگ کلب ڈبوں کو دس دس کے گروہ میں بنڈل کرتا ہے۔ ان کے پاس 6 بنڈل دس کے اور 3 اکیلے ڈبے ہیں۔ ان کے پاس کل کتنے ڈبے ہیں؟",
+          },
+          choices: [
+            { en: "63", es: "63", ur: "63" },
+            { en: "36", es: "36", ur: "36" },
+            { en: "60", es: "60", ur: "60" },
+            { en: "9", es: "9", ur: "9" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-1.2B-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌳 A tree-planting group has 84 seedlings. Which shows 84 built from tens and ones?",
+            es: "🌳 Un grupo de siembra de árboles tiene 84 plantas. ¿Cuál muestra el 84 formado con decenas y unidades?",
+            ur: "🌳 ایک درخت لگانے والے گروہ کے پاس 84 پودے ہیں۔ کون سا دکھاتا ہے کہ 84 دہائیوں اور اکائیوں سے کیسے بنا؟",
+          },
+          choices: [
+            { en: "8 tens + 4 ones", es: "8 decenas + 4 unidades", ur: "8 دہائیاں + 4 اکائیاں" },
+            { en: "4 tens + 8 ones", es: "4 decenas + 8 unidades", ur: "4 دہائیاں + 8 اکائیاں" },
+            { en: "8 tens + 40 ones", es: "8 decenas + 40 unidades", ur: "8 دہائیاں + 40 اکائیاں" },
+            { en: "80 tens + 4 ones", es: "80 decenas + 4 unidades", ur: "80 دہائیاں + 4 اکائیاں" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-1.2B-3",
+          type: "true-false",
+          prompt: {
+            en: "💯 A community food drive collected 112 bottles. That means they have 1 hundred, 1 ten, and 2 ones.",
+            es: "💯 Una colecta comunitaria de alimentos recolectó 112 botellas. Eso significa que tienen 1 centena, 1 decena y 2 unidades.",
+            ur: "💯 ایک کمیونٹی فوڈ ڈرائیو نے 112 بوتلیں جمع کیں۔ اس کا مطلب ہے کہ ان کے پاس 1 سو، 1 دہائی اور 2 اکائیاں ہیں۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+      quiz: [
+        {
+          id: "qz-1.2B-1",
+          type: "multiple-choice",
+          prompt: {
+            en: "♻️ A recycling drive collected 9 bundles of ten cans and 5 loose cans. How many cans in total?",
+            es: "♻️ Una campaña de reciclaje recolectó 9 grupos de diez latas y 5 latas sueltas. ¿Cuántas latas en total?",
+            ur: "♻️ ایک ری سائیکلنگ مہم نے 9 بنڈل دس دس ڈبوں کے اور 5 اکیلے ڈبے جمع کیے۔ کل کتنے ڈبے ہیں؟",
+          },
+          choices: [
+            { en: "95", es: "95", ur: "95" },
+            { en: "59", es: "59", ur: "59" },
+            { en: "90", es: "90", ur: "90" },
+            { en: "14", es: "14", ur: "14" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "qz-1.2B-2",
+          type: "multiple-choice",
+          prompt: {
+            en: "🌱 57 seed packets need to be bundled for planting day. Which is one way to compose 57?",
+            es: "🌱 57 sobres de semillas necesitan agruparse para el día de siembra. ¿Cuál es una forma de componer el 57?",
+            ur: "🌱 پودے لگانے کے دن کے لیے 57 بیجوں کے پیکٹ بنڈل کرنے ہیں۔ 57 بنانے کا ایک طریقہ کون سا ہے؟",
+          },
+          choices: [
+            { en: "5 tens + 7 ones", es: "5 decenas + 7 unidades", ur: "5 دہائیاں + 7 اکائیاں" },
+            { en: "7 tens + 5 ones", es: "7 decenas + 5 unidades", ur: "7 دہائیاں + 5 اکائیاں" },
+            { en: "50 tens + 7 ones", es: "50 decenas + 7 unidades", ur: "50 دہائیاں + 7 اکائیاں" },
+            { en: "5 tens + 70 ones", es: "5 decenas + 70 unidades", ur: "5 دہائیاں + 70 اکائیاں" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "qz-1.2B-3",
+          type: "multiple-choice",
+          prompt: {
+            en: "🔓 42 = 4 tens + 2 ones. Which is another correct way to build 42?",
+            es: "🔓 42 = 4 decenas + 2 unidades. ¿Cuál es otra forma correcta de construir el 42?",
+            ur: "🔓 42 = 4 دہائیاں + 2 اکائیاں۔ 42 بنانے کا ایک اور درست طریقہ کون سا ہے؟",
+          },
+          choices: [
+            { en: "3 tens + 12 ones", es: "3 decenas + 12 unidades", ur: "3 دہائیاں + 12 اکائیاں" },
+            { en: "5 tens + 2 ones", es: "5 decenas + 2 unidades", ur: "5 دہائیاں + 2 اکائیاں" },
+            { en: "4 tens + 20 ones", es: "4 decenas + 20 unidades", ur: "4 دہائیاں + 20 اکائیاں" },
+            { en: "2 tens + 4 ones", es: "2 decenas + 4 unidades", ur: "2 دہائیاں + 4 اکائیاں" },
+          ],
+          correctIndex: 0,
+        },
+      ],
+    },
+
     // ─── Unit 1: Comparing Numbers >, <, = ───────────────────────────────────
     {
       teks: "1.2G",
