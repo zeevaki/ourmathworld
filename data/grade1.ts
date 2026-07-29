@@ -836,6 +836,75 @@ const grade1: Grade = {
       ],
     },
 
+    // ─── The Commutative Property: Flipping Addends within 10 ─────────────────
+    {
+      teks: "1.5G",
+      cambridge: "Stage 1 · TBD",
+      emoji: "🔄",
+      title: {
+        en: "The Commutative Property",
+        es: "La Propiedad Conmutativa",
+        ur: "تبادلی خاصیت",
+      },
+      vocabulary: [
+        {
+          id: "commutative-property",
+          emoji: "🔄",
+          word: { en: "commutative property", es: "propiedad conmutativa", ur: "تبادلی خاصیت" },
+          definition: {
+            en: "you can add two numbers in any order and get the same sum",
+            es: "puedes sumar dos números en cualquier orden y obtener la misma suma",
+            ur: "تم دو نمبروں کو کسی بھی ترتیب میں جمع کر سکتے ہو اور حاصل جمع وہی رہے گا",
+          },
+        },
+        {
+          id: "flip-flop-rule",
+          emoji: "🔀",
+          word: { en: "flip-flop rule", es: "regla de voltear", ur: "پلٹنے کا اصول" },
+          definition: {
+            en: "another name for the commutative property — swap the order of the addends without changing the answer",
+            es: "otro nombre para la propiedad conmutativa — cambia el orden de los sumandos sin cambiar la respuesta",
+            ur: "تبادلی خاصیت کا دوسرا نام — جواب بدلے بغیر جمع ہونے والے نمبروں کی ترتیب بدلنا",
+          },
+        },
+        {
+          id: "addend-flip",
+          emoji: "➕",
+          word: { en: "addend", es: "sumando", ur: "جمع ہونے والا نمبر" },
+          definition: {
+            en: "a number being added to another number",
+            es: "un número que se suma a otro número",
+            ur: "وہ نمبر جو دوسرے نمبر میں جمع کیا جائے",
+          },
+        },
+        {
+          id: "order-flip",
+          emoji: "🔢",
+          word: { en: "order", es: "orden", ur: "ترتیب" },
+          definition: {
+            en: "the sequence numbers are written or added in",
+            es: "la secuencia en la que se escriben o suman los números",
+            ur: "وہ ترتیب جس میں نمبر لکھے یا جمع کیے جاتے ہیں",
+          },
+        },
+      ],
+      lesson: {
+        en: "🔄 **You can flip addends and the sum stays the same!**\n\nThe Commutative Property is also called the **flip-flop rule**: when you add two numbers, you can swap their order and get the exact same answer.\n\n🧡 Example: A community garden has 3 tomato plants and 7 pepper plants.\n3 + 7 = 10 plants\n7 + 3 = 10 plants\n\nSame two numbers, same sum — just flipped! Knowing this means if you already know 7 + 3, you also know 3 + 7 without doing new work.\n\n**Why it helps:** If one number is harder to start with, flip it! 2 + 8 is easier to solve as 8 + 2 — starting with the bigger number and counting on just 2 more.\n\nThe flip-flop rule helps you add faster with numbers you already know. 🌟",
+        es: "🔄 **¡Puedes voltear los sumandos y la suma queda igual!**\n\nLa propiedad conmutativa también se llama la **regla de voltear**: cuando sumas dos números, puedes cambiar su orden y obtener exactamente la misma respuesta.\n\n🧡 Ejemplo: Un jardín comunitario tiene 3 plantas de tomate y 7 plantas de pimiento.\n3 + 7 = 10 plantas\n7 + 3 = 10 plantas\n\n¡Los mismos dos números, la misma suma — solo volteados! Saber esto significa que si ya sabes 7 + 3, también sabes 3 + 7 sin hacer trabajo nuevo.\n\n**Por qué ayuda:** Si un número es más difícil para empezar, ¡voltéalo! 2 + 8 es más fácil resolverlo como 8 + 2 — empezando con el número más grande y contando solo 2 más.\n\nLa regla de voltear te ayuda a sumar más rápido con números que ya conoces. 🌟",
+        ur: "🔄 **تم جمع ہونے والے نمبروں کو پلٹ سکتے ہو اور حاصل جمع وہی رہتا ہے!**\n\nتبادلی خاصیت کو **پلٹنے کا اصول** بھی کہتے ہیں: جب تم دو نمبر جمع کرتے ہو، تو ان کی ترتیب بدل سکتے ہو اور بالکل وہی جواب ملے گا۔\n\n🧡 مثال: ایک کمیونٹی گارڈن میں 3 ٹماٹر کے پودے اور 7 مرچ کے پودے ہیں۔\n3 + 7 = 10 پودے\n7 + 3 = 10 پودے\n\nوہی دو نمبر، وہی حاصل جمع — بس پلٹے ہوئے! یہ جاننا مطلب ہے کہ اگر تم 7 + 3 جانتے ہو تو 3 + 7 بھی بغیر نئے کام کے جانتے ہو۔\n\n**یہ کیوں مدد کرتا ہے:** اگر ایک نمبر سے شروع کرنا مشکل ہو تو اسے پلٹ دو! 2 + 8 کو 8 + 2 کے طور پر حل کرنا آسان ہے — بڑے نمبر سے شروع کر کے صرف 2 مزید گنو۔\n\nپلٹنے کا اصول تمہیں معلوم نمبروں سے تیزی سے جمع کرنے میں مدد دیتا ہے۔ 🌟",
+      },
+      exercises: [
+        { id: "ex-1.5G-1", type: "multiple-choice", prompt: { en: "🌱 A garden has 4 sunflowers and 6 daisies. Which shows the flip-flop of 4 + 6 = 10?", es: "🌱 Un jardín tiene 4 girasoles y 6 margaritas. ¿Cuál muestra el volteo de 4 + 6 = 10?", ur: "🌱 ایک باغ میں 4 سورج مکھی اور 6 گل داؤدی ہیں۔ 4 + 6 = 10 کا پلٹا ہوا کون سا ہے؟" }, choices: [{ en: "6 + 4 = 10", es: "6 + 4 = 10", ur: "6 + 4 = 10" }, { en: "4 + 6 = 11", es: "4 + 6 = 11", ur: "4 + 6 = 11" }, { en: "10 + 4 = 14", es: "10 + 4 = 14", ur: "10 + 4 = 14" }, { en: "6 − 4 = 2", es: "6 − 4 = 2", ur: "6 − 4 = 2" }], correctIndex: 0 },
+        { id: "ex-1.5G-2", type: "true-false", prompt: { en: "➕ If 5 + 8 = 13, then 8 + 5 = 13 too.", es: "➕ Si 5 + 8 = 13, entonces 8 + 5 = 13 también.", ur: "➕ اگر 5 + 8 = 13 ہے، تو 8 + 5 بھی 13 ہے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "ex-1.5G-3", type: "multiple-choice", prompt: { en: "🔄 Which addition sentence is the flip-flop of 9 + 1?", es: "🔄 ¿Cuál oración de suma es el volteo de 9 + 1?", ur: "🔄 9 + 1 کا پلٹا ہوا کون سا جمع کا جملہ ہے؟" }, choices: [{ en: "1 + 9", es: "1 + 9", ur: "1 + 9" }, { en: "9 − 1", es: "9 − 1", ur: "9 − 1" }, { en: "1 − 9", es: "1 − 9", ur: "1 − 9" }, { en: "9 + 9", es: "9 + 9", ur: "9 + 9" }], correctIndex: 0 },
+      ],
+      quiz: [
+        { id: "qz-1.5G-1", type: "multiple-choice", prompt: { en: "🌿 A recycling bin has 7 cans and 3 bottles. Which shows the flip-flop?", es: "🌿 Un contenedor de reciclaje tiene 7 latas y 3 botellas. ¿Cuál muestra el volteo?", ur: "🌿 ری سائیکلنگ بن میں 7 ڈبے اور 3 بوتلیں ہیں۔ پلٹا ہوا کون سا ہے؟" }, choices: [{ en: "3 + 7", es: "3 + 7", ur: "3 + 7" }, { en: "7 − 3", es: "7 − 3", ur: "7 − 3" }, { en: "3 − 7", es: "3 − 7", ur: "3 − 7" }, { en: "7 + 7", es: "7 + 7", ur: "7 + 7" }], correctIndex: 0 },
+        { id: "qz-1.5G-2", type: "true-false", prompt: { en: "🔄 6 + 2 and 2 + 6 both equal 8.", es: "🔄 6 + 2 y 2 + 6 son iguales a 8.", ur: "🔄 6 + 2 اور 2 + 6 دونوں 8 کے برابر ہیں۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+        { id: "qz-1.5G-3", type: "multiple-choice", prompt: { en: "➕ Which pair of number sentences shows the commutative property?", es: "➕ ¿Qué par de oraciones numéricas muestra la propiedad conmutativa?", ur: "➕ نمبر کے کون سے جوڑے تبادلی خاصیت دکھاتے ہیں؟" }, choices: [{ en: "5 + 4 and 4 + 5", es: "5 + 4 y 4 + 5", ur: "5 + 4 اور 4 + 5" }, { en: "5 + 4 and 5 − 4", es: "5 + 4 y 5 − 4", ur: "5 + 4 اور 5 − 4" }, { en: "5 + 4 and 4 − 5", es: "5 + 4 y 4 − 5", ur: "5 + 4 اور 4 − 5" }, { en: "5 + 4 and 9 + 0", es: "5 + 4 y 9 + 0", ur: "5 + 4 اور 9 + 0" }], correctIndex: 0 },
+      ],
+    },
+
     // ─── Unit 5: Shapes & Equal Parts ────────────────────────────────────────
     {
       teks: "1.6",
