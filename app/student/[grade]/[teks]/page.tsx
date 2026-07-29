@@ -42,6 +42,7 @@ const teksIconMap: Record<string, LucideIcon> = {
   "1.8A": BarChart2,
   "1.9": Layers,
   // Grade 2
+  "2.2A": Layers,
   "2.2B": Hash,
   "2.3B": PieChart,
   "2.4A": Sprout,

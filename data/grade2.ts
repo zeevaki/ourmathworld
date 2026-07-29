@@ -7,6 +7,86 @@ const grade2: Grade = {
   color: "#7C3AED",
   units: [
     {
+      teks: "2.2A",
+      cambridge: "Stage 2 · TBD",
+      emoji: "📦",
+      title: { en: "Bundling to 1,200", es: "Agrupar hasta 1,200", ur: "1,200 تک بنڈل بنانا" },
+      vocabulary: [
+        {
+          id: "bundle-of-hundred",
+          emoji: "📦",
+          word: { en: "bundle of a hundred", es: "grupo de cien", ur: "سو کا بنڈل" },
+          definition: {
+            en: "ten bundles of ten grouped together into one larger bundle of a hundred",
+            es: "diez grupos de diez agrupados juntos en un grupo más grande de cien",
+            ur: "دس کے دس بنڈل مل کر ایک بڑا سو کا بنڈل بناتے ہیں",
+          },
+        },
+        {
+          id: "thousand-1200",
+          emoji: "🧱",
+          word: { en: "thousand", es: "mil", ur: "ہزار" },
+          definition: {
+            en: "ten bundles of a hundred grouped together to make one thousand",
+            es: "diez grupos de cien agrupados juntos para formar un mil",
+            ur: "سو کے دس بنڈل مل کر ایک ہزار بناتے ہیں",
+          },
+        },
+        {
+          id: "tens-hundreds-1200",
+          emoji: "🔟",
+          word: { en: "thousands, hundreds, tens, and ones", es: "millares, centenas, decenas y unidades", ur: "ہزار، سینکڑے، دہائیاں اور اکائیاں" },
+          definition: {
+            en: "the four place values we use to build numbers up to 1,200",
+            es: "los cuatro valores posicionales que usamos para construir números hasta 1,200",
+            ur: "وہ چار جگہ کی قدریں جو ہم 1,200 تک نمبر بنانے میں استعمال کرتے ہیں",
+          },
+        },
+        {
+          id: "compose-1200",
+          emoji: "🧩",
+          word: { en: "compose", es: "componer", ur: "جوڑنا" },
+          definition: {
+            en: "put thousands, hundreds, tens, and ones together to build a number",
+            es: "juntar millares, centenas, decenas y unidades para construir un número",
+            ur: "ایک نمبر بنانے کے لیے ہزار، سینکڑے، دہائیاں اور اکائیاں جوڑنا",
+          },
+        },
+        {
+          id: "decompose-1200",
+          emoji: "🔓",
+          word: { en: "decompose", es: "descomponer", ur: "توڑنا" },
+          definition: {
+            en: "break a number apart into thousands, hundreds, tens, and ones — there is more than one way to do it!",
+            es: "separar un número en millares, centenas, decenas y unidades — ¡hay más de una forma de hacerlo!",
+            ur: "ایک نمبر کو ہزار، سینکڑوں، دہائیوں اور اکائیوں میں توڑنا — اسے کرنے کے ایک سے زیادہ طریقے ہیں!",
+          },
+        },
+      ],
+      lesson: {
+        en: "📦 **Big community projects need bigger bundles!**\n\nWhen a whole city works together — recycling, planting trees, or collecting donations — the numbers get much bigger than 120. We bundle **ten hundreds together to make one thousand**, just like we bundled ten ones to make a ten.\n\n**Building a number:** Count the thousands, then the hundreds, then the tens, then what's left over.\n\n🧡 Example: The Dallas ISD recycling challenge collected supplies from every school.\nThey have **1 bundle of a thousand**, **1 bundle of a hundred**, **4 bundles of ten**, and **7 loose items**.\n1 thousand + 1 hundred + 4 tens + 7 ones = **1,147 items!**\n\n**More than one way:** 1,147 can also be built as **10 hundreds + 14 tens + 7 ones** — same total, different bundles! Numbers up to 1,200 can always be composed and decomposed more than one way.\n\nThe bigger the bundle, the bigger the difference our community can make. 🌍",
+        es: "📦 **¡Los grandes proyectos comunitarios necesitan grupos más grandes!**\n\nCuando toda una ciudad trabaja junta — reciclando, plantando árboles o recolectando donaciones — los números se vuelven mucho más grandes que 120. Agrupamos **diez centenas para formar un mil**, igual que agrupamos diez unidades para formar una decena.\n\n**Construir un número:** Cuenta los millares, luego las centenas, luego las decenas, luego lo que sobra.\n\n🧡 Ejemplo: El reto de reciclaje de Dallas ISD recolectó suministros de todas las escuelas.\nTienen **1 grupo de mil**, **1 grupo de cien**, **4 grupos de diez** y **7 artículos sueltos**.\n1 mil + 1 centena + 4 decenas + 7 unidades = **¡1,147 artículos!**\n\n**Más de una forma:** 1,147 también se puede formar como **10 centenas + 14 decenas + 7 unidades** — ¡el mismo total, con grupos diferentes! Los números hasta 1,200 siempre se pueden componer y descomponer de más de una manera.\n\nEntre más grande el grupo, más grande la diferencia que nuestra comunidad puede hacer. 🌍",
+        ur: "📦 **بڑے کمیونٹی منصوبوں کو بڑے بنڈلوں کی ضرورت ہوتی ہے!**\n\nجب پورا شہر مل کر کام کرتا ہے — ری سائیکلنگ، درخت لگانا، یا عطیات جمع کرنا — تو نمبر 120 سے بہت بڑے ہو جاتے ہیں۔ ہم **دس سینکڑوں کو ملا کر ایک ہزار** بناتے ہیں، بالکل جیسے ہم نے دس اکائیوں کو ملا کر ایک دہائی بنائی تھی۔\n\n**نمبر بنانا:** پہلے ہزار گنو، پھر سینکڑے، پھر دہائیاں، پھر جو بچا ہے۔\n\n🧡 مثال: ڈیلس آئی ایس ڈی کی ری سائیکلنگ مہم نے ہر اسکول سے سامان جمع کیا۔\nان کے پاس **1 بنڈل ہزار کا**، **1 بنڈل سو کا**، **4 بنڈل دس کے**، اور **7 اکیلی اشیاء** ہیں۔\n1 ہزار + 1 سو + 4 دہائیاں + 7 اکائیاں = **1,147 اشیاء!**\n\n**ایک سے زیادہ طریقے:** 1,147 کو **10 سینکڑے + 14 دہائیاں + 7 اکائیاں** کے طور پر بھی بنایا جا سکتا ہے — وہی کل تعداد، مختلف بنڈل! 1,200 تک کے نمبر ہمیشہ ایک سے زیادہ طریقوں سے جوڑے اور توڑے جا سکتے ہیں۔\n\nبنڈل جتنا بڑا ہوگا، ہماری کمیونٹی اتنا بڑا فرق ڈال سکتی ہے۔ 🌍",
+      },
+      exercises: [
+        { id: "ex-2.2A-1", type: "multiple-choice", prompt: { en: "♻️ A city recycling drive bundles items into thousands, hundreds, and tens. They have 1 bundle of a thousand, 2 bundles of a hundred, 3 bundles of ten, and 5 loose items. How many items in all?", es: "♻️ Una campaña de reciclaje de la ciudad agrupa artículos en millares, centenas y decenas. Tienen 1 grupo de mil, 2 grupos de cien, 3 grupos de diez y 5 artículos sueltos. ¿Cuántos artículos en total?", ur: "♻️ ایک شہر کی ری سائیکلنگ مہم اشیاء کو ہزار، سو اور دس میں بنڈل کرتی ہے۔ ان کے پاس 1 بنڈل ہزار کا، 2 بنڈل سو کے، 3 بنڈل دس کے، اور 5 اکیلی اشیاء ہیں۔ کل کتنی اشیاء ہیں؟" }, choices: [{ en: "1,235", es: "1,235", ur: "1,235" }, { en: "1,325", es: "1,325", ur: "1,325" }, { en: "235", es: "235", ur: "235" }, { en: "1,253", es: "1,253", ur: "1,253" }], correctIndex: 0 },
+        { id: "ex-2.2A-2", type: "multiple-choice", prompt: { en: "🌱 A statewide tree-planting effort has 1,050 seedlings. Which shows 1,050 built from thousands, hundreds, tens, and ones?", es: "🌱 Un esfuerzo estatal de siembra de árboles tiene 1,050 plantas. ¿Cuál muestra 1,050 formado con millares, centenas, decenas y unidades?", ur: "🌱 ایک صوبائی درخت لگانے کی مہم کے پاس 1,050 پودے ہیں۔ کون سا 1,050 کو ہزار، سو، دس اور اکائیوں سے دکھاتا ہے؟" }, choices: [{ en: "1 thousand + 0 hundreds + 5 tens + 0 ones", es: "1 mil + 0 centenas + 5 decenas + 0 unidades", ur: "1 ہزار + 0 سو + 5 دہائیاں + 0 اکائیاں" }, { en: "1 thousand + 5 hundreds + 0 tens + 0 ones", es: "1 mil + 5 centenas + 0 decenas + 0 unidades", ur: "1 ہزار + 5 سو + 0 دہائیاں + 0 اکائیاں" }, { en: "0 thousand + 1 hundred + 5 tens + 0 ones", es: "0 mil + 1 centena + 5 decenas + 0 unidades", ur: "0 ہزار + 1 سو + 5 دہائیاں + 0 اکائیاں" }, { en: "1 thousand + 0 hundreds + 0 tens + 5 ones", es: "1 mil + 0 centenas + 0 decenas + 5 unidades", ur: "1 ہزار + 0 سو + 0 دہائیاں + 5 اکائیاں" }], correctIndex: 0 },
+        { id: "ex-2.2A-3", type: "true-false", prompt: { en: "💯 1,147 can be built as 11 hundreds + 4 tens + 7 ones, instead of 1 thousand + 1 hundred + 4 tens + 7 ones.", es: "💯 1,147 se puede formar como 11 centenas + 4 decenas + 7 unidades, en vez de 1 mil + 1 centena + 4 decenas + 7 unidades.", ur: "💯 1,147 کو 11 سو + 4 دہائیاں + 7 اکائیاں کے طور پر بھی بنایا جا سکتا ہے، 1 ہزار + 1 سو + 4 دہائیاں + 7 اکائیوں کی بجائے۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+      ],
+      quiz: [
+        { id: "qz-2.2A-1", type: "multiple-choice", prompt: { en: "♻️ A coastal cleanup collected 2 bundles of a hundred, 8 bundles of ten, and 3 loose pieces of trash. How many pieces in total?", es: "♻️ Una limpieza costera recolectó 2 grupos de cien, 8 grupos de diez y 3 piezas sueltas de basura. ¿Cuántas piezas en total?", ur: "♻️ ایک ساحلی صفائی مہم نے 2 بنڈل سو کے، 8 بنڈل دس کے، اور 3 اکیلے ٹکڑے جمع کیے۔ کل کتنے ٹکڑے ہیں؟" }, choices: [{ en: "283", es: "283", ur: "283" }, { en: "238", es: "238", ur: "238" }, { en: "2,083", es: "2,083", ur: "2,083" }, { en: "823", es: "823", ur: "823" }], correctIndex: 0 },
+        { id: "qz-2.2A-2", type: "multiple-choice", prompt: { en: "🐝 A statewide bee count reached 1,200 bees exactly. How many bundles of a hundred is that?", es: "🐝 Un conteo estatal de abejas llegó exactamente a 1,200 abejas. ¿Cuántos grupos de cien son?", ur: "🐝 ایک صوبائی مکھی شماری بالکل 1,200 پر پہنچی۔ یہ سو کے کتنے بنڈل ہیں؟" }, choices: [{ en: "12 bundles of a hundred", es: "12 grupos de cien", ur: "سو کے 12 بنڈل" }, { en: "120 bundles of a hundred", es: "120 grupos de cien", ur: "سو کے 120 بنڈل" }, { en: "2 bundles of a hundred", es: "2 grupos de cien", ur: "سو کے 2 بنڈل" }, { en: "20 bundles of a hundred", es: "20 grupos de cien", ur: "سو کے 20 بنڈل" }], correctIndex: 0 },
+        { id: "qz-2.2A-3", type: "multiple-choice", prompt: { en: "🔓 617 = 6 hundreds + 1 ten + 7 ones. Which is another correct way to build 617?", es: "🔓 617 = 6 centenas + 1 decena + 7 unidades. ¿Cuál es otra forma correcta de construir 617?", ur: "🔓 617 = 6 سو + 1 دہائی + 7 اکائیاں۔ 617 بنانے کا ایک اور درست طریقہ کون سا ہے؟" }, choices: [{ en: "5 hundreds + 11 tens + 7 ones", es: "5 centenas + 11 decenas + 7 unidades", ur: "5 سو + 11 دہائیاں + 7 اکائیاں" }, { en: "6 hundreds + 2 tens + 7 ones", es: "6 centenas + 2 decenas + 7 unidades", ur: "6 سو + 2 دہائیاں + 7 اکائیاں" }, { en: "5 hundreds + 1 ten + 7 ones", es: "5 centenas + 1 decena + 7 unidades", ur: "5 سو + 1 دہائی + 7 اکائیاں" }, { en: "6 hundreds + 1 ten + 17 ones", es: "6 centenas + 1 decena + 17 unidades", ur: "6 سو + 1 دہائی + 17 اکائیاں" }], correctIndex: 0 },
+      ],
+      wordProblems: [
+        { id: "wp-2.2A-1", emoji: "🌳🔢", scene: "A park ranger at Big Bend National Park bundling wildlife sighting logs", prompt: { en: "A park ranger at Big Bend bundles wildlife sightings. She has 1 bundle of a thousand, 0 bundles of a hundred, 3 bundles of ten, and 6 loose sightings logged this year. How many sightings in all?", es: "Una guardabosques en Big Bend agrupa avistamientos de vida silvestre. Tiene 1 grupo de mil, 0 grupos de cien, 3 grupos de diez y 6 avistamientos sueltos este año. ¿Cuántos avistamientos en total?", ur: "بگ بینڈ میں ایک رینجر جنگلی حیات کے مشاہدات بنڈل کرتی ہے۔ اس کے پاس 1 بنڈل ہزار کا، 0 بنڈل سو کے، 3 بنڈل دس کے، اور 6 اکیلے مشاہدات ہیں۔ کل کتنے مشاہدات ہیں؟" }, answer: 1036, answerUnit: { en: "sightings", es: "avistamientos", ur: "مشاہدات" } },
+        { id: "wp-2.2A-2", emoji: "♻️💚", scene: "Dallas ISD recycling challenge — tracking totals across schools", prompt: { en: "The Dallas ISD recycling challenge collected 1 thousand, 1 hundred, 4 tens, and 7 ones worth of items. How many items did they collect?", es: "El reto de reciclaje de Dallas ISD recolectó 1 mil, 1 centena, 4 decenas y 7 unidades de artículos. ¿Cuántos artículos recolectaron?", ur: "ڈیلس آئی ایس ڈی ری سائیکلنگ مہم نے 1 ہزار، 1 سو، 4 دہائیاں، اور 7 اکائیوں کے برابر اشیاء جمع کیں۔ انہوں نے کتنی اشیاء جمع کیں؟" }, answer: 1147, answerUnit: { en: "items", es: "artículos", ur: "اشیاء" } },
+        { id: "wp-2.2A-3", emoji: "🌊🐢", scene: "Sea turtle rescue center on the Texas Gulf Coast", prompt: { en: "Volunteers at the Gulf Coast rescue center bundled 9 hundreds, 1 ten, and 8 ones worth of ocean trash collected this year. How many pieces is that?", es: "Los voluntarios del centro de rescate de la costa del Golfo agruparon 9 centenas, 1 decena y 8 unidades de basura oceánica recolectada este año. ¿Cuántas piezas son?", ur: "خلیجی ساحل کے ریسکیو مرکز کے رضاکاروں نے 9 سو، 1 دہائی، اور 8 اکائیوں کے برابر سمندری کچرا جمع کیا۔ یہ کتنے ٹکڑے ہیں؟" }, answer: 918, answerUnit: { en: "pieces", es: "piezas", ur: "ٹکڑے" } },
+        { id: "wp-2.2A-4", emoji: "🌱🌍", scene: "Statewide seed bank preserving native Texas plants from extinction", prompt: { en: "A statewide seed bank has 1 thousand + 0 hundreds + 8 tens + 4 ones worth of native seeds stored. How many seeds is that?", es: "Un banco estatal de semillas tiene 1 mil + 0 centenas + 8 decenas + 4 unidades de semillas nativas guardadas. ¿Cuántas semillas son?", ur: "ایک صوبائی بیج بینک میں 1 ہزار + 0 سو + 8 دہائیاں + 4 اکائیوں کے برابر مقامی بیج محفوظ ہیں۔ یہ کتنے بیج ہیں؟" }, answer: 1084, answerUnit: { en: "seeds", es: "semillas", ur: "بیج" } },
+        { id: "wp-2.2A-5", emoji: "🐝🌻", scene: "Pollinator garden in Fort Worth — tracking bee populations", prompt: { en: "A bee population bundled as 11 hundreds and 5 tens just grew by 1 more bundle of ten. What is the new total?", es: "Una población de abejas agrupada como 11 centenas y 5 decenas creció 1 grupo de diez más. ¿Cuál es el nuevo total?", ur: "ایک مکھی آبادی جو 11 سو اور 5 دہائیوں کے طور پر بنڈل تھی، مزید 1 دہائی کے بنڈل سے بڑھ گئی۔ نیا کل کیا ہے؟" }, answer: 1160, answerUnit: { en: "bees", es: "abejas", ur: "مکھیاں" } },
+      ],
+    },
+    {
       teks: "2.2B",
       cambridge: "Stage 2 · 2Nn2",
       emoji: "🔢",
