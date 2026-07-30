@@ -114,11 +114,34 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
         )}
 
         <div className="p-6">
-          <p className="text-gray-800 font-bold text-base leading-relaxed mb-1">{problem.prompt.en}</p>
+          <div className="flex items-start gap-2 mb-1">
+            <p className="text-gray-800 font-bold text-base leading-relaxed flex-1">{problem.prompt.en}</p>
+            <button
+              type="button"
+              onClick={() => speakText(problem.prompt.en, "en-US")}
+              aria-label="Listen in English"
+              className="text-gray-400 hover:text-primary transition-colors flex-shrink-0 mt-0.5 cursor-pointer"
+            >
+              <Volume2 size={18} />
+            </button>
+          </div>
           {promptText && (
-            <p className="text-primary font-semibold text-sm mb-4" style={{ direction: lang === "ur" ? "rtl" : "ltr" }}>
-              {promptText}
-            </p>
+            <div className="flex items-start gap-2 mb-4">
+              <p
+                className="text-primary font-semibold text-sm flex-1"
+                style={{ direction: lang === "ur" ? "rtl" : "ltr" }}
+              >
+                {promptText}
+              </p>
+              <button
+                type="button"
+                onClick={() => speakText(promptText, lang === "es" ? "es-MX" : "ur-PK")}
+                aria-label={lang === "es" ? "Listen in Spanish" : "Listen in Urdu"}
+                className="text-primary/60 hover:text-primary transition-colors flex-shrink-0 mt-0.5 cursor-pointer"
+              >
+                <Volume2 size={18} />
+              </button>
+            </div>
           )}
 
           <div className="flex items-center gap-3 flex-wrap">
@@ -193,6 +216,15 @@ function getLang(text: { en: string; es: string; ur: string }, lang: string | nu
   if (lang === "es") return text.es;
   if (lang === "ur") return text.ur;
   return text.en;
+}
+
+function speakText(text: string, langCode: string) {
+  if (typeof window === "undefined" || !window.speechSynthesis) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = langCode;
+  utter.rate = 0.9;
+  window.speechSynthesis.speak(utter);
 }
 
 function speakVocab(en: string, es: string) {
