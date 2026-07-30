@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
   Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer, Hash,
-  Volume2,
+  Volume2, ScrollText,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -54,12 +54,14 @@ const vocabSymbolMap: Record<string, string> = {
   "ordered-pair": "(,)", origin: "(0,0)",
 };
 import { TeksUnit, ExerciseQuestion, Fluency, WordProblem } from "@/data/types";
+import { getTeksInfo } from "@/data/teksStandards";
 import { useLanguage } from "./LanguageContext";
 import NumbersDrill from "./NumbersDrill";
 
-type Tab = "vocab" | "lesson" | "exercises" | "apply" | "quiz" | "story" | "fluency" | "numbers";
+type Tab = "teks" | "vocab" | "lesson" | "exercises" | "apply" | "quiz" | "story" | "fluency" | "numbers";
 
 const baseTabs: { id: Tab; label: string; icon: LucideIcon }[] = [
+  { id: "teks",      label: "TEKS",         icon: ScrollText     },
   { id: "vocab",     label: "Vocabulary",  icon: BookOpen       },
   { id: "lesson",    label: "Lesson",       icon: GraduationCap  },
   { id: "exercises", label: "Exercises",    icon: PencilLine     },
@@ -234,6 +236,55 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
           );
         })}
       </div>
+
+      {/* TEKS */}
+      {activeTab === "teks" && (() => {
+        const info = getTeksInfo(grade, unit.teks);
+        if (!info) {
+          return (
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-gray-500">
+              Official standard text isn&apos;t available yet for TEKS {unit.teks}.
+            </div>
+          );
+        }
+        return (
+          <div className="flex flex-col gap-4">
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+              <span className="text-xs font-bold uppercase tracking-wide text-primary">
+                TEKS {info.strandCode} — {info.strandTitle}
+              </span>
+              <p className="text-gray-700 text-sm mt-2 leading-relaxed italic">&quot;{info.overview}&quot;</p>
+              <p className="text-gray-400 text-xs mt-3">{info.plainExplanation}</p>
+            </div>
+
+            {info.isBundle && (
+              <p className="text-gray-400 text-xs px-1">
+                This unit bundles the following parts of TEKS {info.strandCode}:
+              </p>
+            )}
+
+            {info.parts.map((part) => (
+              <div
+                key={part.letter}
+                className={`bg-white rounded-2xl p-5 shadow-sm border-2 ${
+                  !info.isBundle ? "border-primary" : "border-gray-100"
+                }`}
+              >
+                <span className="font-mono font-black text-primary text-sm">
+                  {info.strandCode}({part.letter})
+                </span>
+                <p className="text-gray-700 mt-1.5 leading-relaxed">{part.text}</p>
+              </div>
+            ))}
+
+            <div className="bg-primary-light rounded-2xl p-5 text-xs text-gray-500 leading-relaxed">
+              Source: Texas Essential Knowledge and Skills for Mathematics, §111.3 (Grade {grade}). Statements
+              containing &quot;including&quot; reference content that must be mastered; those with &quot;such
+              as&quot; are illustrative examples only.
+            </div>
+          </div>
+        );
+      })()}
 
       {/* Vocabulary */}
       {activeTab === "vocab" && (
