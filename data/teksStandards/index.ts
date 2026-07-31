@@ -1,5 +1,6 @@
 import { TeksStrand } from "./grade1";
 import grade1Standards from "./grade1";
+import grade2Standards from "./grade2";
 
 export type TeksInfoPart = { letter: string; text: string };
 
@@ -15,6 +16,7 @@ export type TeksInfo = {
 
 const standardsByGrade: Record<string, TeksStrand[]> = {
   "1": grade1Standards,
+  "2": grade2Standards,
 };
 
 /**

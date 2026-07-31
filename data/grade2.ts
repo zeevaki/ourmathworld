@@ -615,6 +615,79 @@ const grade2: Grade = {
     },
 
     {
+      teks: "2.4B",
+      cambridge: "Stage 2 · TBD",
+      emoji: "🔢",
+      title: {
+        en: "Adding & Subtracting with Strategies",
+        es: "Sumar y Restar con Estrategias",
+        ur: "حکمت عملیوں سے جمع اور تفریق",
+      },
+      vocabulary: [
+        {
+          id: "mental-strategy-24b",
+          emoji: "🧠",
+          word: { en: "mental strategy", es: "estrategia mental", ur: "ذہنی حکمت عملی" },
+          definition: {
+            en: "a way to solve a problem in your head, using what you know about place value",
+            es: "una forma de resolver un problema en tu mente, usando lo que sabes sobre el valor posicional",
+            ur: "جگہ کی قدر کے علم سے مسئلہ ذہن میں حل کرنے کا طریقہ",
+          },
+        },
+        {
+          id: "algorithm-24b",
+          emoji: "🔢",
+          word: { en: "algorithm", es: "algoritmo", ur: "الگورتھم" },
+          definition: {
+            en: "a step-by-step method for adding or subtracting, like lining up the tens and ones",
+            es: "un método paso a paso para sumar o restar, como alinear las decenas y unidades",
+            ur: "جمع یا تفریق کرنے کا مرحلہ وار طریقہ، جیسے دہائیاں اور اکائیاں لائن میں لگانا",
+          },
+        },
+        {
+          id: "regroup-24b",
+          emoji: "🔄",
+          word: { en: "regroup", es: "reagrupar", ur: "دوبارہ گروہ بندی" },
+          definition: {
+            en: "trade 10 ones for 1 ten (or 1 ten for 10 ones) when adding or subtracting",
+            es: "cambiar 10 unidades por 1 decena (o 1 decena por 10 unidades) al sumar o restar",
+            ur: "جمع یا تفریق کرتے وقت 10 اکائیوں کو 1 دہائی سے بدلنا (یا 1 دہائی کو 10 اکائیوں سے)",
+          },
+        },
+        {
+          id: "compatible-numbers-24b",
+          emoji: "🤝",
+          word: { en: "compatible numbers", es: "números compatibles", ur: "موافق نمبر" },
+          definition: {
+            en: "numbers that are easy to add together mentally, like ones that make a multiple of ten",
+            es: "números fáciles de sumar mentalmente, como los que forman un múltiplo de diez",
+            ur: "وہ نمبر جو ذہنی طور پر جمع کرنا آسان ہو، جیسے جو دس کا مضاعف بنائیں",
+          },
+        },
+      ],
+      lesson: {
+        en: "🔢 **Big totals need smart strategies!**\n\nWhen we add several two-digit numbers together, we don't have to add them one at a time randomly — we can use place value to make it faster.\n\n🧡 Example: Four classrooms collect recycling for a week.\nRoom A: 23 cans, Room B: 18 cans, Room C: 31 cans, Room D: 14 cans\n\n**Mental strategy — add the tens first, then the ones:**\n20 + 10 + 30 + 10 = 70 (tens)\n3 + 8 + 1 + 4 = 16 (ones)\n70 + 16 = **86 cans in all!**\n\n**Subtracting with regrouping:** If the school only had room for 86 cans but the recycling truck already took 59, how many are left?\n86 − 59: since 6 ones is less than 9 ones, **regroup** 1 ten into 10 ones — now it's 7 tens and 16 ones. 16 − 9 = 7, and 7 tens − 5 tens = 2 tens. **86 − 59 = 27 cans left.**\n\nSmart strategies mean you don't need a calculator — just your knowledge of place value! 🌍",
+        es: "🔢 **¡Los totales grandes necesitan estrategias inteligentes!**\n\nCuando sumamos varios números de dos dígitos, no tenemos que sumarlos uno por uno al azar — podemos usar el valor posicional para hacerlo más rápido.\n\n🧡 Ejemplo: Cuatro salones recolectan reciclaje durante una semana.\nSalón A: 23 latas, Salón B: 18 latas, Salón C: 31 latas, Salón D: 14 latas\n\n**Estrategia mental — suma las decenas primero, luego las unidades:**\n20 + 10 + 30 + 10 = 70 (decenas)\n3 + 8 + 1 + 4 = 16 (unidades)\n70 + 16 = **¡86 latas en total!**\n\n**Restar con reagrupación:** Si la escuela solo tenía espacio para 86 latas pero el camión de reciclaje ya se llevó 59, ¿cuántas quedan?\n86 − 59: como 6 unidades es menos que 9 unidades, **reagrupamos** 1 decena en 10 unidades — ahora son 7 decenas y 16 unidades. 16 − 9 = 7, y 7 decenas − 5 decenas = 2 decenas. **86 − 59 = 27 latas quedan.**\n\n¡Las estrategias inteligentes significan que no necesitas calculadora — solo tu conocimiento del valor posicional! 🌍",
+        ur: "🔢 **بڑی مقداروں کے لیے سمارٹ حکمت عملی چاہیے!**\n\nجب ہم کئی دو ہندسوں والے نمبر جمع کرتے ہیں، تو انہیں بے ترتیب ایک ایک کر کے ذہن میں جمع کرنے کی ضرورت نہیں — ہم جگہ کی قدر استعمال کر کے تیزی سے کر سکتے ہیں۔\n\n🧡 مثال: چار کلاس روم ایک ہفتے میں ری سائیکلنگ جمع کرتے ہیں۔\nروم A: 23 ڈبے، روم B: 18 ڈبے، روم C: 31 ڈبے، روم D: 14 ڈبے\n\n**ذہنی حکمت عملی — پہلے دہائیاں جمع کرو، پھر اکائیاں:**\n20 + 10 + 30 + 10 = 70 (دہائیاں)\n3 + 8 + 1 + 4 = 16 (اکائیاں)\n70 + 16 = **کل 86 ڈبے!**\n\n**دوبارہ گروہ بندی کے ساتھ تفریق:** اگر اسکول میں صرف 86 ڈبوں کی جگہ تھی لیکن ٹرک پہلے ہی 59 لے گیا، تو کتنے بچے؟\n86 − 59: چونکہ 6 اکائیاں 9 اکائیوں سے کم ہیں، **دوبارہ گروہ بندی** کرو 1 دہائی کو 10 اکائیوں میں — اب یہ 7 دہائیاں اور 16 اکائیاں ہیں۔ 16 − 9 = 7، اور 7 دہائیاں − 5 دہائیاں = 2 دہائیاں۔ **86 − 59 = 27 ڈبے بچے۔**\n\nسمارٹ حکمت عملی کا مطلب ہے کہ تمہیں کیلکولیٹر کی ضرورت نہیں — صرف جگہ کی قدر کا علم! 🌍",
+      },
+      exercises: [
+        { id: "ex-2.4B-1", type: "multiple-choice", prompt: { en: "♻️ Four gardens collected rainwater: 24 L, 17 L, 32 L, and 19 L. What is the total?", es: "♻️ Cuatro jardines recolectaron agua de lluvia: 24 L, 17 L, 32 L y 19 L. ¿Cuál es el total?", ur: "♻️ چار باغوں نے بارش کا پانی جمع کیا: 24 لیٹر، 17 لیٹر، 32 لیٹر، اور 19 لیٹر۔ کل کتنا ہے؟" }, choices: [{ en: "92 L", es: "92 L", ur: "92 لیٹر" }, { en: "82 L", es: "82 L", ur: "82 لیٹر" }, { en: "102 L", es: "102 L", ur: "102 لیٹر" }, { en: "72 L", es: "72 L", ur: "72 لیٹر" }], correctIndex: 0 },
+        { id: "ex-2.4B-2", type: "multiple-choice", prompt: { en: "🌳 A tree nursery has 82 saplings. They give away 47. Using regrouping, how many saplings are left?", es: "🌳 Un vivero tiene 82 plantas. Regalan 47. Usando reagrupación, ¿cuántas plantas quedan?", ur: "🌳 ایک نرسری میں 82 پودے ہیں۔ 47 دے دیے جاتے ہیں۔ دوبارہ گروہ بندی سے، کتنے پودے بچے؟" }, choices: [{ en: "35", es: "35", ur: "35" }, { en: "45", es: "45", ur: "45" }, { en: "39", es: "39", ur: "39" }, { en: "25", es: "25", ur: "25" }], correctIndex: 0 },
+        { id: "ex-2.4B-3", type: "true-false", prompt: { en: "🔢 To add 23 + 15 + 12 mentally, you can add all the tens first (20+10+10=40) and all the ones next (3+5+2=10), then combine: 40+10=50.", es: "🔢 Para sumar 23 + 15 + 12 mentalmente, puedes sumar primero las decenas (20+10+10=40) y luego las unidades (3+5+2=10), y combinar: 40+10=50.", ur: "🔢 23 + 15 + 12 کو ذہنی طور پر جمع کرنے کے لیے، پہلے دہائیاں جمع کرو (20+10+10=40) پھر اکائیاں (3+5+2=10)، پھر ملاؤ: 40+10=50۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+      ],
+      quiz: [
+        { id: "qz-2.4B-1", type: "multiple-choice", prompt: { en: "♻️ Four bins have 26, 33, 21, and 14 bottles. What is the total across all four bins?", es: "♻️ Cuatro contenedores tienen 26, 33, 21 y 14 botellas. ¿Cuál es el total de los cuatro?", ur: "♻️ چار ڈبوں میں 26، 33، 21 اور 14 بوتلیں ہیں۔ چاروں کا کل کتنا ہے؟" }, choices: [{ en: "94", es: "94", ur: "94" }, { en: "84", es: "84", ur: "84" }, { en: "104", es: "104", ur: "104" }, { en: "90", es: "90", ur: "90" }], correctIndex: 0 },
+        { id: "qz-2.4B-2", type: "multiple-choice", prompt: { en: "🌱 A garden had 91 flowers. Volunteers picked 58 for a fundraiser. How many flowers are left?", es: "🌱 Un jardín tenía 91 flores. Los voluntarios cortaron 58 para una recaudación de fondos. ¿Cuántas flores quedan?", ur: "🌱 ایک باغ میں 91 پھول تھے۔ رضاکاروں نے فنڈ ریزنگ کے لیے 58 کاٹے۔ کتنے پھول بچے؟" }, choices: [{ en: "33", es: "33", ur: "33" }, { en: "43", es: "43", ur: "43" }, { en: "37", es: "37", ur: "37" }, { en: "23", es: "23", ur: "23" }], correctIndex: 0 },
+        { id: "qz-2.4B-3", type: "true-false", prompt: { en: "🔄 When subtracting 63 − 28, you need to regroup because 3 ones is less than 8 ones.", es: "🔄 Al restar 63 − 28, necesitas reagrupar porque 3 unidades es menos que 8 unidades.", ur: "🔄 63 − 28 میں تفریق کرتے وقت، دوبارہ گروہ بندی کی ضرورت ہے کیونکہ 3 اکائیاں 8 اکائیوں سے کم ہیں۔" }, choices: [{ en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" }, { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" }], correctIndex: 0 },
+      ],
+      wordProblems: [
+        { id: "wp-2.4B-1", emoji: "🌳🔢", scene: "Four Texas state parks tracking spring tree-planting totals", prompt: { en: "Four Texas state parks each planted trees this spring: Big Bend planted 34, Palo Duro Canyon planted 27, Enchanted Rock planted 19, and Garner planted 22. How many trees were planted across all four parks?", es: "Cuatro parques estatales de Texas plantaron árboles esta primavera: Big Bend plantó 34, Palo Duro Canyon plantó 27, Enchanted Rock plantó 19 y Garner plantó 22. ¿Cuántos árboles se plantaron en total?", ur: "ٹیکساس کے چار اسٹیٹ پارکس نے اس بہار درخت لگائے: بگ بینڈ نے 34، پیلو ڈورو کینین نے 27، اینچینٹڈ راک نے 19، اور گارنر نے 22۔ چاروں پارکس میں کل کتنے درخت لگائے گئے؟" }, answer: 102, answerUnit: { en: "trees", es: "árboles", ur: "درخت" } },
+        { id: "wp-2.4B-2", emoji: "♻️🚛", scene: "City recycling center tracking bins emptied by noon", prompt: { en: "A city recycling center had 75 bins ready to empty. Trucks emptied 38 of them by noon. How many bins are left to empty?", es: "Un centro de reciclaje de la ciudad tenía 75 contenedores listos para vaciar. Los camiones vaciaron 38 antes del mediodía. ¿Cuántos contenedores quedan por vaciar?", ur: "شہر کے ری سائیکلنگ مرکز میں 75 ڈبے خالی کرنے کو تیار تھے۔ دوپہر تک ٹرکوں نے 38 خالی کر دیے۔ کتنے ڈبے باقی ہیں؟" }, answer: 37, answerUnit: { en: "bins", es: "contenedores", ur: "ڈبے" } },
+        { id: "wp-2.4B-3", emoji: "🐝🌻", scene: "Four community gardens counting pollinator visits in one afternoon", prompt: { en: "Four community gardens counted their pollinator visits in one afternoon: 16, 24, 31, and 18 bees. How many bee visits in all?", es: "Cuatro jardines comunitarios contaron sus visitas de polinizadores en una tarde: 16, 24, 31 y 18 abejas. ¿Cuántas visitas de abejas en total?", ur: "چار کمیونٹی باغوں نے ایک دوپہر میں مکھیوں کی آمد گنی: 16، 24، 31، اور 18 مکھیاں۔ کل کتنی مکھیاں آئیں؟" }, answer: 89, answerUnit: { en: "bee visits", es: "visitas de abejas", ur: "مکھیوں کی آمد" } },
+      ],
+    },
+
+    {
       teks: "2.4C",
       cambridge: "Stage 2 · 2Nc3",
       emoji: "📊",

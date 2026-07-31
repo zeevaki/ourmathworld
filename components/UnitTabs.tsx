@@ -218,6 +218,10 @@ function getLang(text: { en: string; es: string; ur: string }, lang: string | nu
   return text.en;
 }
 
+const teaSectionByGrade: Record<string, string> = {
+  K: "111.2", "1": "111.3", "2": "111.4", "3": "111.5", "4": "111.6", "5": "111.7",
+};
+
 function speakText(text: string, langCode: string) {
   if (typeof window === "undefined" || !window.speechSynthesis) return;
   window.speechSynthesis.cancel();
@@ -310,7 +314,7 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
             ))}
 
             <div className="bg-primary-light rounded-2xl p-5 text-xs text-gray-500 leading-relaxed">
-              Source: Texas Essential Knowledge and Skills for Mathematics, §111.3 (Grade {grade}). Statements
+              Source: Texas Essential Knowledge and Skills for Mathematics, §{teaSectionByGrade[grade] ?? "111.x"} (Grade {grade}). Statements
               containing &quot;including&quot; reference content that must be mastered; those with &quot;such
               as&quot; are illustrative examples only.
             </div>
