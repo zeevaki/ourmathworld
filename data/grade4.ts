@@ -17,6 +17,16 @@ const grade4: Grade = {
         es: "Multiplicación de Varios Dígitos",
         ur: "کئی ہندسوں کی ضرب",
       },
+      learningObjective: {
+        en: "I am learning to multiply multi-digit numbers so that I can solve bigger multiplication problems accurately.",
+        es: "Estoy aprendiendo a multiplicar números de varios dígitos para poder resolver problemas de multiplicación más grandes con precisión.",
+        ur: "میں کئی ہندسوں کے نمبروں کی ضرب کرنا سیکھ رہا ہوں تاکہ بڑے ضرب کے مسائل درستگی سے حل کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can multiply a multi-digit number by a one-digit number.", es: "Puedo multiplicar un número de varios dígitos por un número de un dígito.", ur: "میں کئی ہندسوں کے نمبر کو ایک ہندسے کے نمبر سے ضرب دے سکتا ہوں۔" },
+        { en: "I can use place value or an array to multiply larger numbers.", es: "Puedo usar el valor posicional o un arreglo para multiplicar números más grandes.", ur: "میں بڑے نمبروں کو ضرب دینے کے لیے جگہ کی قدر یا صف استعمال کر سکتا ہوں۔" },
+        { en: "I can check that my multiplication answer makes sense.", es: "Puedo verificar que mi respuesta de multiplicación tenga sentido.", ur: "میں چیک کر سکتا ہوں کہ میرا ضرب کا جواب معقول ہے۔" },
+      ],
       vocabulary: [
         {
           id: "multiply",
@@ -188,6 +198,16 @@ const grade4: Grade = {
         es: "Sumar y Restar Fracciones",
         ur: "کسروں کو جمع اور تفریق کرنا",
       },
+      learningObjective: {
+        en: "I am learning to add and subtract fractions with the same denominator so that I can combine or compare parts of a whole.",
+        es: "Estoy aprendiendo a sumar y restar fracciones con el mismo denominador para poder combinar o comparar partes de un entero.",
+        ur: "میں ایک جیسے مخرج والی کسریں جمع اور تفریق کرنا سیکھ رہا ہوں تاکہ مکمل چیز کے حصوں کو ملا یا موازنہ کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can add two fractions that have the same denominator.", es: "Puedo sumar dos fracciones que tienen el mismo denominador.", ur: "میں ایک جیسے مخرج والی دو کسریں جمع کر سکتا ہوں۔" },
+        { en: "I can subtract two fractions that have the same denominator.", es: "Puedo restar dos fracciones que tienen el mismo denominador.", ur: "میں ایک جیسے مخرج والی دو کسریں تفریق کر سکتا ہوں۔" },
+        { en: "I can simplify a fraction answer when possible.", es: "Puedo simplificar una respuesta de fracción cuando es posible.", ur: "میں ممکن ہو تو کسر کے جواب کو آسان بنا سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "like-denominators",
@@ -344,6 +364,16 @@ const grade4: Grade = {
         es: "Decimales y Dinero",
         ur: "اعشاریہ اور پیسہ",
       },
+      learningObjective: {
+        en: "I am learning to represent decimals so that I can understand tenths, hundredths, and money amounts.",
+        es: "Estoy aprendiendo a representar decimales para poder entender décimas, centésimas y cantidades de dinero.",
+        ur: "میں اعشاریے ظاہر کرنا سیکھ رہا ہوں تاکہ دسویں، سویں، اور رقم کی مقدار سمجھ سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can represent a decimal using tenths and hundredths.", es: "Puedo representar un decimal usando décimas y centésimas.", ur: "میں دسویں اور سویں کا استعمال کرتے ہوئے اعشاریہ ظاہر کر سکتا ہوں۔" },
+        { en: "I can compare two decimal numbers.", es: "Puedo comparar dos números decimales.", ur: "میں دو اعشاریہ نمبروں کا موازنہ کر سکتا ہوں۔" },
+        { en: "I can connect a decimal to a money amount.", es: "Puedo relacionar un decimal con una cantidad de dinero.", ur: "میں اعشاریہ کو رقم کی مقدار سے جوڑ سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "decimal",
@@ -499,6 +529,16 @@ const grade4: Grade = {
         es: "Perímetro y Área",
         ur: "محیط اور رقبہ",
       },
+      learningObjective: {
+        en: "I am learning to solve problems involving perimeter and area so that I can measure the distance around a shape and the space it covers.",
+        es: "Estoy aprendiendo a resolver problemas de perímetro y área para poder medir la distancia alrededor de una figura y el espacio que cubre.",
+        ur: "میں محیط اور رقبے کے مسائل حل کرنا سیکھ رہا ہوں تاکہ کسی شکل کے ارد گرد کا فاصلہ اور اس کی جگہ ناپ سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can find the perimeter of a rectangle using a formula.", es: "Puedo encontrar el perímetro de un rectángulo usando una fórmula.", ur: "میں فارمولے کا استعمال کرتے ہوئے مستطیل کا محیط معلوم کر سکتا ہوں۔" },
+        { en: "I can find the area of a rectangle using a formula.", es: "Puedo encontrar el área de un rectángulo usando una fórmula.", ur: "میں فارمولے کا استعمال کرتے ہوئے مستطیل کا رقبہ معلوم کر سکتا ہوں۔" },
+        { en: "I can solve a real-world problem involving perimeter or area.", es: "Puedo resolver un problema del mundo real que involucra perímetro o área.", ur: "میں محیط یا رقبے سے متعلق حقیقی دنیا کا مسئلہ حل کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "perimeter",

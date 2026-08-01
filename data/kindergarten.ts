@@ -17,6 +17,16 @@ const kindergarten: Grade = {
         es: "Contar hasta 10",
         ur: "دس تک گننا",
       },
+      learningObjective: {
+        en: "I am learning to count objects up to 10 so that I can tell how many things are in a group.",
+        es: "Estoy aprendiendo a contar objetos hasta 10 para poder decir cuántas cosas hay en un grupo.",
+        ur: "میں 10 تک اشیاء گننا سیکھ رہا ہوں تاکہ بتا سکوں کہ گروپ میں کتنی چیزیں ہیں۔",
+      },
+      successCriteria: [
+        { en: "I can say numbers in order from 1 to 10.", es: "Puedo decir los números en orden del 1 al 10.", ur: "میں 1 سے 10 تک نمبر ترتیب سے بول سکتا ہوں۔" },
+        { en: "I can count a group of objects one at a time without skipping or repeating.", es: "Puedo contar un grupo de objetos uno por uno sin saltar ni repetir.", ur: "میں اشیاء کے گروپ کو ایک ایک کر کے بغیر چھوڑے یا دہرائے گن سکتا ہوں۔" },
+        { en: "I can tell how many objects are in a group after counting them.", es: "Puedo decir cuántos objetos hay en un grupo después de contarlos.", ur: "گننے کے بعد میں بتا سکتا ہوں کہ گروپ میں کتنی اشیاء ہیں۔" },
+      ],
       vocabulary: [
         {
           id: "count",
@@ -174,6 +184,16 @@ const kindergarten: Grade = {
         es: "Más, Menos o Igual",
         ur: "زیادہ، کم یا برابر",
       },
+      learningObjective: {
+        en: "I am learning to compare two groups of objects so that I can tell which has more, which has less, or if they are equal.",
+        es: "Estoy aprendiendo a comparar dos grupos de objetos para poder decir cuál tiene más, cuál tiene menos, o si son iguales.",
+        ur: "میں دو گروپوں کا موازنہ کرنا سیکھ رہا ہوں تاکہ بتا سکوں کہ کس میں زیادہ ہے، کس میں کم ہے، یا وہ برابر ہیں۔",
+      },
+      successCriteria: [
+        { en: "I can compare two groups and say which one has more.", es: "Puedo comparar dos grupos y decir cuál tiene más.", ur: "میں دو گروپوں کا موازنہ کر کے بتا سکتا ہوں کس میں زیادہ ہے۔" },
+        { en: "I can compare two groups and say which one has less.", es: "Puedo comparar dos grupos y decir cuál tiene menos.", ur: "میں دو گروپوں کا موازنہ کر کے بتا سکتا ہوں کس میں کم ہے۔" },
+        { en: "I can tell when two groups have the same amount and are equal.", es: "Puedo decir cuándo dos grupos tienen la misma cantidad y son iguales.", ur: "میں بتا سکتا ہوں کہ کب دو گروپ برابر مقدار کے ہیں۔" },
+      ],
       vocabulary: [
         {
           id: "more",
@@ -325,6 +345,16 @@ const kindergarten: Grade = {
         es: "Juntar y Separar",
         ur: "ملانا اور الگ کرنا",
       },
+      learningObjective: {
+        en: "I am learning to join and separate groups of objects so that I can find out how many are in all or how many are left.",
+        es: "Estoy aprendiendo a juntar y separar grupos de objetos para poder saber cuántos hay en total o cuántos quedan.",
+        ur: "میں اشیاء کے گروپوں کو ملانا اور الگ کرنا سیکھ رہا ہوں تاکہ جان سکوں کل کتنے ہیں یا کتنے بچے ہیں۔",
+      },
+      successCriteria: [
+        { en: "I can join two groups together and count how many there are in all.", es: "Puedo juntar dos grupos y contar cuántos hay en total.", ur: "میں دو گروپ ملا کر گن سکتا ہوں کہ کل کتنے ہیں۔" },
+        { en: "I can take some objects away from a group and count how many are left.", es: "Puedo quitar algunos objetos de un grupo y contar cuántos quedan.", ur: "میں گروپ سے کچھ اشیاء ہٹا کر گن سکتا ہوں کتنی بچی ہیں۔" },
+        { en: "I can use objects or pictures to show joining and separating.", es: "Puedo usar objetos o dibujos para mostrar cómo juntar y separar.", ur: "میں اشیاء یا تصویروں سے ملانا اور الگ کرنا دکھا سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "join",
@@ -482,6 +512,16 @@ const kindergarten: Grade = {
         es: "Figuras a Nuestro Alrededor",
         ur: "ہمارے ارد گرد شکلیں",
       },
+      learningObjective: {
+        en: "I am learning to name and describe basic shapes so that I can find them in the world around me.",
+        es: "Estoy aprendiendo a nombrar y describir figuras básicas para poder encontrarlas en el mundo que me rodea.",
+        ur: "میں بنیادی شکلوں کے نام اور تفصیل سیکھ رہا ہوں تاکہ اپنے ارد گرد کی دنیا میں انہیں تلاش کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can name a circle, square, triangle, and rectangle.", es: "Puedo nombrar un círculo, un cuadrado, un triángulo y un rectángulo.", ur: "میں دائرہ، مربع، تکون، اور مستطیل کے نام بتا سکتا ہوں۔" },
+        { en: "I can count the sides and corners of a shape.", es: "Puedo contar los lados y las esquinas de una figura.", ur: "میں کسی شکل کے اطراف اور کونے گن سکتا ہوں۔" },
+        { en: "I can find real examples of shapes in my classroom and community.", es: "Puedo encontrar ejemplos reales de figuras en mi salón y mi comunidad.", ur: "میں اپنی کلاس اور کمیونٹی میں شکلوں کی اصل مثالیں تلاش کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "circle",

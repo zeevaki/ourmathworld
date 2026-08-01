@@ -17,6 +17,16 @@ const grade5: Grade = {
         es: "Multiplicar Decimales",
         ur: "اعشاریوں کی ضرب",
       },
+      learningObjective: {
+        en: "I am learning to multiply decimals so that I can solve real problems involving money and measurement.",
+        es: "Estoy aprendiendo a multiplicar decimales para poder resolver problemas reales de dinero y medición.",
+        ur: "میں اعشاریوں کی ضرب کرنا سیکھ رہا ہوں تاکہ پیسے اور پیمائش سے متعلق حقیقی مسائل حل کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can multiply a decimal by a whole number.", es: "Puedo multiplicar un decimal por un número entero.", ur: "میں اعشاریہ کو مکمل نمبر سے ضرب دے سکتا ہوں۔" },
+        { en: "I can multiply two decimals together.", es: "Puedo multiplicar dos decimales entre sí.", ur: "میں دو اعشاریوں کو آپس میں ضرب دے سکتا ہوں۔" },
+        { en: "I can decide where to place the decimal point in my answer.", es: "Puedo decidir dónde colocar el punto decimal en mi respuesta.", ur: "میں فیصلہ کر سکتا ہوں کہ اپنے جواب میں اعشاریہ نقطہ کہاں رکھنا ہے۔" },
+      ],
       vocabulary: [
         {
           id: "decimal-product",
@@ -174,6 +184,16 @@ const grade5: Grade = {
         es: "Volumen",
         ur: "حجم",
       },
+      learningObjective: {
+        en: "I am learning to find the volume of a rectangular prism so that I can measure how much space is inside a 3D shape.",
+        es: "Estoy aprendiendo a encontrar el volumen de un prisma rectangular para poder medir cuánto espacio hay dentro de una figura 3D.",
+        ur: "میں مستطیل منشور کا حجم معلوم کرنا سیکھ رہا ہوں تاکہ ناپ سکوں کہ تین جہتی شکل کے اندر کتنی جگہ ہے۔",
+      },
+      successCriteria: [
+        { en: "I can find volume using the formula length × width × height.", es: "Puedo encontrar el volumen usando la fórmula largo × ancho × alto.", ur: "میں لمبائی × چوڑائی × اونچائی کے فارمولے سے حجم معلوم کر سکتا ہوں۔" },
+        { en: "I can count cubic units to find the volume of a box.", es: "Puedo contar unidades cúbicas para encontrar el volumen de una caja.", ur: "میں ڈبے کا حجم معلوم کرنے کے لیے مکعب اکائیاں گن سکتا ہوں۔" },
+        { en: "I can solve a real-world problem involving volume.", es: "Puedo resolver un problema del mundo real que involucra volumen.", ur: "میں حجم سے متعلق حقیقی دنیا کا مسئلہ حل کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "volume",
@@ -357,6 +377,16 @@ const grade5: Grade = {
         es: "Orden de las Operaciones",
         ur: "کاروائیوں کی ترتیب",
       },
+      learningObjective: {
+        en: "I am learning to use order of operations so that I can correctly evaluate expressions with more than one operation.",
+        es: "Estoy aprendiendo a usar el orden de las operaciones para poder evaluar correctamente expresiones con más de una operación.",
+        ur: "میں کاروائیوں کی ترتیب استعمال کرنا سیکھ رہا ہوں تاکہ ایک سے زیادہ عمل والے اظہاریوں کو درست طریقے سے حل کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can solve an expression using parentheses first.", es: "Puedo resolver una expresión usando primero los paréntesis.", ur: "میں پہلے قوسین حل کر کے اظہاریہ حل کر سکتا ہوں۔" },
+        { en: "I can follow order of operations to evaluate a numerical expression.", es: "Puedo seguir el orden de las operaciones para evaluar una expresión numérica.", ur: "میں عددی اظہاریہ حل کرنے کے لیے کاروائیوں کی ترتیب پر عمل کر سکتا ہوں۔" },
+        { en: "I can explain why order of operations matters.", es: "Puedo explicar por qué importa el orden de las operaciones.", ur: "میں وضاحت کر سکتا ہوں کہ کاروائیوں کی ترتیب کیوں اہم ہے۔" },
+      ],
       vocabulary: [
         {
           id: "expression",
@@ -514,6 +544,16 @@ const grade5: Grade = {
         es: "Plano de Coordenadas",
         ur: "متناسق میدان",
       },
+      learningObjective: {
+        en: "I am learning to use a coordinate plane so that I can locate and describe points using ordered pairs.",
+        es: "Estoy aprendiendo a usar un plano de coordenadas para poder ubicar y describir puntos usando pares ordenados.",
+        ur: "میں متناسق میدان استعمال کرنا سیکھ رہا ہوں تاکہ ترتیب شدہ جوڑوں کا استعمال کرتے ہوئے نقاط تلاش اور بیان کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can plot a point on the coordinate plane using an ordered pair.", es: "Puedo marcar un punto en el plano de coordenadas usando un par ordenado.", ur: "میں ترتیب شدہ جوڑے کا استعمال کرتے ہوئے متناسق میدان پر نقطہ لگا سکتا ہوں۔" },
+        { en: "I can name the ordered pair for a given point.", es: "Puedo nombrar el par ordenado de un punto dado.", ur: "میں دیے گئے نقطے کا ترتیب شدہ جوڑا بتا سکتا ہوں۔" },
+        { en: "I can find the distance between two points on the x-axis or y-axis.", es: "Puedo encontrar la distancia entre dos puntos en el eje x o el eje y.", ur: "میں x محور یا y محور پر دو نقاط کے درمیان فاصلہ معلوم کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "coordinate-plane",

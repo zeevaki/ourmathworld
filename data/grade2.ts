@@ -11,6 +11,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · TBD",
       emoji: "📦",
       title: { en: "Bundling to 1,200", es: "Agrupar hasta 1,200", ur: "1,200 تک بنڈل بنانا" },
+      learningObjective: {
+        en: "I am learning to compose and decompose numbers up to 1,200 using thousands, hundreds, tens, and ones so that I can build big numbers more than one way.",
+        es: "Estoy aprendiendo a componer y descomponer números hasta 1,200 usando millares, centenas, decenas y unidades para poder construir números grandes de más de una forma.",
+        ur: "میں ہزار، سو، دہائیوں اور اکائیوں کا استعمال کرتے ہوئے 1,200 تک نمبر جوڑنا اور توڑنا سیکھ رہا ہوں تاکہ ایک سے زیادہ طریقوں سے بڑے نمبر بنا سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can build a number using bundles of a thousand, a hundred, and ten.", es: "Puedo construir un número usando grupos de mil, de cien y de diez.", ur: "میں ہزار، سو اور دس کے بنڈلوں کا استعمال کر کے ایک نمبر بنا سکتا ہوں۔" },
+        { en: "I can show the same number as two different combinations of bundles.", es: "Puedo mostrar el mismo número como dos combinaciones diferentes de grupos.", ur: "میں ایک ہی نمبر کو بنڈلوں کے دو مختلف مجموعوں سے دکھا سکتا ہوں۔" },
+        { en: "I can explain what each bundle is worth.", es: "Puedo explicar cuánto vale cada grupo.", ur: "میں بتا سکتا ہوں کہ ہر بنڈل کی قیمت کیا ہے۔" },
+      ],
       vocabulary: [
         {
           id: "bundle-of-hundred",
@@ -91,6 +101,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Nn2",
       emoji: "🔢",
       title: { en: "Place Value to 1,200", es: "Valor Posicional hasta 1,200", ur: "1,200 تک مقامی قدر" },
+      learningObjective: {
+        en: "I am learning to represent and compare numbers up to 1,200 so that I can tell which number is greater, less, or equal.",
+        es: "Estoy aprendiendo a representar y comparar números hasta 1,200 para poder decir cuál número es mayor, menor o igual.",
+        ur: "میں 1,200 تک نمبروں کو ظاہر کرنا اور موازنہ کرنا سیکھ رہا ہوں تاکہ بتا سکوں کون سا نمبر بڑا، چھوٹا یا برابر ہے۔",
+      },
+      successCriteria: [
+        { en: "I can write a number in standard, word, and expanded form.", es: "Puedo escribir un número en forma estándar, con palabras y en forma desarrollada.", ur: "میں ایک نمبر کو معیاری، لفظی اور پھیلی ہوئی شکل میں لکھ سکتا ہوں۔" },
+        { en: "I can compare two numbers up to 1,200 using >, <, or =.", es: "Puedo comparar dos números hasta 1,200 usando >, < o =.", ur: "میں >، <، یا = استعمال کر کے 1,200 تک دو نمبروں کا موازنہ کر سکتا ہوں۔" },
+        { en: "I can order a set of numbers from least to greatest.", es: "Puedo ordenar un conjunto de números de menor a mayor.", ur: "میں نمبروں کے سیٹ کو چھوٹے سے بڑے ترتیب میں لگا سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "place-value",
@@ -163,6 +183,16 @@ const grade2: Grade = {
         es: "Números Pares e Impares",
         ur: "جفت اور طاق نمبر",
       },
+      learningObjective: {
+        en: "I am learning to tell whether a number is even or odd so that I can group objects into pairs.",
+        es: "Estoy aprendiendo a decir si un número es par o impar para poder agrupar objetos en pares.",
+        ur: "میں یہ بتانا سیکھ رہا ہوں کہ نمبر جفت ہے یا طاق تاکہ اشیاء کو جوڑوں میں گروپ کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can pair up objects to check if a number is even or odd.", es: "Puedo emparejar objetos para verificar si un número es par o impar.", ur: "میں یہ چیک کرنے کے لیے اشیاء کے جوڑے بنا سکتا ہوں کہ نمبر جفت ہے یا طاق۔" },
+        { en: "I can tell if a number up to 40 is even or odd without counting objects.", es: "Puedo decir si un número hasta 40 es par o impar sin contar objetos.", ur: "میں اشیاء گنے بغیر بتا سکتا ہوں کہ 40 تک نمبر جفت ہے یا طاق۔" },
+        { en: "I can explain what makes a number even or odd.", es: "Puedo explicar qué hace que un número sea par o impar.", ur: "میں وضاحت کر سکتا ہوں کہ نمبر کو جفت یا طاق کیا بناتا ہے۔" },
+      ],
       vocabulary: [
         {
           id: "even",
@@ -279,6 +309,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Nf1",
       emoji: "🍕",
       title: { en: "Fractions: Halves, Fourths & Eighths", es: "Fracciones: Mitades, Cuartos y Octavos", ur: "کسریں: آدھے، چوتھائی اور آٹھویں" },
+      learningObjective: {
+        en: "I am learning about fractions so that I can name and compare equal parts of a whole.",
+        es: "Estoy aprendiendo sobre las fracciones para poder nombrar y comparar partes iguales de un entero.",
+        ur: "میں کسروں کے بارے میں سیکھ رہا ہوں تاکہ ایک مکمل چیز کے برابر حصوں کے نام بتا سکوں اور موازنہ کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can divide a shape into halves, fourths, or eighths.", es: "Puedo dividir una figura en mitades, cuartos u octavos.", ur: "میں کسی شکل کو آدھے، چوتھائی، یا آٹھویں حصوں میں تقسیم کر سکتا ہوں۔" },
+        { en: "I can name a fractional part using words.", es: "Puedo nombrar una parte fraccionaria usando palabras.", ur: "میں کسری حصے کا نام الفاظ میں بتا سکتا ہوں۔" },
+        { en: "I can explain that more parts means each part is smaller.", es: "Puedo explicar que más partes significa que cada parte es más pequeña.", ur: "میں وضاحت کر سکتا ہوں کہ زیادہ حصے ہونے کا مطلب ہے ہر حصہ چھوٹا ہوگا۔" },
+      ],
       vocabulary: [
         {
           id: "fraction",
@@ -352,6 +392,16 @@ const grade2: Grade = {
         es: "Sumar y Restar",
         ur: "جمع اور تفریق",
       },
+      learningObjective: {
+        en: "I am learning my addition and subtraction facts within 20 so that I can solve them quickly and automatically.",
+        es: "Estoy aprendiendo mis datos de suma y resta hasta 20 para poder resolverlos rápida y automáticamente.",
+        ur: "میں 20 تک جمع اور تفریق کے حقائق سیکھ رہا ہوں تاکہ انہیں تیزی اور خودکار طریقے سے حل کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can recall an addition fact within 20 without counting on my fingers.", es: "Puedo recordar un dato de suma hasta 20 sin contar con los dedos.", ur: "میں انگلیوں پر گنے بغیر 20 تک جمع کا حقیقت یاد کر سکتا ہوں۔" },
+        { en: "I can recall a subtraction fact within 20 quickly.", es: "Puedo recordar un dato de resta hasta 20 rápidamente.", ur: "میں 20 تک تفریق کا حقیقت جلدی یاد کر سکتا ہوں۔" },
+        { en: "I can explain how addition and subtraction facts are related.", es: "Puedo explicar cómo se relacionan los datos de suma y resta.", ur: "میں وضاحت کر سکتا ہوں کہ جمع اور تفریق کے حقائق کیسے جڑے ہیں۔" },
+      ],
       vocabulary: [
         {
           id: "add",
@@ -623,6 +673,16 @@ const grade2: Grade = {
         es: "Sumar y Restar con Estrategias",
         ur: "حکمت عملیوں سے جمع اور تفریق",
       },
+      learningObjective: {
+        en: "I am learning to add up to four two-digit numbers and subtract two-digit numbers using mental strategies so that I can compute quickly and accurately.",
+        es: "Estoy aprendiendo a sumar hasta cuatro números de dos dígitos y restar números de dos dígitos usando estrategias mentales para poder calcular rápido y con precisión.",
+        ur: "میں ذہنی حکمت عملیوں کا استعمال کرتے ہوئے چار تک دو ہندسوں کے نمبر جمع کرنا اور دو ہندسوں کے نمبر تفریق کرنا سیکھ رہا ہوں تاکہ تیزی اور درستگی سے حساب کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can add several two-digit numbers by adding the tens and ones separately.", es: "Puedo sumar varios números de dos dígitos sumando las decenas y las unidades por separado.", ur: "میں دہائیوں اور اکائیوں کو الگ الگ جمع کر کے کئی دو ہندسوں کے نمبر جمع کر سکتا ہوں۔" },
+        { en: "I can subtract two-digit numbers using regrouping.", es: "Puedo restar números de dos dígitos usando reagrupación.", ur: "میں دوبارہ گروہ بندی کا استعمال کرتے ہوئے دو ہندسوں کے نمبر تفریق کر سکتا ہوں۔" },
+        { en: "I can choose a mental strategy instead of just guessing.", es: "Puedo elegir una estrategia mental en lugar de simplemente adivinar.", ur: "میں محض اندازہ لگانے کی بجائے ذہنی حکمت عملی چن سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "mental-strategy-24b",
@@ -696,6 +756,16 @@ const grade2: Grade = {
         es: "Problemas de Suma y Resta",
         ur: "جمع اور تفریق کے مسائل",
       },
+      learningObjective: {
+        en: "I am learning to solve one-step and multi-step word problems within 1,000 so that I can figure out real totals and differences.",
+        es: "Estoy aprendiendo a resolver problemas de uno y varios pasos hasta 1,000 para poder calcular totales y diferencias reales.",
+        ur: "میں 1,000 تک ایک اور کئی مرحلوں کے مسائل حل کرنا سیکھ رہا ہوں تاکہ حقیقی کل اور فرق معلوم کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can identify whether a word problem needs addition or subtraction.", es: "Puedo identificar si un problema necesita suma o resta.", ur: "میں پہچان سکتا ہوں کہ کسی مسئلے میں جمع درکار ہے یا تفریق۔" },
+        { en: "I can solve a word problem using place value strategies.", es: "Puedo resolver un problema usando estrategias de valor posicional.", ur: "میں جگہ کی قدر کی حکمت عملیوں سے مسئلہ حل کر سکتا ہوں۔" },
+        { en: "I can solve a word problem that needs more than one step.", es: "Puedo resolver un problema que necesita más de un paso.", ur: "میں ایسا مسئلہ حل کر سکتا ہوں جس میں ایک سے زیادہ مرحلے درکار ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "regroup",
@@ -1042,6 +1112,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Nc5",
       emoji: "📐",
       title: { en: "Number Sentences: Add & Subtract", es: "Oraciones Numéricas: Suma y Resta", ur: "نمبر جملے: جمع اور تفریق" },
+      learningObjective: {
+        en: "I am learning to write and solve number sentences so that I can turn a real problem into math and back again.",
+        es: "Estoy aprendiendo a escribir y resolver oraciones numéricas para poder convertir un problema real en matemáticas y viceversa.",
+        ur: "میں نمبر جملے لکھنا اور حل کرنا سیکھ رہا ہوں تاکہ حقیقی مسئلے کو ریاضی میں بدل سکوں اور واپس بھی۔",
+      },
+      successCriteria: [
+        { en: "I can write a number sentence to match a word problem.", es: "Puedo escribir una oración numérica que corresponda a un problema.", ur: "میں کسی مسئلے سے مطابقت رکھنے والا نمبر جملہ لکھ سکتا ہوں۔" },
+        { en: "I can solve for the unknown number in an equation.", es: "Puedo resolver el número desconocido en una ecuación.", ur: "میں مساوات میں نامعلوم نمبر حل کر سکتا ہوں۔" },
+        { en: "I can create my own word problem to match a given number sentence.", es: "Puedo crear mi propio problema que corresponda a una oración numérica dada.", ur: "میں دیے گئے نمبر جملے سے مطابقت رکھنے والا اپنا مسئلہ بنا سکتا ہوں۔" },
+      ],
       vocabulary: [
         { id: "number-sentence", emoji: "🔣", word: { en: "number sentence", es: "oración numérica", ur: "نمبر جملہ" }, definition: { en: "a math statement using numbers, operations, and an equal sign, like 5 + 3 = 8", es: "un enunciado matemático con números, operaciones y un signo igual, como 5 + 3 = 8", ur: "ایک ریاضی بیان جو نمبروں، علامات اور = سے مل کر بنتا ہے، جیسے 5 + 3 = 8" } },
         { id: "unknown", emoji: "❓", word: { en: "unknown", es: "desconocido", ur: "نامعلوم" }, definition: { en: "the missing number in a math sentence, shown with a ? or a box", es: "el número que falta en una oración matemática, representado con ? o un cuadrado", ur: "ریاضی جملے میں لاپتہ نمبر، جو ? یا خانے سے دکھایا جاتا ہے" } },
@@ -1089,6 +1169,16 @@ const grade2: Grade = {
         es: "Dinero y Monedas",
         ur: "پیسہ اور سکے",
       },
+      learningObjective: {
+        en: "I am learning to find the value of a group of coins so that I can solve money problems up to one dollar.",
+        es: "Estoy aprendiendo a encontrar el valor de un grupo de monedas para poder resolver problemas de dinero hasta un dólar.",
+        ur: "میں سکوں کے گروپ کی قدر معلوم کرنا سیکھ رہا ہوں تاکہ ایک ڈالر تک پیسوں کے مسائل حل کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can find the total value of a mixed group of coins.", es: "Puedo encontrar el valor total de un grupo mixto de monedas.", ur: "میں مخلوط سکوں کے گروپ کی کل قدر معلوم کر سکتا ہوں۔" },
+        { en: "I can use the cent symbol and dollar sign correctly.", es: "Puedo usar correctamente el símbolo de centavo y el signo de dólar.", ur: "میں سینٹ کی علامت اور ڈالر کا نشان درست طور پر استعمال کر سکتا ہوں۔" },
+        { en: "I can compare the value of two different groups of coins.", es: "Puedo comparar el valor de dos grupos diferentes de monedas.", ur: "میں سکوں کے دو مختلف گروپوں کی قدر کا موازنہ کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "penny",
@@ -1327,6 +1417,16 @@ const grade2: Grade = {
         es: "Grupos Iguales",
         ur: "برابر گروہ",
       },
+      learningObjective: {
+        en: "I am learning to model multiplication and division with equal groups so that I can understand how joining and sharing groups work.",
+        es: "Estoy aprendiendo a modelar la multiplicación y la división con grupos iguales para poder entender cómo funcionan unir y compartir grupos.",
+        ur: "میں برابر گروپوں سے ضرب اور تقسیم کا ماڈل بنانا سیکھ رہا ہوں تاکہ سمجھ سکوں کہ گروپوں کو ملانا اور بانٹنا کیسے کام کرتا ہے۔",
+      },
+      successCriteria: [
+        { en: "I can model a multiplication situation using equal groups of objects.", es: "Puedo modelar una situación de multiplicación usando grupos iguales de objetos.", ur: "میں اشیاء کے برابر گروپوں کا استعمال کر کے ضرب کی صورتحال ظاہر کر سکتا ہوں۔" },
+        { en: "I can model a division situation by separating objects into equal sets.", es: "Puedo modelar una situación de división separando objetos en conjuntos iguales.", ur: "میں اشیاء کو برابر سیٹوں میں الگ کر کے تقسیم کی صورتحال ظاہر کر سکتا ہوں۔" },
+        { en: "I can describe a real situation using equal groups.", es: "Puedo describir una situación real usando grupos iguales.", ur: "میں برابر گروپوں کا استعمال کرتے ہوئے حقیقی صورتحال بیان کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "equal-groups",
@@ -1661,6 +1761,16 @@ const grade2: Grade = {
         es: "Figuras 2D",
         ur: "دو جہتی شکلیں",
       },
+      learningObjective: {
+        en: "I am learning to create two-dimensional shapes based on given attributes so that I can build exactly the shape I'm asked for.",
+        es: "Estoy aprendiendo a crear figuras bidimensionales según atributos dados para poder construir exactamente la figura que me piden.",
+        ur: "میں دیے گئے اوصاف کی بنیاد پر دو جہتی شکلیں بنانا سیکھ رہا ہوں تاکہ بالکل وہی شکل بنا سکوں جو مجھ سے مانگی جائے۔",
+      },
+      successCriteria: [
+        { en: "I can create a shape when I'm told its number of sides.", es: "Puedo crear una figura cuando me dicen su número de lados.", ur: "جب مجھے اطراف کی تعداد بتائی جائے تو میں شکل بنا سکتا ہوں۔" },
+        { en: "I can create a shape when I'm told its number of vertices.", es: "Puedo crear una figura cuando me dicen su número de vértices.", ur: "جب مجھے زاویوں کی تعداد بتائی جائے تو میں شکل بنا سکتا ہوں۔" },
+        { en: "I can explain which attributes make a shape what it is.", es: "Puedo explicar qué atributos hacen que una figura sea lo que es.", ur: "میں وضاحت کر سکتا ہوں کہ کون سے اوصاف کسی شکل کو وہ بناتے ہیں۔" },
+      ],
       vocabulary: [
         {
           id: "circle",
@@ -1880,6 +1990,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Gs3",
       emoji: "🔷",
       title: { en: "3D Solids", es: "Sólidos Tridimensionales", ur: "تین جہتی اشکال" },
+      learningObjective: {
+        en: "I am learning to classify three-dimensional solids so that I can sort and describe them using their attributes.",
+        es: "Estoy aprendiendo a clasificar sólidos tridimensionales para poder ordenarlos y describirlos usando sus atributos.",
+        ur: "میں تین جہتی اشکال کی درجہ بندی کرنا سیکھ رہا ہوں تاکہ انہیں ان کے اوصاف سے چھانٹ اور بیان کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can name a sphere, cone, cylinder, rectangular prism, and triangular prism.", es: "Puedo nombrar una esfera, un cono, un cilindro, un prisma rectangular y un prisma triangular.", ur: "میں کرہ، مخروط، بیلن، مستطیل منشور، اور مثلثی منشور کے نام بتا سکتا ہوں۔" },
+        { en: "I can describe a 3D solid using formal geometric language.", es: "Puedo describir un sólido 3D usando lenguaje geométrico formal.", ur: "میں رسمی ہندسی زبان استعمال کرتے ہوئے تین جہتی جسم بیان کر سکتا ہوں۔" },
+        { en: "I can sort solids into groups based on shared attributes.", es: "Puedo clasificar sólidos en grupos según atributos compartidos.", ur: "میں مشترکہ اوصاف کی بنیاد پر ٹھوس اجسام کو گروپوں میں چھانٹ سکتا ہوں۔" },
+      ],
       vocabulary: [
         { id: "sphere", emoji: "🌍", word: { en: "sphere", es: "esfera", ur: "کرہ" }, definition: { en: "a perfectly round solid shape with no flat faces — like a ball or the Earth", es: "una forma sólida perfectamente redonda sin caras planas — como una pelota o la Tierra", ur: "ایک بالکل گول ٹھوس شکل جس میں کوئی چپٹی سطح نہیں — جیسے گیند یا کرۂ زمین" } },
         { id: "cone", emoji: "🍦", word: { en: "cone", es: "cono", ur: "مخروط" }, definition: { en: "a solid shape with a flat circular base and a curved side that comes to a point at the top", es: "una forma sólida con una base circular plana y un lado curvo que termina en un punto", ur: "ایک ٹھوس شکل جس میں ایک گول چپٹی بنیاد اور اوپر نوک ہوتی ہے" } },
@@ -1923,6 +2043,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Gs1",
       emoji: "🔺",
       title: { en: "Classifying Polygons", es: "Clasificando Polígonos", ur: "کثیر الاضلاع کی درجہ بندی" },
+      learningObjective: {
+        en: "I am learning to classify polygons so that I can sort shapes by their sides and vertices.",
+        es: "Estoy aprendiendo a clasificar polígonos para poder ordenar figuras según sus lados y vértices.",
+        ur: "میں کثیر الاضلاع کی درجہ بندی کرنا سیکھ رہا ہوں تاکہ شکلوں کو ان کے اطراف اور زاویوں سے چھانٹ سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can count the sides of a polygon with 12 or fewer sides.", es: "Puedo contar los lados de un polígono con 12 lados o menos.", ur: "میں 12 یا اس سے کم اطراف والے کثیر الاضلاع کے اطراف گن سکتا ہوں۔" },
+        { en: "I can count the vertices of a polygon.", es: "Puedo contar los vértices de un polígono.", ur: "میں کثیر الاضلاع کے زاویے گن سکتا ہوں۔" },
+        { en: "I can sort polygons into groups based on their number of sides.", es: "Puedo clasificar polígonos en grupos según su número de lados.", ur: "میں کثیر الاضلاع کو ان کے اطراف کی تعداد کی بنیاد پر گروپوں میں چھانٹ سکتا ہوں۔" },
+      ],
       vocabulary: [
         { id: "polygon", emoji: "🔷", word: { en: "polygon", es: "polígono", ur: "کثیر الاضلاع" }, definition: { en: "a closed flat shape with straight sides; triangles, squares, and hexagons are all polygons", es: "una figura plana cerrada con lados rectos; los triángulos, cuadrados y hexágonos son polígonos", ur: "سیدھے اطراف والی بند چپٹی شکل؛ مثلث، مربع اور چھ ضلعی سب کثیر الاضلاع ہیں" } },
         { id: "vertex", emoji: "📌", word: { en: "vertex (vertices)", es: "vértice (vértices)", ur: "رأس (زوایا)" }, definition: { en: "the corner point where two sides of a polygon meet; a triangle has 3 vertices", es: "el punto de esquina donde se unen dos lados de un polígono; un triángulo tiene 3 vértices", ur: "وہ کونے کا نقطہ جہاں کثیر الاضلاع کے دو اطراف ملتے ہیں؛ مثلث کے 3 زاویے ہیں" } },
@@ -1966,6 +2096,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Ml1",
       emoji: "📏",
       title: { en: "Estimating Length", es: "Estimando Longitudes", ur: "لمبائی کا اندازہ" },
+      learningObjective: {
+        en: "I am learning to estimate and solve problems involving length so that I can make a reasonable guess before I measure.",
+        es: "Estoy aprendiendo a estimar y resolver problemas de longitud para poder hacer una suposición razonable antes de medir.",
+        ur: "میں لمبائی کا اندازہ لگانا اور مسائل حل کرنا سیکھ رہا ہوں تاکہ ناپنے سے پہلے معقول اندازہ لگا سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can estimate the length of an object before measuring it.", es: "Puedo estimar la longitud de un objeto antes de medirlo.", ur: "میں کسی چیز کو ناپنے سے پہلے اس کی لمبائی کا اندازہ لگا سکتا ہوں۔" },
+        { en: "I can compare my estimate to the actual measurement.", es: "Puedo comparar mi estimación con la medida real.", ur: "میں اپنے اندازے کا حقیقی پیمائش سے موازنہ کر سکتا ہوں۔" },
+        { en: "I can solve a real problem involving length.", es: "Puedo resolver un problema real que involucra longitud.", ur: "میں لمبائی سے متعلق حقیقی مسئلہ حل کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         { id: "estimate", emoji: "🤔", word: { en: "estimate", es: "estimar", ur: "اندازہ لگانا" }, definition: { en: "a careful guess about a measurement that is close to the exact answer", es: "una suposición cuidadosa sobre una medida que se acerca a la respuesta exacta", ur: "کسی پیمائش کے بارے میں احتیاطی اندازہ جو صحیح جواب کے قریب ہو" } },
         { id: "length", emoji: "📐", word: { en: "length", es: "longitud", ur: "لمبائی" }, definition: { en: "the measurement of how long something is from end to end", es: "la medida de cuán largo es algo de un extremo al otro", ur: "کسی چیز کی ایک سرے سے دوسرے سرے تک کی پیمائش" } },
@@ -2009,6 +2149,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Mt1",
       emoji: "🕐",
       title: { en: "Telling Time to the Minute", es: "Leyendo el Reloj al Minuto", ur: "منٹ تک وقت بتانا" },
+      learningObjective: {
+        en: "I am learning to read and write time to the nearest minute so that I can tell exact time on any clock.",
+        es: "Estoy aprendiendo a leer y escribir la hora al minuto más cercano para poder decir la hora exacta en cualquier reloj.",
+        ur: "میں قریب ترین منٹ تک وقت پڑھنا اور لکھنا سیکھ رہا ہوں تاکہ کسی بھی گھڑی پر صحیح وقت بتا سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can read the minute hand to tell time to the nearest minute.", es: "Puedo leer el minutero para decir la hora al minuto más cercano.", ur: "میں منٹ کی سوئی پڑھ کر قریب ترین منٹ تک وقت بتا سکتا ہوں۔" },
+        { en: "I can write the time shown on an analog clock in digital form.", es: "Puedo escribir la hora mostrada en un reloj análogo en forma digital.", ur: "میں اینالاگ گھڑی پر دکھایا گیا وقت ڈیجیٹل شکل میں لکھ سکتا ہوں۔" },
+        { en: "I can tell whether a time is a.m. or p.m.", es: "Puedo decir si una hora es a.m. o p.m.", ur: "میں بتا سکتا ہوں کہ وقت صبح کا ہے یا شام کا۔" },
+      ],
       vocabulary: [
         { id: "hour-hand", emoji: "🕐", word: { en: "hour hand", es: "manecilla de las horas", ur: "گھنٹے کی سوئی" }, definition: { en: "the shorter hand on a clock that points to the hour", es: "la manecilla más corta del reloj que apunta a la hora", ur: "گھڑی پر چھوٹی سوئی جو گھنٹہ ظاہر کرتی ہے" } },
         { id: "minute-hand", emoji: "🕐", word: { en: "minute hand", es: "manecilla de los minutos", ur: "منٹ کی سوئی" }, definition: { en: "the longer hand on a clock that points to the minutes", es: "la manecilla más larga del reloj que apunta a los minutos", ur: "گھڑی پر لمبی سوئی جو منٹ ظاہر کرتی ہے" } },
@@ -2052,6 +2202,16 @@ const grade2: Grade = {
       cambridge: "Stage 2 · 2Ss2",
       emoji: "📊",
       title: { en: "Bar Graphs & Pictographs", es: "Gráficas de Barras y Pictografías", ur: "بار گراف اور تصویری گراف" },
+      learningObjective: {
+        en: "I am learning to write and solve word problems using graphs so that I can answer real questions with data.",
+        es: "Estoy aprendiendo a escribir y resolver problemas usando gráficas para poder responder preguntas reales con datos.",
+        ur: "میں گراف استعمال کرتے ہوئے مسائل لکھنا اور حل کرنا سیکھ رہا ہوں تاکہ ڈیٹا سے حقیقی سوالات کے جواب دے سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can read a bar graph or pictograph to find information.", es: "Puedo leer una gráfica de barras o un pictograma para encontrar información.", ur: "میں معلومات معلوم کرنے کے لیے بار گراف یا تصویری گراف پڑھ سکتا ہوں۔" },
+        { en: "I can write an addition or subtraction word problem based on a graph.", es: "Puedo escribir un problema de suma o resta basado en una gráfica.", ur: "میں گراف کی بنیاد پر جمع یا تفریق کا مسئلہ لکھ سکتا ہوں۔" },
+        { en: "I can solve a word problem using data from a graph.", es: "Puedo resolver un problema usando datos de una gráfica.", ur: "میں گراف کے ڈیٹا کا استعمال کر کے مسئلہ حل کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         { id: "bar-graph", emoji: "📊", word: { en: "bar graph", es: "gráfica de barras", ur: "بار گراف" }, definition: { en: "a graph that uses bars of different lengths to show and compare data", es: "una gráfica que usa barras de diferentes longitudes para mostrar y comparar datos", ur: "ایک گراف جو ڈیٹا دکھانے اور موازنہ کرنے کے لیے مختلف لمبائی کی سلاخیں استعمال کرتا ہے" } },
         { id: "pictograph", emoji: "🖼️", word: { en: "pictograph", es: "pictografía", ur: "تصویری گراف" }, definition: { en: "a graph that uses pictures or symbols to represent data; each picture usually stands for more than one item", es: "una gráfica que usa imágenes o símbolos para representar datos; cada imagen generalmente representa más de un elemento", ur: "ایک گراف جو ڈیٹا کو تصاویر سے ظاہر کرتا ہے؛ ہر تصویر عام طور پر ایک سے زیادہ اشیاء کو ظاہر کرتی ہے" } },
@@ -2100,6 +2260,16 @@ const grade2: Grade = {
         es: "Educación Financiera",
         ur: "مالیاتی خواندگی",
       },
+      learningObjective: {
+        en: "I am learning about saving, borrowing, and lending so that I can make smart choices with money.",
+        es: "Estoy aprendiendo sobre ahorrar, pedir prestado y prestar para poder tomar decisiones inteligentes con el dinero.",
+        ur: "میں بچت، قرض لینے اور قرض دینے کے بارے میں سیکھ رہا ہوں تاکہ پیسوں کے بارے میں سمجھدار فیصلے کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can explain how saved money can grow over time.", es: "Puedo explicar cómo el dinero ahorrado puede crecer con el tiempo.", ur: "میں وضاحت کر سکتا ہوں کہ بچایا گیا پیسہ وقت کے ساتھ کیسے بڑھ سکتا ہے۔" },
+        { en: "I can tell the difference between a deposit and a withdrawal.", es: "Puedo decir la diferencia entre un depósito y un retiro.", ur: "میں جمع اور نکلوانے کا فرق بتا سکتا ہوں۔" },
+        { en: "I can explain the difference between producers and consumers.", es: "Puedo explicar la diferencia entre productores y consumidores.", ur: "میں پیدا کرنے والوں اور استعمال کرنے والوں کا فرق بتا سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "income",

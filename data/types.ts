@@ -57,6 +57,8 @@ export type TeksUnit = {
   cambridge: string;
   title: BilingualText;
   emoji: string;
+  learningObjective?: BilingualText;
+  successCriteria?: BilingualText[];
   vocabulary: VocabWord[];
   lesson: BilingualText;
   lessonImage?: string;

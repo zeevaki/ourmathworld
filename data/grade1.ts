@@ -17,6 +17,16 @@ const grade1: Grade = {
         es: "Agrupar hasta 120",
         ur: "120 تک بنڈل بنانا",
       },
+      learningObjective: {
+        en: "I am learning to compose and decompose numbers up to 120 using tens and ones so that I can understand what a number really means.",
+        es: "Estoy aprendiendo a componer y descomponer números hasta 120 usando decenas y unidades para poder entender lo que un número realmente significa.",
+        ur: "میں دہائیوں اور اکائیوں کا استعمال کرتے ہوئے 120 تک نمبر جوڑنا اور توڑنا سیکھ رہا ہوں تاکہ سمجھ سکوں کہ نمبر کا اصل مطلب کیا ہے۔",
+      },
+      successCriteria: [
+        { en: "I can build a number by counting bundles of ten and leftover ones.", es: "Puedo construir un número contando grupos de diez y las unidades que sobran.", ur: "میں دس کے بنڈل اور بچی ہوئی اکائیاں گن کر ایک نمبر بنا سکتا ہوں۔" },
+        { en: "I can break a number apart into tens and ones in more than one way.", es: "Puedo separar un número en decenas y unidades de más de una forma.", ur: "میں ایک نمبر کو دہائیوں اور اکائیوں میں ایک سے زیادہ طریقوں سے توڑ سکتا ہوں۔" },
+        { en: "I can show a number up to 120 using bundles.", es: "Puedo mostrar un número hasta 120 usando grupos.", ur: "میں بنڈلوں کا استعمال کرتے ہوئے 120 تک نمبر دکھا سکتا ہوں۔" },
+      ],
       lessonImage: "1.2B_Lesson.png",
       vocabulary: [
         {
@@ -185,6 +195,16 @@ const grade1: Grade = {
         es: "Comparar Números",
         ur: "نمبروں کا موازنہ",
       },
+      learningObjective: {
+        en: "I am learning to compare two numbers so that I can tell which is greater, less, or equal using >, <, or =.",
+        es: "Estoy aprendiendo a comparar dos números para poder decir cuál es mayor, menor o igual usando >, < o =.",
+        ur: "میں دو نمبروں کا موازنہ کرنا سیکھ رہا ہوں تاکہ >، <، یا = استعمال کر کے بتا سکوں کون بڑا، چھوٹا یا برابر ہے۔",
+      },
+      successCriteria: [
+        { en: "I can compare two numbers and choose the correct symbol: >, <, or =.", es: "Puedo comparar dos números y elegir el símbolo correcto: >, < o =.", ur: "میں دو نمبروں کا موازنہ کر کے صحیح نشان چن سکتا ہوں: >، <، یا =۔" },
+        { en: "I can explain why one number is greater or less than another.", es: "Puedo explicar por qué un número es mayor o menor que otro.", ur: "میں وضاحت کر سکتا ہوں کہ ایک نمبر دوسرے سے بڑا یا چھوٹا کیوں ہے۔" },
+        { en: "I can use comparing words like greater than and less than out loud.", es: "Puedo usar palabras de comparación como mayor que y menor que en voz alta.", ur: "میں زیادہ اور کم جیسے موازنہ کرنے والے الفاظ زبانی استعمال کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "greater-than",
@@ -339,6 +359,16 @@ const grade1: Grade = {
         es: "Conteo de Salto y Patrones",
         ur: "چھوڑ کر گنتی اور نمونے",
       },
+      learningObjective: {
+        en: "I am learning to skip-count by twos, fives, and tens so that I can count a large group of objects quickly and find number patterns.",
+        es: "Estoy aprendiendo a contar de dos en dos, de cinco en cinco y de diez en diez para poder contar un grupo grande rápidamente y encontrar patrones numéricos.",
+        ur: "میں دو، پانچ اور دس کی چھلانگوں میں گننا سیکھ رہا ہوں تاکہ بڑے گروپ کو تیزی سے گن سکوں اور نمبر کے نمونے تلاش کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can skip-count by twos to count a group of objects.", es: "Puedo contar de dos en dos para contar un grupo de objetos.", ur: "میں اشیاء کا گروپ گننے کے لیے دو دو کر کے گن سکتا ہوں۔" },
+        { en: "I can skip-count by fives and tens to find a total up to 120.", es: "Puedo contar de cinco en cinco y de diez en diez para encontrar un total hasta 120.", ur: "میں 120 تک کل تعداد جاننے کے لیے پانچ اور دس کی چھلانگوں میں گن سکتا ہوں۔" },
+        { en: "I can find the number that is 10 more or 10 less than a given number.", es: "Puedo encontrar el número que es 10 más o 10 menos que un número dado.", ur: "میں کسی دیے گئے نمبر سے 10 زیادہ یا 10 کم نمبر تلاش کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "skip-count",
@@ -522,6 +552,16 @@ const grade1: Grade = {
         es: "Sumar y Restar hasta 20",
         ur: "20 تک جمع اور تفریق",
       },
+      learningObjective: {
+        en: "I am learning to solve addition and subtraction word problems within 20 so that I can figure out totals and what's left in real situations.",
+        es: "Estoy aprendiendo a resolver problemas de suma y resta hasta 20 para poder calcular totales y lo que queda en situaciones reales.",
+        ur: "میں 20 تک جمع اور تفریق کے مسائل حل کرنا سیکھ رہا ہوں تاکہ حقیقی حالات میں کل اور بچی ہوئی مقدار معلوم کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can use objects or pictures to solve a joining (addition) word problem.", es: "Puedo usar objetos o dibujos para resolver un problema de unir (suma).", ur: "میں ملانے (جمع) کا مسئلہ حل کرنے کے لیے اشیاء یا تصویریں استعمال کر سکتا ہوں۔" },
+        { en: "I can use objects or pictures to solve a separating (subtraction) word problem.", es: "Puedo usar objetos o dibujos para resolver un problema de separar (resta).", ur: "میں الگ کرنے (تفریق) کا مسئلہ حل کرنے کے لیے اشیاء یا تصویریں استعمال کر سکتا ہوں۔" },
+        { en: "I can find the missing number in a number sentence like 3 + ? = 7.", es: "Puedo encontrar el número que falta en una oración numérica como 3 + ? = 7.", ur: "میں 3 + ? = 7 جیسے نمبر جملے میں غائب نمبر تلاش کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "add",
@@ -689,6 +729,16 @@ const grade1: Grade = {
         es: "Formar el 10",
         ur: "10 بنانا",
       },
+      learningObjective: {
+        en: "I am learning all the ways to make 10 so that I can add bigger numbers faster.",
+        es: "Estoy aprendiendo todas las formas de formar el 10 para poder sumar números más grandes más rápido.",
+        ur: "میں 10 بنانے کے تمام طریقے سیکھ رہا ہوں تاکہ بڑے نمبر تیزی سے جمع کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can name pairs of numbers that add up to 10.", es: "Puedo nombrar pares de números que suman 10.", ur: "میں ان نمبر جوڑوں کے نام بتا سکتا ہوں جو ملا کر 10 بنتے ہیں۔" },
+        { en: "I can use a ten frame to show a way to make 10.", es: "Puedo usar un marco de diez para mostrar una forma de formar el 10.", ur: "میں 10 بنانے کا طریقہ دکھانے کے لیے ٹین فریم استعمال کر سکتا ہوں۔" },
+        { en: "I can use what I know about making 10 to solve a harder addition problem.", es: "Puedo usar lo que sé sobre formar el 10 para resolver un problema de suma más difícil.", ur: "میں 10 بنانے کے علم سے مشکل جمع کا مسئلہ حل کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "ten-frame",
@@ -846,6 +896,16 @@ const grade1: Grade = {
         es: "La Propiedad Conmutativa",
         ur: "تبادلی خاصیت",
       },
+      learningObjective: {
+        en: "I am learning to use the Commutative Property (the \"flip-flop\" rule) so that I can add numbers more quickly and efficiently.",
+        es: "Estoy aprendiendo a usar la Propiedad Conmutativa (la regla de voltear) para poder sumar números más rápido y con más eficiencia.",
+        ur: "میں تبادلی خاصیت (پلٹنے کا اصول) استعمال کرنا سیکھ رہا ہوں تاکہ نمبر زیادہ تیزی اور مؤثر طریقے سے جمع کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can flip the order of two addends and get the same sum.", es: "Puedo voltear el orden de dos sumandos y obtener la misma suma.", ur: "میں دو جمع ہونے والے نمبروں کی ترتیب پلٹ کر وہی حاصل جمع حاصل کر سکتا ہوں۔" },
+        { en: "I can explain that addition order doesn't change the answer.", es: "Puedo explicar que el orden de la suma no cambia la respuesta.", ur: "میں وضاحت کر سکتا ہوں کہ جمع کی ترتیب جواب نہیں بدلتی۔" },
+        { en: "I can choose the easier order to add two numbers in my head.", es: "Puedo elegir el orden más fácil para sumar dos números mentalmente.", ur: "میں ذہنی طور پر دو نمبر جمع کرنے کے لیے آسان ترتیب چن سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "commutative-property",
@@ -915,6 +975,16 @@ const grade1: Grade = {
         es: "Figuras y Partes Iguales",
         ur: "شکلیں اور برابر حصے",
       },
+      learningObjective: {
+        en: "I am learning to build and describe two-dimensional shapes and divide them into equal parts so that I can understand how shapes fit together and how to share fairly.",
+        es: "Estoy aprendiendo a construir y describir figuras bidimensionales y dividirlas en partes iguales para poder entender cómo encajan las figuras y cómo compartir de forma justa.",
+        ur: "میں دو جہتی شکلیں بنانا اور بیان کرنا اور انہیں برابر حصوں میں تقسیم کرنا سیکھ رہا ہوں تاکہ سمجھ سکوں کہ شکلیں کیسے فٹ ہوتی ہیں اور منصفانہ طریقے سے کیسے بانٹا جائے۔",
+      },
+      successCriteria: [
+        { en: "I can name and describe basic 2D shapes using their sides and corners.", es: "Puedo nombrar y describir figuras 2D básicas usando sus lados y esquinas.", ur: "میں بنیادی دو جہتی شکلوں کو ان کے اطراف اور کونوں سے نام دے اور بیان کر سکتا ہوں۔" },
+        { en: "I can put shapes together to build a new, bigger shape.", es: "Puedo unir figuras para construir una nueva figura más grande.", ur: "میں شکلوں کو ملا کر ایک نئی، بڑی شکل بنا سکتا ہوں۔" },
+        { en: "I can divide a shape into two or four equal parts and name them halves or fourths.", es: "Puedo dividir una figura en dos o cuatro partes iguales y nombrarlas mitades o cuartos.", ur: "میں کسی شکل کو دو یا چار برابر حصوں میں تقسیم کر کے انہیں آدھا یا چوتھائی کہہ سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "half",
@@ -1103,6 +1173,16 @@ const grade1: Grade = {
         es: "Valor de las Monedas",
         ur: "سکوں کی قیمت",
       },
+      learningObjective: {
+        en: "I am learning to identify U.S. coins and their values so that I can figure out how much a group of coins is worth.",
+        es: "Estoy aprendiendo a identificar las monedas de EE.UU. y sus valores para poder calcular cuánto vale un grupo de monedas.",
+        ur: "میں امریکی سکے اور ان کی قدر پہچاننا سیکھ رہا ہوں تاکہ معلوم کر سکوں کہ سکوں کے گروپ کی مالیت کتنی ہے۔",
+      },
+      successCriteria: [
+        { en: "I can name a penny, nickel, dime, and quarter and tell its value.", es: "Puedo nombrar un penique, una moneda de cinco centavos, una de diez centavos y una de veinticinco centavos y decir su valor.", ur: "میں پینی، نکل، ڈائم، اور کوارٹر کے نام بتا کر ان کی قدر بتا سکتا ہوں۔" },
+        { en: "I can skip-count by fives or tens to find the value of a group of coins.", es: "Puedo contar de cinco en cinco o de diez en diez para encontrar el valor de un grupo de monedas.", ur: "میں سکوں کے گروپ کی مالیت جاننے کے لیے پانچ یا دس کی چھلانگوں میں گن سکتا ہوں۔" },
+        { en: "I can write a coin's value using the cent symbol.", es: "Puedo escribir el valor de una moneda usando el símbolo de centavo.", ur: "میں سینٹ کی علامت استعمال کر کے سکے کی قدر لکھ سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "penny",
@@ -1295,6 +1375,16 @@ const grade1: Grade = {
         es: "Medir y Decir la Hora",
         ur: "پیمائش اور وقت بتانا",
       },
+      learningObjective: {
+        en: "I am learning to measure length and tell time so that I can describe how long something is and what time it is.",
+        es: "Estoy aprendiendo a medir la longitud y decir la hora para poder describir cuánto mide algo y qué hora es.",
+        ur: "میں لمبائی ناپنا اور وقت بتانا سیکھ رہا ہوں تاکہ بتا سکوں کوئی چیز کتنی لمبی ہے اور کیا وقت ہوا ہے۔",
+      },
+      successCriteria: [
+        { en: "I can measure an object's length using same-size units placed end-to-end.", es: "Puedo medir la longitud de un objeto usando unidades del mismo tamaño colocadas una tras otra.", ur: "میں ایک جیسی اکائیوں کو ایک دوسرے کے ساتھ رکھ کر کسی چیز کی لمبائی ناپ سکتا ہوں۔" },
+        { en: "I can describe a length using a number and a unit.", es: "Puedo describir una longitud usando un número y una unidad.", ur: "میں ایک نمبر اور اکائی کا استعمال کر کے لمبائی بیان کر سکتا ہوں۔" },
+        { en: "I can tell time to the hour and half hour on an analog and digital clock.", es: "Puedo decir la hora en punto y media hora en un reloj análogo y digital.", ur: "میں اینالاگ اور ڈیجیٹل گھڑی پر گھنٹے اور آدھے گھنٹے تک وقت بتا سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "length",
@@ -1496,6 +1586,16 @@ const grade1: Grade = {
         es: "Gráficas y Datos",
         ur: "گراف اور ڈیٹا",
       },
+      learningObjective: {
+        en: "I am learning to collect, sort, and organize data so that I can use it to answer questions.",
+        es: "Estoy aprendiendo a recolectar, clasificar y organizar datos para poder usarlos y responder preguntas.",
+        ur: "میں معلومات جمع کرنا، چھانٹنا اور منظم کرنا سیکھ رہا ہوں تاکہ سوالات کے جواب دینے کے لیے استعمال کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can sort information into up to three categories.", es: "Puedo clasificar información en hasta tres categorías.", ur: "میں معلومات کو تین اقسام تک چھانٹ سکتا ہوں۔" },
+        { en: "I can record data using tally marks or a T-chart.", es: "Puedo registrar datos usando marcas de conteo o una tabla en T.", ur: "میں ٹیلی مارکس یا ٹی چارٹ کا استعمال کرتے ہوئے ڈیٹا ریکارڈ کر سکتا ہوں۔" },
+        { en: "I can use my organized data to answer a question.", es: "Puedo usar mis datos organizados para responder una pregunta.", ur: "میں اپنے منظم ڈیٹا کا استعمال کر کے سوال کا جواب دے سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "data",
@@ -1659,6 +1759,16 @@ const grade1: Grade = {
         es: "Necesidades, Deseos y Ahorrar",
         ur: "ضروریات، خواہشات اور بچت",
       },
+      learningObjective: {
+        en: "I am learning about money and personal choices so that I can understand the difference between needs, wants, spending, and saving.",
+        es: "Estoy aprendiendo sobre el dinero y las decisiones personales para poder entender la diferencia entre necesidades, deseos, gastar y ahorrar.",
+        ur: "میں پیسے اور ذاتی فیصلوں کے بارے میں سیکھ رہا ہوں تاکہ ضروریات، خواہشات، خرچ کرنے اور بچت کے فرق کو سمجھ سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can explain that income is money earned.", es: "Puedo explicar que el ingreso es dinero que se gana.", ur: "میں وضاحت کر سکتا ہوں کہ آمدنی وہ پیسہ ہے جو کمایا جاتا ہے۔" },
+        { en: "I can tell the difference between a want and a need.", es: "Puedo decir la diferencia entre un deseo y una necesidad.", ur: "میں خواہش اور ضرورت کا فرق بتا سکتا ہوں۔" },
+        { en: "I can explain the difference between spending and saving, and what it means to give to others.", es: "Puedo explicar la diferencia entre gastar y ahorrar, y lo que significa dar a otros.", ur: "میں خرچ کرنے اور بچت کا فرق اور دوسروں کو دینے کا مطلب بتا سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "need",

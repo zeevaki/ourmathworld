@@ -17,6 +17,16 @@ const grade3: Grade = {
         es: "Multiplicación",
         ur: "ضرب",
       },
+      learningObjective: {
+        en: "I am learning my multiplication facts so that I can multiply quickly and solve problems with equal groups.",
+        es: "Estoy aprendiendo mis tablas de multiplicar para poder multiplicar rápido y resolver problemas con grupos iguales.",
+        ur: "میں اپنی ضرب کے حقائق سیکھ رہا ہوں تاکہ تیزی سے ضرب کر سکوں اور برابر گروپوں کے مسائل حل کر سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can use an array or equal groups to find a multiplication answer.", es: "Puedo usar un arreglo o grupos iguales para encontrar una respuesta de multiplicación.", ur: "میں ضرب کا جواب معلوم کرنے کے لیے صف یا برابر گروپ استعمال کر سکتا ہوں۔" },
+        { en: "I can recall multiplication facts up to 10 x 10.", es: "Puedo recordar tablas de multiplicar hasta 10 x 10.", ur: "میں 10 x 10 تک ضرب کے حقائق یاد کر سکتا ہوں۔" },
+        { en: "I can explain what the factors and product mean in a multiplication problem.", es: "Puedo explicar qué significan los factores y el producto en un problema de multiplicación.", ur: "میں وضاحت کر سکتا ہوں کہ ضرب کے مسئلے میں فیکٹرز اور حاصل ضرب کا کیا مطلب ہے۔" },
+      ],
       vocabulary: [
         {
           id: "multiply",
@@ -198,6 +208,16 @@ const grade3: Grade = {
         es: "División",
         ur: "تقسیم",
       },
+      learningObjective: {
+        en: "I am learning to divide so that I can share a total into equal groups and find how many are in each group.",
+        es: "Estoy aprendiendo a dividir para poder repartir un total en grupos iguales y encontrar cuántos hay en cada grupo.",
+        ur: "میں تقسیم کرنا سیکھ رہا ہوں تاکہ کل تعداد کو برابر گروپوں میں بانٹ سکوں اور معلوم کر سکوں ہر گروپ میں کتنے ہیں۔",
+      },
+      successCriteria: [
+        { en: "I can use objects or a picture to solve a division problem.", es: "Puedo usar objetos o un dibujo para resolver un problema de división.", ur: "میں تقسیم کا مسئلہ حل کرنے کے لیے اشیاء یا تصویر استعمال کر سکتا ہوں۔" },
+        { en: "I can explain what the dividend, divisor, and quotient mean.", es: "Puedo explicar qué significan el dividendo, el divisor y el cociente.", ur: "میں وضاحت کر سکتا ہوں کہ مقسوم، مقسوم علیہ، اور خارج قسمت کا کیا مطلب ہے۔" },
+        { en: "I can use what I know about multiplication to help me divide.", es: "Puedo usar lo que sé sobre la multiplicación para ayudarme a dividir.", ur: "میں تقسیم کرنے میں مدد کے لیے ضرب کا علم استعمال کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "divide",
@@ -365,6 +385,16 @@ const grade3: Grade = {
         es: "Fracciones",
         ur: "کسر",
       },
+      learningObjective: {
+        en: "I am learning to represent fractions so that I can show and understand parts of a whole or a set.",
+        es: "Estoy aprendiendo a representar fracciones para poder mostrar y entender partes de un entero o un conjunto.",
+        ur: "میں کسریں ظاہر کرنا سیکھ رہا ہوں تاکہ ایک مکمل چیز یا سیٹ کے حصے دکھا اور سمجھ سکوں۔",
+      },
+      successCriteria: [
+        { en: "I can show a fraction using a picture, a number line, or objects.", es: "Puedo mostrar una fracción usando un dibujo, una recta numérica u objetos.", ur: "میں تصویر، نمبر لائن، یا اشیاء کا استعمال کرتے ہوئے کسر دکھا سکتا ہوں۔" },
+        { en: "I can name the numerator and denominator of a fraction.", es: "Puedo nombrar el numerador y el denominador de una fracción.", ur: "میں کسر کے صورت اور مخرج کے نام بتا سکتا ہوں۔" },
+        { en: "I can explain what a fraction represents.", es: "Puedo explicar qué representa una fracción.", ur: "میں وضاحت کر سکتا ہوں کہ کسر کیا ظاہر کرتی ہے۔" },
+      ],
       vocabulary: [
         {
           id: "fraction",
@@ -530,6 +560,16 @@ const grade3: Grade = {
         es: "Área de Rectángulos",
         ur: "مستطیل کا رقبہ",
       },
+      learningObjective: {
+        en: "I am learning to find the area of a rectangle so that I can measure how much surface it covers.",
+        es: "Estoy aprendiendo a encontrar el área de un rectángulo para poder medir cuánta superficie cubre.",
+        ur: "میں مستطیل کا رقبہ معلوم کرنا سیکھ رہا ہوں تاکہ ناپ سکوں کہ وہ کتنی سطح ڈھانپتا ہے۔",
+      },
+      successCriteria: [
+        { en: "I can find the area of a rectangle by multiplying its length by its width.", es: "Puedo encontrar el área de un rectángulo multiplicando su largo por su ancho.", ur: "میں مستطیل کی لمبائی کو چوڑائی سے ضرب دے کر اس کا رقبہ معلوم کر سکتا ہوں۔" },
+        { en: "I can count square units to check the area of a rectangle.", es: "Puedo contar unidades cuadradas para verificar el área de un rectángulo.", ur: "میں مستطیل کا رقبہ چیک کرنے کے لیے مربع اکائیاں گن سکتا ہوں۔" },
+        { en: "I can solve a real-world problem involving area.", es: "Puedo resolver un problema del mundo real que involucra área.", ur: "میں رقبے سے متعلق حقیقی دنیا کا مسئلہ حل کر سکتا ہوں۔" },
+      ],
       vocabulary: [
         {
           id: "area",

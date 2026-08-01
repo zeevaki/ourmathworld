@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
   Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer, Hash,
-  Volume2, ScrollText,
+  Volume2, ScrollText, CheckCircle2,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -276,48 +276,90 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
       {/* TEKS */}
       {activeTab === "teks" && (() => {
         const info = getTeksInfo(grade, unit.teks);
-        if (!info) {
-          return (
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-gray-500">
-              Official standard text isn&apos;t available yet for TEKS {unit.teks}.
-            </div>
-          );
-        }
         return (
           <div className="flex flex-col gap-4">
-            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-              <span className="text-xs font-bold uppercase tracking-wide text-primary">
-                TEKS {info.strandCode} — {info.strandTitle}
-              </span>
-              <p className="text-gray-700 text-sm mt-2 leading-relaxed italic">&quot;{info.overview}&quot;</p>
-              <p className="text-gray-400 text-xs mt-3">{info.plainExplanation}</p>
-            </div>
-
-            {info.isBundle && (
-              <p className="text-gray-400 text-xs px-1">
-                This unit bundles the following parts of TEKS {info.strandCode}:
-              </p>
+            {unit.learningObjective && (
+              <div className="bg-primary text-white rounded-2xl p-6 shadow-sm">
+                <span className="text-xs font-bold uppercase tracking-wide text-white/70">Learning Objective</span>
+                <p className="text-lg font-bold mt-2 leading-relaxed">{unit.learningObjective.en}</p>
+                {language && (
+                  <p
+                    className="text-white/90 font-semibold mt-2 leading-relaxed"
+                    style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                  >
+                    {getLang(unit.learningObjective, language)}
+                  </p>
+                )}
+              </div>
             )}
 
-            {info.parts.map((part) => (
-              <div
-                key={part.letter}
-                className={`bg-white rounded-2xl p-5 shadow-sm border-2 ${
-                  !info.isBundle ? "border-primary" : "border-gray-100"
-                }`}
-              >
-                <span className="font-mono font-black text-primary text-sm">
-                  {info.strandCode}({part.letter})
-                </span>
-                <p className="text-gray-700 mt-1.5 leading-relaxed">{part.text}</p>
+            {unit.successCriteria && unit.successCriteria.length > 0 && (
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                <span className="text-xs font-bold uppercase tracking-wide text-primary">Success Criteria</span>
+                <ul className="flex flex-col gap-3 mt-3">
+                  {unit.successCriteria.map((sc, i) => (
+                    <li key={i} className="flex items-start gap-2.5">
+                      <CheckCircle2 size={18} className="text-primary flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-gray-700 leading-relaxed">{sc.en}</p>
+                        {language && (
+                          <p
+                            className="text-gray-500 text-sm mt-0.5 leading-relaxed"
+                            style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                          >
+                            {getLang(sc, language)}
+                          </p>
+                        )}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            ))}
+            )}
 
-            <div className="bg-primary-light rounded-2xl p-5 text-xs text-gray-500 leading-relaxed">
-              Source: Texas Essential Knowledge and Skills for Mathematics, §{teaSectionByGrade[grade] ?? "111.x"} (Grade {grade}). Statements
-              containing &quot;including&quot; reference content that must be mastered; those with &quot;such
-              as&quot; are illustrative examples only.
-            </div>
+            {info && (
+              <>
+                <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+                  <span className="text-xs font-bold uppercase tracking-wide text-primary">
+                    TEKS {info.strandCode} — {info.strandTitle}
+                  </span>
+                  <p className="text-gray-700 text-sm mt-2 leading-relaxed italic">&quot;{info.overview}&quot;</p>
+                  <p className="text-gray-400 text-xs mt-3">{info.plainExplanation}</p>
+                </div>
+
+                {info.isBundle && (
+                  <p className="text-gray-400 text-xs px-1">
+                    This unit bundles the following parts of TEKS {info.strandCode}:
+                  </p>
+                )}
+
+                {info.parts.map((part) => (
+                  <div
+                    key={part.letter}
+                    className={`bg-white rounded-2xl p-5 shadow-sm border-2 ${
+                      !info.isBundle ? "border-primary" : "border-gray-100"
+                    }`}
+                  >
+                    <span className="font-mono font-black text-primary text-sm">
+                      {info.strandCode}({part.letter})
+                    </span>
+                    <p className="text-gray-700 mt-1.5 leading-relaxed">{part.text}</p>
+                  </div>
+                ))}
+
+                <div className="bg-primary-light rounded-2xl p-5 text-xs text-gray-500 leading-relaxed">
+                  Source: Texas Essential Knowledge and Skills for Mathematics, §{teaSectionByGrade[grade] ?? "111.x"} (Grade {grade}). Statements
+                  containing &quot;including&quot; reference content that must be mastered; those with &quot;such
+                  as&quot; are illustrative examples only.
+                </div>
+              </>
+            )}
+
+            {!info && !unit.learningObjective && (
+              <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-gray-500">
+                Official standard text isn&apos;t available yet for TEKS {unit.teks}.
+              </div>
+            )}
           </div>
         );
       })()}
