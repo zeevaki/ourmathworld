@@ -276,19 +276,40 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
       {/* TEKS */}
       {activeTab === "teks" && (() => {
         const info = getTeksInfo(grade, unit.teks);
+        const lo = unit.learningObjective;
         return (
           <div className="flex flex-col gap-4">
-            {unit.learningObjective && (
+            {lo && (
               <div className="bg-primary text-white rounded-2xl p-6 shadow-sm">
                 <span className="text-xs font-bold uppercase tracking-wide text-white/70">Learning Objective</span>
-                <p className="text-lg font-bold mt-2 leading-relaxed">{unit.learningObjective.en}</p>
-                {language && (
-                  <p
-                    className="text-white/90 font-semibold mt-2 leading-relaxed"
-                    style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                <div className="flex items-start gap-2 mt-2">
+                  <p className="text-lg font-bold leading-relaxed flex-1">{lo.en}</p>
+                  <button
+                    type="button"
+                    onClick={() => speakText(lo.en, "en-US")}
+                    aria-label="Listen in English"
+                    className="text-white/70 hover:text-white transition-colors flex-shrink-0 mt-1 cursor-pointer"
                   >
-                    {getLang(unit.learningObjective, language)}
-                  </p>
+                    <Volume2 size={18} />
+                  </button>
+                </div>
+                {language && (
+                  <div className="flex items-start gap-2 mt-2">
+                    <p
+                      className="text-white/90 font-semibold leading-relaxed flex-1"
+                      style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                    >
+                      {getLang(lo, language)}
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => speakText(getLang(lo, language), language === "es" ? "es-MX" : "ur-PK")}
+                      aria-label={language === "es" ? "Listen in Spanish" : "Listen in Urdu"}
+                      className="text-white/70 hover:text-white transition-colors flex-shrink-0 mt-1 cursor-pointer"
+                    >
+                      <Volume2 size={18} />
+                    </button>
+                  </div>
                 )}
               </div>
             )}
@@ -300,15 +321,35 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
                   {unit.successCriteria.map((sc, i) => (
                     <li key={i} className="flex items-start gap-2.5">
                       <CheckCircle2 size={18} className="text-primary flex-shrink-0 mt-0.5" />
-                      <div>
-                        <p className="text-gray-700 leading-relaxed">{sc.en}</p>
-                        {language && (
-                          <p
-                            className="text-gray-500 text-sm mt-0.5 leading-relaxed"
-                            style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                      <div className="flex-1">
+                        <div className="flex items-start gap-2">
+                          <p className="text-gray-700 leading-relaxed flex-1">{sc.en}</p>
+                          <button
+                            type="button"
+                            onClick={() => speakText(sc.en, "en-US")}
+                            aria-label="Listen in English"
+                            className="text-gray-400 hover:text-primary transition-colors flex-shrink-0 mt-0.5 cursor-pointer"
                           >
-                            {getLang(sc, language)}
-                          </p>
+                            <Volume2 size={16} />
+                          </button>
+                        </div>
+                        {language && (
+                          <div className="flex items-start gap-2 mt-0.5">
+                            <p
+                              className="text-gray-500 text-sm leading-relaxed flex-1"
+                              style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+                            >
+                              {getLang(sc, language)}
+                            </p>
+                            <button
+                              type="button"
+                              onClick={() => speakText(getLang(sc, language), language === "es" ? "es-MX" : "ur-PK")}
+                              aria-label={language === "es" ? "Listen in Spanish" : "Listen in Urdu"}
+                              className="text-primary/50 hover:text-primary transition-colors flex-shrink-0 mt-0.5 cursor-pointer"
+                            >
+                              <Volume2 size={16} />
+                            </button>
+                          </div>
                         )}
                       </div>
                     </li>
