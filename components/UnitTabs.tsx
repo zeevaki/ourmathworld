@@ -74,22 +74,80 @@ const baseTabs: { id: Tab; label: string; icon: LucideIcon }[] = [
 const numbersTab: { id: Tab; label: string; icon: LucideIcon } =
   { id: "numbers", label: "Numbers", icon: Hash };
 
+type Tier = "easy" | "medium" | "hard";
+const tierOrder: Tier[] = ["easy", "medium", "hard"];
+
+function pickFromTier(problems: WordProblem[], tier: Tier, avoidId?: string): WordProblem {
+  const pool = problems.filter(p => (p.difficulty ?? "medium") === tier);
+  const fresh = pool.filter(p => p.id !== avoidId);
+  const choices = fresh.length > 0 ? fresh : pool.length > 0 ? pool : problems;
+  return choices[Math.floor(Math.random() * choices.length)];
+}
+
 function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: string | null }) {
+  // Adaptive mode only kicks in when a unit's problems are actually tagged
+  // with difficulty. Untagged units (every other unit today) fall through
+  // to the original fixed-order behavior below — nothing else breaks.
+  const isAdaptive = problems.some(p => p.difficulty);
+
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const [current, setCurrent] = useState(0);
 
-  const problem = problems[current];
-  const userAnswer = answers[problem.id] ?? "";
-  const isChecked = checked[problem.id] ?? false;
+  // Adaptive-only state: which problem is on screen, current tier, and a
+  // streak of consecutive correct answers at that tier. Answer/checked
+  // state here is scoped to "the current round," NOT keyed by problem id —
+  // a tier with only one problem in it can show the same problem again in
+  // a later round, and it needs to be answerable again, fresh.
+  const [activeId, setActiveId] = useState(problems[0].id);
+  const [tier, setTier] = useState<Tier>("easy");
+  const [streak, setStreak] = useState(0);
+  const [askedCount, setAskedCount] = useState(1);
+  const [roundAnswer, setRoundAnswer] = useState("");
+  const [roundChecked, setRoundChecked] = useState(false);
+  const [roundScore, setRoundScore] = useState(0);
+
+  const problem = isAdaptive ? problems.find(p => p.id === activeId)! : problems[current];
+  const userAnswer = isAdaptive ? roundAnswer : (answers[problem.id] ?? "");
+  const isChecked = isAdaptive ? roundChecked : (checked[problem.id] ?? false);
   const isCorrect = isChecked && parseInt(userAnswer) === problem.answer;
-  const score = problems.filter(p => checked[p.id] && parseInt(answers[p.id] ?? "") === p.answer).length;
+  const score = isAdaptive
+    ? roundScore
+    : problems.filter(p => checked[p.id] && parseInt(answers[p.id] ?? "") === p.answer).length;
+  const maxRounds = 5;
+  const isDone = isAdaptive ? askedCount >= maxRounds : current >= problems.length - 1;
 
   function handleCheck() {
+    if (isAdaptive) {
+      setRoundChecked(true);
+      const correct = parseInt(roundAnswer) === problem.answer;
+      if (correct) setRoundScore(s => s + 1);
+      if (correct) {
+        const newStreak = streak + 1;
+        if (newStreak >= 2 && tier !== "hard") {
+          setTier(tierOrder[tierOrder.indexOf(tier) + 1]);
+          setStreak(0);
+        } else {
+          setStreak(newStreak);
+        }
+      } else {
+        setStreak(0);
+        if (tier !== "easy") setTier(tierOrder[tierOrder.indexOf(tier) - 1]);
+      }
+      return;
+    }
     setChecked(prev => ({ ...prev, [problem.id]: true }));
   }
 
   function handleNext() {
+    if (isAdaptive) {
+      const next = pickFromTier(problems, tier, problem.id);
+      setActiveId(next.id);
+      setAskedCount(c => c + 1);
+      setRoundAnswer("");
+      setRoundChecked(false);
+      return;
+    }
     if (current < problems.length - 1) setCurrent(current + 1);
   }
 
@@ -99,8 +157,19 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <span className="text-sm font-bold text-gray-400">Problem {current + 1} of {problems.length}</span>
-        <span className="text-sm font-bold text-primary">🌍 {score} / {problems.length} solved</span>
+        {isAdaptive ? (
+          <>
+            <span className="text-sm font-bold text-gray-400">Round {askedCount} of {maxRounds}</span>
+            <span className="text-sm font-bold text-primary">
+              {tier === "easy" ? "🌱 Easy" : tier === "medium" ? "🌿 Medium" : "🌳 Hard"}
+            </span>
+          </>
+        ) : (
+          <>
+            <span className="text-sm font-bold text-gray-400">Problem {current + 1} of {problems.length}</span>
+            <span className="text-sm font-bold text-primary">🌍 {score} / {problems.length} solved</span>
+          </>
+        )}
       </div>
 
       <div className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
@@ -149,7 +218,7 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
             <input
               type="number"
               value={userAnswer}
-              onChange={e => setAnswers(prev => ({ ...prev, [problem.id]: e.target.value }))}
+              onChange={e => isAdaptive ? setRoundAnswer(e.target.value) : setAnswers(prev => ({ ...prev, [problem.id]: e.target.value }))}
               disabled={isChecked}
               onKeyDown={e => { if (e.key === "Enter" && !isChecked && userAnswer) handleCheck(); }}
               className="w-24 border-2 border-gray-200 rounded-xl px-3 py-2 text-center font-bold text-lg focus:border-primary focus:outline-none disabled:bg-gray-50"
@@ -175,39 +244,58 @@ function WordProblemDrill({ problems, lang }: { problems: WordProblem[]; lang: s
               >
                 Check Answer
               </button>
-            ) : current < problems.length - 1 ? (
+            ) : !isDone ? (
               <button onClick={handleNext} className="flex-1 bg-primary text-white font-bold py-3 rounded-xl cursor-pointer">
                 Next Problem →
               </button>
             ) : (
               <div className="flex-1 bg-primary-light text-primary font-bold py-3 rounded-xl text-center text-sm">
-                🌍 Amazing! You solved all {problems.length} word problems!
+                {isAdaptive
+                  ? `🌍 Nice work! You finished at the ${tier} level — ${score} of ${askedCount} correct.`
+                  : `🌍 Amazing! You solved all ${problems.length} word problems!`}
               </div>
             )}
           </div>
         </div>
       </div>
 
-      <div className="flex justify-center gap-2 mt-5">
-        {problems.map((p, i) => {
-          const done = checked[p.id];
-          const correct = done && parseInt(answers[p.id] ?? "") === p.answer;
-          return (
-            <button
-              key={p.id}
-              onClick={() => setCurrent(i)}
-              className={`w-8 h-8 rounded-full text-xs font-bold transition-all cursor-pointer ${
-                i === current ? "bg-primary text-white scale-110" :
-                correct ? "bg-emerald-100 text-emerald-700" :
-                done ? "bg-red-100 text-red-500" :
-                "bg-gray-100 text-gray-400"
-              }`}
-            >
-              {i + 1}
-            </button>
-          );
-        })}
-      </div>
+      {isAdaptive ? (
+        <div className="flex justify-center items-center gap-2 mt-5">
+          {tierOrder.map((t, i) => (
+            <div key={t} className="flex items-center gap-2">
+              <span
+                className={`px-3 py-1 rounded-full text-xs font-bold transition-all ${
+                  t === tier ? "bg-primary text-white scale-110" : "bg-gray-100 text-gray-400"
+                }`}
+              >
+                {t === "easy" ? "🌱 Easy" : t === "medium" ? "🌿 Medium" : "🌳 Hard"}
+              </span>
+              {i < tierOrder.length - 1 && <span className="text-gray-300">→</span>}
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="flex justify-center gap-2 mt-5">
+          {problems.map((p, i) => {
+            const done = checked[p.id];
+            const correct = done && parseInt(answers[p.id] ?? "") === p.answer;
+            return (
+              <button
+                key={p.id}
+                onClick={() => setCurrent(i)}
+                className={`w-8 h-8 rounded-full text-xs font-bold transition-all cursor-pointer ${
+                  i === current ? "bg-primary text-white scale-110" :
+                  correct ? "bg-emerald-100 text-emerald-700" :
+                  done ? "bg-red-100 text-red-500" :
+                  "bg-gray-100 text-gray-400"
+                }`}
+              >
+                {i + 1}
+              </button>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

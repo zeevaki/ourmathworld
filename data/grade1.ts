@@ -526,6 +526,7 @@ const grade1: Grade = {
           },
           answer: 20,
           answerUnit: { en: "seeds", es: "semillas", ur: "بیج" },
+          difficulty: "easy",
         },
         {
           id: "wp-1.5-2",
@@ -538,6 +539,20 @@ const grade1: Grade = {
           },
           answer: 6,
           answerUnit: { en: "apples", es: "manzanas", ur: "سیب" },
+          difficulty: "medium",
+        },
+        {
+          id: "wp-1.5-3",
+          emoji: "🧩🌻",
+          scene: "Community garden supply shed — a missing-number fact family puzzle",
+          prompt: {
+            en: "The shed has some watering cans. 7 are taken out, leaving 9. Using the fact family for 7, 9, and 16, how many watering cans were in the shed at the start?",
+            es: "El cobertizo tiene regaderas. Se sacan 7, quedan 9. Usando la familia de datos de 7, 9 y 16, ¿cuántas regaderas había al principio?",
+            ur: "شیڈ میں کچھ پانی دینے والے ڈبے ہیں۔ 7 نکالے گئے، 9 باقی رہے۔ 7، 9، اور 16 کی حقیقت فیملی استعمال کرتے ہوئے، شروع میں کتنے ڈبے تھے؟",
+          },
+          answer: 16,
+          answerUnit: { en: "watering cans", es: "regaderas", ur: "پانی دینے والے ڈبے" },
+          difficulty: "hard",
         },
       ],
     },

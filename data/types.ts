@@ -50,6 +50,7 @@ export type WordProblem = {
   answer: number;
   answerUnit: BilingualText;
   image?: string;
+  difficulty?: "easy" | "medium" | "hard";
 };
 
 export type TeksUnit = {
