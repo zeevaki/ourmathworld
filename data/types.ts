@@ -53,6 +53,12 @@ export type WordProblem = {
   difficulty?: "easy" | "medium" | "hard";
 };
 
+export type CreativePrompt = {
+  promptType: "poem" | "story" | "illustration" | "shape-art";
+  title: BilingualText;
+  instructions: BilingualText;
+};
+
 export type TeksUnit = {
   teks: string;
   cambridge: string;
@@ -68,6 +74,7 @@ export type TeksUnit = {
   story?: Story;
   fluency?: Fluency;
   wordProblems?: WordProblem[];
+  creativePrompt?: CreativePrompt;
 };
 
 export type Grade = {

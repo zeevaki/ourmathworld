@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   BookOpen, GraduationCap, PencilLine, ClipboardCheck, BookMarked, Zap,
   Target, ChevronLeft, ChevronRight, Star, ThumbsUp, Dumbbell, Timer, Hash,
-  Volume2, ScrollText, CheckCircle2,
+  Volume2, ScrollText, CheckCircle2, Palette,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -566,6 +566,20 @@ export default function UnitTabs({ unit, grade }: { unit: TeksUnit; grade: strin
               }}
             />
           </div>
+          {unit.creativePrompt && (
+            <div className="bg-white rounded-2xl p-6 shadow-sm border-2 border-dashed border-accent">
+              <h3 className="font-black text-accent mb-2 flex items-center gap-2">
+                <Palette size={20} /> {getLang(unit.creativePrompt.title, language)}
+              </h3>
+              <p className="text-gray-700 leading-relaxed mb-2">{unit.creativePrompt.instructions.en}</p>
+              <p
+                className="text-gray-600 leading-relaxed font-semibold"
+                style={{ direction: language === "ur" ? "rtl" : "ltr" }}
+              >
+                {getLang(unit.creativePrompt.instructions, language)}
+              </p>
+            </div>
+          )}
           <button
             onClick={() => setActiveTab("exercises")}
             className="w-full bg-primary text-white font-bold py-4 rounded-2xl hover:bg-primary-dark transition-colors text-lg cursor-pointer"

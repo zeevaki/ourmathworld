@@ -1983,6 +1983,19 @@ const grade2: Grade = {
           },
         ],
       },
+      creativePrompt: {
+        promptType: "shape-art",
+        title: {
+          en: "Draw Like Picasso",
+          es: "Dibuja como Picasso",
+          ur: "پکاسو کی طرح تصویر بناؤ",
+        },
+        instructions: {
+          en: "The artist Pablo Picasso loved painting people and animals using simple shapes — triangles, circles, squares, and rectangles. Try it yourself! Draw a face or an animal using only the 2D shapes you just learned, and label each shape you use.",
+          es: "Al artista Pablo Picasso le encantaba pintar personas y animales usando figuras simples — triángulos, círculos, cuadrados y rectángulos. ¡Inténtalo tú! Dibuja una cara o un animal usando solo las figuras 2D que acabas de aprender, y rotula cada figura que uses.",
+          ur: "فنکار پابلو پکاسو کو سادہ شکلوں — تکون، دائرہ، مربع، اور مستطیل — استعمال کر کے لوگوں اور جانوروں کی تصویریں بنانا بہت پسند تھا۔ خود کوشش کرو! صرف وہی دو جہتی شکلیں استعمال کرتے ہوئے چہرہ یا جانور بناؤ جو تم نے ابھی سیکھی ہیں، اور ہر شکل کا نام لکھو۔",
+        },
+      },
     },
 
     {
