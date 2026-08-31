@@ -8,7 +8,8 @@ import {
   Layers, Equal, Dot, Move,
   Box, ListOrdered, Crosshair,
   Hexagon, Clock, Ruler, PieChart,
-  Brain,
+  Brain, ArrowLeftRight, MoveHorizontal, RulerDimensionLine,
+  MapPin, Target,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import grade2 from "@/data/grade2";
@@ -57,8 +58,14 @@ const teksIconMap: Record<string, LucideIcon> = {
   "2.8A": Leaf,
   "2.8B": Box,
   "2.8C": Hexagon,
+  "2.9A": Ruler,
+  "2.9B": ArrowLeftRight,
+  "2.9C": MoveHorizontal,
+  "2.9D": RulerDimensionLine,
   "2.9E": Ruler,
   "2.9G": Clock,
+  "2.2E": MapPin,
+  "2.2F": Target,
   "2.10C": BarChart2,
   "2.11": Layers,
   // Grade 3

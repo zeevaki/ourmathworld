@@ -34,6 +34,12 @@ const vocabSymbolMap: Record<string, string> = {
   "hour-hand": "h", "minute-hand": "m", "a.m.": "AM", "p.m.": "PM",
   "elapsed-time": "⏱",
   "bar-graph": "▊", pictograph: "📊", key: "K", scale: "↕",
+  "length-unit-9a": "🧱", "iterate-9a": "🔁", "no-gaps-9a": "✅", "inch-tile-9a": "in", "centimeter-cube-9a": "cm",
+  "inverse-relationship-9b": "↔", "bigger-unit-9b": ">", "smaller-unit-9b": "<", "same-length-9b": "=",
+  "distance-9c": "↔", "jump-9c": "⌒", "starting-point-9c": "●", "landing-point-9c": "🏁",
+  "ruler-9d": "📏", "yardstick-9d": "yd", "meter-stick-9d": "m", "measuring-tape-9d": "📐", "nearest-marked-unit-9d": "≈",
+  "open-number-line-2e": "—", "locate-2e": "📍", "endpoint-2e": "|", "benchmark-number-2e": "⭐",
+  "point-2f": "●", "correspond-2f": "=", "value-2f": "#", "landmark-2f": "🚩",
   // ── Grade 3 ────────────────────────────────────────────────────
   multiply: "×", factor: "×", product: "=",
   array: "▦", "equal-groups": "○○",
