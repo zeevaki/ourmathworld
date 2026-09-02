@@ -34,6 +34,7 @@ const vocabSymbolMap: Record<string, string> = {
   "hour-hand": "h", "minute-hand": "m", "a.m.": "AM", "p.m.": "PM",
   "elapsed-time": "⏱",
   "bar-graph": "▊", pictograph: "📊", key: "K", scale: "↕",
+  deposit: "+", withdrawal: "−", borrow: "🤝", lend: "🎁",
   "length-unit-9a": "🧱", "iterate-9a": "🔁", "no-gaps-9a": "✅", "inch-tile-9a": "in", "centimeter-cube-9a": "cm",
   "inverse-relationship-9b": "↔", "bigger-unit-9b": ">", "smaller-unit-9b": "<", "same-length-9b": "=",
   "distance-9c": "↔", "jump-9c": "⌒", "starting-point-9c": "●", "landing-point-9c": "🏁",

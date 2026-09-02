@@ -3242,6 +3242,8 @@ const grade2: Grade = {
         { en: "I can explain how saved money can grow over time.", es: "Puedo explicar cómo el dinero ahorrado puede crecer con el tiempo.", ur: "میں وضاحت کر سکتا ہوں کہ بچایا گیا پیسہ وقت کے ساتھ کیسے بڑھ سکتا ہے۔" },
         { en: "I can tell the difference between a deposit and a withdrawal.", es: "Puedo decir la diferencia entre un depósito y un retiro.", ur: "میں جمع اور نکلوانے کا فرق بتا سکتا ہوں۔" },
         { en: "I can explain the difference between producers and consumers.", es: "Puedo explicar la diferencia entre productores y consumidores.", ur: "میں پیدا کرنے والوں اور استعمال کرنے والوں کا فرق بتا سکتا ہوں۔" },
+        { en: "I can identify an example of responsible borrowing.", es: "Puedo identificar un ejemplo de préstamo responsable.", ur: "میں ذمہ دارانہ قرض لینے کی مثال پہچان سکتا ہوں۔" },
+        { en: "I can explain the benefits and costs of lending.", es: "Puedo explicar los beneficios y costos de prestar.", ur: "میں قرض دینے کے فوائد اور نقصانات بتا سکتا ہوں۔" },
       ],
       vocabulary: [
         {
@@ -3314,11 +3316,51 @@ const grade2: Grade = {
             ur: "وہ کام جو لوگ دوسروں کی مدد کے لیے کرتے ہیں — جیسے پڑھانا، صفائی کرنا یا مرمت کرنا",
           },
         },
+        {
+          id: "deposit",
+          emoji: "🏦",
+          word: { en: "deposit", es: "depósito", ur: "جمع" },
+          definition: {
+            en: "to put money INTO a bank account, making the balance go up",
+            es: "poner dinero DENTRO de una cuenta bancaria, haciendo que el saldo suba",
+            ur: "بینک اکاؤنٹ میں پیسے جمع کرنا، جس سے بیلنس بڑھتا ہے",
+          },
+        },
+        {
+          id: "withdrawal",
+          emoji: "💸",
+          word: { en: "withdrawal", es: "retiro", ur: "نکلوانا" },
+          definition: {
+            en: "to take money OUT of a bank account, making the balance go down",
+            es: "sacar dinero DE una cuenta bancaria, haciendo que el saldo baje",
+            ur: "بینک اکاؤنٹ سے پیسے نکالنا، جس سے بیلنس کم ہوتا ہے",
+          },
+        },
+        {
+          id: "borrow",
+          emoji: "🤝",
+          word: { en: "borrow", es: "pedir prestado", ur: "قرض لینا" },
+          definition: {
+            en: "to use someone else's money or things now and promise to give them back or pay them back later",
+            es: "usar el dinero o las cosas de otra persona ahora y prometer devolverlas o pagarlas después",
+            ur: "کسی اور کا پیسہ یا چیز ابھی استعمال کرنا اور بعد میں واپس کرنے کا وعدہ کرنا",
+          },
+        },
+        {
+          id: "lend",
+          emoji: "🎁",
+          word: { en: "lend", es: "prestar", ur: "قرض دینا" },
+          definition: {
+            en: "to let someone else use your money or things now, trusting they will return or pay it back later",
+            es: "dejar que otra persona use tu dinero o tus cosas ahora, confiando en que las devolverá o pagará después",
+            ur: "کسی اور کو ابھی اپنا پیسہ یا چیز استعمال کرنے دینا، اس بھروسے پر کہ وہ بعد میں واپس کرے گا",
+          },
+        },
       ],
       lesson: {
-        en: "🏦 **Smart money choices help our community!** Every day, people make decisions about money.\n\n**Producers** make or grow things to sell — like a farmer who grows tomatoes or a baker who makes bread. **Consumers** buy and use those things.\n\n**Goods** are things you can touch and take home — like a book, food, or a toy. **Services** are helpful jobs — like a doctor helping you feel better or a teacher helping you learn.\n\n**Income** is money you earn by working. You can **spend** it (buy things now) or **save** it (keep it for later). Saving is how you reach bigger goals — like buying something special or helping your family. 💚",
-        es: "🏦 **¡Las decisiones inteligentes con el dinero ayudan a nuestra comunidad!** Cada día, las personas toman decisiones sobre el dinero.\n\nLos **productores** hacen o cultivan cosas para vender — como un granjero que cultiva tomates o un panadero que hace pan. Los **consumidores** compran y usan esas cosas.\n\nLos **bienes** son cosas que puedes tocar y llevar a casa — como un libro, comida o un juguete. Los **servicios** son trabajos útiles — como un médico que te ayuda a sentirte mejor o un maestro que te ayuda a aprender.\n\nLos **ingresos** son el dinero que ganas trabajando. Puedes **gastarlo** (comprar cosas ahora) o **ahorrarlo** (guardarlo para después). ¡Ahorrar es cómo alcanzas metas más grandes! 💚",
-        ur: "🏦 **سمجھداری سے پیسے کے فیصلے ہماری کمیونٹی کی مدد کرتے ہیں!** ہر روز لوگ پیسے کے بارے میں فیصلے کرتے ہیں۔\n\n**پیدا کنندہ** چیزیں بناتے یا اگاتے ہیں — جیسے کسان ٹماٹر اگاتا ہے یا بیکر روٹی بناتا ہے۔ **صارفین** وہ چیزیں خریدتے اور استعمال کرتے ہیں۔\n\n**سامان** وہ چیزیں ہیں جو تم چھو سکتے ہو — جیسے کتاب، کھانا یا کھلونا۔ **خدمات** مددگار کام ہیں — جیسے ڈاکٹر تمہیں ٹھیک کرتا ہے یا استاد تمہیں پڑھاتا ہے۔\n\n**آمدنی** وہ پیسہ ہے جو تم کام کر کے کماتے ہو۔ تم اسے **خرچ** کر سکتے ہو (ابھی چیزیں خریدو) یا **بچا** سکتے ہو (بعد کے لیے رکھو)۔ بچت سے تم بڑے ہدف پورے کرتے ہو! 💚",
+        en: "🏦 **Smart money choices help our community!** Every day, people make decisions about money.\n\n**Producers** make or grow things to sell — like a farmer who grows tomatoes or a baker who makes bread. **Consumers** buy and use those things.\n\n**Goods** are things you can touch and take home — like a book, food, or a toy. **Services** are helpful jobs — like a doctor helping you feel better or a teacher helping you learn.\n\n**Income** is money you earn by working. You can **spend** it (buy things now) or **save** it (keep it for later). Saving is how you reach bigger goals — like buying something special or helping your family. 💚\n\n**At the bank:** A **deposit** puts money IN — your balance goes up. A **withdrawal** takes money OUT — your balance goes down.\n\n🤝 **Borrowing and lending:** Sometimes you **borrow** — using someone else's money or things now and promising to give them back. Borrowing a library book and returning it on time is responsible; keeping it forever or never paying back a loan is irresponsible. When you **lend**, you let someone else use your money or things, trusting they'll return it. Lending has a benefit (helping someone, and they trust you more) and a cost (you don't have that money to use yourself until it comes back).",
+        es: "🏦 **¡Las decisiones inteligentes con el dinero ayudan a nuestra comunidad!** Cada día, las personas toman decisiones sobre el dinero.\n\nLos **productores** hacen o cultivan cosas para vender — como un granjero que cultiva tomates o un panadero que hace pan. Los **consumidores** compran y usan esas cosas.\n\nLos **bienes** son cosas que puedes tocar y llevar a casa — como un libro, comida o un juguete. Los **servicios** son trabajos útiles — como un médico que te ayuda a sentirte mejor o un maestro que te ayuda a aprender.\n\nLos **ingresos** son el dinero que ganas trabajando. Puedes **gastarlo** (comprar cosas ahora) o **ahorrarlo** (guardarlo para después). ¡Ahorrar es cómo alcanzas metas más grandes! 💚\n\n**En el banco:** Un **depósito** pone dinero DENTRO — tu saldo sube. Un **retiro** saca dinero — tu saldo baja.\n\n🤝 **Pedir prestado y prestar:** A veces **pides prestado** — usas el dinero o las cosas de otra persona ahora y prometes devolverlas. Pedir prestado un libro de la biblioteca y devolverlo a tiempo es responsable; quedarte con él para siempre o nunca devolver un préstamo es irresponsable. Cuando **prestas**, dejas que otra persona use tu dinero o tus cosas, confiando en que las devolverá. Prestar tiene un beneficio (ayudar a alguien, que además confía más en ti) y un costo (no tienes ese dinero para usar tú mismo hasta que regrese).",
+        ur: "🏦 **سمجھداری سے پیسے کے فیصلے ہماری کمیونٹی کی مدد کرتے ہیں!** ہر روز لوگ پیسے کے بارے میں فیصلے کرتے ہیں۔\n\n**پیدا کنندہ** چیزیں بناتے یا اگاتے ہیں — جیسے کسان ٹماٹر اگاتا ہے یا بیکر روٹی بناتا ہے۔ **صارفین** وہ چیزیں خریدتے اور استعمال کرتے ہیں۔\n\n**سامان** وہ چیزیں ہیں جو تم چھو سکتے ہو — جیسے کتاب، کھانا یا کھلونا۔ **خدمات** مددگار کام ہیں — جیسے ڈاکٹر تمہیں ٹھیک کرتا ہے یا استاد تمہیں پڑھاتا ہے۔\n\n**آمدنی** وہ پیسہ ہے جو تم کام کر کے کماتے ہو۔ تم اسے **خرچ** کر سکتے ہو (ابھی چیزیں خریدو) یا **بچا** سکتے ہو (بعد کے لیے رکھو)۔ بچت سے تم بڑے ہدف پورے کرتے ہو! 💚\n\n**بینک میں:** **جمع** کرنے سے پیسہ اندر جاتا ہے — بیلنس بڑھتا ہے۔ **نکلوانے** سے پیسہ باہر جاتا ہے — بیلنس کم ہوتا ہے۔\n\n🤝 **قرض لینا اور دینا:** کبھی کبھی آپ **قرض لیتے** ہیں — ابھی کسی اور کا پیسہ یا چیز استعمال کرتے ہیں اور واپس کرنے کا وعدہ کرتے ہیں۔ لائبریری کی کتاب وقت پر واپس کرنا ذمہ دارانہ ہے؛ ہمیشہ کے لیے رکھ لینا غیر ذمہ دارانہ ہے۔ جب آپ **قرض دیتے** ہیں، آپ کسی اور کو اپنا پیسہ یا چیز استعمال کرنے دیتے ہیں۔ قرض دینے کا ایک فائدہ ہے (کسی کی مدد کرنا) اور ایک نقصان ہے (وہ پیسہ واپس آنے تک آپ کے پاس استعمال کے لیے نہیں ہوتا)۔",
       },
       exercises: [
         {
@@ -3365,6 +3407,94 @@ const grade2: Grade = {
           ],
           correctIndex: 2,
         },
+        {
+          id: "ex-2.11-4",
+          type: "multiple-choice",
+          prompt: {
+            en: "🏦 Maria puts $20 into her savings account. Is this a deposit or a withdrawal?",
+            es: "🏦 María pone $20 en su cuenta de ahorros. ¿Es esto un depósito o un retiro?",
+            ur: "🏦 ماریا اپنے بچت اکاؤنٹ میں $20 ڈالتی ہے۔ کیا یہ جمع ہے یا نکلوانا؟",
+          },
+          choices: [
+            { en: "Deposit — money goes in", es: "Depósito — el dinero entra", ur: "جمع — پیسہ اندر جاتا ہے" },
+            { en: "Withdrawal — money comes out", es: "Retiro — el dinero sale", ur: "نکلوانا — پیسہ باہر آتا ہے" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-2.11-5",
+          type: "true-false",
+          prompt: {
+            en: "🏦 A withdrawal makes your bank balance go up.",
+            es: "🏦 Un retiro hace que tu saldo bancario suba.",
+            ur: "🏦 نکلوانے سے بینک بیلنس بڑھتا ہے۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "ex-2.11-6",
+          type: "multiple-choice",
+          prompt: {
+            en: "📚 Which is an example of RESPONSIBLE borrowing?",
+            es: "📚 ¿Cuál es un ejemplo de préstamo RESPONSABLE?",
+            ur: "📚 ذمہ دارانہ قرض لینے کی مثال کون سی ہے؟",
+          },
+          choices: [
+            { en: "Borrowing a library book and returning it on time", es: "Pedir prestado un libro de la biblioteca y devolverlo a tiempo", ur: "لائبریری کی کتاب قرض لینا اور وقت پر واپس کرنا" },
+            { en: "Borrowing money and never paying it back", es: "Pedir dinero prestado y nunca devolverlo", ur: "پیسے قرض لینا اور کبھی واپس نہ کرنا" },
+            { en: "Borrowing a bike and never returning it", es: "Pedir prestada una bicicleta y nunca devolverla", ur: "سائیکل قرض لینا اور کبھی واپس نہ کرنا" },
+            { en: "Borrowing supplies and losing them", es: "Pedir prestados materiales y perderlos", ur: "سامان قرض لینا اور کھو دینا" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-2.11-7",
+          type: "true-false",
+          prompt: {
+            en: "🤝 Irresponsible borrowing means paying back what you borrowed on time.",
+            es: "🤝 Un préstamo irresponsable significa devolver lo que pediste prestado a tiempo.",
+            ur: "🤝 غیر ذمہ دارانہ قرض لینے کا مطلب ہے قرض وقت پر واپس کرنا۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 1,
+        },
+        {
+          id: "ex-2.11-8",
+          type: "multiple-choice",
+          prompt: {
+            en: "🎁 When you lend money to a friend, what is one BENEFIT?",
+            es: "🎁 Cuando le prestas dinero a un amigo, ¿cuál es un BENEFICIO?",
+            ur: "🎁 جب آپ دوست کو پیسے قرض دیتے ہیں تو ایک فائدہ کیا ہے؟",
+          },
+          choices: [
+            { en: "You help your friend and they trust you more", es: "Ayudas a tu amigo y confía más en ti", ur: "آپ دوست کی مدد کرتے ہیں اور وہ آپ پر زیادہ بھروسہ کرتا ہے" },
+            { en: "You lose your money forever", es: "Pierdes tu dinero para siempre", ur: "آپ اپنا پیسہ ہمیشہ کے لیے کھو دیتے ہیں" },
+            { en: "You have more money to spend right away", es: "Tienes más dinero para gastar de inmediato", ur: "آپ کے پاس ابھی خرچ کرنے کے لیے زیادہ پیسہ ہے" },
+            { en: "Nothing happens", es: "No pasa nada", ur: "کچھ نہیں ہوتا" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "ex-2.11-9",
+          type: "true-false",
+          prompt: {
+            en: "💰 One cost of lending money is that you don't have it to use yourself until it's paid back.",
+            es: "💰 Un costo de prestar dinero es que no lo tienes para usarlo tú mismo hasta que te lo devuelvan.",
+            ur: "💰 قرض دینے کا ایک نقصان یہ ہے کہ واپس آنے تک آپ خود اسے استعمال نہیں کر سکتے۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
       ],
       quiz: [
         {
@@ -3406,6 +3536,50 @@ const grade2: Grade = {
             en: "💡 When you save money instead of spending it right away, you can use it later for something more important.",
             es: "💡 Cuando ahorras dinero en lugar de gastarlo enseguida, puedes usarlo después para algo más importante.",
             ur: "💡 جب تم پیسے فوری خرچ کرنے کی بجائے بچاتے ہو، تو تم انہیں بعد میں کسی اہم چیز کے لیے استعمال کر سکتے ہو۔",
+          },
+          choices: [
+            { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
+            { en: "False ❌", es: "Falso ❌", ur: "غلط ❌" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "qz-2.11-4",
+          type: "multiple-choice",
+          prompt: {
+            en: "🏦 Jayden takes $15 out of his savings account to buy a gift. Is this a deposit or a withdrawal?",
+            es: "🏦 Jayden saca $15 de su cuenta de ahorros para comprar un regalo. ¿Es esto un depósito o un retiro?",
+            ur: "🏦 جیڈن تحفہ خریدنے کے لیے اپنے بچت اکاؤنٹ سے $15 نکالتا ہے۔ کیا یہ جمع ہے یا نکلوانا؟",
+          },
+          choices: [
+            { en: "Withdrawal — money comes out", es: "Retiro — el dinero sale", ur: "نکلوانا — پیسہ باہر آتا ہے" },
+            { en: "Deposit — money goes in", es: "Depósito — el dinero entra", ur: "جمع — پیسہ اندر جاتا ہے" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "qz-2.11-5",
+          type: "multiple-choice",
+          prompt: {
+            en: "🤝 Which shows RESPONSIBLE borrowing?",
+            es: "🤝 ¿Cuál muestra un préstamo RESPONSABLE?",
+            ur: "🤝 ذمہ دارانہ قرض لینے کی مثال کون سی ہے؟",
+          },
+          choices: [
+            { en: "Returning a borrowed item on time and in good condition", es: "Devolver algo prestado a tiempo y en buen estado", ur: "قرض لی گئی چیز وقت پر اور اچھی حالت میں واپس کرنا" },
+            { en: "Keeping something borrowed forever", es: "Quedarse con algo prestado para siempre", ur: "قرض لی گئی چیز ہمیشہ کے لیے رکھ لینا" },
+            { en: "Never returning what you borrowed", es: "Nunca devolver lo que pediste prestado", ur: "قرض لی گئی چیز کبھی واپس نہ کرنا" },
+            { en: "Breaking a borrowed item and not telling anyone", es: "Romper algo prestado y no decirle a nadie", ur: "قرض لی گئی چیز توڑ دینا اور کسی کو نہ بتانا" },
+          ],
+          correctIndex: 0,
+        },
+        {
+          id: "qz-2.11-6",
+          type: "true-false",
+          prompt: {
+            en: "🤝 Lending means letting someone use your money now, trusting they'll pay it back later.",
+            es: "🤝 Prestar significa dejar que alguien use tu dinero ahora, confiando en que lo devolverá después.",
+            ur: "🤝 قرض دینے کا مطلب ہے کسی کو ابھی آپ کا پیسہ استعمال کرنے دینا، اس بھروسے پر کہ وہ بعد میں واپس کرے گا۔",
           },
           choices: [
             { en: "True ✅", es: "Verdadero ✅", ur: "صحیح ✅" },
@@ -3474,6 +3648,42 @@ const grade2: Grade = {
           },
           answer: 12,
           answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-6",
+          emoji: "🏦🚌",
+          scene: "Credit union savings tracker for a class field-trip fund",
+          prompt: {
+            en: "A class has $60 saved for a field trip. They deposit $15 more, then withdraw $10 for supplies. How much is in the fund now?",
+            es: "Una clase tiene $60 ahorrados para una excursión. Depositan $15 más, luego retiran $10 para materiales. ¿Cuánto hay en el fondo ahora?",
+            ur: "کلاس کے پاس سفر کے لیے $60 جمع ہیں۔ وہ مزید $15 جمع کرتے ہیں، پھر سامان کے لیے $10 نکالتے ہیں۔ اب فنڈ میں کتنے ہیں؟",
+          },
+          answer: 65,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-7",
+          emoji: "🤝👧",
+          scene: "Sibling borrowing money and paying it back responsibly over two weeks",
+          prompt: {
+            en: "Malik borrows $12 from his sister. He pays back $5 this week and $7 next week. How much did he pay back in total?",
+            es: "Malik pide prestados $12 a su hermana. Paga $5 esta semana y $7 la próxima. ¿Cuánto pagó en total?",
+            ur: "ملک اپنی بہن سے $12 قرض لیتا ہے۔ وہ اس ہفتے $5 اور اگلے ہفتے $7 واپس کرتا ہے۔ اس نے کل کتنا واپس کیا؟",
+          },
+          answer: 12,
+          answerUnit: { en: "dollars ($)", es: "dólares ($)", ur: "ڈالر ($)" },
+        },
+        {
+          id: "wp-2.11-8",
+          emoji: "🎁🌱",
+          scene: "Community tool-lending library where neighbors lend garden supplies to each other",
+          prompt: {
+            en: "A neighbor lends 8 shovels to a community garden. 3 shovels are returned this week. How many shovels are still out on loan?",
+            es: "Un vecino presta 8 palas a un jardín comunitario. Se devuelven 3 palas esta semana. ¿Cuántas palas siguen prestadas?",
+            ur: "ایک ہمسایہ کمیونٹی باغ کو 8 بیلچے قرض دیتا ہے۔ اس ہفتے 3 بیلچے واپس آتے ہیں۔ کتنے بیلچے ابھی قرض پر ہیں؟",
+          },
+          answer: 5,
+          answerUnit: { en: "shovels", es: "palas", ur: "بیلچے" },
         },
       ],
     },
