@@ -7,7 +7,7 @@ const sites = [
 
 export default function SiteFooter() {
   return (
-    <footer className="bg-gray-900 text-gray-400 text-sm py-10 px-6">
+    <footer className="bg-gray-900 text-gray-400 text-sm py-10 px-6 print:hidden">
       <div className="max-w-4xl mx-auto">
         <p className="text-white font-black text-center mb-2">The OurWorld Family</p>
         <p className="text-gray-500 font-semibold text-center text-xs mb-6">

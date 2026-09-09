@@ -2,7 +2,7 @@ import NavBar from "@/components/NavBar";
 import Link from "next/link";
 import {
   Languages, ArrowLeft, Volume2, Repeat, MessageCircle,
-  PersonStanding, Users, Image as ImageIcon,
+  PersonStanding, Users, Image as ImageIcon, ArrowRightLeft,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -101,6 +101,24 @@ export default function EslStrategiesPage() {
             );
           })}
         </div>
+
+        <Link
+          href="/community/esl-strategies/comparison-poster"
+          className="mt-8 flex items-center gap-4 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:border-primary transition-colors"
+        >
+          <div className="bg-accent-light rounded-xl flex-shrink-0 flex items-center justify-center w-12 h-12">
+            <ArrowRightLeft size={22} className="text-accent" />
+          </div>
+          <div>
+            <span className="text-xs font-bold uppercase tracking-wide text-accent">Printable poster</span>
+            <h3 className="font-black text-gray-800 text-lg mt-0.5">
+              &quot;More than&quot; vs. &quot;less than&quot; — a comparison-language poster
+            </h3>
+            <p className="text-gray-500 text-sm">
+              A trilingual (EN/ES/UR) bar-model anchor chart for the comparison language that trips up word problems most — print it for the wall or keep it open during Apply.
+            </p>
+          </div>
+        </Link>
 
         <div className="mt-10 bg-primary-light rounded-2xl p-6 text-center">
           <p className="text-gray-500 font-semibold">Have a strategy that works in your classroom?</p>
