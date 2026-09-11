@@ -1013,7 +1013,7 @@ function FluencyDrill({ fluency, language }: { fluency: Fluency; language: strin
             <Timer size={14} /> {timeLeft}s
           </span>
         </div>
-        <p className="text-5xl font-black text-gray-800 mb-6">{problem.prompt} = ?</p>
+        <p className="text-4xl font-black text-gray-800 mb-6">{problem.prompt}</p>
         <input
           ref={inputRef}
           type="number"
